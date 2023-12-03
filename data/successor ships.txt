@@ -737,8 +737,8 @@ ship `Kaskhorade`
 		`"Ojet" Bimodal Coilgun` 4
 		"Burst Anti-Missile Turret" 4
 		"Multimodal Armor: Heavy"
-	turret -34 5
-	turret 34 5
+	turret -31 6
+	turret 31 6
 	turret 0 -15
 	turret 0 30
 	gun -3 -120
