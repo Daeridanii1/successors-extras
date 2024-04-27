@@ -33,6 +33,7 @@ shipyard "successors"
 	`Valsaqra`
 	`Veusade`
 	`Nnesaarau`
+	`Vujlet`
 outfitter "successors"
 	"Auxiliary Power Reserve"
 	"Primary Power Reserve"

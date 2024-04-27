@@ -20,11 +20,12 @@ shipyard "Successor Heavy"
 shipyard "Chydiyi"
 	`Nnesaarau (Naive)`
 
+shipyard "New Houses Light"
+	`Vujlet (Naive)`
+
 shipyard "High Houses Light"
-	`Aaulqra (Naive)`
 	`Seiitej`
 	`Veusade (Naive)`
-	`Kaskhorade`
 
 shipyard "High Houses Heavy"
 	`Aaulqra (Naive)`

@@ -225,6 +225,9 @@ event "no longer naive to successors"
 	shipyard "Chydiyi"
 		remove `Nnesaarau (Naive)`
 		add `Nnesaarau`
+	shipyard "New Houses Light"
+		remove `Vujlet (Naive)`
+		add `Vujlet`
 	shipyard "High Houses Light"
 		remove `Aaulqra (Naive)`
 		remove `Veusade (Naive)`

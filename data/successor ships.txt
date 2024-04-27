@@ -623,6 +623,88 @@ ship `Veusade`
 ship `Veusade` `Veusade (Naive)`
 	description `The "Veusade" bristles with gun ports but has a small overall weapons capacity; in fact, it is just enough to saturate its hardpoints with drag cannons. Such a narrowly-focused design makes these ships ill-suited for multipurpose use, but they are frequently seen as auxiliary or police craft, owing to their ability to rapidly catch and immobilize fleeing vessels.`
 
+ship `Vujlet`
+	sprite "ship/vujlet"
+	thumbnail "thumbnail/vujlet"
+	attributes
+		licenses
+			"High Houses"
+		category "Light Warship"
+		"cost" 8200000
+		"shields" 3000
+		"hull" 17500
+		"required crew" 2
+		"bunks" 6
+		"mass" 120
+		"drag" 2.4
+		"heat dissipation" .84
+		"fuel capacity" 800
+		"cargo space" 15
+		"outfit space" 241
+		"weapon capacity" 70
+		"engine capacity" 85
+		"multimodal armor" 1
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`"Nnesa" Inertial Core`
+		`Auxiliary Power Reserve`
+		`"Veldt" Combat Scanner`
+		`"Ej" Shield Cortex`
+		"Hyperdrive"
+		"Successor Cooling"
+		`"Ojet" Bimodal Coilgun` 2
+		"Multimodal Armor: Stealth"
+	gun -4 -48
+	gun 4 -48
+	turret 0 1
+	engine -7 44
+		zoom .8
+	engine 7 44
+		zoom .8
+	"reverse engine" -8 -22
+		zoom .7
+		over
+	"reverse engine" 8 -22
+		zoom .7
+		over
+	"steering engine" -16 34
+		left
+		angle 90
+		zoom .5
+	"steering engine" -6 -25
+		right
+		angle 90
+		zoom .5
+		over
+	"steering engine" 16 34
+		right
+		angle 270
+		zoom .5
+	"steering engine" 6 -25
+		left
+		angle 270
+		zoom .5
+		over
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `Navigating the stars with the grace of a flitting bird, the compact "Vujlet" is a mass-produced High Houses warship flexible enough to serve in a variety of light-duty roles. Large enough to operate as a self-sufficient unit, these vessels serve as a useful bridge between short-ranged, relatively vulnerable interceptors, and larger, more resource-intensive warships that can be much more expensive to build and operate.`
+	description `	The design was originally employed by House Kaatrij as a stealth reconnaissance vessel during a past territorial conflict over the now largely-uninhabited systems to the galactic south. Following the resolution of that particular conflict and the strengthening of the alliance between the New Houses, the plans for the "Vujlet" were distributed among Kaatrij's allies. Produced en masse by the other New Houses, the "Vujlet" rapidly became a mainstay of their fleets.`
+
+ship `Vujlet` `Vujlet (Naive)`
+	description `The compact "Vujlet" is a mass-produced High Houses warship flexible enough to serve in a variety of light-duty roles. Large enough to operate as a self-sufficient unit, these vessels serve as a useful bridge between short-ranged, relatively vulnerable interceptors, and larger, more resource-intensive warships that can be much more expensive to build and operate.`
+
 ship `Aaulqra`
 	sprite "ship/aaulqra"
 	thumbnail "thumbnail/aaulqra"
