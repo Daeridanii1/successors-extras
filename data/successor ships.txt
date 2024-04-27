@@ -169,32 +169,38 @@ ship `Myaede`
 		`"Aqra" Inductive Reverser`
 		`3-"Kaska" Betavoltaic Cell` 2
 		`1-"Uurau" Betavoltaic Cell`
-		"Pulse Laser Turret"
-		"Pulse Laser" 2
+		"Pulse Laser Turret" 2
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
-	turret -40 10 
-	turret 0 8 "Pulse Laser Turret"
-	turret 40 10 "Pulse Laser Turret"
-	gun -3 -48
-	gun 3 -48
-	engine -40 46
-	engine 40 46
-	"steering engine" -40 -25
-		zoom .6
-		angle 180
+	turret -24 3 "Pulse Laser Turret"
+	turret 24 3 "Pulse Laser Turret"
+	gun -3 -56
+	gun 3 -56
+	engine -45 28
+	engine 45 28
+	"steering engine" 16 -48
+		zoom .5
+		over
 		left
+		angle 270
+	"steering engine" -16 -48
+		zoom .5
 		over
-	"steering engine" 40 -25
-		zoom .6
-		angle 180
 		right
+		angle 90
+	"steering engine" 11 74
+		zoom .5
 		over
-	"reverse engine" -40 -25
-		zoom .6
+		right
+		angle 270
+	"steering engine" -11 74
+		zoom .5
 		over
-	"reverse engine" 40 -25
-		zoom .6
+		left
+		angle 90
+	"reverse engine" -45 -20
+		over
+	"reverse engine" 45 -20
 		over
 	leak "leak" 50 50
 	leak "flame" 30 80
