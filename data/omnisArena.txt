@@ -27,29 +27,33 @@ system "Successors "
 		distance 900
 		offset 210
 		sprite "ship/stolsaqra"
-	add object "Aaulqra  "
+	add object "Vujlet  "
 		distance 900
 		offset 240
-		sprite "ship/aaulqra"
-	add object "Seiitej  "
-		distance 900
-		offset 270
-		sprite "ship/seiitej"
+		sprite "ship/vujlet"
 	add object "Veusade  "
 		distance 900
-		offset 300
+		offset 270
 		sprite "ship/veusade"
-	add object "Kaskhorade  "
+	add object "Seiitej  "
+		distance 900
+		offset 300
+		sprite "ship/seiitej"
+	add object "Aaulqra  "
 		distance 900
 		offset 330
-		sprite "ship/kaskhorade"
-	add object "Valsaqra  "
+		sprite "ship/aaulqra"
+	add object "Kaskhorade  "
 		distance 900
 		offset 360
+		sprite "ship/kaskhorade"
+	add object "Valsaqra  "
+		distance 1500
+		offset 0
 		sprite "ship/valsaqra"
 	add object "Valkkyiara-Khorasaqra  "
 		distance 1500
-		offset 0
+		offset 30
 		sprite "ship/valkkyiara-khorasaqra"
 #	Ships
 planet "Kvelqde "
@@ -171,23 +175,40 @@ fleet "Stolsaqra "
 	personality "heroic"
 	variant
 		"Stolsaqra"
-planet "Aaulqra "
+planet "Vujlet "
 	bribe 0
 	government "Arena"
 	tribute 1
-		fleet "Aaulqra "
+		fleet "Vujlet "
 		threshold 0
-planet "Aaulqra  "
+planet "Vujlet  "
 	bribe 0
 	government "Arena"
 	tribute 1
-		fleet "Aaulqra "
+		fleet "Vujlet "
 		threshold 0
-fleet "Aaulqra "
+fleet "Vujlet "
 	government "Arena"
 	personality "heroic"
 	variant
-		"Aaulqra"
+		"Vujlet"
+planet "Veusade  "
+	bribe 0
+	government "Arena"
+	tribute 1
+		fleet "Veusade "
+		threshold 0
+planet "Veusade  "
+	bribe 0
+	government "Arena"
+	tribute 1
+		fleet "Veusade "
+		threshold 0
+fleet "Veusade "
+	government "Arena"
+	personality "heroic"
+	variant
+		"Veusade"
 planet "Seiitej "
 	bribe 0
 	government "Arena"
@@ -205,23 +226,23 @@ fleet "Seiitej "
 	personality "heroic"
 	variant
 		"Seiitej"
-planet "Veusade "
+planet "Aaulqra "
 	bribe 0
 	government "Arena"
 	tribute 1
-		fleet "Veusade "
+		fleet "Aaulqra "
 		threshold 0
-planet "Veusade  "
+planet "Aaulqra  "
 	bribe 0
 	government "Arena"
 	tribute 1
-		fleet "Veusade "
+		fleet "Aaulqra "
 		threshold 0
-fleet "Veusade "
+fleet "Aaulqra "
 	government "Arena"
 	personality "heroic"
 	variant
-		"Veusade"
+		"Aaulqra"
 planet "Kaskhorade "
 	bribe 0
 	government "Arena"
