@@ -248,48 +248,76 @@ fleet "Small New Houses"
         heroic
     government "New Houses"
     names "high houses"
-    variant 60
+    variant 100
         "Stolsaqra (Military)"
-    variant 20
-        "Veusade" 3
-    variant 20
-        "Seiitej" 2
-        "Aaulqra"
-    variant 20
-        "Aaulqra" 2
+    variant 100
+        "Stolsaqra (Military)" 2
+    variant 80
+        "Vujlet"
+    variant 70
+        "Vujlet" 2
+    variant 70
+        "Vujlet"
+        "Stolsaqra (Military)" 2
+    variant 40
+        "Vujlet" 3
     variant 40
         "Veusade"
     variant 40
         "Seiitej"
-    variant 40
-        "Aaulqra"
+    variant 20
+        "Seiitej"
+        "Stolsaqra (Military)" 2
+    variant 20
+        "Veusade" 2
+    variant 10
+        "Vujlet" 5
+    variant 10
+        "Seiitej" 3
 
 fleet "Large New Houses"
     government "New Houses"
     names "high houses"
     personality
         heroic
-    variant 50
-        "Kaskhorade" 2
+    variant 100
+        "Kaskhorade"
+    variant 100
+        "Aaulqra"
+    variant 60
+        "Kaskhorade"
+        "Aaulqra"
+    variant 60
         "Aaulqra" 2
+    variant 30
+        "Aaulqra" 2
+        "Vujlet" 4
+    variant 30
+        "Kaskhorade"
+        "Vujlet" 4
     variant 20
-        "Aaulqra" 3
+        "Kaskhorade" 2
+        "Vujlet" 2
         "Veusade" 2
-        "Seiitej" 2
-    variant 50
-        "Kaskhorade" 3
-    variant 25
+    variant 20
         "Valsaqra"
     variant 10
         "Valsaqra" 2
     variant 10
         "Valsaqra"
         "Aaulqra" 2
+    variant 5
+        "Kaskhorade"
+        "Aaulqra" 3
+        "Veusade" 2
+        "Vujlet" 4
     variant 1
         "Valkkyiara-Khorasaqra"
-        "Valsaqrar" 2
+        "Valsaqra" 2
         "Kaskhorade" 2
         "Aaulqra" 4
+        "Vujlet" 6
+        "Veusade" 4
 
 fleet "Successor Miners"
     government "Successor"
