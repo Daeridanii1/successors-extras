@@ -172,28 +172,28 @@ ship `Myaede`
 		"Pulse Laser Turret" 2
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
-	turret -24 3 "Pulse Laser Turret"
-	turret 24 3 "Pulse Laser Turret"
+	turret -24 0 "Pulse Laser Turret"
+	turret 24 0 "Pulse Laser Turret"
 	gun -3 -56
 	gun 3 -56
 	engine -45 28
 	engine 45 28
-	"steering engine" 16 -48
+	"steering engine" 27 -49
 		zoom .5
 		over
 		left
 		angle 270
-	"steering engine" -16 -48
+	"steering engine" -27 -49
 		zoom .5
 		over
 		right
 		angle 90
-	"steering engine" 11 74
+	"steering engine" 15 71
 		zoom .5
 		over
 		right
 		angle 270
-	"steering engine" -11 74
+	"steering engine" -15 71
 		zoom .5
 		over
 		left
