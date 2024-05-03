@@ -638,7 +638,7 @@ system Ofstond-Stir
 		distance 1000.41
 		period 400.255
 		object Saska-Aa-Noorr
-			sprite planet/station1
+			sprite planet/stationsuccessor1
 			distance 300
 			period 30
 			offset 2
@@ -1411,10 +1411,11 @@ planet Raaqa-Uur-Kaav
 	government Predecessor
 
 planet Saska-Aa-Noorr
-	attributes station successor
+	attributes station successor rich
 	landscape land/space7
-	description "With Raaqa-Aa-Ryuit serving such an enormous volume of trade, it eventually became economically feasible to establish an orbiting station as an ancillary port for all the freighter captains who preferred not to go to the trouble of making a landing on the planet. Rather than building an entirely new station, the High Houses chose to disassemble an old industrial station from the now-abandoned industrial systems in the south of Successor space and transport it here. This ended up costing much more than projected, and with the planets in their star cluster more than sufficient to house their population, the Successors have refrained from building or transporting any other stations for over a hundred years."
-	spaceport "The zero-G environment makes landing and the loading and unloading of cargo relatively easy compared to planetside, and it's no surprise that the spaceport is busy but efficient. Everyone here is in a hurry, and while the Successors that you speak to are happy to help and trade, it's clear that there are several demands on their time."
+	description "Though the Successors invest in few truly massive constructions, this station is one of them. Originally built over three thousand years ago as a support platform for the Predecessors' early colonization efforts, Saska-Aa-Noorr has been a consistent fixture of the star cluster and one of House Myurej's most important assets."
+	description "	In the present day it serves a primarily residental role, housing almost five million Successors in rotating cylindrical segments of its arms. The gentler gravity and tightly controlled climate these offer makes living stationside quite desirable to many Successors, but the limited space available combined with the high taxes Myurej's levies here mean that usually only the wealthiest Successors can afford to take up residence."
+	spaceport "The spaceport takes full advantage of its zero-gravity nature, with loading docks extending into the distance at all angles."
 	government Successor
 	"required reputation" 10
 	bribe 0
@@ -1434,7 +1435,7 @@ planet Staja-Kella-Oa
 	description "Staja-Kella-Oa is widely recognized as the location of the best educational institutions in Successor space, most of which are funded by the Old Houses but accept applications from all Successors regardless of birthplace or family history."
 	description "The planet itself is densely forested with a few small cities. Part of the reason that it continues to be a center for education is that it has a rich archaelogical history: this planet was home to a now presumed-extinct sapient species roughly one hundred thousand years ago, and there is a great deal of interest in uncovering the details of their society."
 	description "Staja-Kella-Oa is also home to the ancestral estate of House Sioeora, one of the Old Houses."
-	spaceport "The dense tree cover shades the landing pads of the spaceport and casts the whole area in dappled light that reflects softly off the moving ships. Much of the traffic at the spaceport is small shuttles and transports carrying Successor students to and from the planet; the interior of it is clean and colorful, and seems directed towards its more youthful audience, with several recruiting posters for the fleets of the various high houses plastered on the walls."
+	spaceport "The dense tree cover shades the landing pads of the spaceport and casts the whole area in dappled light that reflects softly off the moving ships. Much of the traffic at the spaceport is small shuttles and transports carrying Successor students to and from the planet; the interior of it is clean and colorful, and seems directed towards its more youthful audience, with several recruiting posters for the fleets of the various High Houses plastered on the walls."
 	shipyard "Successor Basics"
 	outfitter "Successor Basics"
 	"required reputation" 1
