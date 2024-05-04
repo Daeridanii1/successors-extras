@@ -278,6 +278,73 @@ ship `Ejniisde`
 	"final explode" "final explosion medium"
 	description `The Successors have a relatively small population and therefore are not in great need of large transport vessels. However, transporting passengers entirely by shuttle lacks a degree of comfort and security, so for longer journeys, the Successors use this dedicated transport ship. While unarmed by default, it is fast enough to escape most ships that might mean it harm.`
 
+ship `Nnaatej`
+	sprite "ship/nnaatej"
+	thumbnail "thumbnail/nnaatej"
+	attributes
+		licenses
+			"Successor"
+		category "Transport"
+		"cost" 3825000
+		"shields" 3000
+		"hull" 15500
+		"required crew" 5
+		"bunks" 26
+		"mass" 380
+		"drag" 2.1
+		"heat dissipation" 0.7
+		"fuel capacity" 500
+		"cargo space" 35
+		"outfit space" 220
+		"weapon capacity" 54
+		"engine capacity" 82
+		"gaslining" 1
+		"waterlining" 1
+		"corrosion resistance" 0.6
+		"slowing resistance" 0.6
+		"hull repair rate" 0.1
+		"hull heat" 0.25
+		"hull energy" 0.2
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		`"Chyyra" Inductive Reverser`
+		`6-"Ruuv" Betavoltaic Cell`
+		`"Ej" Shield Cortex`
+		"Hyperdrive"
+	turret 0 -14
+	engine 0 50
+	"steering engine" 8 38
+		zoom .5
+		over
+		right
+		angle 270
+	"steering engine" -8 38
+		zoom .5
+		over
+		left
+		angle 90
+	"reverse engine" -9 -60
+		zoom .6
+		over
+	"reverse engine" 9 -60
+		zoom .6
+		over
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `Owing to their amphibious nature, a substantial portion of the Successor population lives underwater. Most of their ships are built with this in mind and are capable of some degree of underwater operation. However, the "Nnaatej" is a specialist vessel built specifically for this purpose, shuttling passengers from deep ocean to deep space and back again. It is designed with a denser, pressure-stable hull, built-in maintenance systems, and increased resistance to corrosion and slowing effects. These features come at the cost of making it a heavy and expensive ship for its size, but are considered well worth it to ensure the safety and comfort of its passengers and cargo.`
+	description `	While not explicitly designed for it, the unique design of the "Nnaatej" also allows it to enter the atmospheres of gas giants without issue.`
+
 ship `Ojde`
 	sprite "ship/ojde"
 	thumbnail "thumbnail/ojde"

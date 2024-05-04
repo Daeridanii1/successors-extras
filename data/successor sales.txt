@@ -8,6 +8,7 @@ shipyard "Successor Civilian"
 
 	`Myaede (Naive)`
 	`Ejniisde`
+	`Nnaatej`
 
 shipyard "Successor Heavy"
 	`Kvelqde (Naive)`
