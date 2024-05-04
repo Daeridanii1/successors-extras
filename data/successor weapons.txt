@@ -310,7 +310,7 @@ outfit "High-Velocity Spike"
 	thumbnail "outfit/hv spike"
 	"mass" .5
 	"spike capacity" -1
-	description `The projectiles used by the "Sjeja" Puncture Rail are too large to be synthesized on-the-fly from the ship's reserves, and must be carried separately.`
+	description `The projectiles fired by the "Sjeja" Kinetic Lance are too large to be synthesized on-the-fly from the ship's reserves, and must be carried separately.`
 
 outfit `High-Velocity Spike Rack`
 	category "Ammunition"
@@ -322,7 +322,7 @@ outfit `High-Velocity Spike Rack`
 	"outfit space" -12
 	"energy capacity" 800
 	"spike capacity" 16
-	description `Though few situations require the use of more shots than those carried in the built-in ammunition reserves of the "Sjeja" Puncture Rail's, the High Houses do manufacture this additional storage unit for use on their largest warships. The rack includes a small set of batteries to support the high power costs of the "Sjeja."`
+	description `Though the built-in ammunition reserves of the "Sjeja" Kinetic Lance are sufficient for all but the most protracted engagements, the High Houses do manufacture this additional storage unit for use on their largest warships. The rack includes a small set of batteries to help support the high power costs of the "Sjeja."`
 
 outfit "Burst Anti-Missile Turret"
 	category "Turrets"
