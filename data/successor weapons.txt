@@ -283,6 +283,8 @@ outfit `"Sjeja" Puncture Rail`
 		sound "typhoon"
 		ammo "High-Velocity Spike"
 		icon "icon/hv spike"
+		"fire effect" "moonbeam fleck" 20
+		"fire effect" "electron impact"
 		"hit effect" "torpedo hit"
 		"die effect" "tiny explosion"
 		"cluster"
@@ -291,6 +293,7 @@ outfit `"Sjeja" Puncture Rail`
 		"reload" 160
 		"firing force" 800
 		"firing energy" 1900
+		"firing ion" 3.0
 		"firing heat" 4000
 		"shield damage" 1336
 		"hull damage" 1920
