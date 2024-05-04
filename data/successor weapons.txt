@@ -317,11 +317,11 @@ outfit `High-Velocity Spike Rack`
 	cost 350000
 	licenses
 		"High Houses"
-	thumbnail "outfit/sjeja puncture rail"
+	thumbnail "outfit/hv spike rack"
 	"mass" 7
-	"outfit space" -15
+	"outfit space" -12
 	"energy capacity" 800
-	"spike capacity" 20
+	"spike capacity" 16
 	description `Though few situations require the use of more shots than those carried in the built-in ammunition reserves of the "Sjeja" Puncture Rail's, the High Houses do manufacture this additional storage unit for use on their largest warships. The rack includes a small set of batteries to support the high power costs of the "Sjeja."`
 
 outfit "Burst Anti-Missile Turret"
