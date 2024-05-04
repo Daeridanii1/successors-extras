@@ -43,7 +43,7 @@ outfitter "successors"
 	"Dazzle Missile Array"
 	"Dazzle Missile"
 	"Dazzle Missile Rack"
-	`"Sjeja" Puncture Rail`
+	`"Sjeja" Kinetic Lance`
 	"High-Velocity Spike"
 	"High-Velocity Spike Rack"
 	"Gauss Rifle"

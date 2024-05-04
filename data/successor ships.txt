@@ -975,15 +975,15 @@ ship `Valsaqra`
 		"Successor Cooling" 2
 		`"Ojet" Bimodal Coilgun` 2
 		`Bimodal Coilgun Turret` 2
-		`"Sjeja" Puncture Rail` 2
+		`"Sjeja" Kinetic Lance` 2
 		"High-Velocity Spike" 40
 		"Burst Anti-Missile Turret" 1
 		"Multimodal Armor: Heavy"
-	gun -27 -121 `"Sjeja" Puncture Rail`
+	gun -27 -121 `"Sjeja" Kinetic Lance`
 	gun -34 -104 `Bimodal Railgun`
 	gun -50 -65
 	gun -56 -57 
-	gun 27 -121 `"Sjeja" Puncture Rail`
+	gun 27 -121 `"Sjeja" Kinetic Lance`
 	gun 34 -104	`Bimodal Railgun`
 	gun 50 -65
 	gun 56 -57

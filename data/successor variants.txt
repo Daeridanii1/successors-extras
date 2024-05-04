@@ -9,7 +9,7 @@ ship `Aaulqra` `Aaulqra (Sniper)`
 		`"Viir" Repair Module`
 		`Hyperdrive`
 		`Successor Cooling`
-		`"Sjeja" Puncture Rail`
+		`"Sjeja" Kinetic Lance`
 		`High-Velocity Spike` 20
 		`Bimodal Railgun` 4
 		`Burst Anti-Missile Turret` 2
@@ -94,7 +94,7 @@ ship `Kaskhorade` `Kaskhorade (Sniper)`
 		`"Viir" Repair Module`
 		"Hyperdrive"
 		"Successor Cooling"
-		`"Sjeja" Puncture Rail` 2
+		`"Sjeja" Kinetic Lance` 2
 		`High-Velocity Spike Rack`
 		`High-Velocity Spike` 60
 		"Burst Anti-Missile Turret" 2 

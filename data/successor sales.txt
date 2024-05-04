@@ -113,7 +113,7 @@ outfitter "High Houses Heavy"
 	`"Ryuit" Inertial Core`
 	`"Uoret" Inertial Core`
 	"High-Velocity Spike"
-	`"Sjeja" Puncture Rail`
+	`"Sjeja" Kinetic Lance`
 	`Bimodal Coilgun Turret`
 	"Multimodal Armor: Heavy"
 	"Multimodal Armor: Stealth"

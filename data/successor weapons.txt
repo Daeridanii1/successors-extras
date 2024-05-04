@@ -264,12 +264,12 @@ outfit "Overcharged Laser Turret"
 		"cluster"
 	description `Hand-crafted by the more colorful members of the People's Houses, this bespoke overcharged Pulse Laser turret is tuned to fire even faster than the fixed version, producing a truly prodigious amount of heat for a weapon of its size. Despite its crude design, it is nonetheless a fearsome weapon, especially considering that it retains the ability to partially punch through shielding.`
 
-outfit `"Sjeja" Puncture Rail`
+outfit `"Sjeja" Kinetic Lance`
 	category "Secondary Weapons"
 	cost 3500000
 	licenses
 		"High Houses"
-	thumbnail "outfit/sjeja puncture rail"
+	thumbnail "outfit/sjeja kinetic lance"
 	"mass" 60
 	"outfit space" -60
 	"weapon capacity" -60
@@ -277,7 +277,7 @@ outfit `"Sjeja" Puncture Rail`
 	"gun ports" -1
 	"spike capacity" 20
 	weapon
-		sprite "projectile/sjeja puncture rail"
+		sprite "projectile/sjeja kinetic lance"
 			"frame rate" 4
 			"random start frame"
 		sound "typhoon"
@@ -300,7 +300,7 @@ outfit `"Sjeja" Puncture Rail`
 		"piercing" .25
 		"hit force" 2500
 		"penetration count" 5
-	description "The largest and most powerful of the Successors' modern weapons, this massive railgun is elegant in its simplicity, cleanly perforating targets at extreme range. Because the bank of exotic electromagnets it employs requires an unusually high burst of power when firing, the weapon comes with integrated battery banks in order to supply it with a large enough reserve of electricity to function."
+	description "The largest and most powerful of the Successors' modern weapons, this massive coilgun is elegant in its simplicity, cleanly perforating targets at extreme range. Because the bank of exotic electromagnets it employs requires an unusually high burst of power when firing, the weapon comes with integrated battery banks in order to supply it with a large enough reserve of electricity to function."
 
 outfit "High-Velocity Spike"
 	category "Ammunition"
