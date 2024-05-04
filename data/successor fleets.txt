@@ -146,6 +146,10 @@ fleet "Small Successor Transport"
     variant 15
         "Nnesaarau"
         "Kvelqde" 2
+    variant 40
+        "Nnaatej"
+    variant 20
+        "Nnaatej" 2
 
 fleet "People's Houses"
     government "People's Houses"
