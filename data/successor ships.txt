@@ -563,6 +563,9 @@ ship `Seiitej`
 		"weapon capacity" 110
 		"engine capacity" 130
 		"multimodal armor" 1
+		"hull repair rate" 1.2
+		"hull energy" 1.74
+		"hull heat" 1.74
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -631,6 +634,9 @@ ship `Veusade`
 		"weapon capacity" 125
 		"engine capacity" 120
 		"multimodal armor" 1
+		"hull repair rate" 1.45
+		"hull energy" 2.1
+		"hull heat" 2.1
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -711,6 +717,9 @@ ship `Vujlet`
 		"weapon capacity" 105
 		"engine capacity" 85
 		"multimodal armor" 1
+		"hull repair rate" 0.875
+		"hull energy" 1.27
+		"hull heat" 1.27
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -796,6 +805,9 @@ ship `Aaulqra`
 		"weapon capacity" 240
 		"engine capacity" 120
 		"multimodal armor" 1
+		"hull repair rate" 2.75
+		"hull energy" 4.0
+		"hull heat" 4.0
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -877,6 +889,9 @@ ship `Kaskhorade`
 		"weapon capacity" 280
 		"engine capacity" 110
 		"multimodal armor" 1
+		"hull repair rate" 2.25
+		"hull energy" 3.26
+		"hull heat" 3.26
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
