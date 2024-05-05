@@ -47,10 +47,10 @@ system "Successors "
 		distance 900
 		offset 360
 		sprite "ship/kaskhorade"
-	add object "Valsaqra  "
+	add object "Nnaatej  "
 		distance 1500
 		offset 0
-		sprite "ship/valsaqra"
+		sprite "ship/nnaatej"
 	add object "Valkkyiara-Khorasaqra  "
 		distance 1500
 		offset 30
@@ -260,23 +260,23 @@ fleet "Kaskhorade "
 	personality "heroic"
 	variant
 		"Kaskhorade"
-planet "Valsaqra "
+planet "Nnaatej "
 	bribe 0
 	government "Arena"
 	tribute 1
-		fleet "Valsaqra "
+		fleet "Nnaatej "
 		threshold 0
-planet "Valsaqra  "
+planet "Nnaatej  "
 	bribe 0
 	government "Arena"
 	tribute 1
-		fleet "Valsaqra "
+		fleet "Nnaatej "
 		threshold 0
-fleet "Valsaqra "
+fleet "Nnaatej "
 	government "Arena"
 	personality "heroic"
 	variant
-		"Valsaqra"
+		"Nnaatej"
 planet "Valkkyiara-Khorasaqra "
 	bribe 0
 	government "Arena"

@@ -34,8 +34,6 @@ shipyard "High Houses Heavy"
 	`Veusade (Naive)`
 	`Kaskhorade`
 
-	`Valsaqra (Naive)`
-
 shipyard "Peoples Houses"
 	"Myaede-Khora"
 

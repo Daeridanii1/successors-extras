@@ -1,12 +1,3 @@
-#	`Kvelqde`
-#	`Stolsaqra`
-#	`Myaede`
-#	`Veusade`
-#	`Seiitej`
-#	`Aaulqra`
-#	`Khorade`
-#	`Valsaqra`
-
 fleet "Light Successor Freight"
     government "Successor"
     names "successor"
@@ -221,19 +212,6 @@ fleet "Large Old Houses"
         "Seiitej" 2
     variant 50
         "Kaskhorade" 3
-    variant 25
-        "Valsaqra"
-    variant 25
-        "Valsaqra" 2
-    variant 25
-        "Valsaqra"
-        "Kaskhorade"
-        "Aaulqra"
-    variant 1
-        "Valkkyiara-Khorasaqra"
-        "Valsaqra" 2
-        "Kaskhorade" 2
-        "Aaulqra" 4
 
 fleet "Old Houses Police"
     government "Old Houses"
@@ -303,25 +281,12 @@ fleet "Large New Houses"
         "Kaskhorade" 2
         "Vujlet" 2
         "Veusade" 2
-    variant 20
-        "Valsaqra"
-    variant 10
-        "Valsaqra" 2
-    variant 10
-        "Valsaqra"
-        "Aaulqra" 2
     variant 5
         "Kaskhorade"
         "Aaulqra" 3
         "Veusade" 2
         "Vujlet" 4
-    variant 1
-        "Valkkyiara-Khorasaqra"
-        "Valsaqra" 2
-        "Kaskhorade" 2
-        "Aaulqra" 4
-        "Vujlet" 6
-        "Veusade" 4
+
 
 fleet "Successor Miners"
     government "Successor"

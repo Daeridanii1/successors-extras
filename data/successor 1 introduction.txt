@@ -236,10 +236,8 @@ event "no longer naive to successors"
 	shipyard "High Houses Heavy"
 		remove `Aaulqra (Naive)`
 		remove `Veusade (Naive)`
-		remove `Valsaqra (Naive)`
 		add `Aaulqra`
 		add `Veusade`
-		add `Valsaqra`
 
 mission "Successors: People's Houses, First Contact"
 	landing
