@@ -112,19 +112,6 @@ ship `Kaskhorade` `Kaskhorade (Brawler)`
 		"Successor Cooling"
 		`Bimodal Railgun Turret` 4
 
-ship `Kaskhorade` `Kaskhorade (Bomber)`
-	outfits
-		`"Veusa" Inductive Thruster`
-		`"Veusa" Inductive Steering`
-		`"Ryuit" Inertial Core`
-		`"Jorv" Shield Cortex`
-		"Hyperdrive"
-		"Successor Cooling"
-		"Dazzle Missile Array" 4
-		"Dazzle Missile" 800
-		"Burst Anti-Missile Turret" 2
-		`Outfits Expansion` 2
-
 ship `Valsaqra` `Valsaqra (Rails)`
 	outfits
 		`"Veusa" Inductive Thruster`

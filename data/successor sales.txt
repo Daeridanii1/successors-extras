@@ -100,8 +100,6 @@ outfitter "High Houses Light"
 	`"Nnesa" Inertial Core`
 	`"Ojet" Bimodal Coilgun`
 	`Drag Cannon`
-	"Dazzle Missile Array"
-	"Dazzle Missile"
 	`"Jaase" Shield Cortex`
 	`Shield Cortex Interface`
 	`"Viir" Repair Module`
