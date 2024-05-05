@@ -34,6 +34,7 @@ shipyard "successors"
 	`Veusade`
 	`Nnesaarau`
 	`Vujlet`
+	`Nnaatej`
 outfitter "successors"
 	"Auxiliary Power Reserve"
 	"Primary Power Reserve"
