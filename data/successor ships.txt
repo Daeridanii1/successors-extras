@@ -750,7 +750,7 @@ ship `Vujlet`
 		"Hyperdrive"
 		"Successor Cooling"
 		`"Ojet" Bimodal Coilgun` 2
-		"Multimodal Armor: Stealth"
+		"Multimodal Armor: Heavy"
 	gun -6 -46
 	gun 6 -46
 	gun -9 -30
