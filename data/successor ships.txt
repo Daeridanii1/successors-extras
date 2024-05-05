@@ -581,7 +581,6 @@ ship `Seiitej`
 		"Hyperdrive"
 		"Successor Cooling"
 		`"Ojet" Bimodal Coilgun` 4
-		"Burst Anti-Missile Turret"
 		`"Veldt" Combat Scanner`
 		"Multimodal Armor: Heavy"
 	gun -10 -78
@@ -825,7 +824,6 @@ ship `Aaulqra`
 		"Hyperdrive"
 		"Successor Cooling" 2
 		`"Ojet" Bimodal Coilgun` 5
-		"Burst Anti-Missile Turret" 2
 		"Multimodal Armor: Heavy"
 	gun 0 -118 
 	gun -23 -63 
@@ -908,7 +906,6 @@ ship `Kaskhorade`
 		"Hyperdrive"
 		"Successor Cooling"
 		`"Ojet" Bimodal Coilgun` 4
-		"Burst Anti-Missile Turret" 4
 		"Multimodal Armor: Heavy"
 	turret -31 6
 	turret 31 6

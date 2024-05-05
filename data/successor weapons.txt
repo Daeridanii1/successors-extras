@@ -323,36 +323,3 @@ outfit `High-Velocity Spike Rack`
 	"energy capacity" 800
 	"spike capacity" 16
 	description `Though the built-in ammunition reserves of the "Sjeja" Kinetic Lance are sufficient for all but the most protracted engagements, the High Houses do manufacture this additional storage unit for use on their largest warships. The rack includes a small set of batteries to help support the high power costs of the "Sjeja."`
-
-outfit "Burst Anti-Missile Turret"
-	category "Turrets"
-	cost 135000
-	thumbnail "outfit/burst anti missile"
-	licenses
-		"High Houses"
-	"mass" 24
-	"outfit space" -24
-	"weapon capacity" -24
-	"turret mounts" -1
-	weapon
-		"hardpoint sprite" "hardpoint/burst anti missile"
-		"hardpoint offset" 5.
-		"hit effect" "burst anti-missile"
-		"hit effect" "nano spark" 2
-		"anti-missile" 20
-		"velocity" 200
-		"lifetime" 1
-		"burst count" 10
-		"burst reload" 3
-		"reload" 28
-		"firing energy" 10
-		"firing heat" 56
-	description "This burst-fire anti-missile turret is intended as an elegant counter to cluster-fired missiles: it can fire very quickly for a short duration before entering a longer cooldown period, during which the ship carrying it is vulnerable. This tradeoff synergizes with the combat cadence of the Successors, who use it to cover their quick attack runs and endure the cooldown during the retreat phase."
-
-effect "burst anti-missile"
-	sprite "effect/burst anti-missile"
-		"random start frame"
-		"frame rate" 40
-	sound "heavy anti-missile"
-	"lifetime" 5
-	"velocity scale" 1

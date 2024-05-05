@@ -39,7 +39,6 @@ outfitter "successors"
 	"Primary Power Reserve"
 	"Bimodal Coilgun Turret"
 	`"Ojet" Bimodal Coilgun`
-	"Burst Anti-Missile Turret"
 	`"Sjeja" Kinetic Lance`
 	"High-Velocity Spike"
 	"High-Velocity Spike Rack"
