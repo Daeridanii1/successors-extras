@@ -349,9 +349,11 @@ system Luue-Saqru
 	trade Medical 439
 	trade Metal 368
 	trade Plastic 324
-	fleet "People's Houses" 1400
-	fleet "People's Houses Raiders" 5000
+	fleet "People's Houses" 2000
+	fleet "People's Houses Raiders" 10000
 	fleet "Small New Houses" 3000
+	fleet "Successor Miners" 9000
+	fleet "Successor Miners (Well-Defended)" 6000
 	object
 		sprite planet/browndwarf-l
 	object
@@ -391,7 +393,7 @@ system Maspa-Cavaasa
 	trade Metal 397
 	trade Plastic 320
 	fleet "Small Successor Transport" 3000
-	fleet "Successor Miners" 1000
+	fleet "Successor Miners" 3000
 	object
 		sprite star/m0
 		period 10
@@ -424,8 +426,8 @@ system Maspa-Mavra
 	asteroids "small metal" 1 1
 	asteroids "large metal" 1 1
 	minables gold 1 1
-	fleet "Small Old Houses" 5000
-	fleet "Successor Miners" 10000
+	fleet "Small New Houses" 10000
+	fleet "Successor Miners" 5000
 	object
 		sprite star/g0-old
 	object Khosa-Kella-Oa
@@ -443,9 +445,11 @@ system Maspa-Raaqa
 	asteroids "small metal" 54 3
 	minables aluminum 12 5
 	minables iron 8 4
-	fleet "Successor Miners" 1800
+	fleet "Successor Miners" 5000
+	fleet "Successor Miners (Well-Defended)" 3000
 	fleet "People's Houses" 2000
 	fleet "People's Houses Raiders" 4000
+	fleet "Small New Houses" 10000
 	object
 		sprite star/protostar-orange
 	object Giiq-Oj-Sol
@@ -495,8 +499,9 @@ system Myiara-Nnesa
 	fleet "Small New Houses" 500
 	fleet "Large New Houses" 1000
 	fleet "Medium Successor Freight" 1000
-	fleet "Successor Miners" 1000
-	fleet "People's Houses Raiders" 4000
+	fleet "Successor Miners" 10000
+	fleet "Successor Miners (Well-Defended)" 10000
+	fleet "People's Houses Raiders" 8000
 	object
 		sprite star/m-giant
 		period 10

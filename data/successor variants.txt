@@ -84,6 +84,53 @@ ship `Kvelqde` `Kvelqde (Mining)`
 		"Hyperdrive"
 		`"Tuur" Scanning Suite`
 
+ship `Myaede` `Myaede (Violent)`
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		`6-"Ruuv" Betavoltaic Cell`
+		`"Ej" Shield Cortex`
+		"Hyperdrive"
+		`Overcharged Laser Turret` 2
+		`Overcharged Pulse Laser` 2
+		`Auxiliary Power Reserve`
+		`Successor Cooling`
+
+ship `Myaede` `Myaede (Mining)`
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`3-"Kaska" Betavoltaic Cell`
+		`1-"Uurau" Betavoltaic Cell` 3
+		`"Ej" Shield Cortex`
+		"Hyperdrive"
+		`Pulse Laser Turret` 2
+		`Cargo Expansion`
+		`"Tuur" Scanning Suite`
+
+ship `Myaede` `Myaede (Mining, Defensive)`
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		`6-"Ruuv" Betavoltaic Cell`
+		`"Ej" Shield Cortex`
+		"Hyperdrive"
+		`Pulse Laser Turret` 2
+		`Successor Pulse Laser` 2
+		`"Tuur" Scanning Suite`
+		`Auxiliary Power Reserve`
+
+ship `Nnaatej` `Nnaatej (Defensive)`
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		`6-"Ruuv" Betavoltaic Cell`
+		`"Ej" Shield Cortex`
+		"Hyperdrive"
+		`Pulse Laser Turret`
+		`Successor Cooling`
+
 ship `Kaskhorade` `Kaskhorade (Sniper)`
 	outfits
 		`"Veusa" Inductive Thruster`
@@ -111,21 +158,6 @@ ship `Kaskhorade` `Kaskhorade (Brawler)`
 		"Hyperdrive"
 		"Successor Cooling"
 		`Bimodal Railgun Turret` 4
-
-ship `Valsaqra` `Valsaqra (Rails)`
-	outfits
-		`"Veusa" Inductive Thruster`
-		`"Veusa" Inductive Steering`
-		`"Veusa" Inductive Reverser`
-		`"Ryuit" Inertial Core`
-		`"Nnesa" Inertial Core`
-		`"Jorv" Shield Cortex`
-		`1-"Uurau" Betavoltaic Cell` 2
-		"Hyperdrive"
-		"Successor Cooling" 2
-		`"Ojet" Bimodal Coilgun` 6
-		`Bimodal Coilgun Turret` 3
-		"Burst Anti-Missile Turret"
 
 ship "Ojde" "Ojde 2"
 	sprite "ship/ojde 2"

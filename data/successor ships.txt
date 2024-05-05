@@ -317,6 +317,7 @@ ship `Nnaatej`
 		`6-"Ruuv" Betavoltaic Cell`
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
+		`Successor Fuel Sail`
 	turret 0 -10
 	engine 0 62
 	"steering engine" 5 -75
@@ -507,6 +508,7 @@ ship `Stolsaqra`
 		"Successor Pulse Laser" 3
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
+		`Auxiliary Power Reserve`
 
 	gun 0 -40
 	gun -10.5 -20
