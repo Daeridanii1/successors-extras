@@ -702,13 +702,13 @@ ship `Vujlet`
 		"hull" 17500
 		"required crew" 2
 		"bunks" 6
-		"mass" 120
-		"drag" 2.4
+		"mass" 130
+		"drag" 2.2
 		"heat dissipation" .84
-		"fuel capacity" 800
-		"cargo space" 15
-		"outfit space" 241
-		"weapon capacity" 70
+		"fuel capacity" 600
+		"cargo space" 10
+		"outfit space" 280
+		"weapon capacity" 105
 		"engine capacity" 85
 		"multimodal armor" 1
 		weapon
@@ -728,34 +728,37 @@ ship `Vujlet`
 		"Successor Cooling"
 		`"Ojet" Bimodal Coilgun` 2
 		"Multimodal Armor: Stealth"
-	gun -4 -48
-	gun 4 -48
-	turret 0 1
-	engine -7 44
-		zoom .8
-	engine 7 44
-		zoom .8
-	"reverse engine" -8 -22
-		zoom .7
+	gun -6 -46
+	gun 6 -46
+	gun -9 -30
+	gun 9 -30
+	engine -16 49
+		zoom .9
+	engine 16 49
+		zoom .9
+	"reverse engine" -16 -6
+		zoom .9
 		over
-	"reverse engine" 8 -22
-		zoom .7
+	"reverse engine" 16 -5
+		zoom .9
 		over
-	"steering engine" -16 34
+	"steering engine" -4 -53
+		right
+		angle 90
+		zoom .5
+		over
+	"steering engine" 4 -53
 		left
-		angle 90
-		zoom .5
-	"steering engine" -6 -25
-		right
-		angle 90
-		zoom .5
-		over
-	"steering engine" 16 34
-		right
 		angle 270
 		zoom .5
-	"steering engine" 6 -25
+		over
+	"steering engine" -28 34
 		left
+		angle 90
+		zoom .5
+		over
+	"steering engine" 28 34
+		right
 		angle 270
 		zoom .5
 		over
