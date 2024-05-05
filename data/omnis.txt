@@ -52,7 +52,7 @@ outfitter "successors"
 	"Heirloom Hunter-Killers"
 	"Heirloom License"
 	"Heirloom Point Defense"
-	"Heirloom Railgun"
+	`"Sarija" Heirloom Coilgun`
 	"Heirloom Shielding"
 	"High Houses License"
 	"Kinetic Lance"

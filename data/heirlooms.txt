@@ -6,7 +6,7 @@ ship "Valkkyiara-Khorasaqra"
 		licenses
 			"Heirloom"
 		category "Medium Warship"
-		"cost" 785000000
+		"cost" 0
 		"shields" 12500
 		"hull" 115000
 		"hull repair rate" 2.8
@@ -34,46 +34,47 @@ ship "Valkkyiara-Khorasaqra"
 		"Heirloom Reactor"
 		"Heirloom Shielding"
 		"Hyperdrive"
-		"Successor Scanner"
 		"Successor Cooling" 2
-		"Heirloom Railgun" 6
+		`"Sarija" Heirloom Coilgun` 6
 		"Heirloom Point Defense" 4
 		"Kinetic Lance"
 		"Kinetic Spike" 8
 		"Heirloom Hunter-Killers" 20
 	engine -5 69
 	engine 5 69
-	gun -31 -17
-	gun -26.5 -23
-	gun -22 -30
-	gun 31 -17
-	gun 26.5 -23
-	gun 21 -30
-	gun 0 -94 "Kinetic Lance"
-	turret 0 49 "Heirloom Point Defense"
-	turret 0 71 "Heirloom Point Defense"
-	turret -31 31 "Heirloom Point Defense"
-	turret 31 31 "Heirloom Point Defense"
+	gun -31 -22
+	gun -27 -28
+	gun -22 -36
+	gun 31 -22
+	gun 27 -28
+	gun 21 -36
+	gun 0 -110 "Kinetic Lance"
+	turret 0 36 "Heirloom Point Defense"
+	turret 0 -26 "Heirloom Point Defense"
 	"steering engine" -10 -65 
 		zoom .5
-		angle 45
+		angle 90
 		right
 	"steering engine" 10 -65 
 		zoom .5
-		angle 315
+		angle 270
 		left
-	"steering engine" -30 -5 
+	"steering engine" -28 -0
 		left
 		angle 180
-		zoom .7
-	"steering engine" 30 -5 
+		zoom .6
+		over
+	"steering engine" 28 -0
 		right
 		angle 180
-		zoom .7
-	"reverse engine" -30 -5 
-		zoom .7
-	"reverse engine" 30 -5 
-		zoom .7
+		zoom .6
+		over
+	"reverse engine" -28 -0
+		zoom .6
+		over
+	"reverse engine" 28 -0
+		zoom .6
+		over
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
@@ -134,10 +135,10 @@ outfit "Kinetic Spike"
 	"energy capacity" 10000
 	description `This unit contains not only one of the high-velocity projectiles used by the Kinetic Lance, but also the massive single-use battery banks used to provide enough energy to power the railgun. Unfortunately for the High Houses, the techniques for constructing these have been lost to time and there are therefore only a limited number in their reserves.`
 
-outfit "Heirloom Railgun"
+outfit `"Sarija" Heirloom Coilgun`
 	category "Guns"
 	cost 25250000
-	thumbnail "outfit/bimodal railgun"
+	thumbnail "outfit/bimodal coilgun"
 	licenses
 		"Heirloom"
 	"mass" 22
@@ -168,7 +169,7 @@ outfit "Heirloom Railgun"
 		"hit force" 60
 		"cluster"
 		"submunition" "Bimodal Switch" 4
-	description `Secretly stashed away by the high houses since the collapse of the old empire, this lovingly-maintained railgun is far more powerful than any of the Successors' modern technology.`
+	description `Secretly stashed away by the High Houses since the collapse of the old empire, this lovingly-maintained coilgun is far more powerful than any of the Successors' modern technology.`
 
 outfit "Heirloom Point Defense"
 	category "Turrets"
