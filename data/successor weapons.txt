@@ -222,13 +222,13 @@ outfit "Overcharged Pulse Laser"
 		"burst count" 4
 		"burst reload" 1
 		"reload" 7
-		"firing energy" 9.2
-		"firing heat" 38
-		"shield damage" 12.5
-		"hull damage" 18.5
+		"firing energy" 9.1
+		"firing heat" 30.8
+		"shield damage" 14
+		"hull damage" 13.3
 		"piercing" 0.1
 		"cluster"
-	description `Unable to access large quantities of the high-quality weaponry produced by the High Houses, the People's Houses have had to work with what's available to them: mostly the relatively low-powered pulse lasers produced independently in Successor space. This pulse laser has had its safeties bypassed and its optics upgraded, allowing it to do more damage at a higher rate of fire in exchange for producing much more heat than the stock model.`
+	description `Unable to access large quantities of the high-quality weaponry produced by the High Houses, the People's Houses have had to work with what's available to them: mostly the relatively low-powered pulse lasers produced independently in Successor space. This pulse laser has had its safeties bypassed and its optics upgraded, allowing it to do more damage to shields at a lower power cost in exchange for producing substantially more heat.`
 
 outfit "Overcharged Laser Turret"
 	category "Turrets"
@@ -255,14 +255,14 @@ outfit "Overcharged Laser Turret"
 		"turret turn" 3.5
 		"burst count" 4
 		"burst reload" 1
-		"reload" 5
-		"firing energy" 9.2
-		"firing heat" 38
-		"shield damage" 12.5
-		"hull damage" 18.5
+		"reload" 7
+		"firing energy" 12.6
+		"firing heat" 43.05
+		"shield damage" 19.6
+		"hull damage" 18.667
 		"piercing" 0.1
 		"cluster"
-	description `Hand-crafted by the more colorful members of the People's Houses, this bespoke overcharged Pulse Laser turret is tuned to fire even faster than the fixed version, producing a truly prodigious amount of heat for a weapon of its size. Despite its crude design, it is nonetheless a fearsome weapon, especially considering that it retains the ability to partially punch through shielding.`
+	description `Hand-crafted by the more colorful members of the People's Houses, this bespoke overcharged Pulse Laser turret has had even more power pumped into its laser generator compared to the fixed version, producing a truly prodigious amount of heat for a weapon of its size. Despite its inelegant design, it is nonetheless a fearsome weapon, especially considering that it retains the ability to partially punch through shielding.`
 
 outfit `"Sjeja" Kinetic Lance`
 	category "Secondary Weapons"
