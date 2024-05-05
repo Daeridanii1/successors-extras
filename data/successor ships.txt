@@ -83,7 +83,7 @@ ship `Nnesaarau`
 			"Successor"
 		category "Transport"
 		"cost" 1225000
-		"shields" 500
+		"shields" 1800
 		"hull" 2200
 		"required crew" 1
 		"bunks" 4
@@ -92,8 +92,8 @@ ship `Nnesaarau`
 		"heat dissipation" 0.9
 		"fuel capacity" 600
 		"cargo space" 8
-		"outfit space" 155
-		"weapon capacity" 25
+		"outfit space" 175
+		"weapon capacity" 30
 		"engine capacity" 60
 		weapon
 			"blast radius" 100
@@ -107,25 +107,26 @@ ship `Nnesaarau`
 		`3-"Kaska" Betavoltaic Cell`
 		`"Ej" Shield Cortex`
 		"Scram Drive"
-	engine 0 48
-		under
-	"steering engine" 7 -27
-		zoom .3
+	gun -7.5 -38
+	gun 0 -34
+	gun 7.5 -38
+	engine 0 34
+	"steering engine" -10 -29
+		zoom .5
+		right
+		over
+		angle 270
+	"steering engine" 10 -29
+		zoom .5
 		over
 		left
-		angle 270
-	"steering engine" -7 -27
-		zoom .3
-		over
-		right
 		angle 90
-	"reverse engine" 7 -27
-		zoom .3
+	"reverse engine" -20 -14
+		zoom .6
 		over
-	"reverse engine" -7 -27
-		zoom .3
+	"reverse engine" 20 -14
+		zoom .6
 		over
-	gun 0 -32
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
