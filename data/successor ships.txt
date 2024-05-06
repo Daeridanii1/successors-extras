@@ -456,15 +456,40 @@ ship `Myaede-Khora`
 		"Overcharged Laser Turret" 2
 		"Overcharged Pulse Laser" 4
 		"Outfits Expansion" 4
-
-	gun -9 -46
-	gun 9 -46
-	gun -3 -44
-	gun 3 -44
-	turret -21 -8
-	turret 21 -8
-	engine -40 46
-	engine 40 46
+	turret -33 -7
+	turret 33 -7
+	gun -3 -60
+	gun 3 -60
+	gun -32 -32
+	gun 32 -32
+	engine -40 15
+		zoom .8
+	engine 40 15
+		zoom .8
+	"steering engine" 20 -49
+		zoom .5
+		over
+		left
+		angle 270
+	"steering engine" -20 -49
+		zoom .5
+		over
+		right
+		angle 90
+	"steering engine" 11 44
+		zoom .5
+		over
+		right
+		angle 270
+	"steering engine" -11 44
+		zoom .5
+		over
+		left
+		angle 90
+	"reverse engine" -40 -23
+		over
+	"reverse engine" 40 -23
+		over
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
