@@ -84,6 +84,19 @@ ship `Kvelqde` `Kvelqde (Mining)`
 		"Hyperdrive"
 		`"Tuur" Scanning Suite`
 
+ship `Kvelqde-Khora` `Kvelqde-Khora (Mining)`
+	outfits
+		`"Aqra" Inductive Thruster`
+		`"Aqra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`3-"Kaska" Betavoltaic Cell`
+		"Successor Pulse Laser" 2
+		`Auxiliary Power Reserve` 1
+		`Cargo Expansion` 2
+		`"Tuur" Scanning Suite`
+		`"Ej" Shield Cortex`
+		"Hyperdrive"
+
 ship `Myaede` `Myaede (Violent)`
 	outfits
 		`"Chyyra" Inductive Thruster`

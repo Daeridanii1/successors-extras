@@ -25,7 +25,7 @@ shipyard "successors"
 	`Ejniisde`
 	`Kaskhorade`
 	`Kvelqde`
-	`Myaede-Khora`
+	`Kvelqde-Khora`
 	`Myaede`
 	`Ojde`
 	`Seiitej`

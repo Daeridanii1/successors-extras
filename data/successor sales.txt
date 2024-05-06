@@ -35,7 +35,7 @@ shipyard "High Houses Heavy"
 	`Kaskhorade`
 
 shipyard "Peoples Houses"
-	"Myaede-Khora"
+	`Kvelqde-Khora`
 
 shipyard "Heirloom"
 	"Valkkyiara-Khorasaqra"

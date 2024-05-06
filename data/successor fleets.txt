@@ -145,36 +145,46 @@ fleet "People's Houses"
     government "People's Houses"
     names "successor"
     personality harvests disables plunders mining
-    variant 60
+    variant 80
         `Kvelqde (Violent)`
+    variant 100
+        `Kvelqde-Khora`
     variant 60
-        `Stolsaqra`
-    variant 50
+        `Kvelqde-Khora (Mining)`
+    variant 60
         `Kvelqde (Violent)` 2
-    variant 30
-        `Stolsaqra` 2
-    variant 30
-        `Myaede-Khora`
-    variant 30
-        `Myaede`
-    variant 10
-        `Myaede-Khora` 2
+    variant 50
+        `Kvelqde (Violent)`
+        `Kvelqde-Khora`
+    variant 60
+        `Kvelqde-Khora` 2
+    variant 20
+        `Stolsaqra`
+    variant 20
+        `Kvelqde-Khora (Mining)`
+        `Stolsaqra`
+    variant 20
+        `Myaede (Violent)`
+    variant 15
+        `Myaede (Violent)`
+        `Kvelqde-Khora` 2
 
 fleet "People's Houses Raiders"
     government "People's Houses (Hostile)"
     names "successor"
     personality harvests disables plunders
-    variant 30
-        `Kvelqde (Violent)` 4
+    variant 100
+        `Kvelqde-Khora`
     variant 50
-        `Stolsaqra` 2
-    variant 50
-        `Myaede-Khora`
-    variant 30
-        `Myaede-Khora` 2
+        `Stolsaqra`
+    variant 25
+        `Kvelqde-Khora` 2
+    variant 25
+        `Kvelqde-Khora`
+        `Kvelqde (Violent)`
     variant 15
-        `Myaede-Khora` 2
-        `Stolsaqra` 3
+        `Myaede (Violent)`
+        `Kvelqde-Khora` 2
     
 fleet "Small Old Houses"
     personality

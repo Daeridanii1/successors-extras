@@ -5,7 +5,7 @@ ship `Kvelqde`
 		licenses
 			"Successor"
 		category "Transport"
-		"cost" 450000
+		"cost" 185000
 		"shields" 350
 		"hull" 2400
 		"required crew" 1
@@ -420,76 +420,72 @@ ship `Ojde`
 	description `Although it is the largest freighter employed by the Successors, the "Ojde" is still substantially smaller than large human freighters like the Bulk Freighter and Behemoth. While this limits the cargo capacity of any single ship, it also allows these vessels to be surprisingly fast and maneuverable and increases the number of facilities which can effectively tend to them.`
 	description `Rather than built-in cargo holds, the "Ojde" is designed to carry an expandable rack of standardized cargo containers, increasing delivery and loading speed in busy spaceports.`
 
-ship `Myaede-Khora`
-	sprite "ship/myaede-khora"
-	thumbnail "thumbnail/myaede-khora"
+ship `Kvelqde-Khora`
+	sprite "ship/kvelqde-khora"
+	thumbnail "thumbnail/kvelqde-khora"
 	attributes
 		licenses
 			"Successor"
-		category "Light Warship"
-		"cost" 3250000
-		"shields" 3300
-		"hull" 18500
-		"required crew" 7
-		"bunks" 10
-		"mass" 305
-		"drag" 2.5
-		"heat dissipation" 0.8
+		category "Interceptor"
+		"cost" 240000
+		"shields" 785
+		"hull" 4625
+		"required crew" 1
+		"bunks" 6
+		"mass" 126
+		"drag" 1.9
+		"heat dissipation" 0.85
 		"fuel capacity" 500
-		"cargo space" 120
-		"outfit space" 280
-		"weapon capacity" 155
-		"engine capacity" 150
+		"cargo space" 10
+		"outfit space" 197
+		"weapon capacity" 63
+		"engine capacity" 45
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
 			"hull damage" 500
 			"hit force" 1500
 	outfits
-		`"Chyyra" Inductive Thruster`
-		`"Chyyra" Inductive Steering`
-		`6-"Ruuv" Betavoltaic Cell`
-		`1-"Uurau" Betavoltaic Cell`
-		"Successor Cooling"
+		`"Aqra" Inductive Thruster`
+		`"Aqra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`3-"Kaska" Betavoltaic Cell`
+		"Overcharged Pulse Laser" 2
+		"Overcharged Laser Turret"
+		`Auxiliary Power Reserve` 4
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
-		"Overcharged Laser Turret" 2
-		"Overcharged Pulse Laser" 4
-		"Outfits Expansion" 4
-	turret -33 -7
-	turret 33 -7
-	gun -3 -60
-	gun 3 -60
-	gun -32 -32
-	gun 32 -32
-	engine -40 15
-		zoom .8
-	engine 40 15
-		zoom .8
-	"steering engine" 20 -49
+	engine -8 28
+	engine 8 28
+	"steering engine" 9 -20.5
 		zoom .5
 		over
 		left
 		angle 270
-	"steering engine" -20 -49
+	"steering engine" -9 -20.5
 		zoom .5
 		over
 		right
 		angle 90
-	"steering engine" 11 44
+	"steering engine" 6.5 29
 		zoom .5
 		over
 		right
 		angle 270
-	"steering engine" -11 44
+	"steering engine" -6.5 29
 		zoom .5
 		over
 		left
 		angle 90
-	"reverse engine" -40 -23
+	"reverse engine" 12.5 -5
+		zoom .5
 		over
-	"reverse engine" 40 -23
+	"reverse engine" -12.5 -5
+		zoom .5
 		over
+	turret 0 0
+	gun -4 -30	"Successor Pulse Laser"
+	gun 4 -30	"Successor Pulse Laser"
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
@@ -497,8 +493,7 @@ ship `Myaede-Khora`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `While the High Houses do not sell their purpose-built warships to those who don't support their interests, the ubiquity and free space of the "Myaede" freighter has made it a relatively decent light weapons platform. The High Houses, of course, have better ships for this purpose, but independent agents and unoffical groups like the People's Houses do not.`
-	description `This particular "Myaede" is stripped-down to reduce mass, and most of its cargo space has been refitted to fit extra weapons and larger engines.`
+	description `One of the more industrious members of the People's Houses has done their best to ruggedize this "Kvelqde": additional armor plating has been laid over most of the exposed hull, a second gun port has been attached to the underside, and the shield grid has had its capacity substantially increased. While not quite capable of standing toe-to-toe with a production interceptor of the High Houses, it bares enough teeth for a bit of light piracy, and its greater durability is quite welcome for navigating the decaying stations and hostile worlds of southwestern Successor space.`
 
 ship `Stolsaqra`
 	sprite "ship/stolsaqra"

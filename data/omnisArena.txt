@@ -19,10 +19,10 @@ system "Successors "
 		distance 900
 		offset 150
 		sprite "ship/ojde"
-	add object "Myaede-Khora  "
+	add object "Kvelqde-Khora  "
 		distance 900
 		offset 180
-		sprite "ship/myaede-khora"
+		sprite "ship/kvelqde-khora"
 	add object "Stolsaqra  "
 		distance 900
 		offset 210
@@ -141,23 +141,23 @@ fleet "Ojde "
 	personality "heroic"
 	variant
 		"Ojde"
-planet "Myaede-Khora "
+planet "Kvelqde-Khora "
 	bribe 0
 	government "Arena"
 	tribute 1
-		fleet "Myaede-Khora "
+		fleet "Kvelqde-Khora "
 		threshold 0
-planet "Myaede-Khora  "
+planet "Kvelqde-Khora  "
 	bribe 0
 	government "Arena"
 	tribute 1
-		fleet "Myaede-Khora "
+		fleet "Kvelqde-Khora "
 		threshold 0
-fleet "Myaede-Khora "
+fleet "Kvelqde-Khora "
 	government "Arena"
 	personality "heroic"
 	variant
-		"Myaede-Khora"
+		"Kvelqde-Khora"
 planet "Stolsaqra "
 	bribe 0
 	government "Arena"
