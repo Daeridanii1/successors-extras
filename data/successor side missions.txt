@@ -192,13 +192,13 @@ mission "Successors: Buskers"
 			`	You walk through the water-covered floor to the group, and as you start to grow closer, you begin to hear music coming from the pool: a strange, lilting melody filled with notes that seem impossibly high or low or both at once. As you squeeze your way through the crowd, you see that in the pool there is a trio of submerged Successors, each of whom has their arms wrapped around one or several wildly distinct metal devices which protrude through the surface of the water. It is from these devices that the music emanates.`
 			`	One of the Successors in the pool begins to sing; at least, singing is the best way you could describe it: they press one of the longer and more cylindrical instruments up to their head and it begins producing an accompaniment to the other instruments' melody that your translation device occasionally recognizes as words:`
 			`	"... sweetest child ... never want ... not so ... somber current ... endure ..."`
-			`	It is not clear whether or not this represents the entire lyric content of the performance or simply if the translation device is unable to parse the more tonal phrases. The submerged singer displays a variety of colors and textures on their skin, changing with each successive phrase; green and rough on a splittingly high note, pink and smooth-looking on a strangely growl-like low section. Several in the crowd emulate this in their own skin patterning; the group seems to throb with the melody of the music.`
+			`	It is not clear whether or not this represents the entire lyric content of the performance or simply if the translation device is unable to parse the more tonal phrases. The submerged singer displays a variety of colors and textures on their skin, changing with each successive phrase; green and rough on a splittingly high note, pink and smooth-looking on a strangely growl-like low section. Several in the crowd emulate this in their own skin patterning; the group pulses in color and pattern in time with the melody of the music.`
 			choice
 				`	(Continue listening.)`
 				`	(Return to your ship.)`
 					goto unappreciative
-			`	The music eventually crescendos to a long, droning wail of instrumentation with a rapid, high-pitched vocal performance that sees the water in the pool sloshing from side to side as the trio inside move rapturously, before coming to a close with a gentler and more playful section that sees the performers blowing bubbles to the surface and producing short, semi-random notes on their bizarre instruments.`
-			`	The Successors around you produce a dull hum after the piece's conclusion.`
+			`	The music eventually crescendos with a long, droning wail of instrumentation accompanied by a rapid, high-pitched vocal performance that sees the water in the pool sloshing from side to side as the trio within move rapturously, circling around each other faster and faster before suddenly stopping. The performance comes to a close with a gentler and more playful section that sees the performers blowing bubbles to the surface of the pool and producing short, semi-random notes on their bizarre instruments.`
+			`	The Successors around you produce a dull, low hum after the piece's conclusion.`
 			choice
 				`	(Applaud.)`
 					goto applaud
@@ -208,15 +208,15 @@ mission "Successors: Buskers"
 					decline
 
 			label applaud
-			`	The Successors around you seem surprised by your display, not sure what to make of it, but they do not seem offended either. The performers eventually emerge from the pool, gently tucking their instruments into various equally oddly-shaped cases before chatting with some of the few remaining members of the crowd and then departing.`
+			`	The Successors around you seem a little surprised or perhaps confused by your display, but do not express any offense at it, as far as you can tell. The trio of performers eventually emerge from the pool, gently tucking their instruments into various equally oddly-shaped cases before chatting with some of the few remaining members of the crowd and then departing.`
 				decline
 
 			label hum
-			`	The Successors around you seem amused by your humming; some briefly display a bluish-green color before quickly returning to their base shade. Nonetheless, they do not seem to take offense at the gesture. The performers eventually emerge from the pool, gently tucking their instruments into equally oddly-shaped cases before chatting with some of the few remaining members of the crowd and then departing.`
+			`	The Successors around you seem amused by your attempt to emulate the humming; some briefly display a bluish-green wave of color across their skin before quickly returning to their base shade. Nonetheless, no one here seems to take any significant offense at the gesture. The performers eventually emerge from the pool, gently tucking their instruments into equally oddly-shaped cases before chatting with some of the few remaining members of the crowd and then departing.`
 				decline
 			
 			label unappreciative
-			`	You return to your ship, gently extricating yourself from the throng of spellbound Successors, who continue to shimmer and sway in the distance until the performance ends and they disperse.`
+			`	You return to your ship, gently extricating yourself from the throng of spellbound Successors, who continue to shimmer and sway in the distance until the performance eventually ends and they disperse to go their separate ways.`
 				decline
 
 mission `Successors: Stargazing`
