@@ -159,6 +159,45 @@ ship `Kaskhorade` `Kaskhorade (Brawler)`
 		"Successor Cooling"
 		`Bimodal Railgun Turret` 4
 
+ship `Veusade` `Veusade (Surveillance)`
+	outfits
+		`"Veusa" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		`"Ryuit" Inertial Core`
+		`"Jaase" Shield Cortex`
+		"Hyperdrive"
+		"Successor Cooling"
+		"Drag Cannon" 8
+		"Multimodal Armor: Heavy"
+		`"Veldt" Combat Scanner`
+		`Auxiliary Power Reserve` 
+
+ship `Vujlet` `Vujlet (Surveillance)`
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		`"Chyyra" Inductive Reverser`
+		`"Nnesa" Inertial Core`
+		`"Veldt" Combat Scanner`
+		`Primary Power Reserve`
+		`"Jaase" Shield Cortex`
+		"Hyperdrive"
+		"Successor Cooling"
+		`"Ojet" Bimodal Coilgun` 2
+		"Multimodal Armor: Heavy"
+
+ship `Vujlet` `Vujlet (Aggressive)`
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		`"Nnesa" Inertial Core`
+		`Primary Power Reserve`
+		`"Ej" Shield Cortex`
+		"Hyperdrive"
+		"Successor Cooling"
+		`"Ojet" Bimodal Coilgun` 4
+		"Multimodal Armor: Heavy"
+
 ship "Ojde" "Ojde 2"
 	sprite "ship/ojde 2"
 	add attributes

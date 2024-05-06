@@ -25,13 +25,14 @@ system Aaura-Kaska
 	trade Medical 480
 	trade Metal 402
 	trade Plastic 272
-	fleet "" 1000
-	fleet "Medium Successor Freight" 800
-	fleet "Small Successor Transport" 1500
-	fleet "Small Old Houses" 2000
-	fleet "Small New Houses" 2000
-	fleet "Large Old Houses" 5000
-	fleet "Large New Houses" 5000
+	fleet "Medium Successor Freight" 1000
+	fleet "Small Successor Transport" 2000
+	fleet "Small Old Houses" 3000
+	fleet "Small New Houses" 3000
+	fleet "Large Old Houses" 7000
+	fleet "Large New Houses" 7000
+	fleet "Old Houses Surveillance" 6000
+	fleet "New Houses Surveillance" 6000
 	object
 		sprite star/g0
 		distance 21.316
@@ -88,9 +89,12 @@ system Chyyra-Osolaa
 	trade Medical 456
 	trade Metal 382
 	trade Plastic 314
-	fleet "Large New Houses" 1400
+	fleet "Small New Houses" 3000
+	fleet "Large New Houses" 4000
 	fleet "Medium Successor Freight" 800
 	fleet "Small Successor Transport" 1600
+	fleet "People's Houses" 8000
+	fleet "People's Houses Raiders" 12000
 	object
 		sprite star/f0
 	object
@@ -234,7 +238,8 @@ system Kella-Uoasa
 	trade Metal 469
 	trade Plastic 267
 	fleet "People's Houses" 800
-	fleet "Light Successor Freight" 1500
+	fleet "Light Successor Freight" 9000
+	fleet "Small Successor Transport" 9000
 	fleet "People's Houses Raiders" 3000
 	fleet "Small New Houses" 15000
 	object
@@ -285,9 +290,10 @@ system Khosa-Kaska
 	trade Medical 576
 	trade Metal 532
 	trade Plastic 348
-	fleet "Large Old Houses" 2500
-	fleet "Successor Miners" 1500
-	fleet "Medium Successor Freight" 2000
+	fleet "Small Old Houses" 2500
+	fleet "Successor Miners" 2000
+	fleet "Medium Successor Freight" 4000
+	fleet "Small Successor Transport" 2000
 	object
 		sprite star/nova-small
 	object
@@ -393,7 +399,8 @@ system Maspa-Cavaasa
 	trade Metal 397
 	trade Plastic 320
 	fleet "Small Successor Transport" 3000
-	fleet "Successor Miners" 3000
+	fleet "Successor Miners" 4000
+	fleet "Small New Houses" 8000
 	object
 		sprite star/m0
 		period 10
@@ -498,10 +505,9 @@ system Myiara-Nnesa
 	trade Plastic 320
 	fleet "Small New Houses" 500
 	fleet "Large New Houses" 1000
+	fleet "New Houses Surveillance" 2000
 	fleet "Medium Successor Freight" 1000
-	fleet "Successor Miners" 10000
-	fleet "Successor Miners (Well-Defended)" 10000
-	fleet "People's Houses Raiders" 8000
+	fleet "Successor Miners" 6000
 	object
 		sprite star/m-giant
 		period 10
@@ -623,7 +629,7 @@ system Ofstond-Stir
 	trade Plastic 369
 	fleet "Small Old Houses" 500
 	fleet "Large Old Houses" 2500
-	fleet "Old Houses Police" 2000
+	fleet "Old Houses Surveillance" 2000
 	fleet "Medium Successor Freight" 250
 	fleet "Small Successor Transport" 250
 	fleet "Successor Miners" 1000
@@ -808,10 +814,11 @@ system Raaqa-Ryuit
 	trade Medical 839
 	trade Metal 496
 	trade Plastic 285
-	fleet "People's Houses" 1400
-	fleet "Medium Successor Freight" 1200
+	fleet "People's Houses" 3000
+	fleet "Medium Successor Freight" 2000
 	fleet "Small Successor Transport" 1100
-	fleet "Large New Houses" 2000
+	fleet "Large New Houses" 3000
+	fleet "New Houses Surveillance" 1500
 	object
 		sprite star/g0
 	object Raaqa-Puan-Uuoru
@@ -859,6 +866,7 @@ system Stiidej-Nnesa
 	trade Plastic 334
 	fleet "Small Old Houses" 1200
 	fleet "Large Old Houses" 2400
+	fleet "Old Houses Surveillance" 4000
 	fleet "Successor Miners" 1000
 	fleet "Medium Successor Freight" 1000
 	object
@@ -899,8 +907,9 @@ system Tuur-Kella
 	trade Medical 588
 	trade Metal 369
 	trade Plastic 258
-	fleet "Small Old Houses" 800
-	fleet "Large Old Houses" 1200
+	fleet "Small Old Houses" 1000
+	fleet "Large Old Houses" 1400
+	fleet "Old Houses Surveillance" 2000
 	object
 		sprite star/b-giant
 	object
@@ -952,7 +961,7 @@ system Uuoru-Kella
 	fleet "Medium Successor Freight" 1000
 	fleet "Small Old Houses" 1000
 	fleet "Large Old Houses" 2000
-	fleet "Old Houses Police" 1000
+	fleet "Old Houses Surveillance" 1000
 	object
 		sprite star/b-giant
 	object Aava-Aasa-Khora
@@ -1029,10 +1038,9 @@ system Vade-Staja
 	trade Metal 396
 	trade Plastic 286
 	fleet "Small Successor Transport" 1000
-	fleet "" 2000
 	fleet "Light Successor Freight" 1500
-	fleet "Small Old Houses" 1000
-	fleet "Old Houses Police" 7500
+	fleet "Small Old Houses" 2000
+	fleet "Old Houses Surveillance" 7500
 	object
 		sprite star/f0
 		period 10
@@ -1086,8 +1094,9 @@ system Valkkra-Uuoru
 	trade Medical 691
 	trade Metal 423
 	trade Plastic 248
-	fleet "Large Old Houses" 800
-	fleet "Small Old Houses" 1600
+	fleet "Large Old Houses" 1600
+	fleet "Small Old Houses" 800
+	fleet "Old Houses Surveillance" 2000
 	fleet "Medium Successor Freight" 1400
 	fleet "Small Successor Transport" 2000
 	object
@@ -1299,7 +1308,7 @@ planet Maspa-Viir-Kella
 	government Uninhabited
 
 planet Myiara-Sola-Tej
-	attributes station successor uninhabited
+	attributes crime station successor uninhabited
 	landscape land/station25
 	description "This industrial station was constructed during the arrival of the New Houses to exploit the mineral wealth of this system, but was abandoned when richer and more accessible mineral deposits were found planetside. It still remains technically habitable, but none of the High Houses have had an interest in refurbishing it since cheaper and easier industrial and habitation projects are constantly available."
 	government Uninhabited
@@ -1488,7 +1497,7 @@ planet Uuoru-Veldt-Stir
 	government Uninhabited
 
 planet Vade-Osolaa-Kaska
-	attributes station successor uninhabited
+	attributes crime station successor uninhabited
 	landscape land/loc3
 	description "Although briefly used as a small-scale shipyard several hundred years ago, this station was eventually abandoned by the High Houses because of its inconvenient location and altogether poor construction. There are occasional rumors about criminals using it as a bolt-hole or a place to hide contraband, but few Successors have the desire to go and check."
 	spaceport "The spaceport here is cavernous but empty, riddled with voids where vast pieces of machinery have been removed. A layer of dust covers the ground; it is disturbed in some locations with what look like trails, suggesting this place may not be entirely unused."

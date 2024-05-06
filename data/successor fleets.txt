@@ -212,17 +212,17 @@ fleet "Large Old Houses"
     variant 50
         "Kaskhorade" 3
 
-fleet "Old Houses Police"
+fleet "Old Houses Surveillance"
     government "Old Houses"
     names "high houses"
     personality
         heroic opportunistic
     variant 50
         "Stolsaqra (Military)"
-    variant 50
-        "Seiitej"
     variant 25
-        "Seiitej" 2
+        "Veusade (Surveillance)"
+    variant 25
+        "Stolsaqra (Military)" 2
 
 fleet "Small New Houses"
     personality
@@ -285,6 +285,20 @@ fleet "Large New Houses"
         "Aaulqra" 3
         "Veusade" 2
         "Vujlet" 4
+
+fleet "New Houses Surveillance"
+    government "New Houses"
+    names "high houses"
+    personality
+        heroic opportunistic
+    variant 50
+        "Stolsaqra (Military)"
+    variant 20
+        "Stolsaqra (Military)" 2
+    variant 20
+        "Vujlet (Surveiellance)"
+    variant 10
+        "Veusade (Surveillance)"
 
 fleet "Successor Miners"
     government "Successor"
