@@ -132,12 +132,11 @@ fleet "Small Successor Transport"
         "Ejniisde"
     variant 33
         "Ejniisde" 2
-    variant 25
+    variant 70
         "Nnesaarau"
-    variant 15
-        "Nnesaarau"
-        "Kvelqde" 2
-    variant 40
+    variant 20
+        "Nnesaarau" 2
+    variant 70
         "Nnaatej"
     variant 20
         "Nnaatej" 2
