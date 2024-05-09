@@ -223,15 +223,15 @@ mission "Successor: Tourist Expedition"
 		government "Successor"
 	stopover
 		attributes "successor" 
-		attributes "uninhabited" "tourism" "rich"
+		attributes "uninhabited" "tourism" "wealthy"
 		not attributes "crime"
 	stopover
 		attributes "successor"
-		attributes "tourism" "rich"
+		attributes "tourism" "wealthy"
 		not attributes "crime"
 	stopover
 		attributes "successor"
-		attributes "quiet" "tourism" "rich"
+		attributes "quiet" "tourism" "wealthy"
 		not attributes "crime"
 	on stopover
 		dialog phrase "successor tourists stopover"
@@ -392,7 +392,7 @@ mission "Successor: High Value Delivery Out"
 		not attributes "crime"
 	destination
 		government "Successor"
-		attributes "rich"
+		attributes "wealthy"
 		not attributes "crime"
 	on visit
 		dialog phrase "generic cargo on visit"
@@ -548,10 +548,11 @@ mission "Successor: Data Courier 1"
 		random < 30
 	source
 		government "Successor"
-		attributes "rich" "urban" "station"
+		attributes "wealthy" "urban" "station"
 		not attributes "crime"
 	destination
 		government "Successor"
+		not attributes "crime"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -646,7 +647,7 @@ mission "Successor: Researchers Transfer"
 		not attributes "crime"
 	destination
 		government "Successor"
-		attributes "education" "rich"
+		attributes "education" "wealthy"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
