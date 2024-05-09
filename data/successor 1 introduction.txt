@@ -199,8 +199,8 @@ mission "Successors: Trusted"
 				accept
 			label silent
 			`	With no further comments from any of the Successors, the representative from House Sioeora calls for a vote from among the gathered representatives. Unsurprisingly, Sioeora and Chydiyi vote for the proposition and Seineq votes against it, and the representative from Sioeora promptly produces another small box from within their outfit and presents it to you. You open it to reveal one of the pin insignias that you have seen throughout this meeting.`
-			`	"This is the mark of our diplomats and our symbol of trust and cooperation. Our people may remain wary of an alien in their midst, but wherever thou displays this, it shall be known that thou hast recieved the blessing of the High Houses in council and that they made trade with you in amity and without fear."`
-			`	Sioeora then leaves the room, followed by the other representatives and gathered members, all of whom keep their eyes focused on you on the way out. Eventually, when only ones remaining are Sieasej and yourself, you pin the insignia on your jacket beside the translation device and exit as well, when you are directed back to the monorail station.`
+			`	"This is the mark of our diplomats and our symbol of trust and cooperation. Our people may remain wary of an alien in their midst, but wherever thou displays this, it shall be known that thou hast recieved the blessing of the High Houses in council and that they may trade with you in amity and without fear."`
+			`	Sioeora then leaves the room, followed by the other representatives and gathered members, all of whom keep their eyes focused on you on the way out. Eventually, when only ones remaining are Sieasej and yourself, you pin the insignia on your jacket beside the translation device and exit as well, where you are directed back to the monorail station.`
 				
 event "no longer naive to successors"
 	shipyard "Successor Basics"
