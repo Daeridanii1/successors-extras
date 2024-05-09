@@ -271,10 +271,9 @@ system Khasola-Ryuit
 	attributes predecessor
 
 system Khosa-Kaska
-	pos 16.88 1320.52
+	pos 30.88 1300.52
 	government Successor
 	attributes successor
-	link Ofstond-Stir
 	link Vade-Staja
 	asteroids "small metal" 8 1.5
 	asteroids "small rock" 9 1.8
@@ -483,6 +482,50 @@ system Mavra-Ijsola
 	link Kasii-Cavaasa
 	link Uuoru-Sossa
 
+system Mosaa-Iyra
+	pos -10 1399
+	government Successor
+	attributes successor
+	habitable 2900
+	belt 2240 3
+	link Ofstond-Stir
+	asteroids "small rock" 22 4
+	asteroids "large rock" 12 3
+	asteroids "small metal" 18 5
+	minables silicon 11 9
+	minables lead 18 4
+	minables gold 1 8
+	fleet "Successor Miners" 3000
+	fleet "Small Successor Transport" 1500
+	fleet "Light Successor Freight" 1500
+	fleet "Small Old Houses" 2000
+	object
+		sprite star/m0
+	object
+		sprite planet/gas2
+		distance 800
+		period 250
+		object
+			sprite planet/mercury
+			distance 250
+			period 300
+		object
+			sprite planet/miranda
+			distance 325
+			period 380
+	object
+		sprite planet/gas3-b
+		distance 2870
+		period 1678
+		object Iyra-Ijasa-Iret
+			sprite planet/water0-b
+			distance 330
+			period 320
+		object
+			sprite planet/europa
+			distance 500
+			period 800
+
 system Myiara-Nnesa
 	pos -277.38 1156.34
 	government "New Houses"
@@ -605,9 +648,9 @@ system Ofstond-Stir
 	government Successor
 	attributes successor
 	habitable 625
-	link Khosa-Kaska
 	link Stiidej-Nnesa
 	link Uuoru-Kella
+	link Mosaa-Iyra
 	asteroids "small rock" 4 2.215
 	asteroids "medium rock" 32 3.553
 	asteroids "large rock" 29 3.887
@@ -843,11 +886,12 @@ system Raaqa-Ryuit
 			period 300
 
 system Stiidej-Nnesa
-	pos -142.18 1352.51
+	pos -152.18 1352.51
 	government Successor
 	attributes successor
 	link Aaura-Kaska
 	link Ofstond-Stir
+	link Tuur-Kella
 	asteroids "small rock" 32 16
 	asteroids "large rock" 28 17
 	asteroids "small metal" 44 18
@@ -893,7 +937,8 @@ system Tuur-Kella
 	government Successor
 	attributes successor
 	link Aaura-Kaska
-	link Valkkra-Uuoru
+	link Stiidej-Nnesa
+	link Uuoru-Kella
 	asteroids "small metal" 85 8
 	asteroids "large metal" 64 7
 	minables tungsten 16 9
@@ -940,8 +985,9 @@ system Uuoru-Kella
 	habitable 11350
 	belt 1631 6
 	link Ofstond-Stir
-	link Vade-Staja
 	link Valkkra-Uuoru
+	link Vade-Staja
+	link Tuur-Kella
 	asteroids "small metal" 14 4.805
 	asteroids "medium metal" 146 4.93
 	asteroids "large metal" 1 6.178
@@ -1013,11 +1059,12 @@ system Uuoru-Sossa
 		period 5000
 
 system Vade-Staja
-	pos -20.71 1237.85
+	pos -20.71 1242.85
 	government Successor
 	attributes successor
 	link Khosa-Kaska
 	link Uuoru-Kella
+	link Valkkra-Uuoru
 	asteroids "small rock" 2 3.8
 	asteroids "medium rock" 20 5.603
 	asteroids "large rock" 1 4.444
@@ -1078,12 +1125,12 @@ system Vade-Staja
 		period 1466.847
 
 system Valkkra-Uuoru
-	pos -127.56 1200.02
+	pos -102.56 1200.02
 	government Successor
 	attributes successor
 	habitable 3651.37
-	link Tuur-Kella
 	link Uuoru-Kella
+	link Vade-Staja
 	trade Clothing 347
 	trade Electronics 664
 	trade Equipment 419
@@ -1168,7 +1215,7 @@ system Vasa-Oorua
 		period 2000
 
 planet Aava-Aasa-Khora
-	attributes rich successor
+	attributes wealthy successor
 	landscape land/canyon15
 	description "This planet is the collective seat of what are known as the Old Houses, the noble families who held territorial claims to this region of space before the collapse of the Predecessors' empire and the arrival of the so-called New Houses fleeing their crumbling society."
 	description "While today the planet is geologically stable, it experienced major tectonic shifts in the past, folding the planet's surface into a number of visually spectacular canyons and mountain ranges. Since it serves such an important political role, tectonic activity on this planet is closely monitored, and even though there have been no major earthquakes since the Successors settled here, most of the buildings here are built to withstand even large and destructive geological shifts."
@@ -1214,6 +1261,17 @@ planet Giiq-Sou-Kella
 	landscape land/sea2
 	description "Small, atmospherically placid, and tectonically stable, this planet is completely covered in a global ocean composed of liquid methane. The inherent toxicity of this environmental feature, combined with the frigid temperatures on its surface and the tiny amount of dry land, have made it unsuitable for long-term habitation."
 	government Uninhabited
+
+planet Iyra-Ijasa-Iret
+	attributes successor 
+	landscape land/sea10-sfiera
+	description `Iyra-Ijasa-Iret is a pure water world, with no solid land anywhere upon its surface. Despite this, it hosts a relatively sizable population of Successors, most living in several sprawling underwater cities that dot the shallows, but some in much deeper and more pressure-resistant enclaves closer to the ocean floor. The moon is revered throughout Successor space for its undersea beauty; on the side of the moon that faces the gas giant which it orbits, huge plumes of bioluminescent plankton stream up towards the surface from the deep ocean in a daily feeding cycle the Successors call the "Ribbons of Iret."`
+	spaceport `The spaceport resembles a group of enormous bubbles in the ocean near the equator; translucent, hemi-spherical hangars protrude from the water, cracking open like the petals of flowers to allow ships to enter and depart. Once inside, all the hangars are connected by a dense web of corridors and small, spherical rooms. Many are just as water-filled as the port's surroundings, and about half of the Successors you see throughout the spaceport are partially or entirely submerged.`
+	shipyard "Successor Basics"
+	shipyard "Waterlining"
+	outfitter "Successor Basics"
+	"required reputation" 10
+	bribe 0
 
 planet Kasii-Cavasaa-Oa
 	attributes successor
@@ -1270,7 +1328,7 @@ planet Khora-Uurau-Uuoru
 	government Uninhabited
 
 planet Khora-Vasa-Reyyaa
-	attributes manufacturing military mining rich successor
+	attributes manufacturing military mining wealthy successor
 	landscape land/nasa2
 	description "Much of Successor technology relies on advanced composite materials, from their extremely durable ship hulls to their high-performance railguns. This planet contains rich natural deposits of the raw materials required for the manufacturing of their composites, and consequently, it serves as both a center for the mining of these materials and as the industrial core of Successor space."
 	description "Because Khora-Vasa-Reyyaa falls within the sphere of influence of the Old Houses, many in the New Houses are very concerned about the power imbalance this creates, and several treaties are in place ensuring fair and open exports from the planet."
@@ -1314,7 +1372,7 @@ planet Myiara-Sola-Tej
 	government Uninhabited
 
 planet Mavra-Sol-Kvel
-	attributes rich successor
+	attributes wealthy successor
 	landscape land/fields14
 	description "Shielded by the persistent asteroid impacts of this system by its parent gas giant, Mavra-Sol-Kvel enjoys a temperate climate and spectacular vistas. The low gravity here is greatly appreciated by the Successors, and consequently the moon supports a sizable population despite its small size, most of whom live in several cities along the equator."
 	description "It is also the seat of power for House Aqrabe, one of the Old Houses. Despite this categorization, House Aqrabe has remained neutral in most of the Successors' conflicts over the millenia, and continues to present itself as an unbiased and politically uncommitted member of the High Houses which, combined with the central position of this star system, has led House Aqrabe to form strong connections with the New Houses as well as the Old."
@@ -1374,7 +1432,7 @@ planet Osolaa-Val-Mavra
 	government Predecessor
 
 planet O-Vasa-Oa
-	attributes rich successor urban
+	attributes wealthy successor urban
 	landscape land/hills4
 	description "This moon is the collective seat of what are known as the New Houses, the noble families who traveled through the wormhole to this region of space during the collapse of the Predecessors' empire. Many within the New Houses object to that moniker, arguing that their family lines are in fact the more extensive and noble and that they should be categorized by that rather than by their time of arrival."
 	description "Despite population surges in recent years, O-Vasa-Oa remains relatively sparsely populated. The tidal forces from the planet it orbits create high winds that sweep across the landscape, making settlement challenging in undeveloped areas, and expensive even in those that have the infrastructure to support it."
@@ -1401,7 +1459,7 @@ planet Raaqa-Kvelq-Ryuit
 	bribe 0
 
 planet Raaqa-Puan-Uuoru
-	attributes successor quiet rich
+	attributes successor quiet wealthy
 	landscape land/beach3
 	description "After the collapse, many Successors found themselves without a family, or without the knowledge of unbroken lineage that others took comfort in. House Kaatrij, which had lost many of its scions in the collapse, took the previously unprecedented step of welcoming these otherwise-outcasts into its familial order, earning its reputation as perhaps the most open and progressive of the High Houses. While it still remains the smallest of the High Houses, it has also done the best job of preserving and growing its wealth, and has earned a reputation as an unpredictable power player largely separated from the Old/New divide."
 	description "Its home planet is small, rainy, and mostly covered by ocean. Widely regarded as one of the most beautiful planets in Successor space, settlement here is tightly regulated by House Kaatrij."
@@ -1425,7 +1483,7 @@ planet Raaqa-Uur-Kaav
 	government Predecessor
 
 planet Saska-Aa-Noorr
-	attributes station successor rich
+	attributes station successor wealthy
 	landscape land/space7
 	description "Though the Successors invest in few truly massive constructions, this station is one of them. Originally built over three thousand years ago as a support platform for the Predecessors' early colonization efforts, Saska-Aa-Noorr has been a consistent fixture of the star cluster and one of House Myurej's most important assets."
 	description "	In the present day it serves a primarily residental role, housing almost five million Successors in rotating cylindrical segments of its arms. The gentler gravity and tightly controlled climate these offer makes living stationside quite desirable to many Successors, but the limited space available combined with the high taxes Myurej's levies here mean that usually only the wealthiest Successors can afford to take up residence."
@@ -1444,7 +1502,7 @@ planet Shassa-Wyra-Orrou
 	bribe 0
 
 planet Staja-Kella-Oa
-	attributes education rich successor
+	attributes education wealthy successor
 	landscape land/fog11
 	description "Staja-Kella-Oa is widely recognized as the location of the best educational institutions in Successor space, most of which are funded by the Old Houses but accept applications from all Successors regardless of birthplace or family history."
 	description "The planet itself is densely forested with a few small cities. Part of the reason that it continues to be a center for education is that it has a rich archaelogical history: this planet was home to a now presumed-extinct sapient species roughly one hundred thousand years ago, and there is a great deal of interest in uncovering the details of their society."

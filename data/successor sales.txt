@@ -21,6 +21,9 @@ shipyard "Successor Heavy"
 shipyard "Chydiyi"
 	`Nnesaarau (Naive)`
 
+shipyard `Waterlining`
+	`Nnaatej`
+
 shipyard "New Houses Light"
 	`Vujlet (Naive)`
 
