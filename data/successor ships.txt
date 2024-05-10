@@ -249,27 +249,35 @@ ship `Ejniisde`
 		`Successor Fuel Sail`
 		`Successor Cooling`
 		"Hyperdrive"
-	gun 0 -96
-	turret 0 -66
-	turret 0 -50
-	engine -6 97
-	engine 6 97
-	"steering engine" 4 -90
-		zoom .3
+	gun 0 -106
+	turret 22 10
+	turret -22 10
+	engine 25 67
+		zoom .8
+	engine -25 67
+		zoom .8
+	"steering engine" 10 -87
+		zoom .5
 		over
 		left
 		angle 270
-	"steering engine" -4 -90
-		zoom .3
+	"steering engine" -10 -87
+		zoom .5
 		over
 		right
 		angle 90
-	"reverse engine" 4 -90
-		zoom .3
-		over
-	"reverse engine" -4 -90
-		zoom .3
-		over
+	"steering engine" -32 54
+		zoom .5
+		left
+		angle 270
+	"steering engine" 32 54
+		zoom .5
+		right
+		angle 90
+	"reverse engine" 26 -22
+		zoom .8
+	"reverse engine" -26 -22
+		zoom .8
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
