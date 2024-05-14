@@ -5,6 +5,7 @@ system Aaura-Kaska
 	pos -222.08 1285.4
 	government Successor
 	attributes successor
+	arrival 1313.28
 	habitable 1313.28
 	link Myruet-Kvelq
 	link Pelaa-Muora
@@ -67,6 +68,8 @@ system Avasaa-Novaa
 	pos 71 917.52
 	government Uninhabited
 	attributes predecessor
+	arrival 500
+	habitable 320
 	hazard "Predecessors Base Spatial Decay" 400
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object 
@@ -88,6 +91,8 @@ system Chyyra-Osolaa
 	pos -349.15 1193.27
 	government Successor
 	attributes successor
+	arrival 2560
+	habitable 2560
 	link Luue-Saqru
 	link Myiara-Nnesa
 	link Pelaa-Muora
@@ -136,7 +141,8 @@ system "Eta Carinae"
 	pos 122.38 895.99
 	government Uninhabited
 	attributes predecessor
-	habitable 2160
+	arrival 5000
+	habitable 36800
 	asteroids "small rock" 1 4.65
 	asteroids "large rock" 1 4.237
 	asteroids "large metal" 1 2.55
@@ -153,6 +159,8 @@ system Kasii-Cavaasa
 	pos 80.24 798.31
 	government Uninhabited
 	attributes predecessor
+	arrival 5000
+	habitable 17025
 	link Mavra-Ijsola
 	hazard "Predecessors Base Spatial Decay" 400
 	asteroids "small rock" 4 1
@@ -172,6 +180,7 @@ system Kasii-Sola
 	pos 51 970.98
 	government Uninhabited
 	attributes predecessor
+	arrival 500
 	habitable 320
 	link Vasa-Oorua
 	link Oublaa-Khora
@@ -225,6 +234,8 @@ system Kasi-Vasa-Novaa
 	pos 4.56 906.64
 	government Uninhabited
 	attributes predecessor
+	arrival 500
+	habitable 10
 	haze _menu/haze-none
 	hazard "Predecessors Base Spatial Decay" 600
 	object
@@ -246,6 +257,7 @@ system Kella-Uoasa
 	pos -411.49 1302.52
 	government Successor
 	attributes successor
+	arrival 5000
 	habitable 22300
 	link Luue-Saqru
 	link Maspa-Raaqa
@@ -297,6 +309,8 @@ system Khasola-Ryuit
 	pos 21.13 767.59
 	government Uninhabited
 	attributes predecessor
+	arrival 5000
+	habitable 12000
 	hazard "Predecessors Base Spatial Decay" 600
 	asteroids "small metal" 4 1.5
 	asteroids "large metal" 1 1.3
@@ -321,6 +335,8 @@ system Khosa-Kaska
 	pos 30.88 1300.52
 	government Successor
 	attributes successor
+	arrival 500
+	habitable 100
 	link Vade-Staja
 	asteroids "small metal" 8 1.5
 	asteroids "small rock" 9 1.8
@@ -355,6 +371,8 @@ system Kkrav-Luue
 	pos 1.48 831.66
 	government Uninhabited
 	attributes predecessor
+	arrival 2560
+	habitable 2560
 	link Kasi-Vasa-Novaa
 	hazard "Predecessors Base Spatial Decay" 200
 	hazard "Predecessors Spatial Rift Weak" 10000
@@ -382,6 +400,8 @@ system Luue-Saqru
 	pos -387.33 1234.73
 	government Successor
 	attributes successor
+	arrival 500
+	habitable 10
 	link Chyyra-Osolaa
 	link Kella-Uoasa
 	link Raaqa-Ryuit
@@ -429,6 +449,8 @@ system Maspa-Cavaasa
 	pos -582.32 1168.65
 	government Successor
 	attributes successor
+	arrival 500
+	habitable 320
 	link Osolaa-Uuoru
 	asteroids "large metal" 12 1.5
 	minables lead 8 1.5
@@ -475,6 +497,8 @@ system Maspa-Mavra
 	pos -589.96 1295.95
 	government Uninhabited
 	attributes successor
+	arrival 2160
+	habitable 2160
 	link Osolaa-Uuoru
 	asteroids "small metal" 1 1
 	asteroids "large metal" 1 1
@@ -492,6 +516,8 @@ system Maspa-Raaqa
 	pos -488.69 1351.05
 	government Successor
 	attributes successor
+	arrival 500
+	habitable 370
 	link Kella-Uoasa
 	asteroids "small rock" 12 8
 	asteroids "large metal" 13 3
@@ -526,6 +552,8 @@ system Mavra-Ijsola
 	pos 131.33 823.61
 	government Uninhabited
 	attributes predecessor
+	arrival 3000
+	habitable 3000
 	hazard "Predecessors Base Spatial Decay" 200
 	hazard "Predecessors Spatial Rift Weak" 10000
 	hazard "Predecessors Spatial Rift Intense" 20000
@@ -551,6 +579,7 @@ system Mosaa-Iyra
 	pos -10 1399
 	government Successor
 	attributes successor
+	arrival 2900
 	habitable 2900
 	belt 2240 3
 	link Ofstond-Stir
@@ -595,6 +624,7 @@ system Myiara-Nnesa
 	pos -277.38 1156.34
 	government "New Houses"
 	attributes successor
+	arrival 3450
 	habitable 3450
 	belt 1179 3
 	link Chyyra-Osolaa
@@ -668,6 +698,7 @@ system Myruet-Kvelq
 	pos -291.9 1327.37
 	government Successor
 	attributes successor
+	arrival 1715
 	habitable 1715
 	link Aaura-Kaska
 	asteroids "small rock" 27 4.785
@@ -712,6 +743,7 @@ system Ofstond-Stir
 	pos -66.46 1324.58
 	government Successor
 	attributes successor
+	arrival 625
 	habitable 625
 	link Stiidej-Nnesa
 	link Uuoru-Kella
@@ -794,6 +826,8 @@ system Osolaa-Uuoru
 	pos -511.63 1235.62
 	government Successor
 	attributes successor
+	arrival 5000
+	habitable 13720
 	link Maspa-Cavaasa
 	link Raaqa-Ryuit
 	link Maspa-Mavra
@@ -829,6 +863,8 @@ system Oublaa-Khora
 	link "Kasii-Sola"
 	government Uninhabited
 	attributes predecessor
+	arrival 2160
+	habitable 2160
 	asteroids "small rock" 4 16
 	asteroids "large rock" 2 12
 	asteroids "small metal" 3 14
@@ -860,6 +896,7 @@ system Pelaa-Muora
 	pos -273.59 1220.83
 	government Successor
 	attributes successor
+	arrival 5000
 	habitable 12981.236
 	belt 1841 4
 	belt 1916 3
@@ -931,6 +968,8 @@ system Raaqa-Ryuit
 	pos -437.47 1200.55
 	government Successor
 	attributes successor
+	arrival 1080
+	habitable 1080
 	link Chyyra-Osolaa
 	link Luue-Saqru
 	link Osolaa-Uuoru
@@ -978,6 +1017,8 @@ system Stiidej-Nnesa
 	pos -152.18 1352.51
 	government Successor
 	attributes successor
+	arrival 5000
+	habitable 22300
 	link Aaura-Kaska
 	link Ofstond-Stir
 	link Tuur-Kella
@@ -1025,6 +1066,8 @@ system Tuur-Kella
 	pos -152.99 1284.11
 	government Successor
 	attributes successor
+	arrival 5000
+	habitable 12200
 	link Aaura-Kaska
 	link Stiidej-Nnesa
 	link Uuoru-Kella
@@ -1071,6 +1114,7 @@ system Uuoru-Kella
 	pos -83.08 1273.43
 	government "Old Houses"
 	attributes successor
+	arrival 5000
 	habitable 11350
 	belt 1631 6
 	link Ofstond-Stir
@@ -1129,6 +1173,8 @@ system Uuoru-Sossa
 	pos 68 863.13
 	government Uninhabited
 	attributes predecessor
+	arrival 2700
+	habitable 2700	
 	hazard "Predecessors Base Spatial Decay" 100
 	hazard "Predecessors Spatial Rift Intense" 8000
 	object
@@ -1164,6 +1210,8 @@ system Vade-Staja
 	pos -20.71 1242.85
 	government Successor
 	attributes successor
+	arrival 2560
+	habitable 2560
 	link Khosa-Kaska
 	link Uuoru-Kella
 	link Valkkra-Uuoru
@@ -1230,6 +1278,7 @@ system Valkkra-Uuoru
 	pos -102.56 1200.02
 	government Successor
 	attributes successor
+	arrival 3651.37
 	habitable 3651.37
 	link Uuoru-Kella
 	link Vade-Staja
@@ -1298,6 +1347,8 @@ system Vasa-Oorua
 	pos 93.46 946.97
 	government Uninhabited
 	attributes predecessor
+	arrival 1705
+	habitable 1705
 	link Kasii-Sola
 	hazard "Predecessors Base Spatial Decay" 400
 	hazard "Predecessors Spatial Rift Weak" 10000
