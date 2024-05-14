@@ -68,6 +68,8 @@ system Avasaa-Novaa
 	government Predecessor
 	attributes predecessor
 	link Kasii-Sola
+	hazard "Predecessors Base Spatial Decay" 400
+	hazard "Predecessors Spatial Rift Weak" 10000
 
 system Chyyra-Osolaa
 	pos -349.15 1193.27
@@ -122,7 +124,6 @@ system "Eta Carinae"
 	government Uninhabited
 	attributes predecessor
 	habitable 2160
-	link Uuoru-Sossa
 	link Vasa-Oorua
 	asteroids "small rock" 1 4.65
 	asteroids "large rock" 1 4.237
@@ -141,6 +142,7 @@ system Kasii-Cavaasa
 	government Predecessor
 	attributes predecessor
 	link Mavra-Ijsola
+	hazard "Predecessors Base Spatial Decay" 400
 	asteroids "small rock" 4 1
 	asteroids "small metal" 3 1
 	object
@@ -161,6 +163,8 @@ system Kasii-Sola
 	habitable 320
 	link Avasaa-Novaa
 	link Vasa-Oorua
+	hazard "Predecessors Base Spatial Decay" 600
+	hazard "Predecessors Spatial Rift Weak" 20000
 	asteroids "medium rock" 39 1.005
 	asteroids "large rock" 2 1.11
 	asteroids "small metal" 11 1.17
@@ -211,6 +215,7 @@ system Kasi-Vasa-Novaa
 	government Predecessor
 	attributes predecessor
 	haze _menu/haze-none
+	hazard "Predecessors Base Spatial Decay" 600
 	object
 		sprite planet/rock0
 
@@ -269,6 +274,7 @@ system Khasola-Ryuit
 	pos 21.13 767.59
 	government Predecessor
 	attributes predecessor
+	hazard "Predecessors Base Spatial Decay" 600
 
 system Khosa-Kaska
 	pos 30.88 1300.52
@@ -309,7 +315,9 @@ system Kkrav-Luue
 	government Predecessor
 	attributes predecessor
 	link Oublaa-Khora
-	link Uuoru-Sossa
+	hazard "Predecessors Base Spatial Decay" 200
+	hazard "Predecessors Spatial Rift Weak" 10000
+	hazard "Predecessors Spatial Rift Intense" 20000
 	asteroids "large rock" 16 4
 	asteroids "large metal" 12 5
 	object
@@ -479,8 +487,10 @@ system Mavra-Ijsola
 	pos 131.33 823.61
 	government Predecessor
 	attributes predecessor
+	hazard "Predecessors Base Spatial Decay" 200
+	hazard "Predecessors Spatial Rift Weak" 10000
+	hazard "Predecessors Spatial Rift Intense" 20000
 	link Kasii-Cavaasa
-	link Uuoru-Sossa
 
 system Mosaa-Iyra
 	pos -10 1399
@@ -763,6 +773,8 @@ system Oublaa-Khora
 	pos 4.56 906.64
 	government Predecessor
 	attributes predecessor
+	hazard "Predecessors Base Spatial Decay" 300
+	hazard "Predecessors Spatial Rift Weak" 10000
 	link Kkrav-Luue
 	object "Successor Wormhole"
 		sprite planet/wormhole-red
@@ -1040,9 +1052,8 @@ system Uuoru-Sossa
 	pos 68 863.13
 	government Predecessor
 	attributes predecessor
-	link "Eta Carinae"
-	link Kkrav-Luue
-	link Mavra-Ijsola
+	hazard "Predecessors Base Spatial Decay" 100
+	hazard "Predecessors Spatial Rift Intense" 8000
 	object
 		sprite star/f0
 	object Kella-Uuoru-Sossa
@@ -1198,6 +1209,8 @@ system Vasa-Oorua
 	attributes predecessor
 	link "Eta Carinae"
 	link Kasii-Sola
+	hazard "Predecessors Base Spatial Decay" 400
+	hazard "Predecessors Spatial Rift Weak" 10000
 	asteroids "small rock" 32 5
 	asteroids "small metal" 31 5.5
 	asteroids "large rock" 16 2
