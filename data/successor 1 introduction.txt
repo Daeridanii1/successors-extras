@@ -1,3 +1,24 @@
+mission "Successors: Entering Cataclysm"
+	invisible
+	landing
+	destination "Kella-Uuoru-Sossa"
+	to fail 
+		has "Successors: Safe at Last: failed"
+	on enter
+		system
+			attributes "predecessor"
+		dialog phrase "successors entering cataclysm"
+	on complete
+		dialog phrase "successors homeworld cataclysm"
+
+phrase "successors entering cataclysm"
+	word
+		`The fabric of space in this section of the galaxy appears to be coming apart at the seams; bits of the <ship>'s hull are already being eroded away. Within it, your jump drive shudders: it is as if it is already mid-jump despite not being active.`
+
+phrase "successors homeworld cataclysm"
+	word
+		`Whatever happened in this region of space, this system seems to have been the epicenter of it. While the planet you have landed on offers enough protection from the spatial decay to allow you to perform some repairs, outside of its atmosphere the system is wracked with deadly storms and persistent instability. It's not suprising that what signs of life there are here seem millenia old.`
+
 mission "Successors: Safe at Last"
 	invisible
 	landing
@@ -9,7 +30,7 @@ mission "Successors: Safe at Last"
 
 phrase "safe in successor space"
 	word
-		`The system on the other side of the wormhole is the first one in days that your sensors do not respond to with alarms. The clear space around you allows your ship's computer to quickly determine your galactic position; there is no sign of spatial distortions or any other anomalies apart from the wormhole.`
+		`The system on the other side of the wormhole is the first one in days that your sensors do not respond to with alarms. There is no sign of spatial distortion or decay or indeed, any anomalies apart from the wormhole.`
 
 mission "Successors: First Contact"
 	landing
