@@ -1317,8 +1317,8 @@ planet Kasi-Osolaa-Sossa
 planet Kella-Uuoru-Sossa
 	attributes predecessor uninhabited
 	landscape land/badlands0
-	description "This was once the homeworld of the Predecessors. Its surface has been scoured by radiation from the nearby Eta Carinae, and the once-great cities of the fallen empire now lie in ruin. Caustic dust fills the air, and your ship's sensors alert you to the presence of several dust storms at other locations on the planet's surface. It would be wise not to get caught in one."
-	spaceport "The spaceport stands proudly even after thousands of years of disuse. Grand walls and cavernous vaulted ceilings rise up above your ship, some scarred by weapons fire, others distorted by heat or radiation. A couple of small cleaning drones attempt to polish the weather-worn floors, while others wander aimlessly, devoid of purpose and direction."
+	description "This planet is an ecological catastrophe. Its surface has been scoured by radiation; no organic life remains. Many large cities dot the surface, of which several appear to have been leveled by some sort of orbital bombardment, but most are nearly entirely intact. All are equally empty. Caustic dust chokes the atmosphere, and your ship's sensors alert you to the presence of several dust storms at other locations on the planet's surface. It would be wise not to get caught in one."
+	spaceport "A massive spaceport on the surface stands proudly even after thousands of years of disuse. Grand walls and cavernous vaulted ceilings rise hundreds of meters up above your ship, some scarred by weapons fire, others distorted by heat or radiation. A couple of small cleaning drones attempt to polish the weather-worn floors, while others wander aimlessly, devoid of purpose and direction."
 	government Predecessor
 
 planet Khora-Uurau-Uuoru
