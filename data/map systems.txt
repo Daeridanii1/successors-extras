@@ -64,12 +64,25 @@ system Aaura-Kaska
 		period 1878.76
 
 system Avasaa-Novaa
-	pos -35.98 947.52
-	government Predecessor
+	pos 71 917.52
+	government Uninhabited
 	attributes predecessor
-	link Kasii-Sola
 	hazard "Predecessors Base Spatial Decay" 400
 	hazard "Predecessors Spatial Rift Weak" 10000
+	object 
+		sprite star/m0
+	object
+		sprite planet/titan
+		distance 980
+		period 980
+	object
+		sprite planet/tethys-b
+		distance 1112
+		period 1112
+	object
+		sprite planet/gas2
+		distance 3502
+		period 3502
 
 system Chyyra-Osolaa
 	pos -349.15 1193.27
@@ -124,7 +137,6 @@ system "Eta Carinae"
 	government Uninhabited
 	attributes predecessor
 	habitable 2160
-	link Vasa-Oorua
 	asteroids "small rock" 1 4.65
 	asteroids "large rock" 1 4.237
 	asteroids "large metal" 1 2.55
@@ -139,7 +151,7 @@ system "Eta Carinae"
 
 system Kasii-Cavaasa
 	pos 80.24 798.31
-	government Predecessor
+	government Uninhabited
 	attributes predecessor
 	link Mavra-Ijsola
 	hazard "Predecessors Base Spatial Decay" 400
@@ -158,13 +170,12 @@ system Kasii-Cavaasa
 
 system Kasii-Sola
 	pos 51 970.98
-	government Predecessor
+	government Uninhabited
 	attributes predecessor
 	habitable 320
-	link Avasaa-Novaa
 	link Vasa-Oorua
+	link Oublaa-Khora
 	hazard "Predecessors Base Spatial Decay" 600
-	hazard "Predecessors Spatial Rift Weak" 20000
 	asteroids "medium rock" 39 1.005
 	asteroids "large rock" 2 1.11
 	asteroids "small metal" 11 1.17
@@ -193,8 +204,8 @@ system Kasii-Sola
 			sprite planet/lava0
 			distance 266
 			period 17.668
-		object
-			sprite planet/dust1
+		object Raaqa-Uur-Kaav
+			sprite planet/desert4-b
 			distance 392
 			period 31.607
 	object
@@ -211,13 +222,25 @@ system Kasii-Sola
 			period 35.011
 
 system Kasi-Vasa-Novaa
-	pos -58.9 838.39
-	government Predecessor
+	pos 4.56 906.64
+	government Uninhabited
 	attributes predecessor
 	haze _menu/haze-none
 	hazard "Predecessors Base Spatial Decay" 600
 	object
-		sprite planet/rock0
+		sprite planet/browndwarf-l-rogue
+	object
+		sprite planet/ganymede
+		distance 800
+		period 800
+	object
+		sprite planet/desert4
+		distance 1250
+		period 2000
+	object
+		sprite planet/dust0
+		distance 4000
+		period -8000
 
 system Kella-Uoasa
 	pos -411.49 1302.52
@@ -272,9 +295,27 @@ system Kella-Uoasa
 
 system Khasola-Ryuit
 	pos 21.13 767.59
-	government Predecessor
+	government Uninhabited
 	attributes predecessor
 	hazard "Predecessors Base Spatial Decay" 600
+	asteroids "small metal" 4 1.5
+	asteroids "large metal" 1 1.3
+	object
+		sprite star/a-supergiant
+		distance 200
+		period 200
+	object
+		sprite star/o-dwarf
+		distance 600
+		period 600
+	object
+		sprite planet/browndwarf-y
+		distance 6240
+		period 6240
+		object
+			sprite planet/ice4
+			distance 520
+			period 520
 
 system Khosa-Kaska
 	pos 30.88 1300.52
@@ -312,14 +353,12 @@ system Khosa-Kaska
 
 system Kkrav-Luue
 	pos 1.48 831.66
-	government Predecessor
+	government Uninhabited
 	attributes predecessor
-	link Oublaa-Khora
+	link Kasi-Vasa-Novaa
 	hazard "Predecessors Base Spatial Decay" 200
 	hazard "Predecessors Spatial Rift Weak" 10000
 	hazard "Predecessors Spatial Rift Intense" 20000
-	asteroids "large rock" 16 4
-	asteroids "large metal" 12 5
 	object
 		sprite star/f0
 	object
@@ -334,7 +373,7 @@ system Kkrav-Luue
 			sprite planet/ice0
 			distance 500
 			period 500
-	object Raaqa-Uur-Kaav
+	object
 		sprite planet/forest1
 		distance 2890
 		period 2890
@@ -485,12 +524,28 @@ system Maspa-Raaqa
 
 system Mavra-Ijsola
 	pos 131.33 823.61
-	government Predecessor
+	government Uninhabited
 	attributes predecessor
 	hazard "Predecessors Base Spatial Decay" 200
 	hazard "Predecessors Spatial Rift Weak" 10000
 	hazard "Predecessors Spatial Rift Intense" 20000
 	link Kasii-Cavaasa
+	object
+		sprite star/carbon-core
+	object
+		sprite star/carbon
+	object
+		sprite planet/lava3
+		distance 2300
+		period 2300
+		object
+			sprite planet/dust0
+			distance 223
+			period 223
+	object
+		sprite planet/desert10-b
+		distance 3430
+		period 3430
 
 system Mosaa-Iyra
 	pos -10 1399
@@ -770,14 +825,36 @@ system Osolaa-Uuoru
 		period 4500
 
 system Oublaa-Khora
-	pos 4.56 906.64
-	government Predecessor
+	pos 121 989
+	link "Kasii-Sola"
+	government Uninhabited
 	attributes predecessor
-	hazard "Predecessors Base Spatial Decay" 300
-	hazard "Predecessors Spatial Rift Weak" 10000
-	link Kkrav-Luue
-	object "Successor Wormhole"
-		sprite planet/wormhole-red
+	asteroids "small rock" 4 16
+	asteroids "large rock" 2 12
+	asteroids "small metal" 3 14
+	hazard "Predecessors Base Spatial Decay" 600
+	object
+		sprite star/g0-old
+	object
+		sprite planet/rock13
+		distance 1258
+		period 1258
+	object 
+		sprite planet/gas14-b
+		distance 5289
+		period 5289
+		object
+			sprite planet/io
+			distance 528
+			period 528
+		object
+			sprite planet/rhea-b
+			distance 850
+			period 850
+		object "Successor Wormhole"
+			sprite planet/wormhole-red
+			distance 1200
+			period 1200
 
 system Pelaa-Muora
 	pos -273.59 1220.83
@@ -1050,16 +1127,30 @@ system Uuoru-Kella
 
 system Uuoru-Sossa
 	pos 68 863.13
-	government Predecessor
+	government Uninhabited
 	attributes predecessor
 	hazard "Predecessors Base Spatial Decay" 100
 	hazard "Predecessors Spatial Rift Intense" 8000
 	object
 		sprite star/f0
-	object Kella-Uuoru-Sossa
-		sprite planet/desert5-b
-		distance 1500
+		distance 40
+		period 80
+	object
+		sprite star/k-dwarf
+		distance 200
+		period 80
+	object 
+		sprite planet/gas8
+		distance 2200
 		period 32
+		object Kella-Uuoru-Sossa
+			sprite planet/dust6-b
+			distance 520
+			period 60
+		object
+			sprite planet/ice0
+			distance 840
+			period 72
 	object
 		sprite planet/gas12
 		distance 3000
@@ -1205,9 +1296,8 @@ system Valkkra-Uuoru
 
 system Vasa-Oorua
 	pos 93.46 946.97
-	government Predecessor
+	government Uninhabited
 	attributes predecessor
-	link "Eta Carinae"
 	link Kasii-Sola
 	hazard "Predecessors Base Spatial Decay" 400
 	hazard "Predecessors Spatial Rift Weak" 10000

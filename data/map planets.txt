@@ -212,7 +212,7 @@ planet Naph-Naap-Kella
 planet Osolaa-Val-Mavra
 	attributes predecessor uninhabited
 	landscape land/dmottl1
-	description "It is hard to tell if the persistent frost here is a natural phenomenon or a result of the destruction from the collapse of the Predecessors' empire. It blankets the dense shrubbery and abandoned cities with equal depth and absence of concern."
+	description "This moon is covered in a constant veil of frost that coats the sparse and hardy vegetation on its surface in delicate ice crystals. On the side of the moon that faces its parent gas giant, a massive circular trench has been carved into the earth; empty cities and abandoned shipyards are present within, built out of the walls and jutting into the trench's empty air."
 	government Predecessor
 
 planet O-Vasa-Oa
@@ -262,8 +262,8 @@ planet Raaqa-Puan-Uuoru
 planet Raaqa-Uur-Kaav
 	attributes predecessor uninhabited
 	landscape land/forest3
-	description "Unlike most of the Predecessors' planets, this one remains relatively habitable. Its large forests have fluorished in the absence of sapient life, and the stark remains of Predecessor cities are slowly being reclaimed by nature. While the materials the buildings are made of have not decayed an iota in over a thousand years, the tender shoots of green life nontheless adhere to and worm their way through them."
-	spaceport "What was once the spaceport is now a field of flowers. Small blue ones sprout from the landing pads; spiky orange ones jut from empty countertops, a calm but firm reminder of the supremacy of life over the once-living."
+	description "Unlike most of planets in this area of space, this moon remains relatively habitable, perhaps as a consequence of the milder spatial decay in the system. Large forests have fluorished without any sapient life, and the stark remains of abandoned cities are slowly being reclaimed by the nature that surrounds them. While the materials which compose the buildings have not decayed an iota over the eons, the tender shoots of green life nontheless adhere their curving surfaces and worm their way through their interiors."
+	spaceport "What was once this moon's spaceport is now a field of flowers. The landing pad upon which your ship rests has been overtaken by a host of tall blue ribbon-like blossoms, which sprout up from seams in the pavement and wave in the breeze. Nearer what once was the main body of the port, millenia-old flowerboxes are dense with spiky orange blooms that recede when touched and shed seed pods onto the empty walkways, where they are eventually snapped up by the gossamer flying creatures which perch around the whole area."
 	government Predecessor
 
 planet Saska-Aa-Noorr
