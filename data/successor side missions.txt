@@ -285,19 +285,19 @@ mission `Successors: Stargazing`
 			`	Nnesa and Jaasora return after a couple of hours, as promised, their tent gliding back into the <ship>'s cargo bay as smoothly as it exited. The pair unload several notebooks of photos and drawings and chatter excitedly about the various constellations and stellar phenomena that they observed. Nnesa is particularly excited, hurriedly extricating from the interleaved mess of papers a suprisingly well-constructed star map, which they press up in your face with pride. You cannot help but notice that several of the drawings in the stack are of Jaasora rather than any stellar phenomena.`
 			`	"From where on the map dost thou hail, captain?" Nnesa roughly gestures to their impressively accurate map of human space.`
 			choice
-				`	(Indicate Ruticulus.)`
-					goto ruticulus
+				`	(Indicate Rutilicus.)`
+					goto rutilicus
 				`	(Indicate Sol.)`
 					goto sol
 				`	(Gesture broadly to the expanse of space depicted on the map.)`
 			`	"Oh!" says Nnesa, "first and foremost to the stars, captain? A scion of the constellations, of space itself, living to wander? 'Tis appreciable, I shall admit."`
 				goto interrupt
-			label ruticulus
+			label rutilicus
 			`	"Oh!" says Nnesa, "I am not sure I know the name for that one. What dost thou call thy home, captain?"`
 			choice
-				`	"Ruticulus."`
-					goto ruticulus2
-			label ruticulus2
+				`	"Rutilicus."`
+					goto rutilicus2
+			label rutilicus2
 			`	Nnesa works their way through the pronunciation and writes down a short sequence of flowing letters on their map. "A pleasant name," they say.`
 				goto interrupt
 			label sol
