@@ -152,6 +152,7 @@ mission "Successors: Trusted"
 		"reputation: Successor" += 10
 		set "trusted by the successors"
 		event "no longer naive to successors"
+		event "learned predecessor planet history"
 		conversation
 			`Once you have set down at the spaceport, you are met by another group of Successor naval officers. You notice that this group appears even more diverse than the last, representing several different uniform styles and liveries. Unifying them, however, is their wearing a small white and blue pin on their outfits that does not seem to correspond to the insignia of any one of the High Houses. They guide you, politely but firmly, to one of the monorail trains snaking out from the spaceport to other installations on the planet, and you all shuffle together into one of the cars, which appears to have been completely cleared of normal passengers.`
 			`	Several minutes later, the monorail deposits you at an especially large and well-decorated complex that swarms with both military and well-dressed civilians, some of whom appear so opulent and bejewelled that you suspect their personal effects are worth more than your ship. Each of them without exception wears the same white and blue insignia as your escorts, though many have incorporated it into their clothes' design or even display it as a pattern in skin coloration. As your escort peels off into the crowd, you see a familiar face in the distance: Sieasej, the Successor scholar, who visibly perks up when they see you and approaches.`
@@ -238,6 +239,18 @@ event "no longer naive to successors"
 		remove `Veusade (Naive)`
 		add `Aaulqra`
 		add `Veusade`
+
+event "learned predecessor planet history"
+	planet "Kella-Uuoru-Sossa"
+		description "This is the ancestral homeworld of the Successor species. The spatial anomalies that now dominate this system have scoured its surface with radiation and evaporated most of its once-extensive oceans. The great cities of the Predecessors' empire are now devoid of all organic life; many of them remain as pristine and gleaming as the on the days they were abandoned. Caustic dust chokes the lower atmosphere of the planet, and your ship's sensors alert you to the presence of several sandstorms at other locations on the planet's surface. It would be wise not to get caught in one."
+		spaceport "The planet's main spaceport endures proudly even after thousands of years of disuse. Grand walls and cavernous vaulted ceilings rise hundreds of meters above your ship, some scarred by weapons fire, others distorted by heat or radiation. One flock of small cleaning drones continually polish the sand-worn floors, while others wander about aimlessly, devoid of purpose or direction."
+	planet "Osolaa-Val-Mavra"
+		description "It is hard to tell if the persistent frost here is a natural phenomenon or a result of the destruction from the collapse of the Predecessors' empire. It blankets the dense shrubbery and abandoned cities with equal depth and absence of concern."
+	planet "Raaqa-Uur-Kaav"
+		description "Unlike most of the Predecessors' planets, this one remains relatively habitable. Its large forests have fluorished in the absence of sapient life, and the stark remains of Predecessor cities are slowly being reclaimed by nature. While the materials the buildings are made of have not decayed an iota in over a thousand years, the tender shoots of green life nontheless adhere to and worm their way through them."
+		spaceport "What was once the spaceport is now a field of flowers. Small blue ones sprout from the landing pads; spiky orange ones jut from empty countertops, a calm but firm reminder of the supremacy of life over the once-living."
+	planet "Cavaasa-Vasa-Tej"
+		description "It is doubtful this planet ever supported a particularly large population - its surface is hot and dry, the direct opposite of what the Predecessors preferred. Nonetheless, there are a few burned-out installations dotting its surface, mostly mines and industrial yards left abandoned as the Predecessors' empire began to crumble."
 
 mission "Successors: People's Houses, First Contact"
 	landing
