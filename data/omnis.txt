@@ -78,9 +78,9 @@ outfitter "successors"
 	`"Jaase" Shield Cortex`
 	`"Jorv" Shield Cortex`
 	`"Niis" Inductive Engines`
-	`"Nnesa" Inertial Core`
-	`"Ryuit" Inertial Core`
-	`"Uoret" Inertial Core`
+	`"Nnesa" Fusion Core`
+	`"Ryuit" Fusion Core`
+	`"Uoret" Fusion Core`
 	`"Veusa" Inductive Reverser`
 	`"Veusa" Inductive Steering`
 	`"Veusa" Inductive Thruster`

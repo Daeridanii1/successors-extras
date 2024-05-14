@@ -98,7 +98,7 @@ outfitter "Successor High Tech"
 
 outfitter "High Houses Light"
 	`Auxiliary Power Reserve`
-	`"Nnesa" Inertial Core`
+	`"Nnesa" Fusion Core`
 	`"Ojet" Bimodal Coilgun`
 	`Drag Cannon`
 	`"Jaase" Shield Cortex`
@@ -109,8 +109,8 @@ outfitter "High Houses Light"
 
 outfitter "High Houses Heavy"
 	`Primary Power Reserve`
-	`"Ryuit" Inertial Core`
-	`"Uoret" Inertial Core`
+	`"Ryuit" Fusion Core`
+	`"Uoret" Fusion Core`
 	"High-Velocity Spike"
 	`"Sjeja" Kinetic Lance`
 	`Bimodal Coilgun Turret`

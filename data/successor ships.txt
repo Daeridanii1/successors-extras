@@ -616,7 +616,7 @@ ship `Seiitej`
 		`"Veusa" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
-		`"Nnesa" Inertial Core`
+		`"Nnesa" Fusion Core`
 		`OC-"Mavra" Betavoltaic Cell` 2
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
@@ -684,7 +684,7 @@ ship `Veusade`
 	outfits
 		`"Veusa" Inductive Thruster`
 		`"Veusa" Inductive Steering`
-		`"Ryuit" Inertial Core`
+		`"Ryuit" Fusion Core`
 		`"Jaase" Shield Cortex`
 		"Hyperdrive"
 		"Successor Cooling"
@@ -771,7 +771,7 @@ ship `Vujlet`
 		`"Chyyra" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
 		`"Chyyra" Inductive Reverser`
-		`"Nnesa" Inertial Core`
+		`"Nnesa" Fusion Core`
 		`OC-"Mavra" Betavoltaic Cell`
 		`Auxiliary Power Reserve`
 		`"Jaase" Shield Cortex`
@@ -859,8 +859,8 @@ ship `Aaulqra`
 		`"Chyyra" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
 		`"Chyyra" Inductive Reverser`
-		`"Uoret" Inertial Core`
-		`"Nnesa" Inertial Core`
+		`"Uoret" Fusion Core`
+		`"Nnesa" Fusion Core`
 		`Primary Power Reserve`
 		`"Jorv" Shield Cortex`
 		`"Viir" Repair Module`
@@ -942,7 +942,7 @@ ship `Kaskhorade`
 		`"Veusa" Inductive Thruster`
 		`"Veusa" Inductive Steering`
 		`"Veusa" Inductive Reverser`
-		`"Uoret" Inertial Core`
+		`"Uoret" Fusion Core`
 		`1-"Uurau" Betavoltaic Cell` 3
 		`"Jaase" Shield Cortex`
 		`"Viir" Repair Module`
