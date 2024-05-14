@@ -6,13 +6,11 @@ ship `Aaulqra` `Aaulqra (Sniper)`
 		`"Uoret" Fusion Core`
 		`3-"Kaska" Betavoltaic Cell`
 		`"Jaase" Shield Cortex`
-		`"Viir" Repair Module`
 		`Hyperdrive`
 		`Successor Cooling`
 		`"Sjeja" Kinetic Lance`
 		`High-Velocity Spike` 20
 		`Bimodal Railgun` 4
-		`Burst Anti-Missile Turret` 2
 
 ship `Aaulqra` `Aaulqra (Brawler)`
 	outfits
@@ -22,7 +20,6 @@ ship `Aaulqra` `Aaulqra (Brawler)`
 		`"Uoret" Fusion Core`
 		`3-"Kaska" Betavoltaic Cell`
 		`"Jorv" Shield Cortex`
-		`"Viir" Repair Module`
 		`Hyperdrive`
 		`Successor Cooling`
 		`Bimodal Railgun` 2
@@ -151,13 +148,11 @@ ship `Kaskhorade` `Kaskhorade (Sniper)`
 		`"Veusa" Inductive Reverser`
 		`"Uoret" Fusion Core`
 		`"Jaase" Shield Cortex`
-		`"Viir" Repair Module`
 		"Hyperdrive"
 		"Successor Cooling"
 		`"Sjeja" Kinetic Lance` 2
 		`High-Velocity Spike Rack`
 		`High-Velocity Spike` 60
-		"Burst Anti-Missile Turret" 2 
 
 ship `Kaskhorade` `Kaskhorade (Brawler)`
 	outfits
@@ -167,7 +162,6 @@ ship `Kaskhorade` `Kaskhorade (Brawler)`
 		`"Uoret" Fusion Core`
 		`OC-"Mavra" Betavoltaic Cell`
 		`"Jorv" Shield Cortex`
-		`"Viir" Repair Module`
 		"Hyperdrive"
 		"Successor Cooling"
 		`Bimodal Railgun Turret` 4

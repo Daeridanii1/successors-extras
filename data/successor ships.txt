@@ -863,7 +863,6 @@ ship `Aaulqra`
 		`"Nnesa" Fusion Core`
 		`Primary Power Reserve`
 		`"Jorv" Shield Cortex`
-		`"Viir" Repair Module`
 		"Hyperdrive"
 		"Successor Cooling" 2
 		`"Ojet" Bimodal Coilgun` 5
@@ -945,7 +944,6 @@ ship `Kaskhorade`
 		`"Uoret" Fusion Core`
 		`1-"Uurau" Betavoltaic Cell` 3
 		`"Jaase" Shield Cortex`
-		`"Viir" Repair Module`
 		"Hyperdrive"
 		"Successor Cooling"
 		`"Ojet" Bimodal Coilgun` 4
