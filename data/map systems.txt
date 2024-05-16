@@ -1,8 +1,8 @@
 galaxy "label successors"
-	pos -222 1285
+	pos -122 1485
 
 system Aaura-Kaska
-	pos -222.08 1285.4
+	pos -107.928 1431.18
 	government Successor
 	attributes successor
 	arrival 1313.28
@@ -88,7 +88,7 @@ system Avasaa-Novaa
 		period 3502
 
 system Chyyra-Osolaa
-	pos -349.15 1193.27
+	pos -249.15 1390.27
 	government Successor
 	attributes successor
 	arrival 2560
@@ -138,7 +138,7 @@ system Chyyra-Osolaa
 		period 3688
 
 system "Eta Carinae"
-	pos 122.38 895.99
+	pos -212.62 928.99
 	government Uninhabited
 	attributes predecessor
 	arrival 5000
@@ -156,7 +156,7 @@ system "Eta Carinae"
 		period 300
 
 system Kasii-Cavaasa
-	pos 80.24 798.31
+	pos -21.76 909.31
 	government Uninhabited
 	attributes predecessor
 	arrival 5000
@@ -177,7 +177,7 @@ system Kasii-Cavaasa
 		period 3000
 
 system Kasii-Sola
-	pos 51 970.98
+	pos -23 1089.98
 	government Uninhabited
 	attributes predecessor
 	arrival 500
@@ -231,7 +231,7 @@ system Kasii-Sola
 			period 35.011
 
 system Kasi-Vasa-Novaa
-	pos 4.56 906.64
+	pos -149.44 989.64
 	government Uninhabited
 	attributes predecessor
 	arrival 500
@@ -254,7 +254,7 @@ system Kasi-Vasa-Novaa
 		period -8000
 
 system Kella-Uoasa
-	pos -411.49 1302.52
+	pos -323.49 1525.52
 	government Successor
 	attributes successor
 	arrival 5000
@@ -306,7 +306,7 @@ system Kella-Uoasa
 		period 10000
 
 system Khasola-Ryuit
-	pos 21.13 767.59
+	pos -71.87 833.59
 	government Uninhabited
 	attributes predecessor
 	arrival 5000
@@ -332,7 +332,7 @@ system Khasola-Ryuit
 			period 520
 
 system Khosa-Kaska
-	pos 30.88 1300.52
+	pos 246.742 1357.47
 	government Successor
 	attributes successor
 	arrival 500
@@ -368,7 +368,7 @@ system Khosa-Kaska
 		period 3000
 
 system Kkrav-Luue
-	pos 1.48 831.66
+	pos -125.52 955.66
 	government Uninhabited
 	attributes predecessor
 	arrival 2560
@@ -397,7 +397,7 @@ system Kkrav-Luue
 		period 2890
 
 system Luue-Saqru
-	pos -387.33 1234.73
+	pos -261.33 1460.73
 	government Successor
 	attributes successor
 	arrival 500
@@ -446,7 +446,7 @@ system Luue-Saqru
 			period 32
 
 system Maspa-Cavaasa
-	pos -582.32 1168.65
+	pos -515.32 1468.65
 	government Successor
 	attributes successor
 	arrival 500
@@ -494,7 +494,7 @@ system Maspa-Cavaasa
 			period 173.691
 
 system Maspa-Mavra
-	pos -589.96 1295.95
+	pos -565.96 1626.95
 	government Uninhabited
 	attributes successor
 	arrival 2160
@@ -513,7 +513,7 @@ system Maspa-Mavra
 		period 1000
 
 system Maspa-Raaqa
-	pos -488.69 1351.05
+	pos -258.69 1574.05
 	government Successor
 	attributes successor
 	arrival 500
@@ -549,7 +549,7 @@ system Maspa-Raaqa
 			period 510
 
 system Mavra-Ijsola
-	pos 131.33 823.61
+	pos -68.67 883.61
 	government Uninhabited
 	attributes predecessor
 	arrival 3000
@@ -576,7 +576,7 @@ system Mavra-Ijsola
 		period 3430
 
 system Mosaa-Iyra
-	pos -10 1399
+	pos 82.5699 1536.05
 	government Successor
 	attributes successor
 	arrival 2900
@@ -621,7 +621,7 @@ system Mosaa-Iyra
 			period 800
 
 system Myiara-Nnesa
-	pos -277.38 1156.34
+	pos -210.38 1322.34
 	government "New Houses"
 	attributes successor
 	arrival 3450
@@ -695,7 +695,7 @@ system Myiara-Nnesa
 			period 489.011
 
 system Myruet-Kvelq
-	pos -291.9 1327.37
+	pos -89.6802 1505.13
 	government Successor
 	attributes successor
 	arrival 1715
@@ -740,7 +740,7 @@ system Myruet-Kvelq
 		period 400
 
 system Ofstond-Stir
-	pos -66.46 1324.58
+	pos 35.9748 1453.98
 	government Successor
 	attributes successor
 	arrival 625
@@ -823,7 +823,7 @@ system Ofstond-Stir
 			period 61.598
 
 system Osolaa-Uuoru
-	pos -511.63 1235.62
+	pos -482.63 1496.62
 	government Successor
 	attributes successor
 	arrival 5000
@@ -859,7 +859,7 @@ system Osolaa-Uuoru
 		period 4500
 
 system Oublaa-Khora
-	pos 121 989
+	pos 24 1122
 	link "Kasii-Sola"
 	government Uninhabited
 	attributes predecessor
@@ -893,7 +893,7 @@ system Oublaa-Khora
 			period 1200
 
 system Pelaa-Muora
-	pos -273.59 1220.83
+	pos -169.59 1380.83
 	government Successor
 	attributes successor
 	arrival 5000
@@ -965,7 +965,7 @@ system Pelaa-Muora
 		period 1925.801
 
 system Raaqa-Ryuit
-	pos -437.47 1200.55
+	pos -345.47 1421.55
 	government Successor
 	attributes successor
 	arrival 1080
@@ -1014,7 +1014,7 @@ system Raaqa-Ryuit
 			period 300
 
 system Stiidej-Nnesa
-	pos -152.18 1352.51
+	pos -27.0278 1417.17
 	government Successor
 	attributes successor
 	arrival 5000
@@ -1063,7 +1063,7 @@ system Stiidej-Nnesa
 			period 900
 
 system Tuur-Kella
-	pos -152.99 1284.11
+	pos -51.0929 1329.13
 	government Successor
 	attributes successor
 	arrival 5000
@@ -1111,7 +1111,7 @@ system Tuur-Kella
 		period 10000
 
 system Uuoru-Kella
-	pos -83.08 1273.43
+	pos 68.2795 1369.06
 	government "Old Houses"
 	attributes successor
 	arrival 5000
@@ -1170,7 +1170,7 @@ system Uuoru-Kella
 			offset 32
 
 system Uuoru-Sossa
-	pos 68 863.13
+	pos -58 976.13
 	government Uninhabited
 	attributes predecessor
 	arrival 2700
@@ -1207,7 +1207,7 @@ system Uuoru-Sossa
 		period 5000
 
 system Vade-Staja
-	pos -20.71 1242.85
+	pos 157.582 1340.24
 	government Successor
 	attributes successor
 	arrival 2560
@@ -1275,7 +1275,7 @@ system Vade-Staja
 		period 1466.847
 
 system Valkkra-Uuoru
-	pos -102.56 1200.02
+	pos 106.067 1291.65
 	government Successor
 	attributes successor
 	arrival 3651.37
@@ -1344,7 +1344,7 @@ system Valkkra-Uuoru
 			period 182.831
 
 system Vasa-Oorua
-	pos 93.46 946.97
+	pos 31.3947 1014.88
 	government Uninhabited
 	attributes predecessor
 	arrival 1705
