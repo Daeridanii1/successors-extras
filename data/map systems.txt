@@ -73,6 +73,7 @@ system Avasaa-Novaa
 	habitable 320
 	hazard "Predecessors Base Spatial Decay" 400
 	hazard "Predecessors Spatial Rift Weak" 10000
+	haze _menu/haze-tear
 	object 
 		sprite star/m0
 	object
@@ -147,6 +148,7 @@ system "Eta Carinae"
 	asteroids "small rock" 1 4.65
 	asteroids "large rock" 1 4.237
 	asteroids "large metal" 1 2.55
+	haze _menu/haze-tear
 	object
 		sprite star/nova
 	object
@@ -167,6 +169,7 @@ system Kasii-Cavaasa
 	hazard "Predecessors Base Spatial Decay" 400
 	asteroids "small rock" 4 1
 	asteroids "small metal" 3 1
+	haze _menu/haze-tear
 	object
 		sprite star/b-supergiant
 	object
@@ -193,6 +196,7 @@ system Kasii-Sola
 	asteroids "small metal" 11 1.17
 	asteroids "medium metal" 207 1.65
 	asteroids "large metal" 22 1.155
+	haze _menu/haze-tear
 	object
 		sprite star/m0
 		period 10
@@ -240,8 +244,8 @@ system Kasi-Vasa-Novaa
 	attributes predecessor
 	arrival 500
 	habitable 10
-	haze _menu/haze-none
 	hazard "Predecessors Base Spatial Decay" 600
+	haze _menu/haze-tear
 	object
 		sprite planet/browndwarf-l-rogue
 	object
@@ -319,6 +323,7 @@ system Khasola-Ryuit
 	hazard "Predecessors Base Spatial Decay" 600
 	asteroids "small metal" 4 1.5
 	asteroids "large metal" 1 1.3
+	haze _menu/haze-tear
 	object
 		sprite star/a-supergiant
 		distance 200
@@ -383,6 +388,7 @@ system Kkrav-Luue
 	hazard "Predecessors Base Spatial Decay" 200
 	hazard "Predecessors Spatial Rift Weak" 10000
 	hazard "Predecessors Spatial Rift Intense" 20000
+	haze _menu/haze-tear
 	object
 		sprite star/f0
 	object
@@ -565,6 +571,7 @@ system Mavra-Ijsola
 	hazard "Predecessors Spatial Rift Weak" 10000
 	hazard "Predecessors Spatial Rift Intense" 20000
 	link Kasii-Cavaasa
+	haze _menu/haze-tear
 	object
 		sprite star/carbon-core
 	object
@@ -876,6 +883,7 @@ system Oublaa-Khora
 	asteroids "large rock" 2 12
 	asteroids "small metal" 3 14
 	hazard "Predecessors Base Spatial Decay" 600
+	haze _menu/haze-tear
 	object
 		sprite star/g0-old
 	object
@@ -1185,6 +1193,7 @@ system Uuoru-Sossa
 	habitable 2700	
 	hazard "Predecessors Base Spatial Decay" 100
 	hazard "Predecessors Spatial Rift Intense" 8000
+	haze _menu/haze-tear
 	object 
 		sprite star/void-scar
 			scale 2.0
@@ -1367,6 +1376,7 @@ system Vasa-Oorua
 	link Kasii-Sola
 	hazard "Predecessors Base Spatial Decay" 400
 	hazard "Predecessors Spatial Rift Weak" 10000
+	haze _menu/haze-tear
 	asteroids "small rock" 32 5
 	asteroids "small metal" 31 5.5
 	asteroids "large rock" 16 2
