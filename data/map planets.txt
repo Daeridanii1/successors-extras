@@ -121,8 +121,7 @@ planet Khora-Vasa-Reyyaa
 	spaceport "The trading posts, outfitters, and shipyard inside are all quite impressive, and the Successors you meet are all very curt and professional, including the merchant captains."
 	government Successor
 	shipyard "High Houses Heavy"
-	shipyard "Successor Basics"
-	shipyard "Chidiyi"
+	shipyard "Successor Heavy"
 	outfitter "High Houses Light"
 	outfitter "High Houses Heavy"
 	outfitter "Successor Civilian"

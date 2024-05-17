@@ -1,14 +1,12 @@
 shipyard "Successor Basics"
 	`Kvelqde (Naive)`
-	`Stolsaqra (Naive)`
 
 shipyard "Successor Civilian"
 	`Kvelqde (Naive)`
+	
 	`Stolsaqra (Naive)`
-
 	`Myaede (Naive)`
 	`Ejniisde`
-	`Nnaatej`
 
 shipyard "Successor Heavy"
 	`Kvelqde (Naive)`
@@ -17,9 +15,8 @@ shipyard "Successor Heavy"
 	`Ejniisde`
 
 	`Ojde`
-
-shipyard "Chydiyi"
 	`Nnesaarau (Naive)`
+	`Nnaatej`
 
 shipyard `Waterlining`
 	`Nnaatej`
@@ -32,9 +29,10 @@ shipyard "High Houses Light"
 	`Veusade (Naive)`
 
 shipyard "High Houses Heavy"
-	`Aaulqra (Naive)`
 	`Seiitej`
 	`Veusade (Naive)`
+
+	`Aaulqra (Naive)`
 	`Kaskhorade`
 
 shipyard "Peoples Houses"
