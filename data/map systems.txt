@@ -65,6 +65,7 @@ system Aaura-Kaska
 		period 1878.76
 
 system Avasaa-Novaa
+	shrouded
 	pos 71 917.52
 	government Uninhabited
 	attributes predecessor
@@ -156,6 +157,7 @@ system "Eta Carinae"
 		period 300
 
 system Kasii-Cavaasa
+	shrouded
 	pos -21.76 909.31
 	government Uninhabited
 	attributes predecessor
@@ -177,6 +179,7 @@ system Kasii-Cavaasa
 		period 3000
 
 system Kasii-Sola
+	shrouded
 	pos -23 1089.98
 	government Uninhabited
 	attributes predecessor
@@ -231,6 +234,7 @@ system Kasii-Sola
 			period 35.011
 
 system Kasi-Vasa-Novaa
+	shrouded
 	pos -149.44 989.64
 	government Uninhabited
 	attributes predecessor
@@ -306,6 +310,7 @@ system Kella-Uoasa
 		period 10000
 
 system Khasola-Ryuit
+	shrouded
 	pos -71.87 833.59
 	government Uninhabited
 	attributes predecessor
@@ -368,6 +373,7 @@ system Khosa-Kaska
 		period 3000
 
 system Kkrav-Luue
+	shrouded
 	pos -125.52 955.66
 	government Uninhabited
 	attributes predecessor
@@ -549,6 +555,7 @@ system Maspa-Raaqa
 			period 510
 
 system Mavra-Ijsola
+	shrouded
 	pos -68.67 883.61
 	government Uninhabited
 	attributes predecessor
@@ -1170,6 +1177,7 @@ system Uuoru-Kella
 			offset 32
 
 system Uuoru-Sossa
+	shrouded
 	pos -58 976.13
 	government Uninhabited
 	attributes predecessor
@@ -1177,6 +1185,12 @@ system Uuoru-Sossa
 	habitable 2700	
 	hazard "Predecessors Base Spatial Decay" 100
 	hazard "Predecessors Spatial Rift Intense" 8000
+	object 
+		sprite star/void-scar
+			scale 2.0
+		distance 2200
+		period 32
+		hazard "Predecessors Void Scar Erosion" 6
 	object
 		sprite star/f0
 		distance 40
@@ -1344,6 +1358,7 @@ system Valkkra-Uuoru
 			period 182.831
 
 system Vasa-Oorua
+	shrouded
 	pos 31.3947 1014.88
 	government Uninhabited
 	attributes predecessor
