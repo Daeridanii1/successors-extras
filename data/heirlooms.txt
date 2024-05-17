@@ -13,9 +13,9 @@ ship "Valkkyiara-Khorasaqra"
 		"hull energy" 5.2
 		"required crew" 22
 		"bunks" 30
-		"mass" 315
-		"drag" 2.4
-		"heat dissipation" .75
+		"mass" 775
+		"drag" 3.6
+		"heat dissipation" .5
 		"fuel capacity" 600
 		"cargo space" 25
 		"outfit space" 604
@@ -118,8 +118,8 @@ outfit "Kinetic Lance"
 		"firing heat" 12000
 		"shield damage" 18500
 		"hull damage" 24500
-		"firing force" 4000
-		"hit force" 4000
+		"firing force" 6000
+		"hit force" 6000
 		"ion damage" 120
 		"phasing" 1
 	description `The largest and most powerful of the Successors' weapons, this massive railgun propels its magnetic projectiles to a sizeable fraction of the speed of light, delivering enough kinetic energy on impact to destroy a small city or alternatively, a large warship. Any vessel sturdy enough to survive even a single hit will likely have to reboot its power systems as well, as the powerful magnetic fields surrounding the projectiles are highly disruptive to electronics.`
@@ -166,7 +166,7 @@ outfit `"Sarija" Heirloom Coilgun`
 		#70 (parent) - 4*48 (child)
 		"hull damage" 105
 		# 185 (parent) - 4*20 (child)
-		"hit force" 60
+		"hit force" 90
 		"cluster"
 		"submunition" "Bimodal Switch" 4
 	description `Secretly stashed away by the High Houses since the collapse of the old empire, this lovingly-maintained coilgun is far more powerful than any of the Successors' modern technology.`
