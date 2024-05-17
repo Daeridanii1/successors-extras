@@ -517,6 +517,8 @@ system Maspa-Mavra
 	minables gold 1 1
 	fleet "Small New Houses" 10000
 	fleet "Successor Miners" 5000
+	haze _menu/haze-none
+	"starfield density" 0.05
 	object
 		sprite star/g0-old
 	object Khosa-Kella-Oa
