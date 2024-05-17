@@ -31,7 +31,7 @@ outfit `"Ojet" Bimodal Coilgun`
 		# 50 (parent) - 3*48 (child)
 		"hull damage" 75
 		# 135 (parent) - 3*20 (child)
-		"hit force" 80
+		"hit force" 120
 		"cluster"
 		"submunition" "Bimodal Switch" 3
 	description `Precise and deadly, the "Ojet" Bimodal Coilgun has been the High Houses' armament of choice since long before humans ever took to the stars. It was designed quite simply as a perfect weapon; it is said that by the time the empire of the Predecessors fell, they had seen no need to install any other weapon on their ships for over a thousand years.`
@@ -71,7 +71,7 @@ outfit `Bimodal Coilgun Turret`
 		"firing force" 25
 		"shield damage" -94
 		"hull damage" 75
-		"hit force" 80
+		"hit force" 120
 		"cluster"
 		"submunition" "Bimodal Switch" 3
 	description `Successor warships have traditionally relied on fixed weaponry to deal with their foes, but the High Houses do produce a turreted platform for the "Ojet" Coilgun so that their larger and slower vessels can maintain their combat effectiveness against more manuverable targets. It mounts two of the weapons side by side, rigged to fire double the amount of shots per burst to keep them in sync with the fixed hardpoints.`
@@ -291,14 +291,14 @@ outfit `"Sjeja" Kinetic Lance`
 		"velocity" 320
 		"lifetime" 8
 		"reload" 160
-		"firing force" 800
+		"firing force" 1200
 		"firing energy" 1900
 		"firing ion" 3.0
 		"firing heat" 4000
 		"shield damage" 1336
 		"hull damage" 1920
 		"piercing" .25
-		"hit force" 2500
+		"hit force" 3750
 		"penetration count" 5
 	description "The largest and most powerful of the Successors' modern weapons, this massive coilgun is elegant in its simplicity, cleanly perforating targets at extreme range. Because the bank of exotic electromagnets it employs requires an unusually high burst of power when firing, the weapon comes with integrated battery banks in order to supply it with a large enough reserve of electricity to function."
 
