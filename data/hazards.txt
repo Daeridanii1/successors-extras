@@ -2,10 +2,12 @@ hazard "Predecessors Base Spatial Decay"
 	"duration" 1 200
 	"strength" 0.25 1.75
 	"system-wide"
+	"environmental effect" "void spark" 100
 	weapon
 		"relative hull damage" 0.00015
 		"corrosion damage" 0.005
 		"piercing" 0.25
+		"target effect" "void spark tiny"
 
 hazard "Predecessors Spatial Rift Weak"
 	"duration" 200 1000
@@ -17,6 +19,7 @@ hazard "Predecessors Spatial Rift Weak"
 		"relative hull damage" 0.0012
 		"piercing" 0.25
 		"target effect" "spatial hazard" 1
+		"target effect" "void spark tiny"
 
 hazard "Predecessors Spatial Rift Intense"
 	"duration" 300 1500
@@ -28,6 +31,7 @@ hazard "Predecessors Spatial Rift Intense"
 		"relative hull damage" 0.0012
 		"piercing" 0.25
 		"target effect" "spatial hazard" 1
+		"target effect" "void spark tiny"
 
 hazard "Predecessors Void Scar Erosion"
 	"constant strength"
@@ -51,3 +55,18 @@ effect "spatial hazard"
 	"lifetime" 10
 	"random angle" 180
 	"velocity scale" 0.05
+
+effect "void spark"
+	sprite "effect/void spark"
+		"rewind"
+		"frame rate" 6
+		"random start frame"
+		scale 10.0
+	"lifetime" 36
+
+effect "void spark tiny"
+	sprite "effect/void spark"
+		"rewind"
+		"frame rate" 6
+		"random start frame"
+	"lifetime" 36
