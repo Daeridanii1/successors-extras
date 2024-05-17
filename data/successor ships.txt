@@ -10,9 +10,9 @@ ship `Kvelqde`
 		"hull" 2400
 		"required crew" 1
 		"bunks" 9
-		"mass" 85
-		"drag" 1.9
-		"heat dissipation" 0.9
+		"mass" 110
+		"drag" 2.1
+		"heat dissipation" 0.82
 		"fuel capacity" 500
 		"cargo space" 25
 		"outfit space" 160
@@ -87,9 +87,9 @@ ship `Nnesaarau`
 		"hull" 2200
 		"required crew" 1
 		"bunks" 4
-		"mass" 80
-		"drag" 2.0
-		"heat dissipation" 0.9
+		"mass" 90
+		"drag" 2.1
+		"heat dissipation" 0.86
 		"fuel capacity" 600
 		"cargo space" 8
 		"outfit space" 175
@@ -151,9 +151,9 @@ ship `Myaede`
 		"hull" 13000
 		"required crew" 6
 		"bunks" 20
-		"mass" 320
-		"drag" 2.6
-		"heat dissipation" 0.8
+		"mass" 500
+		"drag" 3.4
+		"heat dissipation" 0.62
 		"fuel capacity" 500
 		"cargo space" 125
 		"outfit space" 275
@@ -227,9 +227,9 @@ ship `Ejniisde`
 		"hull" 9500
 		"required crew" 12
 		"bunks" 64
-		"mass" 250
-		"drag" 1.9
-		"heat dissipation" 0.8
+		"mass" 350
+		"drag" 2.3
+		"heat dissipation" 0.67
 		"fuel capacity" 700
 		"cargo space" 50
 		"outfit space" 265
@@ -299,9 +299,9 @@ ship `Nnaatej`
 		"hull" 15500
 		"required crew" 5
 		"bunks" 26
-		"mass" 380
-		"drag" 2.1
-		"heat dissipation" 0.7
+		"mass" 570
+		"drag" 2.4
+		"heat dissipation" 0.61
 		"fuel capacity" 500
 		"cargo space" 35
 		"outfit space" 220
@@ -377,9 +377,9 @@ ship `Ojde`
 		"hull" 31500
 		"required crew" 8
 		"bunks" 24
-		"mass" 760
-		"drag" 3.6
-		"heat dissipation" 0.7
+		"mass" 1190
+		"drag" 5
+		"heat dissipation" 0.5
 		"fuel capacity" 500
 		"cargo space" 450
 		"outfit space" 330
@@ -440,9 +440,9 @@ ship `Kvelqde-Khora`
 		"hull" 4625
 		"required crew" 1
 		"bunks" 6
-		"mass" 126
-		"drag" 1.9
-		"heat dissipation" 0.85
+		"mass" 158
+		"drag" 2.1
+		"heat dissipation" 0.78
 		"fuel capacity" 500
 		"cargo space" 10
 		"outfit space" 197
@@ -515,9 +515,9 @@ ship `Stolsaqra`
 		"hull" 7600
 		"required crew" 1
 		"bunks" 2
-		"mass" 75
-		"drag" 1.4
-		"heat dissipation" 0.9
+		"mass" 120
+		"drag" 1.6
+		"heat dissipation" 0.79
 		"fuel capacity" 300
 		"cargo space" 5
 		"outfit space" 220
@@ -595,9 +595,9 @@ ship `Seiitej`
 		"hull" 28000
 		"required crew" 8
 		"bunks" 36
-		"mass" 200
-		"drag" 2.3
-		"heat dissipation" .80
+		"mass" 400
+		"drag" 3.1
+		"heat dissipation" .60
 		"fuel capacity" 800
 		"cargo space" 130
 		"outfit space" 370
@@ -664,9 +664,9 @@ ship `Veusade`
 		"hull" 29000
 		"required crew" 5
 		"bunks" 10
-		"mass" 190
-		"drag" 2.4
-		"heat dissipation" .80
+		"mass" 360
+		"drag" 3.1
+		"heat dissipation" .62
 		"fuel capacity" 500
 		"cargo space" 15
 		"outfit space" 370
@@ -750,9 +750,9 @@ ship `Vujlet`
 		"hull" 17500
 		"required crew" 2
 		"bunks" 6
-		"mass" 130
-		"drag" 2.2
-		"heat dissipation" .84
+		"mass" 230
+		"drag" 2.8
+		"heat dissipation" .68
 		"fuel capacity" 600
 		"cargo space" 10
 		"outfit space" 280
@@ -838,9 +838,9 @@ ship `Aaulqra`
 		"hull" 55000
 		"required crew" 18
 		"bunks" 25
-		"mass" 280
-		"drag" 4.0
-		"heat dissipation" 0.7
+		"mass" 650
+		"drag" 5.8
+		"heat dissipation" 0.49
 		"fuel capacity" 500
 		"cargo space" 19
 		"outfit space" 550
@@ -920,9 +920,9 @@ ship `Kaskhorade`
 		"hull" 44500
 		"required crew" 34
 		"bunks" 130
-		"mass" 480
-		"drag" 6.5
-		"heat dissipation" .75
+		"mass" 990
+		"drag" 9.7
+		"heat dissipation" .5
 		"fuel capacity" 600
 		"cargo space" 140
 		"outfit space" 570
