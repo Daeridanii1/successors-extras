@@ -244,6 +244,7 @@ system Kasi-Vasa-Novaa
 	attributes predecessor
 	arrival 500
 	habitable 10
+	link Kiiraj-Luue
 	hazard "Predecessors Base Spatial Decay" 600
 	haze _menu/haze-tear
 	object
@@ -377,7 +378,7 @@ system Khosa-Kaska
 		distance 3210
 		period 3000
 
-system Kkrav-Luue
+system Kiiraj-Luue
 	shrouded
 	pos -125.52 955.66
 	government Uninhabited
@@ -598,7 +599,7 @@ system Mosaa-Iyra
 	arrival 2900
 	habitable 2900
 	belt 2240 3
-	link Ofstond-Stir
+	link Ojstaan-Sola
 	asteroids "small rock" 22 4
 	asteroids "large rock" 12 3
 	asteroids "small metal" 18 5
@@ -755,7 +756,7 @@ system Myruet-Kvelq
 		distance 1900
 		period 400
 
-system Ofstond-Stir
+system Ojstaan-Sola
 	pos 35.9748 1453.98
 	government Successor
 	attributes successor
@@ -1037,7 +1038,7 @@ system Stiidej-Nnesa
 	arrival 5000
 	habitable 22300
 	link Aaura-Kaska
-	link Ofstond-Stir
+	link Ojstaan-Sola
 	link Tuur-Kella
 	asteroids "small rock" 32 16
 	asteroids "large rock" 28 17
@@ -1134,8 +1135,8 @@ system Uuoru-Kella
 	arrival 5000
 	habitable 11350
 	belt 1631 6
-	link Ofstond-Stir
-	link Valkkra-Uuoru
+	link Ojstaan-Sola
+	link Valkraa-Uuoru
 	link Vade-Staja
 	link Tuur-Kella
 	asteroids "small metal" 14 4.805
@@ -1239,7 +1240,7 @@ system Vade-Staja
 	habitable 2560
 	link Khosa-Kaska
 	link Uuoru-Kella
-	link Valkkra-Uuoru
+	link Valkraa-Uuoru
 	asteroids "small rock" 2 3.8
 	asteroids "medium rock" 20 5.603
 	asteroids "large rock" 1 4.444
@@ -1299,7 +1300,7 @@ system Vade-Staja
 		distance 4549
 		period 1466.847
 
-system Valkkra-Uuoru
+system Valkraa-Uuoru
 	pos 106.067 1291.65
 	government Successor
 	attributes successor
