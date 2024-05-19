@@ -25,7 +25,7 @@ planet Aqra-Kvel-Taaq
 planet Cavaasa-Vasa-Tej
 	attributes predecessor uninhabited
 	landscape land/lava8
-	description "It is doubtful this planet ever supported a particularly large population - its surface is hot and dry, the direct opposite of what the Predecessors preferred. Nonetheless, there are a few burned-out installations dotting its surface, mostly mines and industrial yards left abandoned as the Predecessors' empire began to crumble."
+	description "This planet is hot and dry, and holds on to only a tenuous atmosphere. Several enormous alien installations are present on its surface; semicircular bubbles that smoothly emerge from the rock as if they were grown from it, dotted with small pores each large enough for a starship. Inside them, the temperature is surprisingly quite habitable and you can observe the remains of what look like mines and industrial facilities within."
 	government Predecessor
 
 planet Chyyra-Raaqa-Tuur
@@ -101,7 +101,7 @@ planet Kasi-Osolaa-Sossa
 planet Kella-Uuoru-Sossa
 	attributes predecessor uninhabited
 	landscape land/badlands0
-	description "This planet is an ecological catastrophe. Its surface has been scoured by radiation; no organic life remains. Many large cities dot the surface, of which several appear to have been leveled by some sort of orbital bombardment, but most are nearly entirely intact. All are equally empty. Caustic dust chokes the atmosphere, and your ship's sensors alert you to the presence of several dust storms at other locations on the planet's surface. It would be wise not to get caught in one."
+	description "This planet is an ecological catastrophe. Its surface has been scoured by radiation and what must have been an orbital bombardment; no organic life remains. Many large cities dot the surface, several of which have been leveled or damaged by weapon strikes, and far more of which are nearly entirely intact. All are equally empty. Persistent clouds of caustic dust choke the atmosphere, and your ship's sensors alert you to the presence of several dust storms at other locations on the planet's surface. It would be wise not to get caught in one."
 	spaceport "A massive spaceport on the surface stands proudly even after thousands of years of disuse. Grand walls and cavernous vaulted ceilings rise hundreds of meters up above your ship, some scarred by weapons fire, others distorted by heat or radiation. A couple of small cleaning drones attempt to polish the weather-worn floors, while others wander aimlessly, devoid of purpose and direction."
 	government Predecessor
 
@@ -211,7 +211,7 @@ planet Naph-Naap-Kella
 planet Osolaa-Val-Mavra
 	attributes predecessor uninhabited
 	landscape land/dmottl1
-	description "This moon is covered in a constant veil of frost that coats the sparse and hardy vegetation on its surface in delicate ice crystals. On the side of the moon that faces its parent gas giant, a massive circular trench has been carved into the earth; empty cities and abandoned shipyards are present within, built out of the walls and jutting into the trench's empty air."
+	description "This moon is covered in a constant veil of frost that coats the sparse and hardy vegetation on its surface in delicate ice crystals. On the side of the moon that faces its parent gas giant, a massive circular trench, kilometers-deep, has been carved into the earth. Within it, huge terraced complexes have been built into the walls; empty residential areas, shipyards, and public spaces jut into the trench's open air where they are adorned by the constant snowfall."
 	government Predecessor
 
 planet O-Vasa-Oa
@@ -261,7 +261,7 @@ planet Raaqa-Puan-Uuoru
 planet Raaqa-Uur-Kaav
 	attributes predecessor uninhabited
 	landscape land/forest3
-	description "Unlike most of planets in this area of space, this moon remains relatively habitable, perhaps as a consequence of the milder spatial decay in the system. Large forests have fluorished without any sapient life, and the stark remains of abandoned cities are slowly being reclaimed by the nature that surrounds them. While the materials which compose the buildings have not decayed an iota over the eons, the tender shoots of green life nontheless adhere their curving surfaces and worm their way through their interiors."
+	description "Unlike most of planets in this area of space, this moon remains relatively habitable. Large forests have fluorished throughout it in the absence of sapient life, and the stark remains of abandoned cities are slowly being reclaimed by the nature that surrounds them. While the materials which compose the buildings have not decayed an iota over the eons, the tender shoots of green life nontheless adhere to their twisting surfaces and flourish within their unmaintained interiors."
 	spaceport "What was once this moon's spaceport is now a field of flowers. The landing pad upon which your ship rests has been overtaken by a host of tall blue ribbon-like blossoms, which sprout up from seams in the pavement and wave in the breeze. Nearer what once was the main body of the port, millenia-old flowerboxes are dense with spiky orange blooms that recede when touched and shed seed pods onto the empty walkways, where they are eventually snapped up by the gossamer flying creatures which perch around the whole area."
 	government Predecessor
 
