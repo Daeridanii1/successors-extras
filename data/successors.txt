@@ -150,6 +150,11 @@ phrase "successor nouns"
 		"Ret"
 		"Uij"
 		"Naaq"
+		"Kujst"
+		"Lijn"
+		"Aar"
+		"Drojm"
+		"Nejra"
 
 phrase "successor locations"
 	word
@@ -275,6 +280,10 @@ phrase "successor end"
 		"kaj"
 		"niq"
 		"oqi"
+
+phrase "successor"
+	phrase 
+		"successor nouns"
 
 phrase "successor"
 	phrase
