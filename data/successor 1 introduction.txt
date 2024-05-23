@@ -42,30 +42,34 @@ mission "Successors: First Contact"
 	clearance
 	on offer
 		conversation
-			`After trudging through several seemingly-dead systems, you've finally found a planet with living inhabitants. As you enter the upper atmosphere, your ship is surrounded by a trio of interceptors and thoroughly scanned. Apparently satisfied, the lead ship transmits an unintelligible hail to you and slowly proceeds to a spaceport complex floating on a large structure on the planet's coast, where the group corrals you onto one of the few fully-dry landing pads. After several minutes, a small crowd begins to form around your landing site.`
-			`	The aliens remind you most of octopi: they are substantially taller than you, rising up off of the ground by several long suckered arms. Their skin seems slightly wet and you can see it changing color and texture as several of them watch you through their hourglass-shaped pupils.`
-			`   After examining you for some time, one of them, an especially tall and brightly colored individual wearing a uniform of some sort, begins to move towards you; they glide slowly and gently over the ground with an unsettling absence of noise. They say something in the strange sharply flowing language that you heard over the hail and wait expectantly for you to reply.`
+			`After trudging through several shrouded and mostly-dead systems, you've finally found a planet with living inhabitants. As you enter the planet's upper atmosphere, your ship is surrounded by a trio of interceptors and thoroughly scanned. After a brief delay, the lead ship transmits an unintelligible hail to you and slowly proceeds to a spaceport complex floating on a large structure on the planet's coast, where the group corrals you onto one of the few fully-dry landing pads. As the minutes wear on, a small crowd begins to form around your landing site.`
+			`	The aliens here remind you most of octopi: they are substantially taller than you, rising up off of the ground by several long suckered arms. Those standing on dry land are joined by several others who slither out of shallow, water-filled pools in the spaceport to come and watch you. Their skin glistens with mucous wetness and you can see it changing color and texture as they run their hourglass-shaped pupils over your person and your ship.`
+			`   After a couple of minutes of activity within the crowd, one uniformed and especially vibrant individual breaks away from the rest and begins to move towards you, gliding gently and silently over the ground. They say something in a strange sharply flowing language, shimmering with waves of color, and then wait expectantly for you to reply.`
 			choice
 				`	(Say nothing.)`
 					goto map
 				`	"Hello, I'm Captain <first> <last>."`
 					goto introduce
 				`	"I come in peace."`
-					goto peace
+					goto introduce
 				`	(Shoot them.)`
-			`	You draw your weapon and fire a shot directly at the center of the uniformed alien, but it does not even manage to scorch the fabric of their clothing. Before you have time to fire a second, there is an unfathomably loud noise that pushes you back and leaves you dead before your body even makes contact with the ground.`
+			`	You draw your weapon and fire a shot directly at the center of the uniformed alien, but it does not manage to even scorch the fabric of their clothing. Before you have time to fire a second time, you hear, see, and feel an unfathomably loud noise that pushes you back and leaves you dead before your body even makes contact with the ground.`
 				die
 			label introduce
-			`   You introduce yourself to the alien, but their expression does not change to reveal any sort of understanding.`
-				goto map
-			label peace
-			`	You affirm your peaceful values to the alien, but their expression does not change to reveal any sort of understanding.`
+			`   The alien shuffles their arms in place and leans their face towards yours, repeating their earlier statement, this time more slowly and at a lower pitch. When you once again fail to give a satisfactory response, they pull away.`
 				goto map
 			label map
-			`   After a few more moments of silence, the alien grunts in a gesture something like a sigh of disappointment and then turns away and says something to another uniformed individual in the now-substantial crowd. Their skin flashes a bright blue and then they leave, gliding towards one of the interceptors now parked alongside your ship at the spaceport.`
-			`   When they return, they are holding a small round device which they hand to the individual in charge, who then in turn offers it to you and burbles an unintelligible phrase with what you might have characterized as an encouraging tone. Several individuals in the crowd by now appear to be taking pictures of the two of you, and you can see more of them gliding towards your landing site in the distance.`
-			`	You take the device from the alien, and as soon as it touches your skin, it begins to project a small but detailed holographic star map of the area highlighting a system a few jumps east of here. The alien grunts energetically as the trio of interceptors begins to hover in preparation for takeoff: it would appear that these people, whoever they are, want you to travel there.`
+			`   After a few more moments of silence, the alien grunts in a gesture something like a sigh of disappointment and then turns away and says something to another uniformed individual waiting on the edges of the now-substantial crowd. The other's skin flashes a bright blue and then they leave, gliding towards one of the interceptors now parked alongside your ship at the spaceport.`
+			`   When they return, they are holding in one of their arms a small spherical device which they hand to the alien in charge, who then in turn offers it to you and burbles an unintelligible phrase with what you might have characterized as an encouraging tone. Several individuals in the crowd by now appear to be taking pictures of the two of you, and you can see more of them in the distance gliding and swimming towards your landing site.`
+			choice
+				`	(Take the device.)`
+				`	(Refuse.)`
+					goto refused
+			`	You take the device from the alien. It liquifies the moment it touches your skin before freezing in mid-splash to project a small but detailed holographic star map of the surrounding systems. A star system a few jumps east of here is highlighted amidst a sea of alien lettering. The individual standing opposite you grunts energetically as the trio of interceptors begins to hover in preparation for takeoff: it would appear that these people, whoever they are, want you to travel there.`
 				accept
+			label refused
+			`	Thinking the device might be a weapon of some sort, you back away from the alien offering it to you and into the safety of the <ship>'s hatch. Though none of the aliens make any move to harm you, you notice from inside that after a couple of minutes, water slowly begins to flow onto the landing pad. It might be wise to take off sooner rather than later.`
+				decline
 
 	npc save accompany
 		government "Old Houses"
@@ -75,7 +79,7 @@ mission "Successors: First Contact"
 		ship "Stolsaqra (Mission Escort)" "Seqra-saqra"
 
 	on fail
-		dialog `At least one of your escortsh have been destroyed. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+		dialog `At least one of your escorts have been destroyed. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
 
 	on visit
 		dialog `You have reached <planet>, but without your escorts, you are refused landing permission at the spaceport and must return to orbit until they arrive.`
