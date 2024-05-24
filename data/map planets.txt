@@ -36,7 +36,7 @@ planet Chyyra-Raaqa-Tuur
 
 planet Giiq-Oj-Sol
 	attributes successor uninhabited boldtourism
-	landscape land/mountain22-spfld
+	landscape land/lava14
 	description "The specific atmosphere of this planet combined with its volcanic activity have combined to make the perfect conditions for the geological production of strands of natural glass, which are thrown into the atmosphere by volcanoes and then carried by high winds all over the planet. This makes stepping outside of one's ship without some sort of protection a very bad idea, as the ground is littered with sharp fragments and the air is filled with microscopic glass particles, both capable of rapidly destroying living tissue."
 	government Uninhabited
 
@@ -59,7 +59,7 @@ planet Iyra-Ijasa-Iret
 
 planet Kasii-Cavasaa-Oa
 	attributes successor
-	landscape land/snow10
+	landscape land/snow25
 	description "Although inhospitable by human standards, the snow-covered Kasii-Cavasaa-Oa falls comfortably, if on the low end of comfortable, within the Successors' tolerances. Beneath the permafrost lie rich deposits of rare earth elements and heavy metals that have formed and supported a highly self-contained economy, with entire production lines from raw material to final product contained within this single planet. Since many of the minerals mined here are integral for the production of the Successors' advanced composite materials, the New Houses keep a tight grip here, funneling many of the end products into their shipyards and construction projects."
 	description "Kasii-Cavasaa-Oa is also the home of House Kvasq, one of the New Houses."
 	spaceport "Far from beautiful, but impressive in its scale and technology, Kasii-Cavasaa-Oa's spaceport looms over the blindingly-white snow hills like an obsidian outcrop. There is a substantial military presence here, guarding the valuable freight convoys of the New Houses; even in these relatively peaceful times, the Successors have clearly not forgotten their fraught and warlike past."
@@ -286,7 +286,7 @@ planet Shassa-Wyra-Orrou
 
 planet Staja-Kella-Oa
 	attributes education wealthy successor
-	landscape land/fog11
+	landscape land/fog12
 	description "Staja-Kella-Oa is widely recognized as the location of the best educational institutions in Successor space, most of which are funded by the Old Houses but accept applications from all Successors regardless of birthplace or family history."
 	description "The planet itself is densely forested with a few small cities. Part of the reason that it continues to be a center for education is that it has a rich archaelogical history: this planet was home to a now presumed-extinct sapient species roughly one hundred thousand years ago, and there is a great deal of interest in uncovering the details of their society."
 	description "Staja-Kella-Oa is also home to the ancestral estate of House Sioeora, one of the Old Houses."
@@ -323,7 +323,7 @@ planet Tuur-Oa-Sola
 
 planet Uo-Oraa-Vayya
 	attributes quiet successor
-	landscape land/sky8
+	landscape land/snow24
 	description "This small planet is in the midst of an ice age, and nearly its entire surface is covered in ice sheets several kilometers thick. There are next to no permanent inhabitants, but the Successors maintain a significant research presence here to study the planet's unique conditions."
 	description "It is rumored that the navies of the New Houses will send recruits on missions here to test their fortitude, though that is unequivocally denied by official sources."
 	spaceport "The spaceport, if you can call it that, is nothing more than an approximately flat area in a mountain valley with a small research base serving as a control tower. The air outside is bitterly cold, and while the Successors do not seem to mind it as much as you, even they express discomfort at being out in the open for too long."
