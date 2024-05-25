@@ -670,7 +670,7 @@ ship `Veusade`
 		"fuel capacity" 500
 		"cargo space" 15
 		"outfit space" 370
-		"weapon capacity" 125
+		"weapon capacity" 96
 		"engine capacity" 120
 		"multimodal armor" 1
 		"hull repair rate" 1.45
@@ -732,8 +732,8 @@ ship `Veusade`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `Blessed with the honor of being named with the Successor word for swiftness, the "Veusade" is designed for one thing: to carry eight drag cannons as close to an enemy ship's hull as possible. The designers shaved off additional mass by excluding turret mounts; the presumption is that a pilot in one of these craft should be able to simply outmaneuver incoming missiles rather than going to the trouble of shooting them down.`
-	description `	Such a narrowly-focused design makes these ships ill-suited for multipurpose use, but they are frequently seen as auxiliary or police craft, owing to their ability to rapidly catch and immobilize fleeing vessels. `
+	description `Blessed with the honor of being named with the Successor word for swiftness, the "Veusade" is designed for only one purpose: to carry eight drag cannons as close to an enemy ship's hull as possible.`
+	description `	Vessels of this lineage earned renown in many of the conflicts between the Predecessors' High Houses, catching and killing ships many times their size and escaping before reinforcements could arrive. In the present, such a narrowly-focused design makes these vessels ill-suited for multipurpose use, but they are frequently seen as auxiliary or police craft, owing to their ability to rapidly intercept and immobilize fleeing ships.`
 
 ship `Veusade` `Veusade (Naive)`
 	description `The "Veusade" bristles with gun ports but has a small overall weapons capacity; in fact, it is just enough to saturate its hardpoints with drag cannons. Such a narrowly-focused design makes these ships ill-suited for multipurpose use, but they are frequently seen as auxiliary or police craft, owing to their ability to rapidly catch and immobilize fleeing vessels.`
@@ -820,8 +820,8 @@ ship `Vujlet`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `Navigating the stars with the grace of a flitting bird, the compact "Vujlet" is a mass-produced High Houses warship flexible enough to serve in a variety of light-duty roles. Large enough to operate as a self-sufficient unit, these vessels serve as a useful bridge between short-ranged, relatively vulnerable interceptors, and larger, more resource-intensive warships that can be much more expensive to build and operate.`
-	description `	The design was originally employed by House Kaatrij as a stealth reconnaissance vessel during a past territorial conflict over the now largely-uninhabited systems to the galactic south. Following the resolution of that particular conflict and the strengthening of the alliance between the New Houses, the plans for the "Vujlet" were distributed among Kaatrij's allies. Produced en masse by the other New Houses, the "Vujlet" rapidly became a mainstay of their fleets.`
+	description `Navigating the stars with the grace of a flitting bird, the compact "Vujlet" is a mass-produced High Houses warship flexible enough to serve in a variety of light-duty roles. Large enough to operate as a self-sufficient unit, these vessels serve as a useful bridge between short-ranged and relatively vulnerable interceptors, and larger, more resource-intensive warships that can be much more expensive to build and operate.`
+	description `	The design was originally employed by House Kaatrij as a stealth reconnaissance vessel that made use of their then-recently-developed cloaking techhnology. As the alliance between the New Houses strengthened, the plans for the "Vujlet" were distributed among them, and the light warship rapidly became a mainstay of their fleets.`
 
 ship `Vujlet` `Vujlet (Naive)`
 	description `The compact "Vujlet" is a mass-produced High Houses warship flexible enough to serve in a variety of light-duty roles. Large enough to operate as a self-sufficient unit, these vessels serve as a useful bridge between short-ranged, relatively vulnerable interceptors, and larger, more resource-intensive warships that can be much more expensive to build and operate.`
@@ -903,7 +903,7 @@ ship `Aaulqra`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `The "Aaulqra" is the oldest warship design currently produced by the High Houses in Successor space, with a recognizable lineage continuing back several thousand years to long before the fall of the old empire. It is compact, fast, and durable for a ship of its class, but has relatively limited internal space and lacks any significant cargo or passenger facilities. The captains of these vessels are often up-and-coming Successor officers hoping to prove themselves to one of the High Houses by demonstrating their mastery of the vessel; while most, of course, do not, the ship's flexibility and ubiquitious presence make it an excellent starting point for those who do.`
+	description `The "Aaulqra" is the oldest warship design currently produced by the High Houses in Successor space, with a recognizable lineage continuing back several thousand years to early in the old empire. It is compact, fast, and durable for a ship of its class, but has relatively limited internal space and lacks any significant cargo or passenger facilities. The captains of these vessels are often up-and-coming Successor officers hoping to prove themselves to one of the High Houses by demonstrating their mastery of the vessel; while most, of course, do not, the ship's flexibility and ubiquitious presence make it an excellent starting point for those who do.`
 
 ship `Aaulqra` `Aaulqra (Naive)`
 	description `This medium warship is among the most common designs employed by the High Houses of the Successors. It is compact, fast, and durable for a ship of its class, but limited internal space and fuel capacity restrict it mostly to short-range patrol service.`
