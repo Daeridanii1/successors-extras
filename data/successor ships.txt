@@ -221,7 +221,7 @@ ship `Ejniisde`
 	attributes
 		licenses
 			"Successor"
-		category "Transport"
+		category "Space Liner"
 		"cost" 4100000
 		"shields" 2000
 		"hull" 9500
