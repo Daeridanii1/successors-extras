@@ -256,24 +256,24 @@ ship `Ejniisde`
 		zoom .8
 	engine -25 67
 		zoom .8
-	"steering engine" 10 -87
+	"steering engine" 7 -83
 		zoom .5
 		over
 		left
 		angle 270
-	"steering engine" -10 -87
+	"steering engine" -7 -83
 		zoom .5
 		over
 		right
 		angle 90
-	"steering engine" -32 54
+	"steering engine" -6 99
 		zoom .5
 		left
-		angle 270
-	"steering engine" 32 54
+		angle 90
+	"steering engine" 6 99
 		zoom .5
 		right
-		angle 90
+		angle 270
 	"reverse engine" 26 -22
 		zoom .8
 	"reverse engine" -26 -22
