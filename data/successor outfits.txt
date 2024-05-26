@@ -495,11 +495,12 @@ outfit "Multimodal Armor: Regen"
 outfit "Multimodal Armor: Resilient"
 	category "Systems"
 	thumbnail "outfit/successor armor resilient"
-	"slowing protection" 0.6
-	"ion protection" 0.6
-	"corrosion protection" 0.6
-	"leak protection" 0.6
-	"burn protection" 0.6
+	"slowing protection" 1.5
+	"ion protection" 1.5
+	"scramble protection" 1.5
+	"corrosion protection" 1.5
+	"leak protection" 1.5
+	"burn protection" 1.5
 	"multimodal armor" -1
 	"unplunderable" 1
 	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
