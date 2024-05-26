@@ -2,7 +2,7 @@ government Predecessor
 	color .7 .7 .7
 
 government Successor
-	swizzle 0
+	swizzle 4
 	color 0 .8 0.653
 	language "successor"
 	"friendly hail" "successor friendly hail"
@@ -21,7 +21,7 @@ government "New Houses"
 		assist 0
 
 government "Old Houses"
-	swizzle 4
+	swizzle 5
 	color 0.375 0.316 1
 	language "successor"
 	"friendly hail" "old houses friendly hail"
