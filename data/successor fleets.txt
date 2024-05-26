@@ -2,121 +2,36 @@ fleet "Light Successor Freight"
     government "Successor"
     names "successor"
     personality timid appeasing
-    variant 240
+    variant 100
         `Kvelqde`
-    variant 160
+    variant 50
         `Kvelqde` 2
-    variant 120
+    variant 30
         `Kvelqde`
         `Myaede`
-    variant 80
+    variant 20
         `Kvelqde` 2
         `Myaede`
-    variant 180
+    variant 50
         `Myaede`
-    variant 20
-        "Ojde"
-    variant 20
-        "Ojde 0"
-    variant 20
-        "Ojde 2"
-    variant 20
-        "Ojde 1"
-    variant 20
-        "Ojde"
-        `Kvelqde`
-    variant 20
-        "Ojde 2"
-        `Kvelqde`
-    variant 20
-        "Ojde 1"
-        `Kvelqde`
-    variant 20
-        "Ojde 0"
-        `Kvelqde`
-    variant 10
-        "Ojde"
-        `Kvelqde` 2
-    variant 10
-        "Ojde 2"
-        `Kvelqde` 2
-    variant 10
-        "Ojde 1"
-        `Kvelqde` 2
-    variant 10
-        "Ojde 0"
-        `Kvelqde` 2
 
 fleet "Medium Successor Freight"
     government "Successor"
     names "successor"
     personality timid appeasing
-    variant 80
-        `Kvelqde` 4
-        `Myaede`
-        "Ojde"
-    variant 20
-        `Kvelqde` 4
-        `Myaede`
-        "Ojde 2"
-    variant 20
-        `Kvelqde` 4
-        `Myaede`
-        "Ojde 1"
-    variant 20
-        `Kvelqde` 4
-        `Myaede`
-        "Ojde 0"
+    variant 100
+        `Ojde`
+    variant 70
+        `Ojde` 
+        `Stolsaqra` 2
+    variant 40
+        `Ojde`
+        `Myaede` 2
+        `Stolsaqra` 2
     variant 10
-        `Kvelqde` 2
-        `Myaede` 2 
-        "Ojde" 2
-    variant 10
-        `Kvelqde` 2
-        `Myaede` 2 
-        "Ojde"
-        "Ojde 1"
-    variant 10
-        `Kvelqde` 2
-        `Myaede` 2 
-        "Ojde 1"
-        "Ojde 2"
-    variant 10
-        `Kvelqde` 2
-        `Myaede` 2 
-        "Ojde 1"
-        "Ojde 0"
-    variant 10
-        `Kvelqde` 3
-        `Myaede`
-        "Ojde"
-        "Stolsaqra" 4
-    variant 10
-        `Kvelqde` 3
-        `Myaede`
-        "Ojde 2"
-        "Stolsaqra" 4
-    variant 10
-        `Kvelqde` 3
-        `Myaede`
-        "Ojde 1"
-        "Stolsaqra" 4
-    variant 20
-        `Kvelqde` 4
-        "Ojde" 3
-        "Stolsaqra" 2
-    variant 20
-        `Kvelqde` 4
-        "Ojde"
-        "Ojde 2"
-        "Ojde 1"
-        "Stolsaqra" 2
-    variant 20
-        `Kvelqde` 4
-        "Ojde"
-        "Ojde 1" 2
-        "Ojde 0"
-        "Stolsaqra" 2
+        `Ojde` 2
+        `Myaede` 3
+        `Stolsaqra` 4
 
 fleet "Small Successor Transport"
     government "Successor"

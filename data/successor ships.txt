@@ -392,32 +392,40 @@ ship `Ojde`
 			"hit force" 1500
 	outfits
 		`"Chyyra" Inductive Thruster`
-		`"Chyyra" Inductive Steering`
+		`"Veusa" Inductive Steering`
 		`"Chyyra" Inductive Reverser`
 		`6-"Ruuv" Betavoltaic Cell`
+		`Primary Power Reserve`
 		"Pulse Laser Turret" 3
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
-	gun -54 -42
-	gun 54 -42
-	turret -51 31
-	turret 51 31
-	turret 0 17
-	engine -61 65
-	engine 61 65
-	engine 0 108
-	"steering engine" -61 -23
-		zoom .6
-		angle 180
+	gun 28 -110
+	gun -28 -110
+	turret 34 37 
+	turret -34 37
+	turret 0 32 
+	engine 15 93 
+	engine -15 93 
+	"reverse engine" -19 -117 
+		zoom .8
+	"reverse engine" 19 -117 
+		zoom .8
+	"steering engine" 33 -99
+		zoom .5
+		angle 270
 		left
-	"steering engine" 61 -23
-		zoom .6
-		angle 180
+	"steering engine" -33 -99 
+		zoom .5
+		angle 90
 		right
-	"reverse engine" -61 -23
-		zoom .6
-	"reverse engine" 61 -23
-		zoom .6
+	"steering engine" 43 63 
+		zoom .5
+		angle 270
+		right
+	"steering engine" -43 63 
+		zoom .5
+		angle 90
+		left
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
