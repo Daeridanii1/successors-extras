@@ -55,10 +55,14 @@ system Aaura-Kaska
 		sprite planet/mercury
 		distance 841.254
 		period 269.322
-	object Mosaa-Ooa-Wyrdd
-		sprite planet/forest4
-		distance 1055.89
+	object
+		sprite planet/gas2
+		distance 1456
 		period 378.715
+		object Mosaa-Ooa-Wyrdd
+			sprite planet/rhea
+			distance 300
+			period 200
 	object
 		sprite planet/gas7
 		distance 3071.33
@@ -670,14 +674,18 @@ system Myiara-Nnesa
 		sprite planet/gas6-b
 		distance 1311
 		period 323.262
-	object Yoqqa-Vasa-Vasa
-		sprite planet/gas16-b
+	object
 		distance 2153
-		period 680.325
-		object O-Vasa-Oa
+		period 680
+		object Yoqqa-Vasa-Vasa
 			sprite planet/ice8
-			distance 238
-			period 138.793
+			distance 120
+			period 140
+		object O-Vasa-Oa
+			sprite planet/dust0-b
+			distance 120
+			period 140
+			offset 180
 	object
 		sprite planet/browndwarf-t
 		distance 2804
@@ -962,7 +970,7 @@ system Pelaa-Muora
 		distance 836
 		period 84.862
 	object Shassa-Wyra-Orrou
-		sprite planet/ocean8-b
+		sprite planet/rock13-b
 		distance 1154
 		period 137.629
 	object
