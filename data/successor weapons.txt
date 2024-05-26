@@ -21,16 +21,20 @@ outfit `"Ojet" Bimodal Coilgun`
 		"velocity" 30
 		"lifetime" 15
 		"range override" 900
-		"burst count" 5
-		"burst reload" 10
+		"burst count" 12
+		"burst reload" 6
 		"reload" 30
 		"firing energy" 80
 		"firing heat" 120
 		# Because parent projectiles inherit the damage of their submunitions, we must subtract the total damage of all submunitions from the parent projectile to get the desired behavior (different damage profiles over different ranges).
 		"shield damage" -94
 		# 50 (parent) - 3*48 (child)
+		# close: 50 shield damage
+		# far: 144 shield damage
 		"hull damage" 75
 		# 135 (parent) - 3*20 (child)
+		# close: 135 hull damage
+		# far: 60 hull damage
 		"hit force" 120
 		"cluster"
 		"submunition" "Bimodal Switch" 3
@@ -63,8 +67,8 @@ outfit `Bimodal Coilgun Turret`
 		"lifetime" 15
 		"range override" 900
 		"turret turn" 3.5
-		"burst count" 10
-		"burst reload" 5
+		"burst count" 24
+		"burst reload" 3
 		"reload" 15
 		"firing energy" 80
 		"firing heat" 120
