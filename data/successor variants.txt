@@ -205,3 +205,15 @@ ship `Vujlet` `Vujlet (Aggressive)`
 		`"Ojet" Bimodal Coilgun` 4
 		"Multimodal Armor: Heavy"
 
+ship `Ojde` `Ojde (Mining)`
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		`"Chyyra" Inductive Reverser`
+		`6-"Ruuv" Betavoltaic Cell`
+		`Primary Power Reserve` 2
+		`Successor Cooling`
+		"Pulse Laser Turret" 2
+		`"Tuur" Scanning Suite`
+		`"Ej" Shield Cortex`
+		"Hyperdrive"

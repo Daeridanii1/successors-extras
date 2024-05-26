@@ -176,10 +176,6 @@ fleet "Small New Houses"
         "Stolsaqra (Military)" 2
     variant 20
         "Veusade" 2
-    variant 10
-        "Vujlet" 5
-    variant 10
-        "Seiitej" 3
 
 fleet "Large New Houses"
     government "New Houses"
@@ -187,13 +183,13 @@ fleet "Large New Houses"
     personality
         heroic
     variant 100
-        "Kaskhorade"
-    variant 100
         "Aaulqra"
     variant 60
         "Kaskhorade"
+    variant 40
+        "Kaskhorade"
         "Aaulqra"
-    variant 60
+    variant 40
         "Aaulqra" 2
     variant 30
         "Aaulqra" 2
@@ -210,6 +206,10 @@ fleet "Large New Houses"
         "Aaulqra" 3
         "Veusade" 2
         "Vujlet" 4
+    variant 10
+        "Vujlet" 5
+    variant 10
+        "Seiitej" 3
 
 fleet "New Houses Surveillance"
     government "New Houses"
@@ -239,6 +239,8 @@ fleet "Successor Miners"
     variant 10
         `Myaede (Mining)`
         `Kvelqde (Mining)` 2
+    variant 10
+        `Ojde (Mining)`
 
 fleet "Successor Miners (Well-Defended)"
     government "Successor"
@@ -252,4 +254,7 @@ fleet "Successor Miners (Well-Defended)"
         `Stolsaqra` 2
     variant 50
         `Myaede (Mining, Defensive)`
+        `Stolsaqra` 2
+    variant 10
+        `Ojde (Mining)`
         `Stolsaqra` 2
