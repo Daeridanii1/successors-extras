@@ -113,7 +113,7 @@ outfitter "High Houses Heavy"
 	`"Sjeja" Kinetic Lance`
 	`Bimodal Coilgun Turret`
 	"Multimodal Armor: Heavy"
-	"Multimodal Armor: Stealth"
+	"Multimodal Armor: Keystone"
 	"Multimodal Armor: Regen"
 	"Multimodal Armor: Resilient"
 	`"Jorv" Shield Cortex`

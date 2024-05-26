@@ -472,16 +472,16 @@ outfit "Multimodal Armor: Heavy"
 	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
 	description "This configuration strengthens the bonds between the atoms making up the armor, increasing its resistance to direct damage."
 
-outfit "Multimodal Armor: Stealth"
+outfit "Multimodal Armor: Keystone"
 	category "Systems"
 	thumbnail "outfit/successor armor stealth"
-	"cloak" 0.006
-	"cloaking energy" 16.0
-	"radar jamming" 12.0
+	cost 10000000
+	"quantum keystone" 1
+	"scan interference" 3
 	"multimodal armor" -1
 	"unplunderable" 1
 	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
-	description "This configuration allows the armor to constantly deflects radar locks and to bend light around it when innervated."
+	description "This configuration allows a vessel equipped with it to safely pass through unstable wormholes. As a side effect, it also substantially interferes with external scans of a vessel's cargo or outfits."
 
 outfit "Multimodal Armor: Regen"
 	category "Systems"
