@@ -34,6 +34,7 @@ shipyard "successors"
 	`Nnesaarau`
 	`Vujlet`
 	`Nnaatej`
+	`Kijra-Khora`
 outfitter "successors"
 	"Auxiliary Power Reserve"
 	"Primary Power Reserve"
