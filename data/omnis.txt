@@ -20,7 +20,7 @@ planet "  Successors"
 	spaceport ""
 #	Sales
 shipyard "successors"
-	"Valkkyiara-Khorasaqra"
+	"Valkkyiara-Khorasaqra" #see heirlooms.txt
 	`Aaulqra`
 	`Ejniisde`
 	`Kaskhorade`
@@ -34,7 +34,7 @@ shipyard "successors"
 	`Nnesaarau`
 	`Vujlet`
 	`Nnaatej`
-	`Kijra-Khora`
+	`Kijra-Khora` #see extras.txt
 outfitter "successors"
 	"Auxiliary Power Reserve"
 	"Primary Power Reserve"
