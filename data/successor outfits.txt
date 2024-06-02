@@ -73,7 +73,7 @@ outfit `"Jorv" Shield Cortex`
 outfit `Shield Cortex Interface`
 	category `Systems`
 	cost 250000
-	thumbnail "outfit/unknown"
+	thumbnail "outfit/shield cortex interface"
 	licenses
 		"Successor"
 	mass 3
