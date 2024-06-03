@@ -4,11 +4,11 @@ Upstream-Contact: Daeridanii (daeridanii44@gmail.com)
 Source: https://github.com/Daeridanii1/successors
 
 Files:
- images/effect/successor?flare*
- images/effect/burst?anti-missile*
+ images/effect/successor?flare/*
  images/effect/drag?cannon?impact*
+ images/effect/void?spark*
 
- images/hardpoint/burst?anti?missile*
+ images/hardpoint/bimodal?turret*
 
  images/icon/hv?spike*
 
@@ -16,16 +16,13 @@ Files:
 
  images/outfit/bimodal?coilgun?turret*
  images/outfit/bimodal?coilgun*
- images/outfit/burst?anti?missile*
- images/outfit/dazzle?missile?array*
- images/outfit/dazzle?missile*
  images/outfit/drag?cannon*
  images/outfit/fuel?sail*
+ images/outfit/hv?spike?rack*
  images/outfit/hv?spike*
  images/outfit/large?betavoltaic*
  images/outfit/large?successor?battery*
  images/outfit/large?successor?reactor*
- images/outfit/large?successor?repair*
  images/outfit/large?successor?reverse*
  images/outfit/large?successor?shield*
  images/outfit/large?successor?steering*
@@ -41,7 +38,8 @@ Files:
  images/outfit/overcharged?pulse?laser?turret*
  images/outfit/overcharged?pulse?laser*
  images/outfit/railgun?h2h*
- images/outfit/sjeja?puncture?rail*
+ images/outfit/shield?cortex?interface*
+ images/outfit/sjeja?kinetic?lance*
  images/outfit/small?betavoltaic*
  images/outfit/small?successor?battery*
  images/outfit/small?successor?reactor*
@@ -64,43 +62,54 @@ Files:
  images/outfit/tuur?scanning?suite*
  images/outfit/veldt?combat?scanner*
 
+ images/planet/stationsuccessor1*
+
  images/projectile/bimodal?switch*
  images/projectile/bimodal*
  images/projectile/drag?cannon*
- images/projectile/sjeja?puncture?rail*
+ images/projectile/sjeja?kinetic?lance*
  images/projectile/successor?pulse?laser*
 
  images/ship/aaulqra*
  images/ship/ejniisde*
  images/ship/kaskhorade*
+ images/ship/kijra-khora*
+ images/ship/kvelqde-khora*
  images/ship/kvelqde*
- images/ship/myaede-khora*
  images/ship/myaede*
  images/ship/nnesaarau*
  images/ship/ojde*
  images/ship/seiitej*
  images/ship/stolsaqra*
  images/ship/valkkyiara-khorasaqra*
- images/ship/valsaqra*
  images/ship/veusade*
+ images/ship/vujlet*
 
  images/thumbnail/aaulqra*
  images/thumbnail/ejniisde*
  images/thumbnail/kaskhorade*
+ images/thumbnail/kijra-khora*
+ images/thumbnail/kvelqde-khora*
  images/thumbnail/kvelqde*
- images/thumbnail/myaede-khora*
  images/thumbnail/myaede*
  images/thumbnail/nnesaarau*
  images/thumbnail/ojde*
  images/thumbnail/seiitej*
  images/thumbnail/stolsaqra*
  images/thumbnail/valkkyiara-khorasaqra*
- images/thumbnail/valsaqra*
  images/thumbnail/veusade*
+ images/thumbnail/vujlet*
 
 Copyright: Daeridanii (https://github.com/Daeridanii1)
 License: CC-BY-SA-4.0
 Comment: Derived from works by Michael Zahniser (under the same license).
+
+Files:
+ images/_menu/haze-tear*
+ images/star/void-scar*
+Copyright: Daeridanii (https://github.com/Daeridanii1)
+License: CC0
+Comment: Derived from works by NASA in the public domain. 
 
 Files:
  images/land/fog12*
