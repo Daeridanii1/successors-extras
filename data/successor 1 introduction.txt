@@ -160,6 +160,96 @@ event "label successor space"
 	galaxy "label successors"
 		sprite label/successors
 
+event "successors: first contact wait"
+
+mission "Successors: First Contact 2"
+	landing
+	clearance
+	source
+		attributes "successor"
+	destination "Staja-Kella-Oa"
+	to offer
+		has "event: successors: first contact wait"
+	on offer
+		conversation
+			`As you exit the <ship> to go into the spaceport here, you notice that a group of uniformed Successors are standing at attention on the landing pad. The lead officer approaches you and hands you a small metallic sphere much like the map device you were offered previously. Rather than projecting a map, however, the sphere begins to play a recording when you touch it.`
+			`	"Captain <first> <last>! I am instructed to inform thee of the desire by the honored scions of House Sioeora that thou woulds't appear before them to render thy service and aid. They, hm ... demand thee make haste to fair Staja-Kella-Oa once more, and to prepare thyself as thou mights't for an audience. In confirmation of this message, I do attest myself: Vijaat Ojniis Seiasej, honored linguist of the of third ichon in service to the noble academy of Staja-Kella-Oa and to our noble House."`
+			`	The recording ends there, and the sphere changes to display a star map as before.`
+			accept
+		event "successors: tardy for sioeora" 14
+	on complete
+		conversation
+			`Shortly after you enter the atmosphere of <destination>, the <ship> is flanked by a pair of interceptors which lead you to a large, sprawling complex in the northern hemisphere at the edge of a large lake. Your escorts set down on two small landing pads near the shore, and you see that another landing pad between them has been lit up in colors matching the livery of your ship.`
+			`	Once again, the landing pad here is surrounded by a cadre of uniformed individuals, but here there must be nearly a hundred standing at attention on the pad's perimeter. Most appear heavily armed. Once again upon disembarking a lead officer approaches you, and they motion with their arm towards the center of the complex as if to instruct you to go. As you begin walking, they and a group of eight others walk with you, leading you deeper into the structure.`
+			choice
+				`	(Continue).`
+			`	The inside of the complex is opulent and massive, with vaulted ceilings rising on columns out of the lake water. Some mimic the forms and textures of tree trunks, spreading out on the ceiling into a canopy filled with thin metallic leaves that slowly wave and occlude the lights embedded above them. Each successive hall you pass through is a unique and enormous sculpture: the arch of a wave moments before crashing; the spiral of an huge suckered arm. You eventually arrive at a large door which melts into a trench on the floor, and you step across the threshold into a final circular room where a group of Successors stand waiting, one of whom you recognize as Sieasej, and many of whom are richly dressed.`
+			`	One of the adorned individuals looks at you and speaks, and Sieasej translates a moment later.`
+			branch "tardy"
+				has "event: successors: tardy for sioeora"
+					`	"Welcome, captain! We appreciate thy promptness in complying with our request. I am Riijaaora, an honored Scion of House Sioeora. I shall speak for the House today."`
+					goto greet
+			label "tardy"
+				`	"Welcome, captain! We appreciate thy compliance with our request, though thou should'st be more prompt should thy wish audience with us in the future. I am Riijaaora, an honored Scion of House Sioeora. I shall speak for the House today."`
+			label greet
+			choice
+				`	(Say nothing).`
+					goto request
+				`	"Hello. I am <first> <last>.`
+					goto introduce
+				`	"I apologize for my tardiness."`
+					to display
+						has "event: successors: tardy for sioeora"
+					goto apologize-tardiness
+			label introduce
+			`	"We are aware of this. Thy introduction is not expected."`
+				goto request
+			label apologize-tardiness
+			`	"Thy apology is noted."`
+			label request
+			`	"Thy presence has been demanded here so that thou might'st provide service to this House. We have a task for thee, and if thou completes't correctly, a gift for thee as a symbol of our patronage."`
+			choice
+				`	(Say nothing).`
+					goto task
+				`	"What sort of task?"`
+					goto task
+				`	"What sort of gift?"`
+					goto gift
+				`	"I do not appreciate being demanded about."`
+					goto rude
+			label task
+			`	"There is a world within the scar of broken systems once called Raaqa-Uur-Kaav. We require thee to visit there, where upon its surface, thou shall'st find a specimen of a certain animal to return to us undamaged and whole. The scholar, Sieasej, will accompany thee as an envoy of this House to assist and monitor thee. If thou'st successful in capturing thy quarry and returning it to us, we shall bestow upon thee the gift of our language, so that thou might'st not need to rely upon a translator such as this one.`
+			choice
+				`	"I accept."`
+					goto accepted
+				`	"I do not accept."`
+					goto rejected
+			label gift
+			`	"The one who speaks this to thee knows very well the value of language, Captain, and we suspect that thou doth as well. There is a world within the scar of broken systems once called Raaqa-Uur-Kaav. We require thee to visit there, where upon its surface, thou shall'st find a specimen of a certain animal to return to us undamaged and whole. The scholar, Sieasej, will accompany thee as an envoy of this House to assist and monitor thee. If thou'st successful in capturing thy quarry and returning it to us, thou shall'st have the reward of our language and all it confers.`
+			choice
+				`	"I accept."`
+					goto accepted
+				`	"I do not accept."`
+					goto rejected
+			label rude
+				`	"Thy appreciation or lack thereof is immaterial. Thou may'st be an alien, and yet that makes thee even more a guest within our space and even more a, hm ... consumer of our hospitality. Thy compliance is expected in return for this generosity.`
+			choice
+				`	"I apologize."`
+				`	"I have no desire to be your servant."`
+					goto rejected
+			`	"Thy apology is noted."`
+				goto task
+			label accepted
+			`	"Thou show'st wisdom in thy choice. Even now, thy ship is prepared within the spaceport of this estate. Thou should'st go there when thy audience is finished, and begin thy task with haste." The scion pauses for a moment before continuing." But note, Captain..." Sieasej shivers with color as the scion speaks the next sentence, "that we do not trust our citizen and servant to thee without consideration. If harm befalls the speaker of these words whilst they are under thy protection, or if thou fail'st to return them here in thirty days, we will consider thee an enemy of this House and levy upon thee every harm that we can offer."`
+			accept
+			label rejected
+			`	A ripple of color runs up the body of Sieasej and several of the other Successors. The scion gives their response slowly. "Then our act of generosity today shall be allowing thee to depart this noble place whilst still possessed of thy freedom and belongings. Thou shalt recieve no further aid nor comfort from this House, and thou shalt be banished at the pleasure of its scions from whatever worlds are held under its dominion."`
+			`	Sieasej and the scions turn their backs to you, and a line of soldiers converge from the walls to form a line separating you from them. The lead officer who escorted you inside motions with their weapon for you to leave.`
+			`	As you exit, the door closes behind you, reforming into solid metal.`
+			fail
+
+event "successors: tardy for sioeora"
+
 mission "Successors: Trusted"
 	landing
 	name "Go to the Uuoru-Kella system to meet with the High Houses"
