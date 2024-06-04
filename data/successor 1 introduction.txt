@@ -95,46 +95,85 @@ mission "Successors: First Contact 1"
 		dialog `You have reached <planet>, but without your escorts, you are refused landing permission at the spaceport and must return to orbit until they arrive.`
 
 	on complete
-		"reputation: Successor" += 10
-		set "known to the successors"
-		set "language: successor"
+		"reputation: Successor" += 1
 		log "Factions" "High Houses" `The High Houses rule over Successor space. From what you can tell, they are similar in structure to large extended families of distantly related Successors: while only those of the central familial bloodline occupy noble positions, the vast majority of the members of any given house are low-born Successors who had an ancestor who was a member of the house at some point in their several-thousand-year continuous history. While the High Houses do not officially restrict weaponry or warships to the general populace, their technology is significantly more powerful than civilian equivalents and they only share it with those who support their interests.`
 		log "Factions" "Successors" `The Successors are an alien species occupying a star cluster on the southwestern outer rim of the galaxy. They are the heirs of a large interstellar empire which collapsed at some point around a thousand years ago, that they refer to as their Predecessors. This empire extended as far north as Sol. The Successors are highly familial and display a great deal of hereditary pride.`
 		log "People" "Sieasej" `Sieasej is a Predecessor linguistics scholar at the Grand Academy of Staja-Kella-Oa who has spent some time studying human language, and is therefore one of the only Successors who can speak to and understand you without the benefit of a translation device. They are apparently somewhat wary of the High Houses and their political machinations.`
 		conversation
 			`In a similar manner to the last time, you set down your ship at a landing pad at the spaceport on this planet, escorted by the interceptors. Different to last time, however, you have been shuttled to a small, out-of-the way area at a great distance from the main complex, where several uniformed individuals are gathered on the landing pad, standing at attention.`
-			`	After waiting for several minutes, a shuttle lands on the pad beside yours and several individuals emerge from it. One of them is moving more quickly than the rest, and the guards allow them to pass and approach you. Their skin changes to a rough brown before they begin to speak.`
-			`	"Greetings, noble visitor. Thou art human, or do mine eyes decieve me?"`
+			`	After waiting for several minutes, a shuttle lands on the pad beside yours and several individuals emerge from it. Two of them are moving more quickly than the rest, and the guards allow them to pass and approach you. The one on the left is a uniformed officer wearing what appears to be heavy body armor, shimmering metallic plates that sparkle in the light. On the right is a smaller alien, wrapped up in a dark, cocoon-like outfit from which their head and arms emerge. The officer says something to the smaller one, who quietly replies and then pulls from a pocket on their outfit a smooth sheet which they inspect several times before haltingly addressing you.`
+			`	"Hark ... noble visitor! We bid thee ... welcome and good tidings." The two eye you closely as they wait for a response.`
+			choice
+				`	"Hello. I am Captain <first> <last>."`
+			`	The two once again proceed slowly and carefully, the speaker briefly conversing with the military officer before each phrase. "I am Sieasej ... of House Sioeora among the Successors. Thou'rt a human, art thou not?"`
 			choice
 				`	"Yes, I am".`
-					goto next
-				`	"Yes. How do you recognize humans?"`
-			`	"Many years past, before from the galaxy we were untimely sever'd, our people watched upon thine and did note upon thy appearence and thy potential to one day ply the stars. Thy species hath advanced much since last we observed you."`
-			`	One of the guards interrupts them, and their skin briefly glows a warm orange. They return their attention to you.`
-			label next
-			`	"If thou art human, then in the spirit of amity, I, the Old High Houses of the Successors, and the Grand Academy of Staja-Kella-Oa, offer to thee a gift, so thou might understand our language as I understand thine."`
-			`	One of the guards approaches and presents you with a small ornately carved box which you gently hold before opening to reveal an equally ornately-carved pin. Upon inspecting the carving, you are surprised to see that it depicts a clearly human sailing ship that has been wrecked upon a shoal.`
-			`	The guards remain at attention, watching you as you look at the box. You can't help but suspect that it was the box and its contents that they have been guarding rather than your ship.`
+			`	This sparks a wave of color among the gathered members, most of all Sieasej, who spends several seconds in a vibrant shade of orange before returning to their resting hue. "Then i'tis confirmed. 'Tis a cause for much excitement, <last>, for thou'rt the first human met by us in fifteen hundred years, since the time before thy species had even left the bounds of thy own planet's gravity. House Sioeora is honored to be the one to make thy acquaitance, as am I." The members of the group splay their free arms towards you and glisten with ripples of blue across their skin. You perform a short bow in return.`
 			choice
-				`	(Quietly accept it.)`
-					goto accept
-				`	"What is it?."`
-			`	"T'is a device most ancient and precious, from when the theatre of thy people dids't entertain our noble Predecessors. This one was't made more than one thousand years ago for a performance of thy Shakespeare's 'The Tempest,' so that the audience might understand and appreciate the work in its original form."`
-			label accept
-			`	"When thou dost place this upon thy person, it shall translate thy words to our language, and ours to thine. Thou shalt treat it kindly, though, for it is..." The speaker pauses for a second, clearly looking for the proper word. "... an artistic loan."`
+				`	"What should I do now?"`
+					goto whatnow
+				`	"How do you know my language?"`
+					goto language
+				`	"How could you have met humans fifteen hundred years ago?"`
+					goto history
+				`	"What is House Sioeora?"`
+					goto house
+			label language
+			`	"When once our predecessors did explore and look upon the life of the galaxy beyond their borders, they were careful to record its details and its subtleties, for life is precious and rare. And doubly so that which is possessed of sapience and culture---noble in reason, infinite in faculty---as the nascent humanity was and, we pray, still remains. So then, our predecessors waited under inky cloaks to silently observe thee in thy glimmering development. And if 'twere not from the rest of the galaxy untimely ripp'd, we surely would have had the pleasure of watching thy species advance to its present point.`
+			`	I am a scholar of language, and of the worlds our predecessors met so long ago. I am one of very few who learned thy language, among others, at least as 'twas fifteen hundred years ago."`
 			choice
-				`	(Pin it on your jacket.)`
-					goto end	
-				`	"Wait, if this device is what translates, then how do you know my language?"`
-			`	The alien shrinks slightly, and a wave of color runs down their body.`
-			`	"I am a scholar of the languages of history at the Academy here. I learned thy language, at least as it was fifteen hundred years past, by examining the records left by our Predecessors when they looked upon thy people."`
+				`	"What should I do now?"`
+					goto whatnow
+				`	"Humans have certainly changed a lot in the last fiteen hundred years."`
+					goto changed
+				`	"What do you mean that you were ripped from the galaxy?"`
+					goto ripped
+				`	"What is House Sioeora?"`
+					goto house
+			label language-short
+			`	"'Tis true. I am a scholar of language, and of the worlds our predecessors met so long ago. I am one of very few who learned thy language, among others, at least as 'twas fifteen hundred years ago."`
 			choice
-				`	(Pin it on your jacket.)`
-					goto end
-				`	"If it is so precious, why are you loaning it to me?"`
-			`	You can see that the remaining guards stiffen at this question, and the speaker grows noticeably quieter and more uncomfortable. They eventually reply, haltingly.`
-			`	"Thou art a ... notable and honored visitor. 'Tis a gesture of ... hospitality and goodwill from the rulers of this space."`
-				goto curious_end
+				`	"What should I do now?"`
+					goto whatnow
+				`	"Humans have certainly changed a lot in the last fiteen hundred years."`
+					goto changed
+				`	"What is House Sioeora?"`
+					goto house
+			label changed
+			`	More waves of color, subtle but noticeable, pass over Sieasej's body. "I had hoped as much," they say, "that thou were't still a young species with a long history before thee, that thou would'st one day take to the stars as it appears now thou hast. Alas, my noble House Sioeora does not permit me today the sort of interrogation of thy knowledge that I desire, for thy arrival portends much, and there is much to arrange."`
+			choice
+				`	"What needs to be arranged?"`
+					goto whatnow
+				`	"What is House Sioeora?`
+					goto house
+			label ripped
+			`	Sieasej confirms their answer with the uniformed officer before answering your question. "Thou surely must have passed through the scarred and fractured systems to which our modern worlds remain connected, however tenuously. 'Tis the inhabitants of those which we exist as Successors to."`
+			choice
+				`	"I see. What should I do now?"`
+					goto whatnow
+				`	"I see. What is House Sioeora?"`
+					goto house
+				`	"I see. "`
+			label history
+			`	"Twas a time in which the domains of our predecessors did extend far to the north, and the reach of their curiosity and exploration even farther so. Life is precious and rare, doubly so that which is possessed of sapience and culture---noble in reason, infinite in faculty---as thine was and, we pray, still remains. So then, our predecessors waited under inky cloaks to silently observe thee in thy glimmering development. And if 'twere not from the rest of the galaxy untimely ripp'd, we surely would have had the pleasure of watching thy species advance to its present point."`
+			choice
+				`	"What should I do now?"`
+					goto whatnow
+				`	"Is that how you know my language?"`
+					goto language-short
+				`	"What is House Sioeora?"`
+					goto house
+			label house
+			`	Sieasej translates your query to the military officer this time, who considers for a moment before saying something back and Sieasej speaks again. "Sioeora is the noble house whose estate thou sees around thee. There are many such within the broader realm; the stars this side'f the wormhole, but 'tis Sioeora who has taken patronage on thee, for the keeping of our history is the ... core of its purpose. 'Twere thee apprehended by the arms of another---" Sieasej gestures towards an interceptor landed on another pad "---thou surely would have languished without recognition as a creature from so distant in our past."`
+			choice
+				`	"What should I do now?"`
+					goto whatnow
+				`	"What do you mean, 'so distant in your past?'`
+					goto history
+				`	"How can you speak my language?"`
+					goto language
+			label whatnow
+			`	Sieasej translates this question to the uniformed officer, who conveys a detailed response accompanied by a series of color and texture displays on their skin. Overhead, a buzzing flock of interceptors fly past and land on a set of landing pads closer to the center of the spaceport complex. Eventually, Sieasej responds, and does so even more slowly and carefully than previously. "The scions of House Sioeora have made it known to the others in the High Houses that thou art a guest in their space and that thou shalt proceed under their protection. Thou may'st explore those of our worlds which thou may, and which permit thee access. Without the use of our language, though, thou shalt find few opportunities to do more than observe."`
 			label end
 			`	You place the pin on your jacket and you notice that it begins to move: the sailing ship is now gently rocking on the shoal. When the alien speaks again, they sound markedly different, like their words are being carried by the wind. They explain that their race, the Successors, are the heirs to an ancient and long-dead empire, their Predecessors, and that you are the first alien visitor they have had in many years.`
 			`	While most of their planets will be open to you, several have been restricted by the "High Houses," the ruling families of Successor space, until you have "proven yourself an ally to their interests."`
@@ -164,7 +203,6 @@ event "successors: first contact wait"
 
 mission "Successors: First Contact 2"
 	landing
-	clearance
 	source
 		attributes "successor"
 	destination "Staja-Kella-Oa"
@@ -342,6 +380,9 @@ mission "Successors: First Contact 3"
 		conversation
 			`Stopover.`
 	on complete
+		set "known to the successors"
+		set "language: successor"
+		"reputation: Successor" += 9
 		conversation
 			`Complete.`
 
