@@ -42,7 +42,7 @@ phrase "safe in successor space"
 	word
 		`The system on the other side of the wormhole is the first one in days that your sensors do not respond to with alarms. There is no sign of spatial distortion or decay or indeed, any anomalies apart from the wormhole.`
 
-mission "Successors: First Contact"
+mission "Successors: First Contact 1"
 	landing
 	name "Go to the Vade-Staja system"
 	description "The aliens in this new area of space have indicated that you should travel to the easternmost inhabited system in their territory."
@@ -246,9 +246,104 @@ mission "Successors: First Contact 2"
 			`	A ripple of color runs up the body of Sieasej and several of the other Successors. The scion gives their response slowly. "Then our act of generosity today shall be allowing thee to depart this noble place whilst still possessed of thy freedom and belongings. Thou shalt recieve no further aid nor comfort from this House, and thou shalt be banished at the pleasure of its scions from whatever worlds are held under its dominion."`
 			`	Sieasej and the scions turn their backs to you, and a line of soldiers converge from the walls to form a line separating you from them. The lead officer who escorted you inside motions with their weapon for you to leave.`
 			`	As you exit, the door closes behind you, reforming into solid metal.`
-			fail
+			action
+				set "rejected: Successors: First Contact 2"
 
 event "successors: tardy for sioeora"
+
+mission "Successors: First Contact 3"
+	priority
+	source "Staja-Kella-Oa"
+	to offer
+		has "completed: Successors: First Contact 2"
+			not "rejected: Successors: First Contact 2"
+	deadline 30
+	stopover "Raaqa-Uur-Kaav"
+	destination "Staja-Kella-Oa"
+	passengers 1
+	on offer
+		conversation 
+			`You are met in House Sioeora's spaceport by Sieasej, who has shed the adorned metallic robes they wore in the presence of the scions for a more robust and rugged-looking outfit. "Ah, captain <last>," they say, "Thou conducted thyself well with the scions of the House. Well enough for an alien, at least."`
+			choice
+				`	"What more can you tell me about our mission?"`
+					goto task
+				`	"What do you mean, 'well enough for an alien?'"`
+					goto wellenough
+			label wellenough
+			`	A ripple of a rough, greenish texture passes over Sieasej's skin before subsiding. "Audiences like that one are subject to a litany of social expectations. Were't thou one of us, thy ignorance of these would seem knavish at best and offensive at worst, but ... the scions are not fools. They are more than willing to endure a little rudeness for the sake of achieving their aims."`
+			`	"I see."`
+			`	Sieasej shuffles their arms beneath them as they continue. "But I must once again speak on behalf of Sioeora." They produce another metallic data-sphere from a pouch on their outfit and offer it to you. "This sphere shall provide a map marker for the system we are to journey to. There, on the second moon of the second planet, we are to land and collect a specimen of a Kijra-Riitaa, a Kijra-'pet'. They are delicate, winged things, so we must be careful."`
+			label task
+			`	Sieasej shuffles their arms beneath them. "I must once again speak on behalf of Sioeora." They produce another metallic data-sphere from a pouch on their outfit and offer it to you. "This sphere shall provide a map marker for the system we are to journey to. There, on the second moon of the second planet, we are to land and collect a specimen of a Kijra-Riitaa, a Kijra-'pet'. They are delicate, winged things, so we must be careful."`
+			choice
+				`	"We'd better get started then."`
+					goto embark
+				`	"How does Sioeora even know that the Kijra-pets are on this moon?"`
+					goto knowledge
+				`	"Are you certain you're okay going with me?"`
+					goto youokay
+				`	"Is there anything I should watch out for?"`
+					goto watchout
+			label knowledge
+			`	"'Tis a mix of things," Sieasej says. "The ... pathways in space which connect those systems are ever-changing, on the span of years. A hazard of the space. Some years ago, there was a pathway leading to it through which the ships of all the High Houses could pass through and explore. Now, it has been many years since that system was easily accessible. The scions know that thou must possess a jump drive in order for thou to have reach'd us---this technology is quite familiar to us---and so they know that thou cans't acquire that what they desire. "`
+			choice
+				`	"We'd better get started then."`
+					goto embark
+				`	"What do you mean that jump drives are 'quite familiar?'"`
+					goto jumpdrives
+				`	"Are you certain you're okay going with me?"`
+					goto youokay
+				`	"Is there anything I should watch out for?"`
+					goto watchout
+			label youokay
+			`	Splotches of orange color emerge at the tips of Sieasej's arms. "I confess this is irregular, and know the prospect of this ... journey instills within me some degree of trepidation. But to visit the lost worlds is a reward in and of itself, and to do so accompanying the very aliens that I have studied makes it doubly so. Thou must realize: thou'rt a historian's dream. Thou'rt a creature from a distant story-page made flesh."`
+			choice
+				`	"We'd better get started."`
+					goto embark
+				`	"How does Sioeora even know that the Kijra-pets are on this moon?"`
+					goto knowledge
+				`	"Is there anything I should watch out for?"`
+					goto watchout
+			label watchout
+			`	"The House hast warned me of the dangers of the space there. Thy vessel must have been durable enough to make it here to our space intact, so I must trust that it shall be so again.`
+			choice
+				`	"We'd better get started then."`
+					goto embark
+				`	"How does Sioeora even know that the Kijra-pets are on this moon?"`
+					goto knowledge
+				`	"Are you certain you're okay going with me?"`
+					goto youokay
+				`	"Is there anything I should watch out for?"`
+					goto watchout
+			label jumpdrives
+			`	"Remember, Captain, our Predecessors did ply the stars for ten thousand years before we last set eyes on thy own race, who by then had only just discovered industry. Drives like the one within thy ship have been known to us for a long, long time."`
+			choice
+				`	"We'd better get going."`
+					goto embark
+				`	"Do the scions have their own jump drives?"`
+					goto warning
+				`	"Are you certain you're okay going with me?"`
+					goto youokay
+				`	"Is there anything I should watch out for?"`
+					goto watchout
+			label warning
+			`	"That is not for me to know, nor, I think, for thee."`
+			choice
+				`	"We'd better get going."`
+					goto embark
+				`	"Are you certain you're okay going with me?"`
+					goto youokay
+				`	"Is there anything I should watch out for?"`
+					goto watchout
+			label embark
+			`	"I agree," Sieasej says.`
+				accept
+	on stopover
+		conversation
+			`Stopover.`
+	on complete
+		conversation
+			`Complete.`
 
 mission "Successors: Trusted"
 	landing
