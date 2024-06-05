@@ -85,8 +85,6 @@ outfitter "successors"
 	`"Veusa" Inductive Reverser`
 	`"Veusa" Inductive Steering`
 	`"Veusa" Inductive Thruster`
-	`"Viir" Repair Module`
-	`"Vyraa" Repair Module`
 	`1-"Uurau" Betavoltaic Cell`
 	`3-"Kaska" Betavoltaic Cell`
 	`6-"Ruuv" Betavoltaic Cell`
@@ -96,9 +94,10 @@ outfitter "successors"
 mission "Successors Naive Test"
 	job
 	repeat
-	name "Successors: non-naive ship descriptions"
-	description "Accepting this mission will trigger the event that swaps certain Successor ship descriptions for more detailed ones, representing the player's increased knowledge."
+	name "Successors: trusted changes"
+	description "Accepting this mission will trigger the events that swap certain Successor ship and planet descriptions for more detailed ones, representing the player's increased knowledge."
 	source "  Successors"
 	on accept
-		event "no longer naive to successors"
+		event "successors: trust 1"
+		event "successsors: trust 2"
 		fail

@@ -17,17 +17,11 @@ mission "Successors: Entering Cataclysm"
 	on enter
 		system
 			attributes "predecessor"
-		dialog phrase "successors entering cataclysm"
+		dialog 
+			`The fabric of space in this section of the galaxy appears to be coming apart at the seams; bits of the <ship>'s hull are already being eroded away. Within it, your jump drive shudders: it is as if it is already mid-jump despite not being active.`
 	on complete
-		dialog phrase "successors homeworld cataclysm"
-
-phrase "successors entering cataclysm"
-	word
-		`The fabric of space in this section of the galaxy appears to be coming apart at the seams; bits of the <ship>'s hull are already being eroded away. Within it, your jump drive shudders: it is as if it is already mid-jump despite not being active.`
-
-phrase "successors homeworld cataclysm"
-	word
-		`Whatever happened in this region of space, this system seems to have been the epicenter of it. While the planet you have landed on offers enough protection from the spatial decay to allow you to perform some repairs, outside of its atmosphere the system is wracked with deadly storms and persistent instability. It's not suprising that what signs of life there are here seem millenia old.`
+		dialog 		
+			`Whatever happened in this region of space, this system seems to have been the epicenter of it. While the planet you have landed on offers enough protection from the spatial decay to allow you to perform some repairs, outside of its atmosphere the system is wracked with deadly storms and persistent instability. It's not suprising that what signs of life there are here seem millenia old.`		
 
 mission "Successors: Safe at Last"
 	invisible
@@ -36,11 +30,8 @@ mission "Successors: Safe at Last"
 		never
 	on enter "Myruet-Kvelq"
 		fail
-		dialog phrase "safe in successor space"
-
-phrase "safe in successor space"
-	word
-		`The system on the other side of the wormhole is the first one in days that your sensors do not respond to with alarms. There is no sign of spatial distortion or decay or indeed, any anomalies apart from the wormhole.`
+		dialog 		
+			`The system on the other side of the wormhole is the first one in days that your sensors do not respond to with alarms. There is no sign of spatial distortion or decay or indeed, any anomalies apart from the wormhole.`
 
 mission "Successors: First Contact 1"
 	landing
@@ -95,10 +86,11 @@ mission "Successors: First Contact 1"
 		dialog `You have reached <planet>, but without your escorts, you are refused landing permission at the spaceport and must return to orbit until they arrive.`
 
 	on complete
+		event "label successor space"
+		event "successors first contact wait" 5
+		log "Factions" "Successors" `The Successors are a society of aliens occupying a territory on the southwestern outer rim of the galaxy. They are the heirs of a large interstellar empire which collapsed at some point around fifteen hundred years ago, who explored much of the galaxy, as far north as Sol.`
+		log "People" "Sieasej" `Sieasej is a Successor scholar of historical linguistics and member of the noble House Sioeora. Because of their area of study, they are one of the only Successors who can speak to and understand you without the benefit of a translation device.`
 		"reputation: Successor" += 1
-		log "Factions" "High Houses" `The High Houses rule over Successor space. From what you can tell, they are similar in structure to large extended families of distantly related Successors: while only those of the central familial bloodline occupy noble positions, the vast majority of the members of any given house are low-born Successors who had an ancestor who was a member of the house at some point in their several-thousand-year continuous history. While the High Houses do not officially restrict weaponry or warships to the general populace, their technology is significantly more powerful than civilian equivalents and they only share it with those who support their interests.`
-		log "Factions" "Successors" `The Successors are an alien species occupying a star cluster on the southwestern outer rim of the galaxy. They are the heirs of a large interstellar empire which collapsed at some point around a thousand years ago, that they refer to as their Predecessors. This empire extended as far north as Sol. The Successors are highly familial and display a great deal of hereditary pride.`
-		log "People" "Sieasej" `Sieasej is a Predecessor linguistics scholar at the Grand Academy of Staja-Kella-Oa who has spent some time studying human language, and is therefore one of the only Successors who can speak to and understand you without the benefit of a translation device. They are apparently somewhat wary of the High Houses and their political machinations.`
 		conversation
 			`In a similar manner to the last time, you set down your ship at a landing pad at the spaceport on this planet, escorted by the interceptors. Different to last time, however, you have been shuttled to a small, out-of-the way area at a great distance from the main complex, where several uniformed individuals are gathered on the landing pad, standing at attention.`
 			`	After waiting for several minutes, a shuttle lands on the pad beside yours and several individuals emerge from it. Two of them are moving more quickly than the rest, and the guards allow them to pass and approach you. The one on the left is a uniformed officer wearing what appears to be heavy body armor, shimmering metallic plates that sparkle in the light. On the right is a smaller alien, wrapped up in a dark, cocoon-like outfit from which their head and arms emerge. The officer says something to the smaller one, who quietly replies and then pulls from a pocket on their outfit a smooth sheet which they inspect several times before haltingly addressing you.`
@@ -173,33 +165,17 @@ mission "Successors: First Contact 1"
 				`	"How can you speak my language?"`
 					goto language
 			label whatnow
-			`	Sieasej translates this question to the uniformed officer, who conveys a detailed response accompanied by a series of color and texture displays on their skin. Overhead, a buzzing flock of interceptors fly past and land on a set of landing pads closer to the center of the spaceport complex. Eventually, Sieasej responds, and does so even more slowly and carefully than previously. "The scions of House Sioeora have made it known to the others in the High Houses that thou art a guest in their space and that thou shalt proceed under their protection. Thou may'st explore those of our worlds which thou may, and which permit thee access. Without the use of our language, though, thou shalt find few opportunities to do more than observe."`
-			label end
-			`	You place the pin on your jacket and you notice that it begins to move: the sailing ship is now gently rocking on the shoal. When the alien speaks again, they sound markedly different, like their words are being carried by the wind. They explain that their race, the Successors, are the heirs to an ancient and long-dead empire, their Predecessors, and that you are the first alien visitor they have had in many years.`
-			`	While most of their planets will be open to you, several have been restricted by the "High Houses," the ruling families of Successor space, until you have "proven yourself an ally to their interests."`
-			`	Finally, your interpreter gives their name as "Sieasej", and encourages you to spend some time exploring the Successors' worlds, and right before they leave, they suggest you familiarize yourself with the High Houses.`
-			`	"Thou art a person of great interest to them, and 'tis easy for even the cleverest among us to fall victim to their politics."`
-				decline
-			label curious_end
-			`	They say nothing more, so you place the pin on your jacket and you notice that it begins to move: the sailing ship is now gently rocking on the shoal. When the alien speaks again, they sound markedly different, like their words are being carried by the wind. They explain, regaining some of their confidence, that their race, the Successors, are the heirs to an ancient and long-dead empire, their Predecessors, and that you are the first alien visitor they have had in many years.`
-			`	While most of their planets will be open to you, several have been restricted by the "High Houses," the ruling families of Successor space, and the ones who "loaned" you the translation device, until you have "proven yourself an ally to their interests."`
-			`	Finally, your interpreter gives their name as "Sieasej", and encourages you to spend some time exploring the Successors' worlds, both to learn more about them, and to assist their people. Right before they leave, they suggest with a similar hue of discomfort as before that you familiarize yourself with the High Houses.`
-			`	"Thou art a person of great interest to them, and 'tis easy for even the cleverest among us to fall victim to their politics."`
-				decline
+			`	Sieasej translates this question to the uniformed officer, who conveys a detailed response accompanied by a series of color and texture displays on their skin. Overhead, a buzzing flock of interceptors fly past and land on a set of landing pads closer to the center of the spaceport complex. Eventually, Sieasej responds, and does so even more slowly and carefully than previously. "The scions of House Sioeora have made it known to the others in the High Houses that thou art a guest in their space and that thou shalt proceed under their protection. Thou may'st explore those of our worlds which thou may, and which permit thee access. Without the use of our language, though, thou shalt find few opportunities to do more than observe. As to that," Sieasej continues, "our noble scions are set to begin their convergence in five days. As thou hast aroused their attention, 'tis expected thou shalt receive a summons to their unity."`
 
-mission "Discovered Successor Space"
-	landing
-	invisible
-	source "Staja-Kella-Oa"
-	on offer
-		event "label successor space"
-		fail
+mission "Successors: First Contact Exploration: Kua-Ua-Aava"
 
-event "label successor space"
-	galaxy "label successors"
-		sprite label/successors
+mission "Successors: First Contact Exploration: Raaqa-Kvelq-Ryuit"
 
-event "successors: first contact wait"
+mission "Successors: First Contact Exploration: Iyra-Ijasa-Iret"
+
+mission "Successors: First Contact Exploration: Mavra-Sol-Kvel"
+
+mission "Successors: First Contact Exploration: Mosaa-Ooa-Wyrdd"
 
 mission "Successors: First Contact 2"
 	landing
@@ -211,7 +187,7 @@ mission "Successors: First Contact 2"
 	on offer
 		conversation
 			`As you exit the <ship> to go into the spaceport here, you notice that a group of uniformed Successors are standing at attention on the landing pad. The lead officer approaches you and hands you a small metallic sphere much like the map device you were offered previously. Rather than projecting a map, however, the sphere begins to play a recording when you touch it.`
-			`	"Captain <first> <last>! I am instructed to inform thee of the desire by the honored scions of House Sioeora that thou woulds't appear before them to render thy service and aid. They, hm ... demand thee make haste to fair Staja-Kella-Oa once more, and to prepare thyself as thou mights't for an audience. In confirmation of this message, I do attest myself: Vijaat Ojniis Seiasej, honored linguist of the of third ichon in service to the noble academy of Staja-Kella-Oa and to our noble House."`
+			`	"Captain <first> <last>! I am instructed to inform thee of the desire by the honored scions of House Sioeora that thou woulds't appear before them to render thy service and aid. They, hm ... demand thee make haste to fair Staja-Kella-Oa once more, and to prepare thyself as thou mights't for an audience. In confirmation of this message, I do attest myself: Vijaat Ojniis Seiasej, honored historian of the of third ichon in service to the noble academy of Staja-Kella-Oa and to our noble House."`
 			`	The recording ends there, and the sphere changes to display a star map as before.`
 			accept
 		event "successors: tardy for sioeora" 14
@@ -287,7 +263,6 @@ mission "Successors: First Contact 2"
 			action
 				set "rejected: Successors: First Contact 2"
 
-event "successors: tardy for sioeora"
 
 mission "Successors: First Contact 3"
 	priority
@@ -382,6 +357,7 @@ mission "Successors: First Contact 3"
 	on complete
 		set "known to the successors"
 		set "language: successor"
+		event "successors: trust 1"
 		"reputation: Successor" += 9
 		conversation
 			`Complete.`
@@ -412,8 +388,7 @@ mission "Successors: Trusted"
 		set "license: Successor"
 		"reputation: Successor" += 10
 		set "trusted by the successors"
-		event "no longer naive to successors"
-		event "learned predecessor planet history"
+		event "successors: trust 2"
 		conversation
 			`Once you have set down at the spaceport, you are met by another group of Successor naval officers. You notice that this group appears even more diverse than the last, representing several different uniform styles and liveries. Unifying them, however, is their wearing a small white and blue pin on their outfits that does not seem to correspond to the insignia of any one of the High Houses. They guide you, politely but firmly, to one of the monorail trains snaking out from the spaceport to other installations on the planet, and you all shuffle together into one of the cars, which appears to have been completely cleared of normal passengers.`
 			`	Several minutes later, the monorail deposits you at an especially large and well-decorated complex that swarms with both military and well-dressed civilians, some of whom appear so opulent and bejewelled that you suspect their personal effects are worth more than your ship. Each of them without exception wears the same white and blue insignia as your escorts, though many have incorporated it into their clothes' design or even display it as a pattern in skin coloration. As your escort peels off into the crowd, you see a familiar face in the distance: Sieasej, the Successor scholar, who visibly perks up when they see you and approaches.`
@@ -463,55 +438,6 @@ mission "Successors: Trusted"
 			`	With no further comments from any of the Successors, the representative from House Sioeora calls for a vote from among the gathered representatives. Unsurprisingly, Sioeora and Chydiyi vote for the proposition and Seineq votes against it, and the representative from Sioeora promptly produces another small box from within their outfit and presents it to you. You open it to reveal one of the pin insignias that you have seen throughout this meeting.`
 			`	"This is the mark of our diplomats and our symbol of trust and cooperation. Our people may remain wary of an alien in their midst, but wherever thou displays this, it shall be known that thou hast recieved the blessing of the High Houses in council and that they may trade with you in amity and without fear."`
 			`	Sioeora then leaves the room, followed by the other representatives and gathered members, all of whom keep their eyes focused on you on the way out. Eventually, when only ones remaining are Sieasej and yourself, you pin the insignia on your jacket beside the translation device and exit as well, where you are directed back to the monorail station.`
-				
-event "no longer naive to successors"
-	shipyard "Successor Basics"
-		remove `Kvelqde (Naive)`
-		remove `Stolsaqra (Naive)`
-		add `Kvelqde`
-		add `Stolsaqra`
-	shipyard "Successor Civilian"
-		remove `Kvelqde (Naive)`
-		remove `Stolsaqra (Naive)`
-		remove `Myaede (Naive)`
-		add `Kvelqde`
-		add `Stolsaqra`
-		add `Myaede`
-	shipyard "Successor Heavy"
-		remove `Kvelqde (Naive)`
-		remove `Stolsaqra (Naive)`
-		remove `Myaede (Naive)`
-		add `Kvelqde`
-		add `Stolsaqra`
-		add `Myaede`
-	shipyard "Chydiyi"
-		remove `Nnesaarau (Naive)`
-		add `Nnesaarau`
-	shipyard "New Houses Light"
-		remove `Vujlet (Naive)`
-		add `Vujlet`
-	shipyard "High Houses Light"
-		remove `Aaulqra (Naive)`
-		remove `Veusade (Naive)`
-		add `Aaulqra`
-		add `Veusade`
-	shipyard "High Houses Heavy"
-		remove `Aaulqra (Naive)`
-		remove `Veusade (Naive)`
-		add `Aaulqra`
-		add `Veusade`
-
-event "learned predecessor planet history"
-	planet "Kella-Uuoru-Sossa"
-		description "This is the ancestral homeworld of the Successor species. The spatial anomalies that now dominate this system have scoured its surface with radiation and evaporated most of its once-extensive oceans. The great cities of the Predecessors' empire are now devoid of all organic life; many of them remain as pristine and gleaming as the on the days they were abandoned. Caustic dust chokes the lower atmosphere of the planet, and your ship's sensors alert you to the presence of several sandstorms at other locations on the planet's surface. It would be wise not to get caught in one."
-		spaceport "The planet's main spaceport endures proudly even after thousands of years of disuse. Grand walls and cavernous vaulted ceilings rise hundreds of meters above your ship, some scarred by weapons fire, others distorted by heat or radiation. One flock of small cleaning drones continually polish the sand-worn floors, while others wander about aimlessly, devoid of purpose or direction."
-	planet "Osolaa-Val-Mavra"
-		description "The moon of Osolaa-Val-Mavra was one of the first worlds of the Predecessors to evacuate as a consequence of the deterioration of their space. House Sejra ran massive transport ships for seven years to and from the surface in an effort to move its citizens offworld and into neighboring systems. By the time they were done, Sejra's coffers were dry and its government on the brink of collapse, and the citizens it had gone to such effort to relocated were stranded in systems that were starting to show the same signs of decay as their one-time home. The desolate habitation trench and ice-covered surface of the moon are testaments to Sejra's folly; of trying to escape something they did not understand and had no hope of stopping."
-	planet "Raaqa-Uur-Kaav"
-		description "The one-time ancestral home of House Kaatrij is one of the few worlds of the Predecessors that remains relatively habitable. Its large forests have fluorished even in the absence of Kaatrij's intentional ecoengineering, and the enduring remains of the moon's cities are slowly but surely being consumed by the nature that surrounds them. While the advanced materials composing them resist decay even on a timescale of thousands of years, the tender shoots of green life nontheless quietly demonstrate their supremacy over the unmaintained artificial."
-		spaceport `What was once this moon's spaceport is now a field of flowers. The landing pad upon which your ship rests has been overtaken by a host of tall blue ribbon-like blossoms for which the Successor name translates to something along the lines of "thread lilies". Nearer what once was the main body of the port, millenia-old flowerboxes are dense with spiky orange blooms that recede when touched and shed seed pods onto the empty walkways, where they are eventually snapped up by the wild gossamer-winged "Kijra"-pets which, like the moon as a whole, have thrived in the absence of their Predecessor masters.`
-	planet "Cavaasa-Vasa-Tej"
-		description "Once an important industrial planet for the High Houses of the core systems, Cavasaa-Vasa-Tej was a hub for the mining of rare elements and for the growth of exotic metal in the superheated corona of the Kasii-Cavaasa star. Without maintenance, most of the stellar metallic gardens have long since fallen into Kasii-Cavaasa's outer layers, but the few that have survived by chance are now completely overgrown with threads of hyperdense alloy; enough to supply the facilities of Cavaasa-Vasa-Tej's industry for years, if they were still operational."
 
 mission "Successors: People's Houses, First Contact"
 	landing
