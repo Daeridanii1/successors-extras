@@ -179,6 +179,8 @@ mission "Successors: First Contact Exploration: Mosaa-Ooa-Wyrdd"
 
 mission "Successors: First Contact 2"
 	landing
+	name "Return to Staja-Kella-Oa"
+	description `The scions of House Sioeora have requested your presence so you can "render service and aid".`
 	source
 		attributes "successor"
 	destination "Staja-Kella-Oa"
@@ -266,6 +268,8 @@ mission "Successors: First Contact 2"
 
 mission "Successors: First Contact 3"
 	priority
+	name "Capture an animal for House Sioeora"
+	description `The scions of House Sioeora have instructed you to visit <stopover planets> and capture a "Kijra-riitaa" to safely return to them at <destination>.`
 	source "Staja-Kella-Oa"
 	to offer
 		has "completed: Successors: First Contact 2"
@@ -287,7 +291,7 @@ mission "Successors: First Contact 3"
 			`	"I see."`
 			`	Sieasej shuffles their arms beneath them as they continue. "But I must once again speak on behalf of Sioeora." They produce another metallic data-sphere from a pouch on their outfit and offer it to you. "This sphere shall provide a map marker for the system we are to journey to. There, on the second moon of the second planet, we are to land and collect a specimen of a Kijra-Riitaa, a Kijra-'pet'. They are delicate, winged things, so we must be careful."`
 			label task
-			`	Sieasej shuffles their arms beneath them. "I must once again speak on behalf of Sioeora." They produce another metallic data-sphere from a pouch on their outfit and offer it to you. "This sphere shall provide a map marker for the system we are to journey to. There, on the second moon of the second planet, we are to land and collect a specimen of a Kijra-Riitaa, a Kijra-'pet'. They are delicate, winged things, so we must be careful."`
+			`	Sieasej shuffles their arms beneath them. "I must once again speak on behalf of Sioeora." They produce another metallic data-sphere from a pouch on their outfit and offer it to you. "This sphere shall provide a map marker for the system we are to journey to. There, on the second moon of the second planet, we are to land and collect a specimen of a Kijra-Riitaa, a Kijra-'pet'. They are delicate, winged things, so we must be careful not to damage it."`
 			choice
 				`	"We'd better get started then."`
 					goto embark
@@ -353,14 +357,71 @@ mission "Successors: First Contact 3"
 				accept
 	on stopover
 		conversation
-			`Stopover.`
+			`Sieasej has mostly kept to themselves during the journey to <stopover planets>, spending most of their time, as far as you can tell, poring over the Successor records of this world and practicing English in their bunk. They emerge shortly after you enter orbit`
+			
+			label successful
+				action
+					set "captured kijra-pet"
+			
+			label released
+				action
+					set "released kijra-pet"
+			
+			label failed
+				action
+					set "failed kijra-pet"
+			
+			label languages
+			`	Later that evening, Sieasej approaches you with what you might have characterized as an inquisitive demeanor. "I confess, captain, thou hast enflamed my curiosity about something and I wish to ask thee before we return: if thou hast explored the galaxy to the point where you have found us, surely thou must have encountered other aliens? We have records, of course, of all those who our Predecessors met in their time. If they have endured as we have, tell me, have their languages also?`
+			choice
+				`	I managed to obtain a translation device for the Hai language.`
+					to display
+						has "language: Hai"
+				`	"I obtained a translation device for the language of the Coalition."`
+					to display
+						has "language: Coalition"
+				`	"Sorry, but I don't have time to talk about language right now.?`
+				`	"Just my own."`
+
+
+	on complete
+		has "captured kijra-pet"
+			set "known to the successors"
+			set "language: successor"
+			event "successors: trust 1"
+			"reputation: Successor" += 9
+		conversation
+			`Complete.`
+
+mission "Successors: Released Kijra-pet follow-up"
+	landing
+	clearance
+	infiltrating
+	name "Go to Raaqa-Puan-Uuoru to meet with House Kaatrij"
+	description "A Successor data-sphere left in your ship appears to be issuing a summons from a House Kaatrij to <destination>."
+	destination "Raaqa-Puan-Uuoru"
+	to offer
+		has "released kijra-pet"
+		has "told sieasej about hai language knowledge"
+		random < 30
+	on offer
+		conversation
+			branch dog
+				outfit "Puny" > 0
+			`Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board. After rummaging through some of your belongings, you discover that it is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in archaic-looking but readable text:`
+				goto message
+			label dog
+			`Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board, shortly after accompanied by the sound of Puny the dog barking. After rummaging through some of your belongings, you discover that the trilling is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in archaic-looking but readable text:`
+				goto message
+			label message
+			`		HOUSE KAATRIJ OFFERS AUDIENCE TO HUMAN CAPTAIN`
+			`	The sphere slowly switches back and forth between displaying this message and a map to a system in western Successor space.`
 	on complete
 		set "known to the successors"
 		set "language: successor"
 		event "successors: trust 1"
-		"reputation: Successor" += 9
 		conversation
-			`Complete.`
+			"Shortly after you enter the atmosphere of the planet, the data-sphere begins to trill again and projects a different map, this time highlighting a set of coordinates on the night side."
 
 mission "Successors: Trusted"
 	landing
