@@ -21,23 +21,21 @@ event "successors: trust 1"
 	### Add full descriptions and facilities to previously-available but limited planets.
 	planet "Iyra-Ijasa-Iret"
 		description `Iyra-Ijasa-Iret is a pure water world, with no solid land anywhere upon its surface. Despite this, it hosts a relatively sizable population of Successors, most living in several sprawling underwater cities that dot the shallows, but some in much deeper and more pressure-resistant enclaves closer to the ocean floor. The moon is revered throughout Successor space for its undersea beauty; on the side of the moon that faces the gas giant which it orbits, huge plumes of bioluminescent plankton stream up towards the surface from the deep ocean in a daily feeding cycle the Successors call the "Ribbons of Iret."`
-		spaceport `The spaceport resembles a group of enormous bubbles in the ocean near the equator; translucent, hemi-spherical hangars protrude from the water, cracking open like the petals of flowers to allow ships to enter and depart. Once inside, all the hangars are connected by a dense web of corridors and small, spherical rooms. Many are just as water-filled as the port's surroundings, and about half of the Successors you see throughout the spaceport are partially or entirely submerged.`
 		add shipyard "Successor Basics"
 		add shipyard "Waterlining"
 		add outfitter "Successor Basics"
 	planet "Kua-Oa-Aava"
 		description "The Old Houses have established several refueling and restock facilities on Aava-Aasa-Khora's moon to increase the speed at which they can service their warships by taking advantage of the additional space and low gravity the moon provides. While nominally open to the public, the vast majority of the facilities here are devoted entirely to military use, and the civilian areas are mostly intended to make sure that no ships without clearance will become stranded in this system."
-		spaceport "The spaceport here is tiny and barebones, offering only minimal services. The few Successors you see are wearing military uniforms and while they show a small degree of surprise at seeing you, they nonetheless remain polite and courteous."
+		spaceport "The spaceport here is tiny and barebones, offering only minimal services. The few Successors you see are wearing military uniforms and remain polite and courteous to you, even as an alien."
 		spaceport "Several tunnels from this spaceport lead off into the distance, though they are guarded by military personnel and identification stations. You presume that they lead to the military facilities established elsewhere on the moon's surface."
 	planet "Mavra-Sol-Kvel"
 		description "Shielded by the persistent asteroid impacts of this system by its parent gas giant, Mavra-Sol-Kvel enjoys a temperate climate and spectacular vistas. The low gravity here is greatly appreciated by the Successors, and consequently the moon supports a sizable population despite its small size, most of whom live in several cities along the equator."
 		description "It is also the seat of power for House Aqrabe, one of the Old Houses. Despite this categorization, House Aqrabe has remained neutral in most of the Successors' conflicts over the millenia, and continues to present itself as an unbiased and politically uncommitted member of the High Houses which, combined with the central position of this star system, has led House Aqrabe to form strong connections with the New Houses as well as the Old."
-		spaceport "The spaceport is large but efficient, and plastered in bright and friendly colors, much like the landscape surrounding it. Most of the buildings are organic in shape, arcing and bubbling from place to place like seafoam, and despite the fanciful design, they also appear to be servicing a large volume of travellers, merchants, and military personnel, with color-coded lines leading to different areas."
 		add shipyard "Successor Civilian"
 		add outfitter "Successor Civilian"
 	planet "Mosaa-Oaa-Wyrdd"
 		description "Mosaa-Oaa-Wyrdd's location in the only hyperspace link between the northern and southern parts of Successor territory has made it a hub for interstellar trade and the center of Successor commerce."
-		description "Unique among all Successor planets, its primary employer is not one of the High Houses but an independent corporation responsible for manufacturing, among other things, the Pulse Laser. The high houses are understandably somewhat perturbed by this autonomy, but have allowed independent commerce to continue here in exchange for levying modest taxes on transactions that do not go through their official channels."
+		description "Unique among all Successor planets, its primary employer is not one of the High Houses but an independent corporation responsible for manufacturing, among other things, the Pulse Laser. The High Houses are understandably somewhat perturbed by this autonomy, but have allowed independent commerce to continue here in exchange for levying modest taxes on transactions that do not go through their official channels."
 		spaceport "The spaceport is large and busy, situated at the foot of a mountain, and seems more haphazard than most Successor spaceports you've seen. Small shops and tents sit abreast advertisements for the latest generation of Pulse Laser and statues of important figures in the high houses, many of which seem weather-worn and unmaintained."
 		spaceport "At the edges of the port, there is a large ongoing construction project to expand it; you can count dozens of half-completed hangars each large enough for several freighters."
 		add shipyard "Successor Heavy"
@@ -59,6 +57,29 @@ event "successors: trust 1"
 		spaceport "The dense tree cover shades the landing pads of the spaceport and casts the whole area in dappled light that reflects softly off the moving ships. Much of the traffic at the spaceport is small shuttles and transports carrying Successor students to and from the planet; the interior of it is clean and colorful, and seems directed towards its more youthful audience, with several recruiting posters for the fleets of the various High Houses plastered on the walls."
 		add shipyard "Successor Basics"
 		add outfitter "Successor Basics"
+	### Add full descriptions to uninhabited Successor planets.
+	planet Aqra-Kvel-Taaq
+		description "Covered in glaciers miles thick and bitterly cold, this planet is little more than a bleak ball of ice too far from its sun to be habitable. In the past, the Successors attempted to set up a shipyard here, but it eventually proved too costly to maintain and too poorly positioned to make up for it. Since it was abandoned, the Successors have made no further attempts to establish facilities here."
+	planet Chyyra-Raaqa-Tuur
+		description "During the arrival of the New Houses, this planet was briefly considered as a location for permanent habitation. However, the brown dwarf it orbits produces very little heat and makes the planet uncomfortably cold, even for the cold-tolerant Successors. Furthermore, its lack of substantial natural resources exempted it from use as an industrial or mining planet, and it continues to remain uninhabited."
+	planet Giiq-Sou-Kella
+		description "Small, atmospherically placid, and tectonically stable, this planet is completely covered in a global ocean composed of liquid methane. The inherent toxicity of this environmental feature, combined with the frigid temperatures on its surface and the tiny amount of dry land, have made it unsuitable for long-term habitation."
+	planet Khora-Uurau-Uuoru
+		description "Thousands of years ago, during the reign of the Predecessors' empire, this moon was used as a weapons testing site. Since the Successors have not invented any novel weapons requiring an entire moon to test since the collapse of the old empire, Khora-Uurau-Uuoru has remained unbombarded since then. Even so, the scars of ancient violence still mar its surface, and its tenuous atmosphere clings desperately to its surface, almost as if it is still terrified of being stripped away."
+	planet Khosa-Kella-Oa
+		description "Devoid of atmosphere, this small and rocky world sits at the eastern end of Successor space, orbiting a dim star. Because of the Successors' location on the rim of the galaxy, this may very well be the last planet for millions of light years, the furthest child of the Milky Way."
+	planet Kuj-Sol-Nnesa
+		description "This desert planet is far too hot and arid for the Successors' environmental needs, and its lack of any meaningful deposits of natural resources has precluded its exploitation by mining or industry. It is occasionally visited by Successor researchers, primarily to study the local fauna; giant millipede-like creatures are known to roam the sand here during the twilight hours, hunting anything that moves."
+	planet Myiara-Sola-Tej
+		description "This industrial station was constructed during the arrival of the New Houses to exploit the mineral wealth of this system, but was abandoned when richer and more accessible mineral deposits were found planetside. It still remains technically habitable, but none of the High Houses have had an interest in refurbishing it since cheaper and easier industrial and habitation projects are constantly available."
+	planet Naph-Naap-Kella
+		description "This planet is deep in the throes of its early history, with a thick sulfurous atmosphere concealing an unstable and volcanically active surface. Despite that, the Successors have discovered very simple life forms here, possibly the very first life that has developed on this planet. Consequently, it is of some interest to Successor biologists, or at least the ones willing to brave the toxic and destructive conditions on the surface."
+	planet "Vade-Osolaa-Kaska"
+		description "Although briefly used as a small-scale shipyard several hundred years ago, this station was eventually abandoned by the High Houses because of its inconvenient location and altogether poor construction. There are occasional rumors about criminals using it as a bolt-hole or a place to hide contraband, but few Successors have the desire to go and check."
+	planet "Vyraa-Giiq-Sora"
+		description "Despite the verdant and often bioluminescent life on its surface, the atmosphere of this planet is highly toxic to the Successors' biochemistry, and so they have made no permanent settlements here. While it is occasionally visited by the odd few tourists who don't mind having to wear an isolation suit, its distance from the majority of Successor space means that the Successors largely leave it alone."
+	planet "Vyraa-Viir-Kella"
+		description "This planet is being surveyed to establish its potential as a new settlement location for the New Houses. Although its gravity is somewhat high for Successor tastes, it has a clear, oxygen-rich atmosphere, and a cool and watery surface. The first few settlers are scheduled to arrive here in a few years, once the planetary surveys are complete and have declared it safe and geologically stable."
 
 event "successors: trust 2"
 	### Associated with "Successors: Trusted" mission.
