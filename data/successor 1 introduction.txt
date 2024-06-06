@@ -167,40 +167,84 @@ mission "Successors: First Contact 1"
 			label whatnow
 			`	Sieasej translates this question to the uniformed officer, who conveys a detailed response accompanied by a series of color and texture displays on their skin. Overhead, a buzzing flock of interceptors fly past and land on a set of landing pads closer to the center of the spaceport complex. Eventually, Sieasej responds, and does so even more slowly and carefully than previously. "The scions of House Sioeora have made it known to the others in the High Houses that thou art a guest in their space and that thou shalt proceed under their protection. Thou may'st explore those of our worlds which thou may, and which permit thee access. Without the use of our language, though, thou shalt find few opportunities to do more than observe. As to that," Sieasej continues, "our noble scions are set to begin their convergence in five days. As thou hast aroused their attention, 'tis expected thou shalt receive a summons to their unity."`
 
-mission "Successors: First Contact Exploration: Kua-Ua-Aava"
-	landing
-	source "Kua-Ua-Aava"
+mission "Successors: First Contact Exploration: Kua-Oa-Aava"
+	source "Kua-Oa-Aava"
 	to offer
-		has "Successors: First Contact 1: completed"
+		has "Successors: First Contact 1: done"
+		not "Successors: First Contact 2: done"
+	on offer
+		conversation
+			`You watch for a couple of minutes as the spaceport crew here attempt to find a fuel adapter that fits your ship. After some time, a group of military officers is called over; they scan the side of the <ship> thoroughly and input their results into a datapad. Eventually the leader produces another one of the Successors' morphic metal spheres; they briefly connect it to the datapad and it rapidly squishes into a shape that lets it interface with both your ship and the fuel hose.`
+				decline
 
 mission "Successors: First Contact Exploration: Raaqa-Kvelq-Ryuit"
-	landing
 	source "Raaqa-Kvelq-Ryuit"
 	to offer
-		has "Successors: First Contact 1: completed"
+		has "Successors: First Contact 1: done"
+		not "Successors: First Contact 2: done"
+	on offer
+		conversation
+			`One of the Successors in the spaceport here seems to be offering small morsels of food to the others; short cooked strips of a dark green plant vaguely resembling a succulent, impaled on a wooden stick. Though most of the individuals here keep their distance from you, this one takes notice and offers you a stick.`
+			choice
+				`	(Take it).`
+				` 	(Decline).`
+					goto refused
+			`	You take the stick from them and a wave of color runs up their body before they slither away to a different part of the spaceport.`
+			choice
+				`	(Try a bite).`
+				`	(Hide it away).`
+					goto hidden
+			`	Though you only take a small bite, the food tastes vile enough for you to gag: it is tough and fishy and far too salty for your palate. You discreetly spit out what little you consumed and consider yourself lucky that you didn't have to pay anything for it.`
+				decline
+			label refused
+			`	After a couple of seconds the Successor retracts their arm and slithers off to a different part of the spaceport.`
+				decline
+			label hidden
+			`	You hold the stick behind your back until you head back inside the <ship> and place it in a waste receptacle.`
+				decline
+
 
 mission "Successors: First Contact Exploration: Iyra-Ijasa-Iret"
-	landing
 	source "Iyra-Ijasa-Iret"
 	to offer
-		has "Successors: First Contact 1: completed"
+		has "Successors: First Contact 1: done"
+		not "Successors: First Contact 2: done"
+	on offer
+		conversation
+			`You've never seen a spaceport that's entirely underwater before. Next to your landing pad, there's a massive window into what you might call an aquarium but what seems to be some sort of lounge for the Successors, who swim around and organize themselves around several multi-layered tables.`
+				decline
 
 mission "Successors: First Contact Exploration: Mavra-Sol-Kvel"
-	landing
 	source "Mavra-Sol-Kvel"
 	to offer
-		has "Successors: First Contact 1: completed"
+		has "Successors: First Contact 1: done"
+		not "Successors: First Contact 2: done"
+	on offer
+		conversation
+			`Your ship draws a bit of a crowd when you land here, though most are kept at bay by a set of pre-arranged barriers set up around your landing pad and the occasional patrolling guard. While walking by the barrier, one Successor offers one of their data-spheres to you.`
+			choice
+				`	(Take it).`
+				`	(Refuse).`
+					goto refused
+			`	The Successor trills warmly when you take the sphere, though they are quickly pushed back by one of the guards. Like previously, the sphere expands into a small star map as soon as you touch it, though this one seems to contain some cultural data in addition to stellar coordinates.`
+				decline
+			action	
+				outfit "Local Map" 1
+			label refused
+			`	You hold up your hands and step away from the individual offering you the data-sphere, and they are quickly pushed back by one of the guards.`
+				decline
 
 mission "Successors: First Contact Exploration: Mosaa-Ooa-Wyrdd"
 	landing
 	source "Mosaa-Ooa-Wyrdd"
 	to offer
-		has "Successors: First Contact 1: completed"
+		has "Successors: First Contact 1: done"
+		not "Successors: First Contact 2: done"
 
 mission "Successors: First Contact 2"
 	landing
 	name "Return to Staja-Kella-Oa"
-	description `The scions of House Sioeora have requested your presence so you can "render service and aid".`
+	description `The scions of House Sioeora have requested your prompt presence at <planet> so you can "render service and aid" to them.`
 	source
 		attributes "successor"
 	destination "Staja-Kella-Oa"
@@ -306,7 +350,7 @@ mission "Successors: First Contact 2"
 mission "Successors: First Contact 3"
 	priority
 	name "Capture an animal for House Sioeora"
-	description `The scions of House Sioeora have instructed you to visit <stopover planets> and capture a "Kijra-riitaa" to safely return to them at <destination>.`
+	description `The scions of House Sioeora have instructed you to visit the planet <planet stopovers> and capture a "Kijra-riitaa" to safely return to them at <planet>. Return by <date> or they will consider you to have kidnapped Sieasej.`
 	source "Staja-Kella-Oa"
 	to offer
 		has "Successors: First Contact 2: done"
