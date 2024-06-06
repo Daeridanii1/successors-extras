@@ -485,7 +485,7 @@ mission "Successors: First Contact 3"
 	on complete
 		has "captured kijra-pet"
 			set "known to the successors"
-			set "language: successor"
+			set "language: Successor"
 			event "successors: trust 1"
 			"reputation: Successor" += 9
 		conversation
@@ -527,7 +527,7 @@ mission "Successors: Released Kijra-pet follow-up"
 			`	The sphere slowly switches back and forth between displaying this message and a map to a system in western Successor space.`
 	on complete
 		set "known to the successors"
-		set "language: successor"
+		set "language: Successor"
 		event "successors: trust 1"
 		conversation
 			`Shortly after you enter the atmosphere of the planet, the data-sphere begins to trill again and projects a different map, this time highlighting a set of coordinates on the night side.`
