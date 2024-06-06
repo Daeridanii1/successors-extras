@@ -248,7 +248,7 @@ mission `Successors: Stargazing 1`
 	deadline 20
 	on offer
 		conversation
-			`While in the spaceport on <planet>, you notice a pair of tired-looking Successors lugging around a cart of a curious folded material, taking turns dragging their apparently heavy luggage over the floor. Both perk up substantially when they see you and your ship, however, and pull their equipment towards you with renewed vigor, finally getting close enough to speak.`
+			`While in the spaceport on <origin>, you notice a pair of tired-looking Successors lugging around a cart of a curious folded material, taking turns dragging their apparently heavy luggage over the floor. Both perk up substantially when they see you and your ship, however, and pull their equipment towards you with renewed vigor, finally getting close enough to speak.`
 			`	The larger of the two begins, "Oh! Thour't that recent alien, no? 'Tis a gorgeous ship thou commands---"` 
 			`	"What we meant to say is---"`
 			`	"Sorry, 'tis just that---" `
