@@ -408,10 +408,10 @@ mission "Successors: Released Kijra-pet follow-up"
 		conversation
 			branch dog
 				outfit "Puny" > 0
-			`Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board. After rummaging through some of your belongings, you discover that it is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in archaic-looking but readable text:`
+			`	Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board. After rummaging through some of your belongings, you discover that it is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in archaic-looking but readable text:`
 				goto message
 			label dog
-			`Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board, shortly after accompanied by the sound of Puny the dog barking. After rummaging through some of your belongings, you discover that the trilling is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in archaic-looking but readable text:`
+			`	Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board, shortly after accompanied by the sound of Puny the dog barking. After rummaging through some of your belongings, you discover that the trilling is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in archaic-looking but readable text:`
 				goto message
 			label message
 			`		HOUSE KAATRIJ OFFERS AUDIENCE TO HUMAN CAPTAIN`
@@ -421,7 +421,7 @@ mission "Successors: Released Kijra-pet follow-up"
 		set "language: successor"
 		event "successors: trust 1"
 		conversation
-			"Shortly after you enter the atmosphere of the planet, the data-sphere begins to trill again and projects a different map, this time highlighting a set of coordinates on the night side."
+			`	Shortly after you enter the atmosphere of the planet, the data-sphere begins to trill again and projects a different map, this time highlighting a set of coordinates on the night side.`
 
 mission "Successors: Trusted"
 	landing
@@ -437,13 +437,13 @@ mission "Successors: Trusted"
 		"reputation: Old Houses" += 1
 		"reputation: New Houses" += 1
 		conversation
-			`Shortly after you set down in the spaceport here, you are approached by a group of Successors in naval uniforms, clearly in the employ of one or several of the High Houses, as there is some variance in the design of their uniforms that you've come to associate with the differences between the various houses. Their leader addresses you in a calm tone with the unmistakable coolness that military officers seem to hold regardless of species. Their skin remains a flat grey throughout.`
+			`	Shortly after you set down in the spaceport here, you are approached by a group of Successors in naval uniforms, clearly in the employ of one or several of the High Houses, as there is some variance in the design of their uniforms that you've come to associate with the differences between the various houses. Their leader addresses you in a calm tone with the unmistakable coolness that military officers seem to hold regardless of species. Their skin remains a flat grey throughout.`
 			`	"Captain <last>. The High Houses have noted thy actions in their space, and wishing to make thee a stronger ally to their cause, have summoned thee to meet them in council. Thou art encouraged to make haste to the Uuoru-Kella system.`
 			choice
 				`	"Thank you for telling me. I'll prepare to travel there immediately."`
 					accept
 				`	"What do you mean 'meet them in council?'"`
-			`   "Thy presence here is notable, Captain. Several representatives of the High Houses hath gathered to decide what is to be done with thee now that thou hast proved thy benevolence and usefulness. More than that, I cannot say."`
+			`	"Thy presence here is notable, Captain. Several representatives of the High Houses hath gathered to decide what is to be done with thee now that thou hast proved thy benevolence and usefulness. More than that, I cannot say."`
 				accept
 	on complete
 		set "license: Successor"
@@ -451,7 +451,7 @@ mission "Successors: Trusted"
 		set "trusted by the successors"
 		event "successors: trust 2"
 		conversation
-			`Once you have set down at the spaceport, you are met by another group of Successor naval officers. You notice that this group appears even more diverse than the last, representing several different uniform styles and liveries. Unifying them, however, is their wearing a small white and blue pin on their outfits that does not seem to correspond to the insignia of any one of the High Houses. They guide you, politely but firmly, to one of the monorail trains snaking out from the spaceport to other installations on the planet, and you all shuffle together into one of the cars, which appears to have been completely cleared of normal passengers.`
+			`	Once you have set down at the spaceport, you are met by another group of Successor naval officers. You notice that this group appears even more diverse than the last, representing several different uniform styles and liveries. Unifying them, however, is their wearing a small white and blue pin on their outfits that does not seem to correspond to the insignia of any one of the High Houses. They guide you, politely but firmly, to one of the monorail trains snaking out from the spaceport to other installations on the planet, and you all shuffle together into one of the cars, which appears to have been completely cleared of normal passengers.`
 			`	Several minutes later, the monorail deposits you at an especially large and well-decorated complex that swarms with both military and well-dressed civilians, some of whom appear so opulent and bejewelled that you suspect their personal effects are worth more than your ship. Each of them without exception wears the same white and blue insignia as your escorts, though many have incorporated it into their clothes' design or even display it as a pattern in skin coloration. As your escort peels off into the crowd, you see a familiar face in the distance: Sieasej, the Successor scholar, who visibly perks up when they see you and approaches.`
 			`	"Captain! Thou hast arrived at a fortuitious time! There are still some minutes before this day's meetings—including thy own audience with the Houses—are scheduled to begin." `
 			choice
