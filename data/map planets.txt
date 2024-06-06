@@ -19,7 +19,7 @@ planet Aava-Aasa-Khora
 planet Aqra-Kvel-Taaq
 	attributes successor uninhabited
 	landscape land/snow20
-	description "Covered in glaciers miles thick and bitterly cold, this planet is little more than a bleak ball of ice too far from its sun to be habitable."
+	description "While this planet may have a rocky surface deep down, it is covered by kilometers-thick glaciers composed of water ice. Near the equator, a ring of craters push the ice up into circular ridges that cast long shadows across the landscape."
 	government Uninhabited
 
 planet Cavaasa-Vasa-Tej
@@ -31,7 +31,7 @@ planet Cavaasa-Vasa-Tej
 planet Chyyra-Raaqa-Tuur
 	attributes successor uninhabited
 	landscape land/snow7
-	description "This snow-covered planet orbits a brown dwarf and is bitterly cold."
+	description "This snow-covered planet orbits a dim brown dwarf, making its surface dark and bitterly cold. Near the north pole, there are signs of large-scale excavation, possibly for materials to construct the station that orbits it."
 	government Uninhabited
 
 planet Giiq-Oj-Sol
@@ -43,7 +43,7 @@ planet Giiq-Oj-Sol
 planet Giiq-Sou-Kella
 	attributes successor uninhabited
 	landscape land/sea2
-	description "Small, atmospherically placid, and tectonically stable, this planet is completely covered in a global ocean composed of liquid methane."
+	description "Small, atmospherically placid, and tectonically stable, this planet is completely covered in a global ocean composed of liquid methane. A few small rock outcrops emerge above the offgassing waves but there are no dry landmasses larger than a square kilometer or so."
 	government Uninhabited
 
 planet Iyra-Ijasa-Iret
@@ -184,8 +184,8 @@ planet Moliia-Cosa-Vasa
 planet Mosaa-Ooa-Wyrdd
 	attributes successor
 	landscape land/mountain14-sfiera
-	description "This small planet hosts a population of towering octopus-like aliens; several cities have been built across the surface, as has a spaceport which tends to a variety of sleek-looking vessels. The air is damp and chilly; rainstorms blanket a significant portion of the planet's surface."
-	spaceport "The spaceport is large and busy, and sits situated at the foot of a mountain. Small shops and tents sit abreast advertisements and large statues of various sorts, many of which seem weather-worn and unmaintained."
+	description "This small planet hosts a population of towering octopus-like aliens. They have built several cities across its surface that are highly symmetrical and filled with organic-looking curved buildings draped in colorful fabrics that shimmer in the light. The air is damp and chilly; rainstorms blanket a significant portion of the planet's surface and many of the sleek-looking vessels that set down in the spaceport discharge streams of water upon landing."
+	spaceport "The spaceport is large and busy, and sits situated at the foot of a mountain. Small shops and tents sit abreast advertisements and large metallic statues of various sorts, many of which seem weather-worn and unmaintained."
 	spaceport "At the edges of the port, there is a large ongoing construction project to expand it; you can count dozens of half-completed hangars each large enough for several freighters."
 	government Successor
 	bribe 0
@@ -193,7 +193,7 @@ planet Mosaa-Ooa-Wyrdd
 planet Naph-Naap-Kella
 	attributes successor uninhabited boldtourism
 	landscape land/lava1
-	description "This planet is deep in the throes of its early history, with a thick sulfurous atmosphere concealing an unstable and volcanically active surface."
+	description "This planet is deep in the throes of its early history, with a thick sulfurous atmosphere concealing an unstable and volcanically active surface. Mineral-rich pools simmer next to lava flows and crumbling ejecta, and the atmosphere is repeatedly lit up by enormous cloud-to-cloud lightning discharges that leave the hull of your ship crackling with static electricity."
 	government Uninhabited
 
 planet Osolaa-Val-Mavra
@@ -302,7 +302,7 @@ planet Tuur-Aasa-Kaska
 planet Tuur-Oa-Sola
 	attributes successor uninhabited boldtourism
 	landscape land/mars2
-	description "The atmosphere of this moon is thin but toxic, and its surface is riddled with fissures that spew hot gases. It appears to be falling below the Roche limit of the gas giant it orbits, and will probably be torn apart into a ring system within a few thousand years."
+	description "The atmosphere of this moon is thin but toxic, and its surface is riddled with fissures that spew hot gases kilometers up into space. It appears to be falling below the Roche limit of the gas giant it orbits, and will probably be torn apart into a ring system within a few thousand years."
 	government Uninhabited
 
 planet Uo-Oraa-Vayya
@@ -331,13 +331,13 @@ planet Vade-Osolaa-Kaska
 planet Vyraa-Giiq-Sora
 	attributes successor uninhabited boldtourism
 	landscape land/myrabella0
-	description "It's not clear why this planet remains uninhabited by the Successors, as it possesses a breathable atmosphere and temperate climate; the surface is covered in indigenous lifeforms, many of which exhibit some degree of bioluminescence."
+	description "It's not clear why this planet remains uninhabited, as it possesses a breathable atmosphere and temperate climate; the surface is covered in indigenous lifeforms, many of which exhibit some degree of bioluminescence."
 	government Uninhabited
 
 planet Vyraa-Viir-Kella
 	attributes successor uninhabited
 	landscape land/water4
-	description "This planet has a clear, oxygen-rich atmosphere, and a cool and watery surface. There appear to be no sites of permanent habitation, though a couple of landing pads and associated temporary shelters have been built in the southern hemisphere."
+	description "This planet has a clear, oxygen-rich atmosphere, and a cool and watery surface with many large lakes. There appear to be no sites of permanent habitation, though a couple of landing pads and associated temporary shelters have been built on islands in the southern hemisphere."
 	government Uninhabited
 
 planet Yoqqa-Vasa-Vasa
