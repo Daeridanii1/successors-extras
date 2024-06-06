@@ -285,9 +285,11 @@ mission "Successors: First Contact 3"
 	stopover "Raaqa-Uur-Kaav"
 	destination "Staja-Kella-Oa"
 	passengers 1
+	cargo "Free Space" 5
+	blocked `You speak with Sieasej, who informs you that they require at least 1 free bunk to travel and 5 tons of free cargo space in order to carry the "Kijra-riitaa" back.`
 	on offer
 		conversation 
-			`You are met in House Sioeora's spaceport by Sieasej, who has shed the adorned metallic robes they wore in the presence of the scions for a more robust and rugged-looking outfit. "Ah, captain <last>," they say, "Thou conducted thyself well with the scions of the House. Well enough for an alien, at least."`
+			`You are met in House Sioeora's spaceport by Sieasej, who has shed the adorned metallic robes they wore in the presence of the scions for a more robust and rugged cocoon-like outfit. "Ah, captain <last>," they say, "Thou conducted thyself well with the scions of the House. Well enough for an alien, at least."`
 			choice
 				`	"What more can you tell me about our mission?"`
 					goto task
@@ -302,11 +304,24 @@ mission "Successors: First Contact 3"
 			choice
 				`	"We'd better get started then."`
 					goto embark
+				`	"What more can you tell me about these Kijra-pets?"`
+					goto kijra-pet
 				`	"How does Sioeora even know that the Kijra-pets are on this moon?"`
 					goto knowledge
 				`	"Are you certain you're okay going with me?"`
 					goto youokay
 				`	"Is there anything I should watch out for?"`
+					goto watchout
+			label kijra-pet
+			`	Sieasej shivers a little, and choses their words slowly. "The Kijra feature heavily in the old culture. 'Twere popular pets and hunting companions among ... some of our predecessors during their time. The larva is the scale of a ... hm, of thy head, approximately, with a delicate body and glassy skin. Once it mates and lays its eggs, they begin to molt several times into a larger and more fearsome form so that they may defend their nascent flock. The Kijra-Riitaa---the 'pet'---is the larva, and the Kijra-Khora is the adult. If thou art wise," Sieasej emphasizes this with a wave of color, "thou shoulds't attempt to capture the larva and nothing else."`
+			choice
+				`	"We'd better get started then."`
+					goto embark
+				`	"How does Sioeora even know that the Kijra-pets are still on this moon?"`
+					goto knowledge
+				`	"Are you certain you're okay going with me?"`
+					goto youokay
+				`	"Is there anything else I should watch out for?"`
 					goto watchout
 			label knowledge
 			`	"'Tis a mix of things," Sieasej says. "The ... pathways in space which connect those systems are ever-changing, on the span of years. A hazard of the space. Some years ago, there was a pathway leading to it through which the ships of all the High Houses could pass through and explore. Now, it has been many years since that system was easily accessible. The scions know that thou must possess a jump drive in order for thou to have reach'd us---this technology is quite familiar to us---and so they know that thou cans't acquire that what they desire. "`
@@ -315,6 +330,8 @@ mission "Successors: First Contact 3"
 					goto embark
 				`	"What do you mean that jump drives are 'quite familiar?'"`
 					goto jumpdrives
+				`	"What more can you tell me about the Kijra-pets?"`
+					goto kijra-pet
 				`	"Are you certain you're okay going with me?"`
 					goto youokay
 				`	"Is there anything I should watch out for?"`
@@ -326,6 +343,8 @@ mission "Successors: First Contact 3"
 					goto embark
 				`	"How does Sioeora even know that the Kijra-pets are on this moon?"`
 					goto knowledge
+				`	"Can you tell me more about the Kijra-pets?"`
+					goto kijra-pet
 				`	"Is there anything I should watch out for?"`
 					goto watchout
 			label watchout
@@ -333,6 +352,8 @@ mission "Successors: First Contact 3"
 			choice
 				`	"We'd better get started then."`
 					goto embark
+				`	"Can you tell me more about the Kijra-pets?"`
+					goto kijra-pet
 				`	"How does Sioeora even know that the Kijra-pets are on this moon?"`
 					goto knowledge
 				`	"Are you certain you're okay going with me?"`
@@ -346,6 +367,8 @@ mission "Successors: First Contact 3"
 					goto embark
 				`	"Do the scions have their own jump drives?"`
 					goto warning
+				`	"What more can you tell me about the Kijra-pets?"`
+					goto kijra-pet
 				`	"Are you certain you're okay going with me?"`
 					goto youokay
 				`	"Is there anything I should watch out for?"`
@@ -364,32 +387,100 @@ mission "Successors: First Contact 3"
 				accept
 	on stopover
 		conversation
-			`Sieasej has mostly kept to themselves during the journey to <stopover planets>, spending most of their time, as far as you can tell, poring over the Successor records of this world and practicing English in their bunk. They emerge shortly after you enter orbit.`
-			
+			`Sieasej has mostly kept to themselves during the journey to <stopover planets>, having spent most of their time, as far as you can tell, poring over the Successor records of this world and practicing English in their bunk. They emerge shortly after you enter orbit, looking only a little bit unsteady.`
+			`	"I confess, captain, that I do not think the jump drive and I are in concord." They steady themselves against a bulkhead.`
+			choice
+				`	(Close the cargo bay door).`
+					goto successful
+				`	(Release the animal).`
+					goto released
+				`	(Do something stupid).`
+					goto failed
 			label successful
-				action
-					set "captured kijra-pet"
-			
+			action
+				set "captured kijra-pet"
+			`	You successfully captured the Kijra-kiitaa.`
+				goto languages
 			label released
-				action
-					set "released kijra-pet"
-			
+			action
+				set "released kijra-pet"
+			`	You released the Kijra-kiitaa.`
+				goto languages
 			label failed
-				action
-					set "failed kijra-pet"
-			
+			action
+				set "failed kijra-pet"
+			`	You failed the capture the Kijra-kiitaa.`
+				goto languages
 			label languages
 			`	Later that evening, Sieasej approaches you with what you might have characterized as an inquisitive demeanor. "I confess, captain, thou hast enflamed my curiosity about something and I wish to ask thee before we return: if thou hast explored the galaxy to the point where you have found us, surely thou must have encountered other aliens? We have records, of course, of all those who our Predecessors met in their time. If they have endured as we have, tell me, have their languages also?`
 			choice
-				`	"I managed to obtain a translation device for the Hai language."`
+				`	"I'm afraid the only language I'm familiar with is my own."`
+					goto naive-monoglot
 					to display
-						has "language: Hai"
-				`	"I obtained a translation device for the language of the Coalition."`
+						and
+							not "First Contact: Bunrodea (Hostile): done"
+							not "Coalition: First Contact: done"
+							not "First Contact: Gegno Vi: done"
+							not "First Contact: Hai: done"
+							not "Discovered Korath Space: done"
+							not "First Contact: Wanderer (Before Hai): done"
+							not "First Contact: Wanderer: done"
+				`	"I've made contact with other aliens, but I'm afraid I can't tell you much about their languages."`
+					goto cognizant-monoglot
 					to display
-						has "language: Coalition"
+						and
+							and
+								not "language: Hai"
+								not "language: Coalition"
+							or
+								has "First Contact: Bunrodea (Hostile): done"
+								has "Coalition: First Contact: done"
+								has "First Contact: Gegno Vi: done"
+								has "First Contact: Hai: done"
+								has "Discovered Korath Space: done"
+								has "First Contact: Wanderer (Before Hai): done"
+								has "First Contact: Wanderer: done"
+				`	"I managed to obtain a translation device for the language of the Hai, who live to the north."`
+					goto hai
+					to display
+						and
+							has "language: Hai"
+							not "language: Coalition"
+				`	"I obtained a translation device for the language of the Coalition, west of here."`
+					goto coalition
+					to display
+						and
+							has "language: Coalition"
+							not "language: Hai"
+				`	"I obtained translation devices for the languages of the Hai and the Coalition, but don't speak them myself."`
+					goto both
+					to display
+						and
+							has "language: Hai"
+							has "language: Coalition"
 				`	"Sorry, but I don't have time to talk about language right now."`
-				`	"Just my own."`
-
+					goto dismissive
+			label naive-monoglot
+				goto end
+			label cognizant-monoglot
+				goto end
+			label hai
+				action
+					set "told sieasej about hai language"
+				goto end
+			label coalition
+				action
+					set "told sieasej about coalition language"
+				goto end
+			label both
+				action
+					set "told sieasej about hai language"
+					set "told sieasej about coalition language"
+				goto end
+			label dismissive
+				goto end
+			label end
+			`	End.`
 
 	on complete
 		has "captured kijra-pet"
@@ -400,6 +491,11 @@ mission "Successors: First Contact 3"
 		conversation
 			`Complete.`
 
+substitutions
+	"<coalition ally>" "Heliarchs"
+	"<coalition ally>" "Lunarium"
+		has "joined the lunarium"
+
 mission "Successors: Released Kijra-pet follow-up"
 	landing
 	clearance
@@ -409,19 +505,25 @@ mission "Successors: Released Kijra-pet follow-up"
 	destination "Raaqa-Puan-Uuoru"
 	to offer
 		has "released kijra-pet"
-		has "told sieasej about hai language knowledge"
+		or
+			has "told sieasej about hai language"
+			has "told sieasej about coalition language"
 		random < 30
 	on offer
 		conversation
-			branch dog
-				outfit "Puny" > 0
-			`Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board. After rummaging through some of your belongings, you discover that it is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in archaic-looking but readable text:`
-				goto message
-			label dog
-			`Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board, shortly after accompanied by the sound of Puny the dog barking. After rummaging through some of your belongings, you discover that the trilling is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in archaic-looking but readable text:`
-				goto message
-			label message
-			`		HOUSE KAATRIJ OFFERS AUDIENCE TO HUMAN CAPTAIN`
+			branch hai
+				has "language: Hai"
+			`Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board. After rummaging through some of your belongings, you discover that it is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in a familiar-looking script that you quickly realize belongs to one of the species of the Coalition. After running the text through the translation box you acquired from the <coalition ally>, you are able to decode the message:`
+				goto message-coalition
+			label hai
+			`Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board. After rummaging through some of your belongings, you discover that it is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in a familiar-looking script that you quickly realize is that of the Hai. After running the text through your ship's Hai translator, you are able to decode the message:`
+				goto message-hai
+			label message-coalition
+			`		AUDIENCE OF HUMAN CAPTAIN, HOUSE KAATRIJ REQUESTS`
+				goto end
+			label message-hai
+			`		HOUSE KAATRIJ [REQUESTS/REQUIRES] AUDIENCE OF HUMAN CAPTAIN`
+			label end
 			`	The sphere slowly switches back and forth between displaying this message and a map to a system in western Successor space.`
 	on complete
 		set "known to the successors"
