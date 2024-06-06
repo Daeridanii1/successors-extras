@@ -195,7 +195,7 @@ mission "Successors: First Contact 2"
 		event "successors: tardy for sioeora" 14
 	on complete
 		conversation
-			`	Shortly after you enter the atmosphere of <destination>, the <ship> is flanked by a pair of interceptors which lead you to a large, sprawling complex in the northern hemisphere at the edge of a large lake. Your escorts set down on two small landing pads near the shore, and you see that another landing pad between them has been lit up in colors matching the livery of your ship.`
+			`Shortly after you enter the atmosphere of <destination>, the <ship> is flanked by a pair of interceptors which lead you to a large, sprawling complex in the northern hemisphere at the edge of a large lake. Your escorts set down on two small landing pads near the shore, and you see that another landing pad between them has been lit up in colors matching the livery of your ship.`
 			`	Once again, the landing pad here is surrounded by a cadre of uniformed individuals, but here there must be nearly a hundred standing at attention on the pad's perimeter. Most appear heavily armed. Once again upon disembarking a lead officer approaches you, and they motion with their arm towards the center of the complex as if to instruct you to go. As you begin walking, they and a group of eight others walk with you, leading you deeper into the structure.`
 			choice
 				`	(Continue).`
@@ -357,7 +357,7 @@ mission "Successors: First Contact 3"
 				accept
 	on stopover
 		conversation
-			`	Sieasej has mostly kept to themselves during the journey to <stopover planets>, spending most of their time, as far as you can tell, poring over the Successor records of this world and practicing English in their bunk. They emerge shortly after you enter orbit.`
+			`Sieasej has mostly kept to themselves during the journey to <stopover planets>, spending most of their time, as far as you can tell, poring over the Successor records of this world and practicing English in their bunk. They emerge shortly after you enter orbit.`
 			
 			label successful
 				action
@@ -421,7 +421,7 @@ mission "Successors: Released Kijra-pet follow-up"
 		set "language: successor"
 		event "successors: trust 1"
 		conversation
-			`	Shortly after you enter the atmosphere of the planet, the data-sphere begins to trill again and projects a different map, this time highlighting a set of coordinates on the night side.`
+			`Shortly after you enter the atmosphere of the planet, the data-sphere begins to trill again and projects a different map, this time highlighting a set of coordinates on the night side.`
 
 mission "Successors: Trusted"
 	landing
@@ -451,7 +451,7 @@ mission "Successors: Trusted"
 		set "trusted by the successors"
 		event "successors: trust 2"
 		conversation
-			`	Once you have set down at the spaceport, you are met by another group of Successor naval officers. You notice that this group appears even more diverse than the last, representing several different uniform styles and liveries. Unifying them, however, is their wearing a small white and blue pin on their outfits that does not seem to correspond to the insignia of any one of the High Houses. They guide you, politely but firmly, to one of the monorail trains snaking out from the spaceport to other installations on the planet, and you all shuffle together into one of the cars, which appears to have been completely cleared of normal passengers.`
+			`Once you have sat down at the spaceport, you are met by another group of Successor naval officers. You notice that this group appears even more diverse than the last, representing several different uniform styles and liveries. Unifying them, however, is their wearing a small white and blue pin on their outfits that does not seem to correspond to the insignia of any one of the High Houses. They guide you, politely but firmly, to one of the monorail trains snaking out from the spaceport to other installations on the planet, and you all shuffle together into one of the cars, which appears to have been completely cleared of normal passengers.`
 			`	Several minutes later, the monorail deposits you at an especially large and well-decorated complex that swarms with both military and well-dressed civilians, some of whom appear so opulent and bejewelled that you suspect their personal effects are worth more than your ship. Each of them without exception wears the same white and blue insignia as your escorts, though many have incorporated it into their clothes' design or even display it as a pattern in skin coloration. As your escort peels off into the crowd, you see a familiar face in the distance: Sieasej, the Successor scholar, who visibly perks up when they see you and approaches.`
 			`	"Captain! Thou hast arrived at a fortuitious time! There are still some minutes before this day's meetings—including thy own audience with the Houses—are scheduled to begin." `
 			choice
