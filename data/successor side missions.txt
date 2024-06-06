@@ -334,7 +334,7 @@ mission "Successors: Graffiti"
 		random < 15
 	on offer
 		conversation
-			`Shortly after you disembark the <ship> for the spaceport on <source>, you hear a quiet but noticeable clattering from behind you where your ship is being refueled.`
+			`Shortly after you disembark the <ship> for the spaceport on <source>, you hear a quiet but noticeable clattering from behind you near where your ship is being refueled.`
 			choice
 				`	(Investigate the sound.)`
 				`	(Ignore it.)`
