@@ -45,7 +45,7 @@ mission "Successors: First Contact 1"
 		conversation
 			`After trudging through several shrouded and mostly-dead systems, you've finally found a planet with living inhabitants. As you enter the planet's upper atmosphere, your ship is surrounded by a trio of interceptors and thoroughly scanned. After a brief delay, the lead ship transmits an unintelligible hail to you and slowly proceeds to a spaceport complex floating on a large structure on the planet's coast, where the group corrals you onto one of the few fully-dry landing pads. As the minutes wear on, a small crowd begins to form around your landing site.`
 			`	The aliens here remind you most of octopi: they are substantially taller than you, rising up off of the ground by several long suckered arms. Those standing on dry land are joined by several others who slither out of shallow, water-filled pools in the spaceport to come and watch you. Their skin glistens with mucous wetness and you can see it changing color and texture as they run their hourglass-shaped pupils over your person and your ship.`
-			`   After a couple of minutes of activity within the crowd, one uniformed and especially vibrant individual breaks away from the rest and begins to move towards you, gliding gently and silently over the ground. They say something in a strange sharply flowing language, shimmering with waves of color, and then wait expectantly for you to reply.`
+			`	After a couple of minutes of activity within the crowd, one uniformed and especially vibrant individual breaks away from the rest and begins to move towards you, gliding gently and silently over the ground. They say something in a strange sharply flowing language, shimmering with waves of color, and then wait expectantly for you to reply.`
 			choice
 				`	(Say nothing.)`
 					goto map
@@ -57,11 +57,11 @@ mission "Successors: First Contact 1"
 			`	You draw your weapon and fire a shot directly at the center of the uniformed alien, but it does not manage to even scorch the fabric of their clothing. Before you have time to fire a second time, you hear, see, and feel an unfathomably loud noise that pushes you back and leaves you dead before your body even makes contact with the ground.`
 				die
 			label introduce
-			`   The alien shuffles their arms in place and leans their face towards yours, repeating their earlier statement, this time more slowly and at a lower pitch. When you once again fail to give a satisfactory response, they pull away.`
+			`	The alien shuffles their arms in place and leans their face towards yours, repeating their earlier statement, this time more slowly and at a lower pitch. When you once again fail to give a satisfactory response, they pull away.`
 				goto map
 			label map
-			`   After a few more moments of silence, the alien grunts in a gesture something like a sigh of disappointment and then turns away and says something to another uniformed individual waiting on the edges of the now-substantial crowd. The other's skin flashes a bright blue and then they leave, gliding towards one of the interceptors now parked alongside your ship at the spaceport.`
-			`   When they return, they are holding in one of their arms a small spherical device which they hand to the alien in charge, who then in turn offers it to you and burbles an unintelligible phrase with what you might have characterized as an encouraging tone. Several individuals in the crowd by now appear to be taking pictures of the two of you, and you can see more of them in the distance gliding and swimming towards your landing site.`
+			`	After a few more moments of silence, the alien grunts in a gesture something like a sigh of disappointment and then turns away and says something to another uniformed individual waiting on the edges of the now-substantial crowd. The other's skin flashes a bright blue and then they leave, gliding towards one of the interceptors now parked alongside your ship at the spaceport.`
+			`	When they return, they are holding in one of their arms a small spherical device which they hand to the alien in charge, who then in turn offers it to you and burbles an unintelligible phrase with what you might have characterized as an encouraging tone. Several individuals in the crowd by now appear to be taking pictures of the two of you, and you can see more of them in the distance gliding and swimming towards your landing site.`
 			choice
 				`	(Take the device.)`
 				`	(Refuse.)`
@@ -394,7 +394,7 @@ mission "Successors: First Contact 3"
 				accept
 	on stopover
 		conversation
-			`Sieasej has mostly kept to themselves during the journey to <stopover planets>, spending most of their time, as far as you can tell, poring over the Successor records of this world and practicing English in their bunk. They emerge shortly after you enter orbit`
+			`Sieasej has mostly kept to themselves during the journey to <stopover planets>, spending most of their time, as far as you can tell, poring over the Successor records of this world and practicing English in their bunk. They emerge shortly after you enter orbit.`
 			
 			label successful
 				action
@@ -411,13 +411,13 @@ mission "Successors: First Contact 3"
 			label languages
 			`	Later that evening, Sieasej approaches you with what you might have characterized as an inquisitive demeanor. "I confess, captain, thou hast enflamed my curiosity about something and I wish to ask thee before we return: if thou hast explored the galaxy to the point where you have found us, surely thou must have encountered other aliens? We have records, of course, of all those who our Predecessors met in their time. If they have endured as we have, tell me, have their languages also?`
 			choice
-				`	I managed to obtain a translation device for the Hai language.`
+				`	"I managed to obtain a translation device for the Hai language."`
 					to display
 						has "language: Hai"
 				`	"I obtained a translation device for the language of the Coalition."`
 					to display
 						has "language: Coalition"
-				`	"Sorry, but I don't have time to talk about language right now.?`
+				`	"Sorry, but I don't have time to talk about language right now."`
 				`	"Just my own."`
 
 
@@ -458,7 +458,7 @@ mission "Successors: Released Kijra-pet follow-up"
 		set "language: successor"
 		event "successors: trust 1"
 		conversation
-			"Shortly after you enter the atmosphere of the planet, the data-sphere begins to trill again and projects a different map, this time highlighting a set of coordinates on the night side."
+			`Shortly after you enter the atmosphere of the planet, the data-sphere begins to trill again and projects a different map, this time highlighting a set of coordinates on the night side.`
 
 mission "Successors: Trusted"
 	landing
@@ -480,7 +480,7 @@ mission "Successors: Trusted"
 				`	"Thank you for telling me. I'll prepare to travel there immediately."`
 					accept
 				`	"What do you mean 'meet them in council?'"`
-			`   "Thy presence here is notable, Captain. Several representatives of the High Houses hath gathered to decide what is to be done with thee now that thou hast proved thy benevolence and usefulness. More than that, I cannot say."`
+			`	"Thy presence here is notable, Captain. Several representatives of the High Houses hath gathered to decide what is to be done with thee now that thou hast proved thy benevolence and usefulness. More than that, I cannot say."`
 				accept
 	on complete
 		set "license: Successor"
@@ -488,7 +488,7 @@ mission "Successors: Trusted"
 		set "trusted by the successors"
 		event "successors: trust 2"
 		conversation
-			`Once you have set down at the spaceport, you are met by another group of Successor naval officers. You notice that this group appears even more diverse than the last, representing several different uniform styles and liveries. Unifying them, however, is their wearing a small white and blue pin on their outfits that does not seem to correspond to the insignia of any one of the High Houses. They guide you, politely but firmly, to one of the monorail trains snaking out from the spaceport to other installations on the planet, and you all shuffle together into one of the cars, which appears to have been completely cleared of normal passengers.`
+			`Once you have sat down at the spaceport, you are met by another group of Successor naval officers. You notice that this group appears even more diverse than the last, representing several different uniform styles and liveries. Unifying them, however, is their wearing a small white and blue pin on their outfits that does not seem to correspond to the insignia of any one of the High Houses. They guide you, politely but firmly, to one of the monorail trains snaking out from the spaceport to other installations on the planet, and you all shuffle together into one of the cars, which appears to have been completely cleared of normal passengers.`
 			`	Several minutes later, the monorail deposits you at an especially large and well-decorated complex that swarms with both military and well-dressed civilians, some of whom appear so opulent and bejewelled that you suspect their personal effects are worth more than your ship. Each of them without exception wears the same white and blue insignia as your escorts, though many have incorporated it into their clothes' design or even display it as a pattern in skin coloration. As your escort peels off into the crowd, you see a familiar face in the distance: Sieasej, the Successor scholar, who visibly perks up when they see you and approaches.`
 			`	"Captain! Thou hast arrived at a fortuitious time! There are still some minutes before this day's meetings—including thy own audience with the Houses—are scheduled to begin." `
 			choice
