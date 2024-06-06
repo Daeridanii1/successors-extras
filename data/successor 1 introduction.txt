@@ -87,7 +87,7 @@ mission "Successors: First Contact 1"
 
 	on complete
 		event "label successor space"
-		event "successors first contact wait" 5
+		event "successors: first contact wait" 5
 		log "Factions" "Successors" `The Successors are a society of aliens occupying a territory on the southwestern outer rim of the galaxy. They are the heirs of a large interstellar empire which collapsed at some point around fifteen hundred years ago, who explored much of the galaxy, as far north as Sol.`
 		log "People" "Sieasej" `Sieasej is a Successor scholar of historical linguistics and member of the noble House Sioeora. Because of their area of study, they are one of the only Successors who can speak to and understand you without the benefit of a translation device.`
 		"reputation: Successor" += 1
