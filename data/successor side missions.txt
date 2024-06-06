@@ -371,7 +371,7 @@ mission "Successors: Graffiti"
 					goto fooled
 			
 			label colorful
-			`	"Oh, thats for ... ah ... safety. Yes, 'tis very dangerous to touch if thou'r'nt trained, so 'tis bright in color as a warning." None of the three are wearing any sort of protective equipment that you can see, and by now most of the group have changed color to what you might characterize as a mirthful shade of pink. This is something which one or two are clearly trying to suppress, their skin shifting in gradients in an effort to maintain their previous dull purple hue. One of the others is trying to hide a bag filled with more cans of "hull solution" behind their arms.`
+			`	"Oh, that's for ... ah ... safety. Yes, 'tis very dangerous to touch if thou'r'nt trained, so 'tis bright in color as a warning." None of the three are wearing any sort of protective equipment that you can see, and by now most of the group have changed color to what you might characterize as a mirthful shade of pink. This is something which one or two are clearly trying to suppress, their skin shifting in gradients in an effort to maintain their previous dull purple hue. One of the others is trying to hide a bag filled with more cans of "hull solution" behind their arms.`
 			choice
 				`	"Well, if you're working on behalf of the port, then surely I can ask you to remove it as well."`
 					goto called
