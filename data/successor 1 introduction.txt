@@ -43,9 +43,9 @@ mission "Successors: First Contact 1"
 	clearance
 	on offer
 		conversation
-			`After trudging through several shrouded and mostly-dead systems, you've finally found a planet with living inhabitants. As you enter the planet's upper atmosphere, your ship is surrounded by a trio of interceptors and thoroughly scanned. After a brief delay, the lead ship transmits an unintelligible hail to you and slowly proceeds to a spaceport complex floating on a large structure on the planet's coast, where the group corrals you onto one of the few fully-dry landing pads. As the minutes wear on, a small crowd begins to form around your landing site.`
+			`	After trudging through several shrouded and mostly-dead systems, you've finally found a planet with living inhabitants. As you enter the planet's upper atmosphere, your ship is surrounded by a trio of interceptors and thoroughly scanned. After a brief delay, the lead ship transmits an unintelligible hail to you and slowly proceeds to a spaceport complex floating on a large structure on the planet's coast, where the group corrals you onto one of the few fully-dry landing pads. As the minutes wear on, a small crowd begins to form around your landing site.`
 			`	The aliens here remind you most of octopi: they are substantially taller than you, rising up off of the ground by several long suckered arms. Those standing on dry land are joined by several others who slither out of shallow, water-filled pools in the spaceport to come and watch you. Their skin glistens with mucous wetness and you can see it changing color and texture as they run their hourglass-shaped pupils over your person and your ship.`
-			`   After a couple of minutes of activity within the crowd, one uniformed and especially vibrant individual breaks away from the rest and begins to move towards you, gliding gently and silently over the ground. They say something in a strange sharply flowing language, shimmering with waves of color, and then wait expectantly for you to reply.`
+			`	After a couple of minutes of activity within the crowd, one uniformed and especially vibrant individual breaks away from the rest and begins to move towards you, gliding gently and silently over the ground. They say something in a strange sharply flowing language, shimmering with waves of color, and then wait expectantly for you to reply.`
 			choice
 				`	(Say nothing.)`
 					goto map
@@ -57,11 +57,11 @@ mission "Successors: First Contact 1"
 			`	You draw your weapon and fire a shot directly at the center of the uniformed alien, but it does not manage to even scorch the fabric of their clothing. Before you have time to fire a second time, you hear, see, and feel an unfathomably loud noise that pushes you back and leaves you dead before your body even makes contact with the ground.`
 				die
 			label introduce
-			`   The alien shuffles their arms in place and leans their face towards yours, repeating their earlier statement, this time more slowly and at a lower pitch. When you once again fail to give a satisfactory response, they pull away.`
+			`	The alien shuffles their arms in place and leans their face towards yours, repeating their earlier statement, this time more slowly and at a lower pitch. When you once again fail to give a satisfactory response, they pull away.`
 				goto map
 			label map
-			`   After a few more moments of silence, the alien grunts in a gesture something like a sigh of disappointment and then turns away and says something to another uniformed individual waiting on the edges of the now-substantial crowd. The other's skin flashes a bright blue and then they leave, gliding towards one of the interceptors now parked alongside your ship at the spaceport.`
-			`   When they return, they are holding in one of their arms a small spherical device which they hand to the alien in charge, who then in turn offers it to you and burbles an unintelligible phrase with what you might have characterized as an encouraging tone. Several individuals in the crowd by now appear to be taking pictures of the two of you, and you can see more of them in the distance gliding and swimming towards your landing site.`
+			`	After a few more moments of silence, the alien grunts in a gesture something like a sigh of disappointment and then turns away and says something to another uniformed individual waiting on the edges of the now-substantial crowd. The other's skin flashes a bright blue and then they leave, gliding towards one of the interceptors now parked alongside your ship at the spaceport.`
+			`	When they return, they are holding in one of their arms a small spherical device which they hand to the alien in charge, who then in turn offers it to you and burbles an unintelligible phrase with what you might have characterized as an encouraging tone. Several individuals in the crowd by now appear to be taking pictures of the two of you, and you can see more of them in the distance gliding and swimming towards your landing site.`
 			choice
 				`	(Take the device.)`
 				`	(Refuse.)`
@@ -92,7 +92,7 @@ mission "Successors: First Contact 1"
 		log "People" "Sieasej" `Sieasej is a Successor scholar of historical linguistics and member of the noble House Sioeora. Because of their area of study, they are one of the only Successors who can speak to and understand you without the benefit of a translation device.`
 		"reputation: Successor" += 1
 		conversation
-			`In a similar manner to the last time, you set down your ship at a landing pad at the spaceport on this planet, escorted by the interceptors. Different to last time, however, you have been shuttled to a small, out-of-the way area at a great distance from the main complex, where several uniformed individuals are gathered on the landing pad, standing at attention.`
+			`	In a similar manner to the last time, you set down your ship at a landing pad at the spaceport on this planet, escorted by the interceptors. Different to last time, however, you have been shuttled to a small, out-of-the way area at a great distance from the main complex, where several uniformed individuals are gathered on the landing pad, standing at attention.`
 			`	After waiting for several minutes, a shuttle lands on the pad beside yours and several individuals emerge from it. Two of them are moving more quickly than the rest, and the guards allow them to pass and approach you. The one on the left is a uniformed officer wearing what appears to be heavy body armor, shimmering metallic plates that sparkle in the light. On the right is a smaller alien, wrapped up in a dark, cocoon-like outfit from which their head and arms emerge. The officer says something to the smaller one, who quietly replies and then pulls from a pocket on their outfit a smooth sheet which they inspect several times before haltingly addressing you.`
 			`	"Hark ... noble visitor! We bid thee ... welcome and good tidings." The two eye you closely as they wait for a response.`
 			choice
@@ -188,14 +188,14 @@ mission "Successors: First Contact 2"
 		has "event: successors: first contact wait"
 	on offer
 		conversation
-			`As you exit the <ship> to go into the spaceport here, you notice that a group of uniformed Successors are standing at attention on the landing pad. The lead officer approaches you and hands you a small metallic sphere much like the map device you were offered previously. Rather than projecting a map, however, the sphere begins to play a recording when you touch it.`
+			`	As you exit the <ship> to go into the spaceport here, you notice that a group of uniformed Successors are standing at attention on the landing pad. The lead officer approaches you and hands you a small metallic sphere much like the map device you were offered previously. Rather than projecting a map, however, the sphere begins to play a recording when you touch it.`
 			`	"Captain <first> <last>! I am instructed to inform thee of the desire by the honored scions of House Sioeora that thou woulds't appear before them to render thy service and aid. They, hm ... demand thee make haste to fair Staja-Kella-Oa once more, and to prepare thyself as thou mights't for an audience. In confirmation of this message, I do attest myself: Vijaat Ojniis Seiasej, honored historian of the of third ichon in service to the noble academy of Staja-Kella-Oa and to our noble House."`
 			`	The recording ends there, and the sphere changes to display a star map as before.`
 			accept
 		event "successors: tardy for sioeora" 14
 	on complete
 		conversation
-			`Shortly after you enter the atmosphere of <destination>, the <ship> is flanked by a pair of interceptors which lead you to a large, sprawling complex in the northern hemisphere at the edge of a large lake. Your escorts set down on two small landing pads near the shore, and you see that another landing pad between them has been lit up in colors matching the livery of your ship.`
+			`	Shortly after you enter the atmosphere of <destination>, the <ship> is flanked by a pair of interceptors which lead you to a large, sprawling complex in the northern hemisphere at the edge of a large lake. Your escorts set down on two small landing pads near the shore, and you see that another landing pad between them has been lit up in colors matching the livery of your ship.`
 			`	Once again, the landing pad here is surrounded by a cadre of uniformed individuals, but here there must be nearly a hundred standing at attention on the pad's perimeter. Most appear heavily armed. Once again upon disembarking a lead officer approaches you, and they motion with their arm towards the center of the complex as if to instruct you to go. As you begin walking, they and a group of eight others walk with you, leading you deeper into the structure.`
 			choice
 				`	(Continue).`
@@ -280,7 +280,7 @@ mission "Successors: First Contact 3"
 	passengers 1
 	on offer
 		conversation 
-			`You are met in House Sioeora's spaceport by Sieasej, who has shed the adorned metallic robes they wore in the presence of the scions for a more robust and rugged-looking outfit. "Ah, captain <last>," they say, "Thou conducted thyself well with the scions of the House. Well enough for an alien, at least."`
+			`	You are met in House Sioeora's spaceport by Sieasej, who has shed the adorned metallic robes they wore in the presence of the scions for a more robust and rugged-looking outfit. "Ah, captain <last>," they say, "Thou conducted thyself well with the scions of the House. Well enough for an alien, at least."`
 			choice
 				`	"What more can you tell me about our mission?"`
 					goto task
@@ -357,7 +357,7 @@ mission "Successors: First Contact 3"
 				accept
 	on stopover
 		conversation
-			`Sieasej has mostly kept to themselves during the journey to <stopover planets>, spending most of their time, as far as you can tell, poring over the Successor records of this world and practicing English in their bunk. They emerge shortly after you enter orbit.`
+			`	Sieasej has mostly kept to themselves during the journey to <stopover planets>, spending most of their time, as far as you can tell, poring over the Successor records of this world and practicing English in their bunk. They emerge shortly after you enter orbit.`
 			
 			label successful
 				action
@@ -507,7 +507,7 @@ mission "Successors: People's Houses, First Contact"
 		has "known to the successors"
 	on offer
 		conversation
-			`Compared to most of the spaceports you have been to in Successor space, this one is dingy, crowded, and uncomfortable. Most of the Successors you see look equally dirty and unhappy, and the majority of the few ships you've noticed landing are painted in a different, darker shade of red.`
+			`	Compared to most of the spaceports you have been to in Successor space, this one is dingy, crowded, and uncomfortable. Most of the Successors you see look equally dirty and unhappy, and the majority of the few ships you've noticed landing are painted in a different, darker shade of red.`
 			`	Would you like to ask someone here about this place?`
 			choice
 				`	(Yes.)`
