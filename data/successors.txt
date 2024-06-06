@@ -42,26 +42,6 @@ government "Old Houses"
 	"penalty for"
 		assist 0
 
-government "New Houses (Partisan)"
-	swizzle 3
-	color 1 0 0.5
-	"player reputation" -999
-	language "Successor"
-	"attitude toward"
-		"New Houses" 0.01
-		"Old Houses" -0.01
-		"Old Houses (Partisan)" -0.01
-
-government "Old Houses (Partisan)"
-	swizzle 4
-	color 0.375 0.316 0.99
-	"player reputation" -999
-	language "Successor"
-	"attitude toward"
-		"Old Houses" 0.01
-		"New Houses" -0.01
-		"New Houses (Partisan)" -0.01
-
 government "People's Houses"
 	swizzle 6
 	color 0.92 0.29 0.20
