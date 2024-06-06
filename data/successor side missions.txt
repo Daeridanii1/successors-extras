@@ -353,7 +353,7 @@ mission "Successors: Graffiti"
 					goto fooled
 
 			label what
-			`	The three Successors startle at the sound of your voice, arms whipping around as they turn to face you. One makes a move to run away, but one of the others clamps onto their arm and reels them back alongside them. All three slowly turn a shade of dull purple and their skin seems to contract over the underlying musculature. One of them eventually replies. "We ... ah ... we're part of the repair crew! We've orders to apply this ... hull solution to repair a spot of damage here."`
+			`	The three Successors startle at the sound of your voice, their arms whipping around as they turn to face you. One makes a move to run away, but one of the others clamps onto their arm and reels them back alongside them. All three slowly turn a shade of dull purple and their skin seems to contract over the underlying musculature. One of them eventually replies. "We ... ah ... we're part of the repair crew! We've orders to apply this ... hull solution to repair a spot of damage here."`
 			`	Waves of color run up the bodies of the others, and the tips of their arms undulate gently.`
 			choice
 				`	"I've never seen a solution like that before. How does it work?"`
