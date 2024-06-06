@@ -40,7 +40,7 @@ mission "Successors: Predecessor Research 1"
 				accept
 	on stopover
 		conversation
-			`	While relatively calm and subdued during the journey here, the researchers bolt out of the airlock almost the instant your ship's landing gear touch ground, arms loaded down with an innumerable array of booklets, catalogs, and strange devices that they waste no time in thrusting into the air or towards the rocks and soil.`
+			`While relatively calm and subdued during the journey here, the researchers bolt out of the airlock almost the instant your ship's landing gear touch ground, arms loaded down with an innumerable array of booklets, catalogs, and strange devices that they waste no time in thrusting into the air or towards the rocks and soil.`
 			`	By the time night falls on the planet, they reluctantly return to your ship, dusty, tired, but abuzz with excitement at their discoveries.`
 			`	As you are making preparations to leave, you realize this would be a good moment to learn about the Predecessors from the experts, especially considering you're liable to be listening to them talk about their new data all the way back.`
 			choice
@@ -101,7 +101,7 @@ mission "Successors: Predecessor Research 1"
 		"old houses jobs" += 2
 		payment 250000
 		conversation
-			`	As expected, the scholars remained highly conversational on the way back, remarking on unusual radiation measurements and fawning over several small metal fragments collected by one particularly lucky member of the team.`
+			`As expected, the scholars remained highly conversational on the way back, remarking on unusual radiation measurements and fawning over several small metal fragments collected by one particularly lucky member of the team.`
 			`	They almost forget to give you your payment when you return them to <destination>, but the head researcher places a chip for <payment> into your hands and thanks you before departing into the spaceport.`
 
 mission "Successors: Biology Research 1"
@@ -131,7 +131,7 @@ mission "Successors: Biology Research 1"
 				accept
 	on stopover
 		conversation
-			`	On the way here, Kaatiora has been impressively inquisitive, continually asking you questions about human biology with a level of verve and excitement you though previously impossible. Once they exhausted your knowledge of every detail of human biology, they moved on without hesitation to every other Earth-related species they knew of from Predecessor records, from cattle to frogs to far more exotic ones that you've never heard of in your life but apparently are all the rage among the circles of Successor xenobiology.`
+			`On the way here, Kaatiora has been impressively inquisitive, continually asking you questions about human biology with a level of verve and excitement you though previously impossible. Once they exhausted your knowledge of every detail of human biology, they moved on without hesitation to every other Earth-related species they knew of from Predecessor records, from cattle to frogs to far more exotic ones that you've never heard of in your life but apparently are all the rage among the circles of Successor xenobiology.`
 			`	It is somewhat relieving when you finally arrive at the planet and Kaatiora momentarily departs, once again carrying their more-than-armful of equipment and excitedly but carefully scanning the volcanic hot-water pools and small lakes around your landing site, occasionally exclaiming with excitement.`
 			`	Eventually they return to your ship, satisfied with the amount of data they have collected, but still obviously energized by the experience.`
 			`	Before leaving, you realize this would be a good time to learn more about the Successors from an expert. Besides, since you spent the majority of the time on the way here answering Kaatiora's questions, you are probably entitled to ask a few of your own.`
@@ -248,7 +248,7 @@ mission `Successors: Stargazing 1`
 	deadline 20
 	on offer
 		conversation
-			`While in the spaceport on <planet>, you notice a pair of tired-looking Successors lugging around a cart of a curious folded material, taking turns dragging their apparently heavy luggage over the floor. Both perk up substantially when they see you and your ship, however, and pull their equipment towards you with renewed vigor, finally getting close enough to speak.`
+			`While in the spaceport on <origin>, you notice a pair of tired-looking Successors lugging around a cart of a curious folded material, taking turns dragging their apparently heavy luggage over the floor. Both perk up substantially when they see you and your ship, however, and pull their equipment towards you with renewed vigor, finally getting close enough to speak.`
 			`	The larger of the two begins, "Oh! Thour't that recent alien, no? 'Tis a gorgeous ship thou commands---"` 
 			`	"What we meant to say is---"`
 			`	"Sorry, 'tis just that---" `
@@ -334,7 +334,7 @@ mission "Successors: Graffiti"
 		random < 15
 	on offer
 		conversation
-			`Shortly after you disembark the <ship> for the spaceport on <source>, you hear a quiet but noticeable clattering from behind you where your ship is being refueled.`
+			`Shortly after you disembark the <ship> for the spaceport on <source>, you hear a quiet but noticeable clattering from behind you near where your ship is being refueled.`
 			choice
 				`	(Investigate the sound.)`
 				`	(Ignore it.)`
@@ -353,7 +353,7 @@ mission "Successors: Graffiti"
 					goto fooled
 
 			label what
-			`	The three Successors startle at the sound of your voice, arms whipping around as they turn to face you. One makes a move to run away, but one of the others clamps onto their arm and reels them back alongside them. All three slowly turn a shade of dull purple and their skin seems to contract over the underlying musculature. One of them eventually replies. "We ... ah ... we're part of the repair crew! We've orders to apply this ... hull solution to repair a spot of damage here."`
+			`	The three Successors startle at the sound of your voice, their arms whipping around as they turn to face you. One makes a move to run away, but one of the others clamps onto their arm and reels them back alongside them. All three slowly turn a shade of dull purple and their skin seems to contract over the underlying musculature. One of them eventually replies. "We ... ah ... we're part of the repair crew! We've orders to apply this ... hull solution to repair a spot of damage here."`
 			`	Waves of color run up the bodies of the others, and the tips of their arms undulate gently.`
 			choice
 				`	"I've never seen a solution like that before. How does it work?"`
@@ -363,7 +363,7 @@ mission "Successors: Graffiti"
 			
 			label how
 			`	The group look around at each other before the same one replies again. "The ... ah ... solution seeps into the cracks and strains within the hull and when it dries it seals them. Beyond that, we do not know; we just apply it as directed by the port authority."`
-			`	One of the other ones pipes up, cheerfully adding, "we don't know anything!" before the others give them a dark look.`
+			`	One of the other ones pipes up, cheerfully adding, "We don't know anything!" before the others give them a dark look.`
 			choice
 				`	"And it's so colorful too! Are you sure it's not a paint of some sort?"`
 					goto colorful
@@ -371,13 +371,13 @@ mission "Successors: Graffiti"
 					goto fooled
 			
 			label colorful
-			`	"Oh, thats for ... ah ... safety. Yes, 'tis very dangerous to touch if thou'r'nt trained, so 'tis bright in color as a warning." None of the three are wearing any sort of protective equipment that you can see, and by now most of the group have changed color to what you might characterize as a mirthful shade of pink. This is something which one or two are clearly trying to suppress, their skin shifting in gradients in an effort to maintain their previous dull purple hue. One of the others is trying to hide a bag filled with more cans of "hull solution" behind their arms.`
+			`	"Oh, that's for ... ah ... safety. Yes, 'tis very dangerous to touch if thou'r'nt trained, so 'tis bright in color as a warning." None of the three are wearing any sort of protective equipment that you can see, and by now most of the group have changed color to what you might characterize as a mirthful shade of pink. This is something which one or two are clearly trying to suppress, their skin shifting in gradients in an effort to maintain their previous dull purple hue. One of the others is trying to hide a bag filled with more cans of "hull solution" behind their arms.`
 			choice
 				`	"Well, if you're working on behalf of the port, then surely I can ask you to remove it as well."`
 					goto called
 				`	"Nice try, but you and I both know what's going on here."`
 					goto called
-				`	"I think my ship's hull has been well-enough repaired. It might be best for you to attend to whatever other vessels are on your list."`
+				`	"I think my ship's hull has been well enough repaired. It might be best for you to attend to whatever other vessels are on your list."`
 					goto complicit
 				`	"Thanks for answering my questions. Please carry on."`
 					goto fooled
