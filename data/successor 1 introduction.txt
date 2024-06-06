@@ -168,14 +168,34 @@ mission "Successors: First Contact 1"
 			`	Sieasej translates this question to the uniformed officer, who conveys a detailed response accompanied by a series of color and texture displays on their skin. Overhead, a buzzing flock of interceptors fly past and land on a set of landing pads closer to the center of the spaceport complex. Eventually, Sieasej responds, and does so even more slowly and carefully than previously. "The scions of House Sioeora have made it known to the others in the High Houses that thou art a guest in their space and that thou shalt proceed under their protection. Thou may'st explore those of our worlds which thou may, and which permit thee access. Without the use of our language, though, thou shalt find few opportunities to do more than observe. As to that," Sieasej continues, "our noble scions are set to begin their convergence in five days. As thou hast aroused their attention, 'tis expected thou shalt receive a summons to their unity."`
 
 mission "Successors: First Contact Exploration: Kua-Ua-Aava"
+	landing
+	source "Kua-Ua-Aava"
+	to offer
+		has "Successors: First Contact 1: completed"
 
 mission "Successors: First Contact Exploration: Raaqa-Kvelq-Ryuit"
+	landing
+	source "Raaqa-Kvelq-Ryuit"
+	to offer
+		has "Successors: First Contact 1: completed"
 
 mission "Successors: First Contact Exploration: Iyra-Ijasa-Iret"
+	landing
+	source "Iyra-Ijasa-Iret"
+	to offer
+		has "Successors: First Contact 1: completed"
 
 mission "Successors: First Contact Exploration: Mavra-Sol-Kvel"
+	landing
+	source "Mavra-Sol-Kvel"
+	to offer
+		has "Successors: First Contact 1: completed"
 
 mission "Successors: First Contact Exploration: Mosaa-Ooa-Wyrdd"
+	landing
+	source "Mosaa-Ooa-Wyrdd"
+	to offer
+		has "Successors: First Contact 1: completed"
 
 mission "Successors: First Contact 2"
 	landing
