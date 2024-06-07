@@ -9,6 +9,8 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 news "high houses scion"
+	to show
+		has "language: Successor"
 	location
 		government
 			"Old Houses"
@@ -26,6 +28,8 @@ news "high houses scion"
 			`"Welcome to our space, honored alien. A pleasure 'tis to meet thee."`
 
 news "high houses official"
+	to show
+		has "language: Successor"
 	location
 		government
 			"Old Houses"
@@ -50,6 +54,8 @@ news "high houses official"
 			`"But today's been rather busy; please speak quickly."`
 
 news "successor student"
+	to show
+		has "language: Successor"
 	location
 		government
 			"Old Houses"
@@ -82,6 +88,8 @@ news "successor student"
 			`!"`
 
 news "successor merchant"
+	to show
+		has "language: Successor"
 	location
 		government
 			"Old Houses"
@@ -108,6 +116,8 @@ news "successor merchant"
 			`!"`
 
 news "high houses propaganda"
+	to show
+		has "language: Successor"
 	location
 		not attributes quiet
 		government
@@ -127,6 +137,8 @@ news "high houses propaganda"
 			`A advertisement plays showing the sleek lines of a Successor warship, its polished armor gleaming in the sunlight. It goes on for several minutes, showing the vessel from numberous angles while a sweeping soundtrack plays.`
 
 news "successor advertisements"
+	to show
+		has "language: Successor"
 	location
 		not attributes quiet
 		government "Successor"
@@ -142,6 +154,8 @@ news "successor advertisements"
 			`A display shows an advertisement for one of the Successor universities, showing elegant, sculptural buildings emerging from the ground under a rain-soaked sky.`
 
 news "local news quiet"
+	to show
+		has "language: Successor"
 	location
 		attributes quiet
 		not attributes station
