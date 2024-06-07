@@ -526,11 +526,96 @@ mission "Successors: Released Kijra-pet follow-up"
 			label end
 			`	The sphere slowly switches back and forth between displaying this message and a map to a system in western Successor space.`
 	on complete
-		set "known to the successors"
-		set "language: Successor"
-		event "successors: trust 1"
 		conversation
-			`Shortly after you enter the atmosphere of the planet, the data-sphere begins to trill again and projects a different map, this time highlighting a set of coordinates on the night side.`
+			`Shortly after you enter the atmosphere of the planet, the data-sphere begins to trill again and projects a different map, this time highlighting a set of coordinates on the night side. You adjust your course to fly there, setting down the <ship> on a patch of land next to a large lake. The data-sphere offers no further guidance.`
+			choice
+				`	(Wait).`
+			`	A couple of animals swim in the water in the distance, making faint honking sounds every once in a while that linger in the starlit air.`
+			choice	
+				`	(Wait).`
+				`	(Leave).`
+					goto premature
+			`	The glow of the <ship>'s lights attract a swarm of flying insect-like creatures that vainly dive at them again and again. A gentle breeze ripples through the leaves of the flora surrounding the lake.`
+			choice
+				`	(Wait).`
+				`	(Leave).`
+					goto premature
+			`	The minutes of the night wear on and, curious, you step out on your ship's boarding ramp to get a better view of your surroundings, to no avail, but you continue to wait. Eventually, after the night has worn on a little more, you hear the sound of water rushing; a small vehicle emerges from the lake and parks itself alongside your ship. A couple of Successors get out, one of whom approaches you.`
+			`	"Captain <first> <last>," they say. Their voice sounds strange, like their words are being carried from a great distance on the wind; the sounds ripple and bend as they speak them.`
+			choice
+				`	"That's right."`
+				`	"Who are you?"`
+			`	"Hmm. Good. I am an envoy of the noble scions of House Kaatrij. I attest this myself as Saajret, of Somber Sejra." Saajret's skin erups with green splashes as they say this. "Thy patience has been much appreciated." They splay their arms in the same manner as when you were first greeted by the Successors, and the two others behind them do so as well. "Ah," they continue, "but thou surely must be curious as to why we've called thee here. Thy actions, knowing or not, have benefitted this noble house, and we would be craven fools to fail to recognize that. Prithee understand thee, Raaqa-Uur-Kaav was our world, not Sioeora's. So too, the Kijran were never theirs to hold or grasp for."`
+			choice
+				`	"So the Kijran belong to you?"`
+					goto kijran
+				`	"How is it that you can communicate with me?"`
+					goto communicate
+			label kijran
+			`	Saajret shivers with texture. "More than just 'belong to us,' 'tis true. The Kijran---Kiitaa and Khora alike---are our creations, genetically engineered as the hybrids of a dozen precursor species. Why was it that the life of our world endured while the life of the rest perished through radiative erosion? It was the old House Kaatrij that strengthened their genomes against decay. That we were---had to leave them behind was one among many sorrows, and it is much better that thy quarry flies free than for another house to subject these children of ours to their whims.`
+			choice	
+				`	"How is it that you can communicate with me?`
+					to display
+						not "language: Successor"
+					goto communicate
+				`	"I see. What's next?"`
+					to display
+						has "language: Successor"
+					goto end
+				`	"Will your supporting me cause conflict with House Sioeora?"`
+					to display
+						has "language: Successor"
+					goto sioeora
+				`	"Can you tell me more about yourself?"`
+					to display
+						has "language: Successor"
+					goto saajret
+			label communicate
+			`	"Ah, there is that matter. Much as the High Houses might prefer to believe that they---we act all within the veil of secrecy, we are all too intertwined to keep our activities hidden for long. The details of thy arrangement with Sioeora and its consequences were apparent to us soon after its conclusion, as will the details of this meeting eventually be apparent to the other houses in time." Saajret pauses for a moment to straighten some aspects of their clothing, before gesturing to a small wooden pin affixed to an outer layer of fabric. "We keep a number of these ancient translation devices, but very few for thine own language: this is the only one that we possess. I am told it is an art piece, commissioned for a performance of thy own Shakespeare's Tempest so that our predecessors could experience the work in its original language. 'Tis far too old and unique to marry with our equipment; hence the need to contact thee in the language of another."`
+			`	Saajret plucks the device from their outfit and offers it to you.`
+			choice
+				`	(Take it).`
+			action
+				set "language: Successor"
+			`	The device is made of carved wood, or at least something that appears like it, depicting in well-varnished grain a sailing ship washed against rocks. As you pin it on your jacket, the ship begins to gently rock in place.`
+			`	"This is a gift from House Kaatrij to thee, Captain," Saajret says. "Thou hast rendered service to this house, and in return this house shall render service to thee. So long as thou wear'st it, it shall translate our language to thee and thine to us. Pray thee treat it kindly, for while durable, it is something which we cannot replace if 'tis damaged." Saajret splays their arms again as if to emphasize the end of the statement.`
+			choice
+				`	"What is next?"`
+					goto end
+				`	"Will this cause conflict with House Sioeora?"`
+					goto sioeora
+				`	"Can you tell me more about yourself?"`
+					goto saajret
+				`	"You mentioned earlier that the Kijran 'belong' to you?"`
+					goto kijran
+			label sioeora
+			`	Saajret hums in a way you can't quite place. "Sioeora will no doubt be upset that one of the New Houses now patronizes the alien that they first met, but they are forced enough to swim in the water they salted. Thou shouldn'st fear any ire from them beyond their politicking, and that is something we are accustomed to handling."`
+			choice
+				`	"What is next?"`
+					goto end
+				`	"Can you tell me more about yourself?"`
+					goto saajret
+				`	"You mentioned earlier that the Kijran 'belong' to you?"`
+					goto kijran
+			label saajret
+			`	A wave of pink cascades along Saajret's arms before they reply. "I am Saajret, honored citizen of noble House Kaatrij and member of the somber noble lineage of House Sejra, which no longer stands as any but a banner under Kaatrij. Ah. Not all our houses survived the fall: Jaasii, Vejret, Ijridanii, Sejra, and many more. Kaatrij absorbed the citizens of some into itself; it is a patchwork that reminds us that we are all patchworks, metamorphic and composed. My roles are many, but first among them, I am an archivist of sorts. I am to preserve the old technology that we still have and to use it, when necessary, for the best possible purposes."`
+			choice
+				`	"What is next?"`
+					goto end
+				`	"Will this cause conflict with House Sioeora?"`
+					goto sioeora
+				`	"You mentioned earlier that the Kijran 'belong' to you?"`
+					goto kijran
+			label premature
+			`	Deciding that you've waited long enough, you activate the <ship>'s repulsor thrusters and return to orbit.`
+				launch
+			label end
+			`	Saajret produces a data-sphere and hands that to you as well. "Within this," they say, "is historical data for most of the worlds in our space. Combined with thy newfound ability of our language, thou should'st find the navigation of our worlds and cities more revealing and fruitful. Officially, thou shalt be a patronized guest of House Kaatrij and shall proceed under our protection and with our blessings. Thou may'st be able to purchase a certain number of petty technologies without frustration, but most require some vetting that, as an alien, may take some time and effort to complete. Should'st the prospect interest thee, assisting with jobs and other tasks would doubtless benefit in proving thyself an ally to our people." Saajret pauses to adjust their clothing once again. "I bid thee farewell, Captain <first> <last>. Kaatrij will continue to apprise ourselves of your actions. I hope that next we speak will be on equally positive terms." With this, Saajret and their escort return to the vehicle, which glides back into the lake. By the time that the <ship> is ready to take off, the ripples on the water have almost entirely dissapated and the first glimmers of sunlight are creeping over the distant hills.`
+			action
+				log "People" "Saajret, of Somber Sejra" `Saajret, of Somber Sejra is an archivist, among other things, for the Successor High House Kaatrij. They are a member of the noble lineage of the now-defunct House Sejra, some of whose citizens were absorbed into House Kaatrij during the partial collapse of their predecessors' society.`
+				set "known to the successors"
+				event "successors: trust 1"
+
 
 mission "Successors: Trusted"
 	landing
