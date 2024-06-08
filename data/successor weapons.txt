@@ -23,7 +23,7 @@ outfit `"Ojet" Bimodal Coilgun`
 			"frame rate" 5
 			"start frame" 0
 			"no repeat"
-		sound "pulse"
+		sound "bimodal"
 		"hit effect" "seeker impact"
 		"hit effect" "electron impact" 3
 		"fire effect" "moonbeam fleck" 4
@@ -68,7 +68,7 @@ outfit `Bimodal Coilgun Turret`
 			"frame rate" 5
 			"start frame" 0
 			"no repeat"
-		sound "pulse"
+		sound "bimodal"
 		"hit effect" "seeker impact"
 		"hit effect" "electron impact" 3
 		"fire effect" "moonbeam fleck" 4
@@ -114,14 +114,15 @@ outfit "Drag Cannon"
 	"weapon capacity" -12
 	"gun ports" -1
 	weapon
-		sound "pulse"
+		sound "drag cannon"
+		"fire effect" "moonbeam fleck" 2
 		"hit effect" "drag cannon impact" 3
 		"velocity" 0
 		"lifetime" 0
 		"range override" 375
 		"velocity override" 25
-		"burst count" 5
-		"burst reload" 4
+		"burst count" 6
+		"burst reload" 6
 		"reload" 45
 		"firing energy" 30
 		"firing heat" 55
