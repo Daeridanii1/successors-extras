@@ -11,17 +11,17 @@
 outfit "Successor License"
 	category "Licenses"
 	thumbnail "outfit/successor license"
-	"description" "Presented to you by the High Houses, this small blue and white pin is an emblem of Successor diplomacy. Given to an alien such as yourself, it communicates their trust and confidence, and with it, their willingness to sell you their civilian-grade technology."
+	description "Presented to you by the High Houses in council, this small blue and white pin is an emblem of Successor diplomacy. Given to an alien such as yourself, it communicates their trust and confidence, and with it, their willingness to sell you their civilian-grade technology."
 
 outfit "High Houses License"
 	category "Licenses"
 	thumbnail "outfit/successor license"
-	"description" "The High Houses produce most of the advanced technology present in Successor space, and are willing to sell it only to those who support their interests. By aligning yourself with one of the houses, you have earned the right to purchase this exclusive technology."
+	description "The High Houses produce most of the advanced technology present in Successor space, and restrict its purchase to only those individuals and groups who support their interests. By aligning yourself with one of the houses, you have earned the right to purchase this exclusive technology."
 
 outfit "Heirloom License"
 	category "Licenses"
 	thumbnail "outfit/successor license"
-	"description" "To obtain one of these, you would have to become an honorary scion of one of the High Houses, which at this point in the story, you are most definitely not."
+	description "To obtain one of these, you would have to become an honorary scion of one of the High Houses, which at this point in the story, you are most definitely not."
 
 outfit `"Byiaa" Shield Cortex`
 	category "Systems"

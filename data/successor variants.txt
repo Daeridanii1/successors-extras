@@ -20,7 +20,7 @@ ship `Aaulqra` `Aaulqra (Sniper)`
 		`Successor Cooling`
 		`"Sjeja" Kinetic Lance`
 		`High-Velocity Spike` 20
-		`Bimodal Railgun` 4
+		`"Ojet" Bimodal Coilgun` 4
 
 ship `Aaulqra` `Aaulqra (Brawler)`
 	outfits
@@ -32,8 +32,8 @@ ship `Aaulqra` `Aaulqra (Brawler)`
 		`"Jorv" Shield Cortex`
 		`Hyperdrive`
 		`Successor Cooling`
-		`Bimodal Railgun` 2
-		`Bimodal Railgun Turret` 2
+		`"Ojet" Bimodal Coilgun` 2
+		`Bimodal Coilgun Turret` 2
 		`Drag Cannon` 3
 
 ship `Stolsaqra` `Stolsaqra (Short-Range)`
@@ -101,7 +101,7 @@ ship `Kvelqde-Khora` `Kvelqde-Khora (Mining)`
 		`Auxiliary Power Reserve` 1
 		`Cargo Expansion` 2
 		`"Tuur" Scanning Suite`
-		`"Ej" Shield Cortex`
+		`"Byiaa" Shield Cortex`
 		"Hyperdrive"
 
 ship `Myaede` `Myaede (Violent)`
@@ -122,7 +122,7 @@ ship `Myaede` `Myaede (Mining)`
 		`"Chyyra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
 		`3-"Kaska" Betavoltaic Cell`
-		`1-"Uurau" Betavoltaic Cell` 3
+		`1-"Uurau" Betavoltaic Cell` 2
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
 		`Pulse Laser Turret` 2
@@ -139,13 +139,14 @@ ship `Myaede` `Myaede (Mining, Defensive)`
 		`Pulse Laser Turret` 2
 		`Successor Pulse Laser` 2
 		`"Tuur" Scanning Suite`
-		`Auxiliary Power Reserve`
 
 ship `Nnaatej` `Nnaatej (Defensive)`
 	outfits
 		`"Chyyra" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
-		`6-"Ruuv" Betavoltaic Cell`
+		`3-"Kaska" Betavoltaic Cell`
+		`1-"Uurau" Betavoltaic Cell`
+		`OC-"Mavra" Betavoltaic Cell`
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
 		`Pulse Laser Turret`
@@ -174,7 +175,7 @@ ship `Kaskhorade` `Kaskhorade (Brawler)`
 		`"Jorv" Shield Cortex`
 		"Hyperdrive"
 		"Successor Cooling"
-		`Bimodal Railgun Turret` 4
+		`Bimodal Coilgun Turret` 4
 
 ship `Veusade` `Veusade (Surveillance)`
 	outfits
@@ -208,7 +209,7 @@ ship `Vujlet` `Vujlet (Aggressive)`
 		`"Chyyra" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
 		`"Nnesa" Fusion Core`
-		`Primary Power Reserve`
+		`Auxiliary Power Reserve` 3
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
 		"Successor Cooling"
@@ -221,9 +222,9 @@ ship `Ojde` `Ojde (Mining)`
 		`"Veusa" Inductive Steering`
 		`"Chyyra" Inductive Reverser`
 		`6-"Ruuv" Betavoltaic Cell`
-		`Primary Power Reserve` 2
+		`Primary Power Reserve`
 		`Successor Cooling`
 		"Pulse Laser Turret" 2
-		`"Tuur" Scanning Suite`
+		`"Tuur" Scanning Suite` 2
 		`"Ej" Shield Cortex`
 		"Hyperdrive"

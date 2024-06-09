@@ -42,7 +42,6 @@ ship `Kijra-Khora`
 		"cloaking heat" 6.0
 		"cloaked afterburner" 1
 		"quantum keystone" 1
-		"unique"
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -60,7 +59,7 @@ ship `Kijra-Khora`
 		`Successor Cooling` 2
 		`"Ojet" Bimodal Coilgun` 6
 		`Multimodal Armor: Heavy`
-		`Gauss Rifle` 5
+		`Kinetic Rail Rifle` 5
 	gun 4 -74 
 	gun -4 -74 
 	gun 34 -20 

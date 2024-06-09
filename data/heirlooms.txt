@@ -46,7 +46,7 @@ ship "Valkkyiara-Khorasaqra"
 		"Hyperdrive"
 		"Successor Cooling" 2
 		`"Sarija" Heirloom Coilgun` 6
-		"Heirloom Point Defense" 4
+		"Heirloom Point Defense" 2
 		"Kinetic Lance"
 		"Kinetic Spike" 8
 		"Heirloom Hunter-Killers" 20
