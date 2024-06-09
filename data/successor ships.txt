@@ -719,7 +719,7 @@ ship `Veusade`
 	gun -7 -72
 	gun 7 -72
 	gun 11 -64
-	gun -22 -34
+	gun 22 -34
 	gun 25 -32
 	engine -11 21
 		zoom .8
