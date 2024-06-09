@@ -100,7 +100,7 @@ outfit `1-"Uurau" Betavoltaic Cell`
 	"mass" 10
 	"outfit space" -10
 	"energy generation" 0.85
-	"heat generation" .65
+	"heat generation" 0.65
 	"energy capacity" 1200
 	description "Unlike most radioisotope generators, this power cell operates by extracting electricity directly from beta particles produced by radioactive decay. While this process yields less energy per unit of material, it is also safer and produces very little waste heat."
 
@@ -114,7 +114,7 @@ outfit `OC-"Mavra" Betavoltaic Cell`
 	"outfit space" -17
 	"energy generation" 2.25
 	"heat generation" 3.8
-	"energy capacity" 2222
+	"energy capacity" 2000
 	description "In an effort to produce a high-density power source smaller than their inertial fusion reactors, the Successors have created this overcharged betavoltaic cell, which contains particularly high-density radioactive material and lacks much of the radiation shielding of the standard models. While it has technically passed safety inspection, most Successor pilots understandably prefer to keep a bulkhead between themselves and one of these potent little cores at all times."
 
 outfit `3-"Kaska" Betavoltaic Cell`
@@ -128,7 +128,7 @@ outfit `3-"Kaska" Betavoltaic Cell`
 	"energy generation" 3.5
 	"heat generation" 2.6
 	"energy capacity" 3100
-	description "The Successors' betavoltaic generators are products of a time shortly after the collapse of the Predecessors' empire, marked by scarcity and necessity. Their rugged designs did not appeal to the traditional Successor values of beauty or heritage, but instead to the harsh new reality of need and loneliness that their first operators found themselves mired in."
+	description "The Successors' betavoltaic generators are products of a time shortly after the collapse of their Predecessors' empire, one marked by scarcity and necessity. Their rugged designs did not appeal to traditional values of beauty, elegance, or uniqueness, but instead offered a level of reliability that made them very popular among those who were then struggling to survive."
 
 outfit `6-"Ruuv" Betavoltaic Cell`
 	category "Power"
@@ -154,7 +154,7 @@ outfit `Auxiliary Power Reserve`
 	"energy capacity" 3000
 	"shield energy" -0.2
 	"hull energy" -0.1
-	description "This compact battery reserves a portion of its capacity exclusively for use by shield generators and hull repair systems, reducing the amount of power they draw from a ship's total energy pool while they are active. The effect is relatively small, but given the limited output of the Successors' betavoltaic cells, both additional battery capacity and power overhead are quite welcome."
+	description "The relatively limited output of the Successors' betavoltaic cells has encouraged them to build efficient batteries to make up for that deficit. In order to gain some additional power overhead, these reserve a portion of their capacity exclusively for use by shield generators and hull repair systems, effectively reducing the amount of power these systems draw from a ship's total energy pool while active."
 
 outfit `Primary Power Reserve`
 	category "Power"
@@ -293,7 +293,7 @@ outfit `"Niis" Inductive Engines`
 	"steering flare sprite" "effect/ion flare/tiny"
 		"frame rate" 14
 	"steering flare sound" "ion tiny"
-	description "This tiny set of inductive engines is just enough to push around a Successor fighter. They retain the dual-mode capabilities of the larger models, albeit at a much smaller scale."
+	description "This tiny set of inductive engines is just enough to push around a Successor shuttle. They retain the dual-mode capabilities of the larger models, albeit at a much smaller scale."
 
 outfit `"Aqra" Inductive Thruster`
 	category "Engines"
@@ -515,16 +515,6 @@ outfit "Multimodal Armor: Resilient"
 	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
 	description "This configuration increases the armor's resilience against certain special types of damage."
 
-outfit "Phasing Laser Sidearm"
-	category "Hand to Hand"
-	thumbnail "outfit/successor h2h"
-	licenses "Successor"
-	cost 43000
-	"capture attack" 0.6
-	"capture defense" 2.6
-	"unplunderable" 1
-	description "Increased piracy in the western regions of Successor space have spurred interest in compact sidearms like this one, which uses the same technology as the Successors' ship-mounted pulse lasers, albeit on a much smaller scale. Specifically designed for repelling boarders, it is capable of interfacing with a Successor ship's computer and surveillance systems, routing target information to a built-in display."
-
 outfit "Gauss Rifle"
 	category "Hand to Hand"
 	thumbnail "outfit/railgun h2h"
@@ -533,7 +523,7 @@ outfit "Gauss Rifle"
 	"capture attack" 1.9
 	"capture defense" 3.2
 	"unplunderable" 1
-	description "While projectile weapons of this scale are considered obsolete in human space, having been superceded by laser weaponry, the Successors' generations of experience with high-power railguns have allowed them to produce this particularly terrifying hand-to-hand weapon, firing projectiles capable of piercing body armor and even intervening bulkheads."
+	description "While projectile weapons of this scale are considered obsolete in human space, having been superceded by laser weaponry, the Successors' generations of experience with high-power kinetic weapons have allowed them to produce this particularly terrifying rifle, firing projectiles capable of piercing body armor and even intervening bulkheads. Particularly effective at repelling boarders, it is capable of interfacing with a Successor ship's computer and surveillance systems, routing target information to a built-in display."
 
 effect "small successor afterburner"
 	sprite "effect/successor flare/afterburner/afterburner"
