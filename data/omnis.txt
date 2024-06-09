@@ -43,7 +43,7 @@ outfitter "successors"
 	`"Sjeja" Kinetic Lance`
 	"High-Velocity Spike"
 	"High-Velocity Spike Rack"
-	"Gauss Rifle"
+	"Kinetic Rail Rifle"
 	"Phasing Laser Sidearm"
 	"Heirloom Hunter-Killers"
 	"Heirloom License"

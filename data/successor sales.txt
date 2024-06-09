@@ -112,7 +112,7 @@ outfitter "High Houses Light"
 	`"Jaase" Shield Cortex`
 	`Shield Cortex Interface`
 	`"Viir" Repair Module`
-	`Gauss Rifle`
+	`Kinetic Rail Rifle`
 	`"Veldt" Combat Scanner`
 
 outfitter "High Houses Heavy"

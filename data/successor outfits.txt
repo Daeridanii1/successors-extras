@@ -515,7 +515,7 @@ outfit "Multimodal Armor: Resilient"
 	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
 	description "This configuration increases the armor's resilience against certain special types of damage."
 
-outfit "Gauss Rifle"
+outfit "Kinetic Rail Rifle"
 	category "Hand to Hand"
 	thumbnail "outfit/railgun h2h"
 	licenses "High Houses"
@@ -523,7 +523,7 @@ outfit "Gauss Rifle"
 	"capture attack" 1.9
 	"capture defense" 3.2
 	"unplunderable" 1
-	description "While projectile weapons of this scale are considered obsolete in human space, having been superceded by laser weaponry, the Successors' generations of experience with high-power kinetic weapons have allowed them to produce this particularly terrifying rifle, firing projectiles capable of piercing body armor and even intervening bulkheads. Particularly effective at repelling boarders, it is capable of interfacing with a Successor ship's computer and surveillance systems, routing target information to a built-in display."
+	description "While projectile weapons of this scale are considered obsolete in human space, having been superceded by laser weaponry, the Successors' generations of experience with high-power kinetic weapons have allowed them to produce this particularly terrifying railgun rifle, firing projectiles capable of piercing body armor and even intervening bulkheads. Particularly effective at repelling boarders, it is capable of interfacing with a Successor ship's computer and surveillance systems, routing target information to a built-in display."
 
 effect "small successor afterburner"
 	sprite "effect/successor flare/afterburner/afterburner"
