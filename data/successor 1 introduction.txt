@@ -8,20 +8,21 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-mission "Successors: Entering Cataclysm"
+mission "Successors: Entering the Scar"
 	invisible
 	landing
-	destination "Kella-Uuoru-Sossa"
+	destination
+		attributes "predecessor"
 	to fail 
 		has "Successors: Safe at Last: failed"
 	on enter
 		system
 			attributes "predecessor"
 		dialog 
-			`The fabric of space in this section of the galaxy appears to be coming apart at the seams; bits of the <ship>'s hull are already being eroded away. Within it, your jump drive shudders: it is as if it is already mid-jump despite not being active.`
+			`Shortly after the jump to this system finishes, your ship's sensors begin to register small but progressive damage to its hull and internal systems, despite there being no other ships in the system. Equally confusing, your jump drive seems to still be partially active despite the jump having been completed.`
 	on complete
 		dialog 		
-			`Whatever happened in this region of space, this system seems to have been the epicenter of it. While the planet you have landed on offers enough protection from the spatial decay to allow you to perform some repairs, outside of its atmosphere the system is wracked with deadly storms and persistent instability. It's not suprising that what signs of life there are here seem millenia old.`		
+			`The mass of the planet seems to be shielding you from whatever is damaging your ship in space, offering an opportunity to rest and repair.`		
 
 mission "Successors: Safe at Last"
 	invisible
@@ -31,12 +32,12 @@ mission "Successors: Safe at Last"
 	on enter "Myruet-Kvelq"
 		fail
 		dialog 		
-			`The system on the other side of the wormhole is the first one in days that your sensors do not respond to with alarms. There is no sign of spatial distortion or decay or indeed, any anomalies apart from the wormhole.`
+			`The system on the other side of the wormhole is the first one in days that your sensors do not respond to with alarms. Apart from the presence of the wormhole, the space here appears entirely normal.`
 
 mission "Successors: First Contact 1"
 	landing
 	name "Go to the Vade-Staja system"
-	description "The aliens in this new area of space have indicated that you should travel to the easternmost inhabited system in their territory."
+	description "The aliens in this area of space have indicated that you should travel to the easternmost inhabited system in their territory."
 	source
 		government "Successor" "Old Houses" "New Houses"
 	destination "Staja-Kella-Oa"
@@ -186,17 +187,18 @@ mission "Successors: First Contact 2"
 	on complete
 		conversation
 			`Shortly after you enter the atmosphere of <planet>, the <ship> is flanked by a pair of interceptors which lead you to a sprawling complex in the northern hemisphere at the edge of a large lake. Your escorts set down on two small landing pads near the shore, and you see that another landing pad between them has been lit up in colors matching the livery of your ship.`
-			`	As before, your landing site has been surrounded by a cadre of uniformed individuals, but here there must be nearly a hundred standing at attention on the pad's perimeter, of which most appear heavily armed. Once again upon disembarking, a lead officer approaches you, and they motion with their arm towards the center of the complex as if to instruct you to go. As you begin walking, they and a group of eight others walk with you, leading you deeper into the structure.`
+			`	As before, your landing site has been surrounded by a cadre of uniformed individuals, but here there must be nearly a hundred standing at attention on the pad's perimeter, of which most appear heavily armed. Once again upon disembarking, a lead officer approaches you, this time accompanied by a group of eight others who follow them in a tight formation. The leader motions with their arm towards the center of the complex as if to instruct you to go.`
 			choice
 				`	(Continue).`
+			`	Your escort relaxes as you move to walk towards the inner complex, and the group of eight follow you as you approach its outer doors.`
 			`	The inside of the complex is opulent and massive, with vaulted ceilings rising on columns out of the lake water. Some mimic the forms and textures of tree trunks, spreading out on the ceiling into a canopy filled with thin metallic leaves that slowly wave and occlude the lights embedded above them. Each successive hall you pass through is a unique and enormous sculpture: the arch of a wave moments before crashing; the spiral of an huge suckered arm. You eventually arrive at a large door; your escort reaches out to touch it and as soon as they do, it begins to liquify and flow into a trench on the floor. When it is finished, you step across the threshold into a final circular room where a group of Successors stand waiting. One you recognize as Sieasej wearing a new set of metallic-looking robes, but the rest are unfamiliar and especially richly dressed.`
 			`	One of the adorned individuals looks at you and speaks, and Sieasej translates a moment later.`
 			branch "tardy"
 				has "event: successors: tardy for sioeora"
-			`	"Welcome, captain! We appreciate thy promptness in complying with our request. I am Riijaaora, an honored Scion of House Sioeora. I shall speak for the House today."`
+			`	"Hail, captain! We appreciate thy promptness in complying with our request. I am Riijaaora, an honored Scion of House Sioeora. I shall speak for the House today."`
 				goto greet
 			label "tardy"
-				`	"Welcome, captain! We appreciate thy compliance with our request, though thou should'st be more prompt should thy wish audience with us in the future. I am Riijaaora, an honored Scion of House Sioeora. I shall speak for the House today."`
+				`	"Hail, captain! Thy tardiness does not reflect well upon thee. I am Riijaaora, an honored Scion of House Sioeora. I shall speak for the House today."`
 			label greet
 			choice
 				`	(Say nothing).`
@@ -208,29 +210,13 @@ mission "Successors: First Contact 2"
 						has "event: successors: tardy for sioeora"
 					goto apologize-tardiness
 			label introduce
-			`	"We are aware of this. Thy introduction is not expected. Thy presence has been demanded here so that thou might'st provide service to this House. We have a task for thee, and if thou completes't correctly, a gift for thee as a symbol of our patronage."`
-			choice
-				`	(Say nothing).`
-					goto task
-				`	"What sort of task?"`
-					goto task
-				`	"What sort of gift?"`
-					goto gift
-				`	"I do not appreciate being demanded about."`
-					goto rude			
+			`	"We are aware of this. Thy introduction is not expected."`
+				goto request
 			label apologize-tardiness
-			`	"Thy apology is noted. Thy presence has been demanded here so that thou might'st provide service to this House. We have a task for thee, and if thou completes't correctly, a gift for thee as a symbol of our patronage."`
-			choice
-				`	(Say nothing).`
-					goto task
-				`	"What sort of task?"`
-					goto task
-				`	"What sort of gift?"`
-					goto gift
-				`	"I do not appreciate being demanded about."`
-					goto rude
+			`	"Thy apology is noted."`
+				goto request
 			label request
-			`	"Thy presence has been demanded here so that thou might'st provide service to this House. We have a task for thee, and if thou completes't correctly, a gift for thee as a symbol of our patronage."`
+			`	Riijaaora continues. "Thy presence has been demanded here so that thou might'st provide service to this House. We have a task for thee, and if thou completes't correctly, a gift for thee as a symbol of our patronage."`
 			choice
 				`	(Say nothing).`
 					goto task
@@ -272,6 +258,10 @@ mission "Successors: First Contact 2"
 			action
 				set "rejected: Successors: First Contact 2"
 
+substitutions 
+	"<tranq h2h>" "Pug staff"
+	"<tranq h2h>" "Heliarch staff"
+		has "outfit: Enforcer Riot Staff"
 
 mission "Successors: First Contact 3"
 	priority
@@ -291,16 +281,14 @@ mission "Successors: First Contact 3"
 		conversation 
 			`You are met in House Sioeora's spaceport by Sieasej, who has shed the adorned metallic robes they wore in the presence of the scions for a more robust and rugged cocoon-like outfit. "Ah, captain <last>," they say, "Thou conducted thyself well with the scions of the House. Well enough for an alien, at least."`
 			choice
-				`	"What more can you tell me about our mission?"`
+				`	"Thank you. What can you tell me about our mission?"`
 					goto task
 				`	"What do you mean, 'well enough for an alien?'"`
-					goto wellenough
-			label wellenough
 			`	A ripple of a rough, greenish texture passes over Sieasej's skin before subsiding. "Audiences like that one are subject to a litany of social expectations. Were't thou one of us, thy ignorance of these would seem knavish at best and offensive at worst, but ... the scions are not fools. They are more than willing to endure a little rudeness for the sake of achieving their aims."`
-			`	"I see."`
-			`	Sieasej shuffles their arms beneath them as they continue. "But I must once again speak on behalf of Sioeora." They produce another metallic data-sphere from a pouch on their outfit and offer it to you. "This sphere shall provide a map marker for the system we are to journey to. There, on the second moon of the second planet, we are to land and collect a specimen of a Kijra-Riitaa, a Kijra-'pet'. They are delicate, winged things, so we must be careful."`
+			`	"I see," you say. "I suppose I am too."`
+			`	"Fret not," Sieasej says, "elegance of address was neither required nor anticipated from thee. All has a place and time where it is necessary, and a place and time where it is not."`
 			label task
-			`	Sieasej shuffles their arms beneath them. "I must once again speak on behalf of Sioeora." They produce another metallic data-sphere from a pouch on their outfit and offer it to you. "This sphere shall provide a map marker for the system we are to journey to. There, on the second moon of the second planet, we are to land and collect a specimen of a Kijra-Riitaa, a Kijra-'pet'. They are delicate, winged things, so we must be careful not to damage it."`
+			`	Sieasej shuffles their arms beneath them. "Ah. I must once again speak on behalf of Sioeora." They produce another metallic data-sphere from a pouch on their outfit and offer it to you. "This sphere shall provide a map marker for the system we are to journey to. There, on the second moon of the second planet, we are to land and collect a specimen of a Kijra-Riitaa, a Kijra-'pet'."`
 			choice
 				`	"We'd better get started then."`
 					goto embark
@@ -387,8 +375,109 @@ mission "Successors: First Contact 3"
 				accept
 	on stopover
 		conversation
-			`Sieasej has mostly kept to themselves during the journey to <stopover planets>, having spent most of their time, as far as you can tell, poring over the Successor records of this world and practicing English in their bunk. They emerge shortly after you enter orbit, looking only a little bit unsteady.`
-			`	"I confess, captain, that I do not think the jump drive and I are in concord." They steady themselves against a bulkhead.`
+			`Shortly after you enter the system, Sieasej enters your ship's cockpit and directs you to a location in the planet's southern hemisphere, on the edge of one of the smaller continents. "Here, captain," they say, "'twas a location for one of the old breeding grounds. When last our ships visited here, this is where they noted most of the Kijran."`
+			`	As you approach the coordinates to land, you see that it contains the remains of a substantial complex; over a dozen large buildings and several disused landing pads are present, connected by paths of smooth, untarnished metal. The materials show a curious quality of being both unblemished and overgrown; vines cling to otherwise-spotless walls and the various walkways, though often shaded by large plants, do not show any debris or detritus on their surfaces.`
+			`	You set the <ship> down on one of the landing pads and exit onto the surface, accompanied by Sieasej, who holds aloft a cylindrical device which they wave in the air for several seconds. "I read several calls of the species," they say. "We are fortunate, captain. We will not have to travel far." They wave their device around some more, making slower but wider motions, before they eventually speak again. "The nearest one lies to the west, about a hundred meters."`
+
+			`You see an animal.`
+			choice
+				`	(Tranquilize it).`
+						goto tranq
+					to display
+						or
+							has "outfit: Enforcer Riot Staff"
+							has "outfit: Pug Peacekeeping Staff"
+				`	(Catch it with a net.)`
+					goto net
+				`	(Stay still.)`
+					goto lure-1
+			
+			label tranq
+			branch tranqed
+				random < 70
+			label tranqed-alarmed
+			`	You successfully tranquilize the animal, but it alarms nearby animals.`
+			label tranqed
+			`	You successfully tranquilize the animal.`
+			
+			label net
+			branch netted-alarmed
+				random < 80
+			label netted-failed
+			`	You failed to net the animal.`
+			label netted-alarmed
+			`	You successfully netted the animal, but it alarms nearby animals.`
+
+			label lure-1
+			branch lure-1-success
+				random < 90
+			`	The animal remains stationary for a moment before darting away.`
+				goto lured-failed
+			label lure-1-success
+			`	The animal remains stationary, examining you closely.`
+			choice
+				`	(Tranquilize it).`
+						goto tranq
+					to display
+						or
+							has "outfit: Enforcer Riot Staff"
+							has "outfit: Pug Peacekeeping Staff"
+				`	(Catch it with a net.)`
+					goto net
+				`	(Slowly extend your hand.)`
+					goto lure-2
+			label lure-2
+			branch lure-2-success
+				random < 90
+			`	The animal inspects your hand for a moment before darting away.`
+			label lured-failed
+				`	(Tranquilize it).`
+						goto tranq
+					to display
+						or
+							has "outfit: Enforcer Riot Staff"
+							has "outfit: Pug Peacekeeping Staff"
+				`	(Catch it with a net.)`
+					goto net
+			label lure-2-success
+			`	The animal seems curious. It approaches your hand, sniffing it gently.`
+			choice
+				`	(Tranquilize it).`
+						goto tranq
+					to display
+						or
+							has "outfit: Enforcer Riot Staff"
+							has "outfit: Pug Peacekeeping Staff"
+				`	(Catch it with a net.)`
+					goto net
+				`	(Offer it a morsel of food.)`
+					goto lure-3
+			
+			label lure-3
+			label lured
+			`	You retrieve a morsel of food and offer it to the animal, which sniffs it gently before starting to eat some.`
+			choice
+				`	(Tranquilize it now).`
+						goto tranq-friends
+					to display
+						or
+							has "outfit: Enforcer Riot Staff"
+							has "outfit: Pug Peacekeeping Staff"
+				`	(Catch it with a net.)`
+					goto net-friends
+				`	(Try to bring it back with food alone.)`
+					goto friends
+			label friends
+			`	`
+			label tranq-friends
+			`	You successfully tranquilize the animal.`
+			label net-friends
+			branch netted-friends-success
+				random < 50
+			label netted-friends-alarmed
+			`	You net the animal but it alarms nearby animals.`
+			label netted-friends-success
+			`	You successfully net the animal.`
 			choice
 				`	(Close the cargo bay door).`
 					goto successful
@@ -615,7 +704,7 @@ mission "Successors: Released Kijra-pet follow-up"
 				log "People" "Saajret, of Somber Sejra" `Saajret, of Somber Sejra is an archivist, among other things, for the Successor High House Kaatrij. They are a member of the noble lineage of the now-defunct House Sejra, some of whose citizens were absorbed into House Kaatrij during the partial collapse of their predecessors' society.`
 				set "known to the successors"
 				event "successors: trust 1"
-
+				"reputation: Successor" += 9
 
 mission "Successors: Trusted"
 	landing
@@ -740,4 +829,3 @@ mission "Successors: People's Houses, First Contact"
 			`	Or don't. Another buried fool makes little difference."`
 			`	With that, the Successor leaves, rising from the cargo containers and heading silently towards the spaceport.`
 				decline
-
