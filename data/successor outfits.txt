@@ -115,7 +115,7 @@ outfit `OC-"Mavra" Betavoltaic Cell`
 	"energy generation" 2.25
 	"heat generation" 3.8
 	"energy capacity" 2000
-	description "In an effort to produce a high-density power source smaller than their inertial fusion reactors, the Successors have created this overcharged betavoltaic cell, which contains particularly high-density radioactive material and lacks much of the radiation shielding of the standard models. While it has technically passed safety inspection, most Successor pilots understandably prefer to keep a bulkhead between themselves and one of these potent little cores at all times."
+	description "In an effort to produce a high-density power source smaller than their fusion reactors, the Successors have created this overcharged betavoltaic cell, which contains particularly high-density radioactive material and lacks much of the radiation shielding of the standard models. While it has technically passed safety inspection, most Successor pilots understandably prefer to keep a bulkhead between themselves and one of these potent little cores at all times."
 
 outfit `3-"Kaska" Betavoltaic Cell`
 	category "Power"
