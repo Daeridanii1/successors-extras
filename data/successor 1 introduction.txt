@@ -378,39 +378,35 @@ mission "Successors: First Contact 3"
 			`Shortly after you enter the system, Sieasej enters your ship's cockpit and directs you to a location in the planet's southern hemisphere, on the edge of one of the smaller continents. "Here, captain," they say, "'twas a location for one of the old breeding grounds. When last our ships visited here, this is where they noted most of the Kijran."`
 			`	As you approach the coordinates to land, you see that it contains the remains of a substantial complex; over a dozen large buildings and several disused landing pads are present, connected by paths of smooth, untarnished metal. The materials show a curious quality of being both unblemished and overgrown; vines cling to otherwise-spotless walls and the various walkways, though often shaded by large plants, do not show any debris or detritus on their surfaces.`
 			`	You set the <ship> down on one of the landing pads and exit onto the surface, accompanied by Sieasej, who holds aloft a cylindrical device which they wave in the air for several seconds. "I read several calls of the species," they say. "We are fortunate, captain. We will not have to travel far." They wave their device around some more, making slower but wider motions, before they eventually speak again. "The nearest one lies to the west, about a hundred meters."`
-
-			`You see an animal.`
 			choice
-				`	(Tranquilize it).`
+				`	(Approach the location).`
+			`	You make your way along one of the walkways to the west, brushing aside the enormous leaves of the overgrowing plants. Sieasej continues to wave their triangulation device in the air and quietly relays your progress; as you get closer, you hear a gentle scuffling that you realize precedes every detection by the device. After making your way through one particularly-dense wall of flora, you spot your target: a glassy-winged animal perched in a plant over the walkway's edge, probing the branch it stands on with long feelers extending from its head.`
+			choice
+				`	(Try to tranquilize it).`
 						goto tranq
 					to display
 						or
 							has "outfit: Enforcer Riot Staff"
 							has "outfit: Pug Peacekeeping Staff"
-				`	(Catch it with a net.)`
+				`	(Try to catch it with a net.)`
 					goto net
 				`	(Stay still.)`
 					goto lure-1
-			
 			label tranq
 			branch tranqed
 				random < 70
 			label tranqed-alarmed
-			`	You successfully tranquilize the animal, but it alarms nearby animals.`
+			`	You take aim and fire a shot from the <tranq h2h> at the animal, but it darts away at the last moment so that the blast only just grazes its body. It plummets to the ground shrieking, and while it soon goes quiet as the tranquilizer takes effect, the shriek is echoed by other animals in the area. Soon after those quiet as well, your ears are pierced by a loud, warbling wail from the distance.`
+				goto escape
 			label tranqed
-			`	You successfully tranquilize the animal.`
-			
+			`	You take aim and fire a shot from the <tranq h2h> at the center of the animal. It briefly jumps to escape but soon plummets to the ground in a puff of leaves and dusty feathers.`
+				goto bring-tranq
 			label net
-			branch netted-alarmed
-				random < 80
-			label netted-failed
-			`	You failed to net the animal.`
-			label netted-alarmed
-			`	You successfully netted the animal, but it alarms nearby animals.`
-
+			`	You toss a net over the animal and it falls to the ground, where it shrieks for a duration before going quiet. The shriek is soon echoed by similar ones from other animals in the area, and once those go quiet as well, your ears are pierced by a loud, warbling wail in the distance.`
+				goto escape
 			label lure-1
 			branch lure-1-success
-				random < 90
+				( random + has "Pookie, Part 5: offered" * 2 + has "Remnant: Face to Maw 1: completed" * 2 ) < 95
 			`	The animal remains stationary for a moment before darting away.`
 				goto lured-failed
 			label lure-1-success
@@ -428,7 +424,7 @@ mission "Successors: First Contact 3"
 					goto lure-2
 			label lure-2
 			branch lure-2-success
-				random < 90
+				( random + has "Pookie, Part 5: offered" * 2 + has "Remnant: Face to Maw 1: completed" * 2 ) < 95
 			`	The animal inspects your hand for a moment before darting away.`
 			label lured-failed
 				`	(Tranquilize it).`
@@ -464,41 +460,82 @@ mission "Successors: First Contact 3"
 							has "outfit: Enforcer Riot Staff"
 							has "outfit: Pug Peacekeeping Staff"
 				`	(Catch it with a net.)`
-					goto net-friends
+					goto net-friends-alarmed
 				`	(Try to bring it back with food alone.)`
 					goto friends
 			label friends
-			`	`
+			action
+				set "Successors FC3: nonviolent kijra-pet capture"
+			`	The Kijra-pet trills as it eats out of your hand; it tucks its wings behind its body like a dragonfly and unfurls two long feather-like antennae from its head, which gently brush at your skin and clothing. Soon, it hops on your arm while sniffing at your pockets, probing deeper into the one where you kept the food and trilling softly at you. You begin the walk back to your ship, slowly and gently so as not to frighten the animal.`
+			`	"'Tis no surprise," Sieasej says, "that 'twere such valued pets if their demeanor is so docile and agreeable." They tuck their triangulation device away in a pocket and slither with you as you approach your ship.`
+				goto ambush
 			label tranq-friends
-			`	You successfully tranquilize the animal.`
-			label net-friends
-			branch netted-friends-success
-				random < 50
-			label netted-friends-alarmed
-			`	You net the animal but it alarms nearby animals.`
-			label netted-friends-success
-			`	You successfully net the animal.`
+			`	While the animal is distracted, you take aim and fire a shot from your <tranq h2h> at it. It briefly jumps to escape but soon plummets to the ground in a puff of leaves and dusty feathers.`
+				goto bring-tranq
+			label net-friends-alarmed
+			`	While the animal is distracted, you toss a net over it and it falls to the ground, where it shrieks for a duration before going quiet. The shriek is soon echoed by similar ones from other animals in the area, and once those go quiet as well, your ears are pierced by a loud, warbling wail in the distance.`
+				goto escape
+			label bring-tranq
+			`	You scoop up the tranquilized animal, careful not to damage its extremities, and begin the walk back to your ship.`
+				goto ambush
+			label escape
 			choice
-				`	(Close the cargo bay door).`
-					goto successful
-				`	(Release the animal).`
-					goto released
-				`	(Do something stupid).`
-					goto failed
+				`	(Grab it and run!)`
+			`	You scoop up the immobilized animal and begin to run back to your ship as the wailing behind you increases in pitch and intensity. As you and Sieasej dash through the foliage, the sunlight overhead is suddenly darkened by the shadow of something flying overhead.`
+			choice
+				`	(Keep running.)`
+				`	(Try to shoot at whatever is above you).`
+					goto shoot-ambush
+			`	Suddenly, the shadow disappears and the wailing stops. You keep running towards your ship, but can't shake the feeling that you are being watched.`
+				goto ambush
+			label shoot-ambush
+			`	You draw your sidearm and look to see what's above you, but the shadow is suddenly gone and you are left staring up into the sunlight and leaves. The wailing has stopped as well; indeed, the whole area remains eerily quiet as you continue to run towards your ship.`
+			label ambush
+			`	When you arrive, however, you find that blocking your entry to the <ship> are two large creatures. Their glassy skin resembles that of the smaller creature you captured, but they are each several meters in size. Their feelers, rather than soft and downy, are whiplike and serrated and tipped with vicious-looking barbs that they thrust towards you and Sieasej upon seeing you. Their many eyes flick back and forth between you and the animal that you captured, and the two let out a loud wail in unison. Waves of red and blue run down Sieasej's body and you have to imagine it's an expression of fear.`
+			choice
+				`	(Run for it!)`
+				`	(Shoot them with your sidearm.)`
+					goto shoot
+				`	(Order your ship to fire on them).`
+					to display
+						"flagship base attribute: turret mounts" > "flagship attribute: turret mounts"
+					goto ship-shoot
+				`	(Release the animal that you captured.)`
+					goto release
+			`	You attempt to run past the creatures, but before you can even get close, one of them swings its barbed feeler at you, lodging it deep in your chest. The last thing you see is Sieasej hurrying away as the creatures pursue them as well.`
+				die
+			label shoot
+			branch shoot-success
+				random < 50
+			label shoot-success
+			`	You draw your sidearm and fire at the creatures, striking one in its midsection. It crumples, and immediately after the other one charges at you. Just in time, you are able to shoot that one as well and it tumbles to the ground, kicking up dirt and leaf litter and wailing before going silent.`
+				goto successful
+			label shoot-failure
+			`	You draw your sidearm and fire at the creatures, striking one in its midsection. It crumples, and the other one suddenly vanishes before you can fire a second shot. In the time it takes your eyes to adapt to the creature's camouflage, it has already lodged the barb of its feeler deep in your chest.`
+				die
+			label ship-shoot
+			`	You radio to the <ship> and order your crew to fire a turret at the creatures, killing them both before they have the opportunity to attack you.`
+				goto successful
+			label release
+			branch release-friends
+				has "Successors FC3: nonviolent kijra-pet capture"
+			action
+				set "Successors FC3: released kijra-pet"
+			`	You gently set the animal you captured on the ground in front of you and back away from it slowly, shuffling to the side as the two larger creatures approach it and stroke it gently with their feelers. The smaller one wriggles a little before unfurling its gossamer wings and flitting away into the foliage. The two larger ones eventually follow, though not before one turns around to look at you and Sieasej and vocalizes.`
+				goto released
+			action
+				set "Successors FC3: released kijra-pet"
+				set "Successors FC3: friend to animals" # Nonviolent capture AND released at first opportunity; planned for as req. for offering a future mission on this planet
+			label release-friends
+			`	You gently coax the animal off your arm and onto the ground in front of you, backing away from it slowly and shuffling to the side. It runs towards the larger two creatures, touching the tips of its feelers against theirs and trilling softly as before. After some time, it wriggles a little before unfurling its gossamer wings and flitting away into the foliage. The two larger ones eventually follow, though not before one turns around to look at you and Sieasej and vocalizes, a longer, lower trill almost like a cat's purr.`
+				goto released
 			label successful
 			action
 				set "captured kijra-pet"
 			`	You successfully captured the Kijra-kiitaa.`
 				goto languages
 			label released
-			action
-				set "released kijra-pet"
 			`	You released the Kijra-kiitaa.`
-				goto languages
-			label failed
-			action
-				set "failed kijra-pet"
-			`	You failed the capture the Kijra-kiitaa.`
 				goto languages
 			label languages
 			`	Later that evening, Sieasej approaches you with what you might have characterized as an inquisitive demeanor. "I confess, captain, thou hast enflamed my curiosity about something and I wish to ask thee before we return: if thou hast explored the galaxy to the point where you have found us, surely thou must have encountered other aliens? We have records, of course, of all those who our Predecessors met in their time. If they have endured as we have, tell me, have their languages also?`
