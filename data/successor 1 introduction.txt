@@ -74,7 +74,7 @@ mission "Successors: First Contact 1"
 				decline
 
 	npc save accompany
-		government "Old Houses"
+		government "House Sioeora"
 		personality timid launching escort
 		ship "Stolsaqra (Mission Escort)" "Kijet-i-khisa"
 		ship "Stolsaqra (Mission Escort)" "Iyiq-sora"
@@ -91,7 +91,10 @@ mission "Successors: First Contact 1"
 		event "successors: first contact wait" 5
 		log "Factions" "Successors" `The Successors are a society of aliens occupying a territory on the southwestern outer rim of the galaxy. They are the heirs of a large interstellar empire which collapsed at some point around fifteen hundred years ago, who explored much of the galaxy, as far north as Sol.`
 		log "People" "Sieasej" `Sieasej is a Successor scholar of historical linguistics and member of the noble House Sioeora. Because of their area of study, they are one of the only Successors who can speak to and understand you without the benefit of a translation device.`
-		"reputation: Successor" += 1
+		"reputation: Successor" += 2
+		"reputation: House Chydiyi" += 2
+		"reputation: House Myurej" += 2
+		"reputation: House Sioeora" += 2
 		conversation
 			`In a similar manner to the last time, you set down your ship at a landing pad at the spaceport on this planet, escorted by the interceptors. Different to last time, however, you have been shuttled to a small, out-of-the way area at a great distance from the main complex, where several uniformed individuals are gathered on the landing pad, standing at attention.`
 			`	After waiting for several minutes, a shuttle lands on the pad beside yours and several individuals emerge from it. Two of them are moving more quickly than the rest, and the guards allow them to pass and approach you. The one on the left is a uniformed officer wearing what appears to be heavy body armor, shimmering metallic plates that sparkle in the light. On the right is a smaller alien, wrapped up in a dark, cocoon-like outfit from which their head and arms emerge. The officer says something to the smaller one, who quietly replies and then pulls from a pocket on their outfit a smooth sheet which they inspect several times before haltingly addressing you.`
@@ -234,7 +237,7 @@ mission "Successors: First Contact 2"
 				`	"I do not accept."`
 					goto rejected
 			label gift
-			`	"The one who speaks this to thee knows very well the value of language, Captain, and we suspect that thou doth as well. There is a world within the scar of broken systems once called Raaqa-Uur-Kaav. We require thee to visit there, where upon its surface, thou shall'st find a specimen of a certain animal to return to us undamaged and whole. The scholar, Sieasej, will accompany thee as an envoy of this House to assist and monitor thee. If thou'st successful in capturing thy quarry and returning it to us, thou shall'st have the reward of our language and all that it confers.`
+			`	"The one who speaks this to thee knows very well the value of language, Captain, and we suspect that thou doth as well. There is a world within the scar of broken systems once called Raaqa-Uur-Kaav. We require thee to visit there, where upon its surface, thou shall'st find a specimen of a certain animal to return to us undamaged and whole. The scholar, Sieasej, will accompany thee as an envoy of this House to assist and monitor thee. If thou'st successful in capturing thy quarry and returning it to us, thou d'st have the reward of our language and all that it confers.`
 			choice
 				`	"I accept."`
 					goto accepted
@@ -275,8 +278,7 @@ mission "Successors: First Contact 3"
 	stopover "Raaqa-Uur-Kaav"
 	destination "Staja-Kella-Oa"
 	passengers 1
-	cargo "Free Space" 5
-	blocked `You speak with Sieasej, who informs you that they require at least 1 free bunk to travel and 5 tons of free cargo space in order to carry the "Kijra-riitaa" back.`
+	blocked `You speak with Sieasej, who informs you that they require at least 1 free bunk to travel.`
 	on offer
 		conversation 
 			`You are met in House Sioeora's spaceport by Sieasej, who has shed the adorned metallic robes they wore in the presence of the scions for a more robust and rugged cocoon-like outfit. "Ah, captain <last>," they say, "Thou conducted thyself well with the scions of the House. Well enough for an alien, at least."`
@@ -531,7 +533,7 @@ mission "Successors: First Contact 3"
 				goto released
 			label successful
 			action
-				set "captured kijra-pet"
+				set "Successors FC3: captured kijra-pet"
 			`	You successfully captured the Kijra-kiitaa.`
 				goto languages
 			label released
@@ -609,12 +611,28 @@ mission "Successors: First Contact 3"
 			`	End.`
 
 	on complete
-		has "captured kijra-pet"
-			set "known to the successors"
-			set "language: Successor"
-			event "successors: trust 1"
-			"reputation: Successor" += 9
 		conversation
+			`Return to Sioeora.`
+			branch capture
+				has "Successors FC3: captured kijra-pet"
+			label release
+			action
+				"reputation: House Sioeora" = 0
+			`	You released the Kijra-pet and are not rewarded.`
+				goto end
+			label capture
+			action
+				set "known to the successors"
+				set "language: Successor"
+				event "successors: trust 1"
+				"reputation: Successor" += 9
+				"reputation: House Chydiyi" += 9
+				"reputation: House Myurej" += 9
+				"reputation: House Sioeora" += 9
+				"reputation: House Aqrabe" += 11
+				"reputation: House Seineq" += 11
+			`	You captured the Kijra-pet and are rewarded.`
+			label end
 			`Complete.`
 
 substitutions
@@ -630,7 +648,7 @@ mission "Successors: Released Kijra-pet follow-up"
 	description "A Successor data-sphere left in your ship appears to be issuing a summons from a House Kaatrij to <destination>."
 	destination "Raaqa-Puan-Uuoru"
 	to offer
-		has "released kijra-pet"
+		has "Successors FC3: released kijra-pet"
 		or
 			has "told sieasej about hai language"
 			has "told sieasej about coalition language"
@@ -742,6 +760,11 @@ mission "Successors: Released Kijra-pet follow-up"
 				set "known to the successors"
 				event "successors: trust 1"
 				"reputation: Successor" += 9
+				"reputation: House Chydiyi" += 9
+				"reputation: House Myurej" += 9
+				"reputation: House Aqrabe" += 10
+				"reputation: House Kaatrij" += 10
+				"reputation: House Seineq" += 10
 
 mission "Successors: Trusted"
 	landing

@@ -121,6 +121,7 @@ system Chyyra-Osolaa
 	fleet "Small Successor Transport" 1600
 	fleet "People's Houses" 8000
 	fleet "People's Houses Raiders" 12000
+	fleet "Aqrabe Home" 1200
 	object
 		sprite star/f0
 	object
@@ -662,11 +663,12 @@ system Myiara-Nnesa
 	trade Medical 452
 	trade Metal 397
 	trade Plastic 320
-	fleet "Small New Houses" 500
-	fleet "Large New Houses" 1000
-	fleet "New Houses Surveillance" 2000
+	fleet "Small New Houses" 1500
+	fleet "Large New Houses" 2000
+	fleet "New Houses Surveillance" 2500
 	fleet "Medium Successor Freight" 1000
 	fleet "Successor Miners" 6000
+	fleet "Seineq Home" 1000
 	object
 		sprite star/m-giant
 		period 10
@@ -1014,8 +1016,9 @@ system Raaqa-Ryuit
 	fleet "People's Houses" 3000
 	fleet "Medium Successor Freight" 2000
 	fleet "Small Successor Transport" 1100
-	fleet "Large New Houses" 3000
-	fleet "New Houses Surveillance" 1500
+	fleet "Large New Houses" 5000
+	#fleet "New Houses Surveillance" 1500
+	fleet "Kaatrij Home" 1500
 	object
 		sprite star/g0
 	object Raaqa-Puan-Uuoru

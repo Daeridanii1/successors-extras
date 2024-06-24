@@ -58,9 +58,10 @@ planet Kasii-Cavasaa-Oa
 	attributes successor
 	landscape land/snow25
 	description "Although inhospitable by human standards, the snow-covered Kasii-Cavasaa-Oa falls comfortably, if on the low end of comfortable, within the Successors' tolerances. Beneath the permafrost lie rich deposits of rare earth elements and heavy metals that have formed and supported a highly self-contained economy, with entire production lines from raw material to final product contained within this single planet. Since many of the minerals mined here are integral for the production of the Successors' advanced composite materials, the New Houses keep a tight grip here, funneling many of the end products into their shipyards and construction projects."
-	description "Kasii-Cavasaa-Oa is also the home of House Kvasq, one of the New Houses."
+	description "Kasii-Cavasaa-Oa is also the home of House Aqrabe, one of the New Houses."
 	spaceport "Far from beautiful, but impressive in its scale and technology, Kasii-Cavasaa-Oa's spaceport looms over the blindingly-white snow hills like an obsidian outcrop. There is a substantial military presence here, guarding the valuable freight convoys of the New Houses; even in these relatively peaceful times, the Successors have clearly not forgotten their fraught and warlike past."
 	spaceport "You gain a similar feeling from your interaction with the Successors here; they are courteous, polite, and just as cold as the biting winds. This a not a place for idle chatter or bright-eyed tourists."
+	government "House Aqrabe"
 	shipyard "Successor Civilian"
 	shipyard "New Houses Light"
 	outfitter "Successor Civilian"
@@ -116,7 +117,7 @@ planet Khora-Vasa-Reyyaa
 	description "Khora-Vasa-Reyyaa is also home to the familial seat of House Chydiyi, one of the Old Houses."
 	spaceport "The spaceport here is perhaps the most militarized of any you have visited in Successor space. Large industrial buildings rise up around the landing pads, casting them into deep shadow, and several small Successor warships stand ready on fast-launch pads, ready to enter orbit at a moment's notice. You pass through a security checkpoint on your way into the spaceport proper, and while the security officers have clearly been briefed to expect alien visitors, they still regard you with some degree of scrutiny."
 	spaceport "The trading posts, outfitters, and shipyard inside are all quite impressive, and the Successors you meet are all very curt and professional, including the merchant captains."
-	government Successor
+	government "House Chydiyi"
 	shipyard "High Houses Heavy"
 	shipyard "Successor Heavy"
 	outfitter "High Houses Light"
@@ -169,18 +170,6 @@ planet Kua-Oa-Aava
 	"required reputation" 1
 	bribe 0
 
-planet Moliia-Cosa-Vasa
-	attributes successor
-	landscape land/fields15
-	description "A large and fertile planet covered in grasslands, Moliia-Cosa-Vasa supports the largest population of any planet in southern Successor space. Most of this is contained within its many cities, but recently, it has become a destination for Successors who want to return to a simpler and more peaceful way of life, and so there are several smaller settlements dotting the surface, each occupied by one or more large extended family groups."
-	description "While unfavorably positioned for hyperspace trade, Moliia-Cosa-Vasa enjoys a strong services economy that sees it as the financial hub for the New Houses and for southern Successor space as a whole."
-	description "The planet is also home to the familial seat of House Haeora, one of the New Houses."
-	spaceport "The spaceport on Moliia-Cosa-Vasa is positioned in an ancient impact crater in the southern hemisphere. The gently sloping sides of the crater have been excavated and rows upon rows of starship hangars have been built in them, offering an impressive view at the port's operation to the pilots who make use of it. In the center of the crater sits the spaceport's main building, a large spire wreathed in tiny landing pads for shuttles and other small craft, which constantly buzz above."
-	government Successor
-	outfitter "Successor Basics"
-	"required reputation" 10
-	bribe 0
-
 planet Mosaa-Ooa-Wyrdd
 	attributes successor
 	landscape land/mountain14-sfiera
@@ -222,7 +211,7 @@ planet Raaqa-Kvelq-Ryuit
 	landscape land/fields6
 	description "This planet seems to host a larger population than any other you have seen in Successor space. The weather is mild, and the landscape is dotted with farms both large and small, and both terrestrial and aquatic. On the tidal shores, massive crops of a long, stringy plant most reminiscent of seaweed grow under the care of swarms of agricultral robots."
 	spaceport "The spaceport is located right on the equator and is a massive, sprawling affair with several enormous racks of cargo containers stretching out into the distance, clearly awaiting transport on soon-arriving freighters. The ground is wet from a sprinkler system that maintains a constant thin film of water all throughout the spaceport's exterior. The Successors, lacking shoes, must appreciate this for reducing friction between their arms and the relatively rough and uncomfortable concrete."
-	government Successor
+	government "House Myurej"
 	"required reputation" 1
 	bribe 0
 
@@ -241,6 +230,7 @@ planet Raaqa-Puan-Uuoru
 	outfitter "Successor Heavy"
 	outfitter "Successor High Tech"
 	"required reputation" 10
+	government "House Kaatrij"
 	bribe 0
 
 planet Raaqa-Uur-Kaav
@@ -275,6 +265,7 @@ planet Staja-Kella-Oa
 	landscape land/fog12
 	description "The easternmost planet in Successor space, Staja-Kella-Oa is mostly covered in dense forest with only a few small cities. The planet hosts at least one academy under the auspices of the noble House Sioeora. Further from your landing site, there is evidence of ongoing archaeological work."
 	spaceport "The dense tree cover shades the landing pads of the spaceport and casts the whole area in dappled light that reflects softly off the moving ships. Much of the traffic at the spaceport is small shuttles and transports carrying youthful-looking groups of Successors to and from the planet; the interiors of the buildings are clean and colorful."
+	government "House Sioeora"
 	"required reputation" 1
 	bribe 0
 
@@ -347,7 +338,7 @@ planet Yoqqa-Vasa-Vasa
 	description "Yoqqa-Vasa-Vasa is also the seat of power of House Seineq, one of the New Houses."
 	spaceport "You take care to equip a respirator before exiting your ship."
 	spaceport "The spaceport here is large and busy, situated on a platform suspended on poles above one of the equatorial jungles. Because of the thick atmosphere, much of the transport in and out is by air, and there is a near-constant drone of airplane and airship engines layered over the normal spaceport chatter. Several large tourist groups are moving to and fro, and while some regard you with surprise, most take no notice of you or your ship, already focused on their upcoming tour or expedition."
-	government Successor
+	government "House Seineq"
 	shipyard "New Houses Light"
 	shipyard "High Houses Heavy"
 	shipyard "Successor Civilian"

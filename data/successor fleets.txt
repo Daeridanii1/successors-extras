@@ -235,6 +235,57 @@ fleet "New Houses Surveillance"
     variant 10
         "Veusade (Surveillance)"
 
+fleet "Kaatrij Home"
+    government "House Kaatrij"
+    names "high houses"
+    personality
+        heroic opportunistic
+    variant 50
+        "Stolsaqra (Military)" 2
+    variant 20
+        "Stolsaqra (Military)" 3
+    variant 20
+        "Vujlet (Surveiellance)"
+    variant 15
+        "Vujlet (Surveillance)" 2
+    variant 10
+        "Veusade (Surveillance)"
+    variant 10
+        "Vujlet (Surveillance)" 3
+
+fleet "Aqrabe Home"
+    government "House Aqrabe"
+    names "high houses"
+    personality
+        heroic
+    variant 50
+        "Aaulqra"
+    variant 50
+        "Aaulqra (Sniper)"
+    variant 20
+        "Aaulqra"
+        "Vujlet" 2
+    variant 10
+        "Aaulqra (Sniper)"
+        "Veusade" 2
+
+fleet "Seineq Home"
+    government "House Aqrabe"
+    names "high houses"
+    personality
+        heroic
+    variant 50
+        "Ejniisde"
+        "Stolsaqra (Military)" 2
+    variant 30
+        "Ejniisde"
+        "Vujlet" 2
+    variant 20
+        "Kaskhorade"
+    variant 10
+        "Kaskhorade"
+        "Vujlet" 2
+
 fleet "Successor Miners"
     government "Successor"
     names "successor"
