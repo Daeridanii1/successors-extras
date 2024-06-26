@@ -158,9 +158,10 @@ mission "Successor: Tourists Out 1"
 		has "known to the successors"
 		random < 25
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "Successor"
+		attributes "successor"
+		not attributes "uninhabited"
 		attributes "tourism" "quiet"
 		distance 5 20
 	on visit
@@ -181,9 +182,10 @@ mission "Successor: Tourists Out 2"
 		has "known to the successors"
 		random < 25
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "Successor"
+		attributes "successor"
+		not attributes "uninhabited"
 		attributes "tourism" "quiet"
 		distance 5 20
 	on visit
@@ -196,7 +198,7 @@ mission "Successor: Tourists Out 2"
 mission "Successor: Bold Tourists Round Trip"
 	job
 	repeat
-	name "Extreme sightseeing on <planet>"
+	name "Extreme sightseeing on <stopover planets>"
 	description "These <bunks> sightseers will pay you <payment> to bring them and their safety equipment to <stopovers> and back home by <date>."
 	deadline
 	cargo "Isolation Suits" 1
@@ -205,7 +207,7 @@ mission "Successor: Bold Tourists Round Trip"
 		has "known to the successors"
 		random < 15
 	source
-		government "Successor"
+		attributes "successor"
 	stopover
 		attributes "boldtourism"
 		distance 5 20
@@ -230,7 +232,7 @@ mission "Successor: Tourist Expedition"
 		has "known to the successors"
 		random < 15
 	source
-		government "Successor"
+		attributes "successor"
 	stopover
 		attributes "successor" 
 		attributes "uninhabited" "tourism" "wealthy"
@@ -263,11 +265,11 @@ mission "Successor: Students Out"
 		has "known to the successors"
 		random < 50
 	source
-		government "Successor"
+		attributes "successor"
 		attributes "education"
 	destination
-		government "Successor"
-		not attributes "education" "crime"
+		attributes "successor"
+		not attributes "uninhabited" "education" "crime"
 		distance 5 20
 	on visit
 		dialog phrase "generic passenger on visit"
@@ -287,10 +289,11 @@ mission "Successor: Students In"
 		has "known to the successors"
 		random < 20
 	source
-		government "Successor"
+		attributes "successor"
 		not attributes "crime"
 	destination
-		government "Successor"
+		attributes "successor"
+		not attributes "uninhabited"
 		attributes "education"
 		distance 5 20
 	on visit
@@ -304,17 +307,17 @@ mission "Successor: Workers Out 1"
 	job
 	repeat
 	name "Successor workers to <planet>"
-	description "These <bunks> workers are looking for jobs on <destination> and will pay you <payment> to take them there."
+	description "These <bunks> workers are looking for jobs on <destination> and will pay you <payment> to take them there by <date>."
 	deadline
 	passengers 2 5 .5
 	to offer
 		has "known to the successors"
 		random < 20
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "Successor"
-		not attributes "quiet"
+		attributes "successor"
+		not attributes "uninhabited" "quiet"
 		distance 5 20
 	on visit
 		dialog phrase "generic passenger on visit"
@@ -327,17 +330,17 @@ mission "Successor: Workers Out 2"
 	job
 	repeat
 	name "Successor workers to <planet>"
-	description "These <bunks> workers are looking for jobs on <destination> and will pay you <payment> to take them there."
+	description "These <bunks> workers are looking for jobs on <destination> and will pay you <payment> to take them there by <date>."
 	deadline
 	passengers 3 6 .5
 	to offer
 		has "known to the successors"
 		random < 20
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "Successor"
-		not attributes "quiet"
+		attributes "successor"
+		not attributes "uninhabited" "quiet"
 		distance 5 20
 	on visit
 		dialog phrase "generic passenger on visit"
@@ -356,9 +359,11 @@ mission "Successor: Delivery Out 1"
 		has "known to the successors"
 		random < 35
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "Successor"
+		attributes "successor"
+		not attributes "uninhabited"
+		distance 3 20
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -377,9 +382,11 @@ mission "Successor: Delivery Out 2"
 		has "known to the successors"
 		random < 30
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "Successor"
+		attributes "successor"
+		not attributes "uninhabited"
+		distance 3 20
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -398,12 +405,13 @@ mission "Successor: High Value Delivery Out"
 		has "known to the successors"
 		random < 10
 	source
-		government "Successor"
+		attributes "successor"
 		not attributes "crime"
 	destination
-		government "Successor"
+		attributes "successor"
 		attributes "wealthy"
-		not attributes "crime"
+		not attributes "crime" "uninhabited"
+		distance 3 20
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -424,10 +432,11 @@ mission "Successor: Aid Delivery Out 1"
 		has "known to the successors"
 		random < 10
 	source
-		government "Successor"
+		attributes "successor"
 		not attributes "crime"
 	destination
-		government "Successor"
+		attributes "successor"
+		not attributes "uninhabited"
 		attributes "crime"
 	on visit
 		dialog phrase "generic cargo on visit"
@@ -447,9 +456,11 @@ mission "Successor: Large Delivery Out 1"
 		has "known to the successors"
 		random < 20
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "Successor"
+		attributes "successor"
+		not attributes "uninhabited"
+		distance 3 20
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -468,9 +479,11 @@ mission "Successor: Large Delivery Out 2"
 		has "known to the successors"
 		random < 20
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "Successor"
+		attributes "successor"
+		not attributes "uninhabited"
+		distance 3 20
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -490,9 +503,11 @@ mission "Successor: Rush Delivery Out 1"
 		has "known to the successors"
 		random < 25
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "Successor"
+		attributes "successor"
+		not attributes "uninhabited"
+		distance 3 20
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -512,9 +527,11 @@ mission "Successor: Large Rush Delivery Out 1"
 		has "known to the successors"
 		random < 15
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "Successor"
+		attributes "successor"
+		not attributes "uninhabited"
+		distance 3 20
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -535,10 +552,11 @@ mission "Successor: Seismic Stabilizers"
 		has "known to the successors"
 		random < 6
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "Successor"
-		not attributes "station"
+		attributes "successor"
+		not attributes "uninhabited" "station"
+		distance 3 20
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -557,12 +575,13 @@ mission "Successor: Data Courier 1"
 		has "known to the successors"
 		random < 30
 	source
-		government "Successor"
+		attributes "successor"
 		attributes "wealthy" "urban" "station"
 		not attributes "crime"
 	destination
-		government "Successor"
-		not attributes "crime"
+		attributes "successor"
+		not attributes "uninhabited" "crime"
+		not near "<system>" 1
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -581,7 +600,7 @@ mission "Successor: Researchers Out 1"
 		has "known to the successors"
 		random < 15
 	source
-		government "Successor"
+		attributes "successor"
 		attributes "education"
 	stopover
 		government "Predecessor"
@@ -604,7 +623,7 @@ mission "Successor: Large Researchers Out 1"
 		has "known to the successors"
 		random < 10
 	source
-		government "Successor"
+		attributes "successor"
 		attributes "education"
 	stopover
 		government "Predecessor"
@@ -627,7 +646,7 @@ mission "Successor: Home Researchers Out 1"
 		has "known to the successors"
 		random < 20
 	source
-		government "Successor"
+		attributes "successor"
 		attributes "education"
 	stopover
 		attributes "uninhabited" 
@@ -653,10 +672,11 @@ mission "Successor: Researchers Transfer"
 		has "known to the successors"
 		random < 30
 	source
-		government "Successor"
+		attributes "successor"
 		not attributes "crime"
 	destination
-		government "Successor"
+		attributes "successor"
+		not attributes "uninhabited"
 		attributes "education" "wealthy"
 	on visit
 		dialog phrase "generic passenger on visit"
@@ -677,9 +697,9 @@ mission "Successor: Old Houses Rush Delivery"
 		has "known the the successors"
 		random < 10
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "Old Houses"
+		government "Old Houses" "House Chydiyi" "House Myurej" "House Sioeora"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -701,9 +721,9 @@ mission "Successor: New Houses Rush Delivery"
 		has "known the the successors"
 		random < 10
 	source
-		government "Successor"
+		attributes "successor"
 	destination
-		government "New Houses"
+		government "New Houses" "House Kaatrij" "House Seineq" "House Aqrabe"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
@@ -723,7 +743,7 @@ mission "High Houses: Criminal Capture 1"
 		has "known to the successors"
 		random < 10
 	source
-		government "Successor"
+		attributes "successor"
 		not attributes "crime"
 	npc disable
 		government "Bounty"
