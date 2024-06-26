@@ -276,7 +276,7 @@ outfit `"Niis" Inductive Engines`
 		"Successor"
 	"mass" 28
 	"outfit space" -28
-	"engine capacity" -38
+	"engine capacity" -28
 	"thrust" 16.8
 	"thrusting energy" 0.6
 	"thrusting heat" 0.8
