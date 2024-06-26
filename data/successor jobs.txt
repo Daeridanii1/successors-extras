@@ -87,7 +87,7 @@ phrase "predecessor researchers out"
 		`scientists `
 		`scholars `
 	word
-		`to <planet> where they `
+		`to <planet stopovers> where they `
 	word
 		`promptly `
 		`immediately `
@@ -119,7 +119,7 @@ phrase "successor researchers out"
 		`scientists `
 		`experimenters `
 	word
-		`to <planet> where they `
+		`to <planet stopovers> where they `
 	word
 		`promptly `
 		`immediately `
@@ -689,7 +689,7 @@ mission "Successor: Researchers Transfer"
 mission "Successor: Old Houses Rush Delivery"
 	job
 	repeat
-	clearance "(After a moment of checking your delivery ID against their manifests, flight control clears you for landing.)"
+	clearance "After a moment of checking your delivery ID against their manifests, flight control clears you for landing."
 	name "Old Houses courier to <planet>"
 	description "The Old Houses require <tons> of high-grade supplies to be transported from <origin> to <planet> by <date>. You will be paid <payment> on delivery."
 	cargo random 5 10 .2
@@ -713,7 +713,7 @@ mission "Successor: Old Houses Rush Delivery"
 mission "Successor: New Houses Rush Delivery"
 	job
 	repeat
-	clearance "(After a moment of checking your delivery ID against their manifests, flight control clears you for landing.)"
+	clearance "After a moment of checking your delivery ID against their manifests, flight control clears you for landing."
 	name "New Houses courier to <planet>"
 	description "The New Houses require <tons> of high-grade supplies to be transported from <origin> to <planet> by <date>. You will be paid <payment> on delivery."
 	cargo random 5 10 .2
@@ -732,7 +732,7 @@ mission "Successor: New Houses Rush Delivery"
 		payment 3000 800
 		dialog phrase "high houses delivery"
 		"successor jobs" ++
-		"old houses jobs" ++
+		"new houses jobs" ++
 
 mission "High Houses: Criminal Capture 1"
 	name "Disable criminal in <system>"
