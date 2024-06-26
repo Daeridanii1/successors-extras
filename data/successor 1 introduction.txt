@@ -91,10 +91,10 @@ mission "Successors: First Contact 1"
 		event "successors: first contact wait" 5
 		log "Factions" "Successors" `The Successors are a society of aliens occupying a territory on the southwestern outer rim of the galaxy. They are the heirs of a large interstellar empire which collapsed at some point around fifteen hundred years ago, who explored much of the galaxy, as far north as Sol.`
 		log "People" "Sieasej" `Sieasej is a Successor scholar of historical linguistics and member of the noble House Sioeora. Because of their area of study, they are one of the only Successors who can speak to and understand you without the benefit of a translation device.`
-		"reputation: Successor" += 2
-		"reputation: House Chydiyi" += 2
-		"reputation: House Myurej" += 2
-		"reputation: House Sioeora" += 2
+		"reputation: Successor" += 5
+		"reputation: House Chydiyi" += 5
+		"reputation: House Myurej" += 5
+		"reputation: House Sioeora" += 5
 		conversation
 			`In a similar manner to the last time, you set down your ship at a landing pad at the spaceport on this planet, escorted by the interceptors. Different to last time, however, you have been shuttled to a small, out-of-the way area at a great distance from the main complex, where several uniformed individuals are gathered on the landing pad, standing at attention.`
 			`	After waiting for several minutes, a shuttle lands on the pad beside yours and several individuals emerge from it. Two of them are moving more quickly than the rest, and the guards allow them to pass and approach you. The one on the left is a uniformed officer wearing what appears to be heavy body armor, shimmering metallic plates that sparkle in the light. On the right is a smaller alien, wrapped up in a dark, cocoon-like outfit from which their head and arms emerge. The officer says something to the smaller one, who quietly replies and then pulls from a pocket on their outfit a smooth sheet which they inspect several times before haltingly addressing you.`
@@ -516,7 +516,7 @@ mission "Successors: First Contact 3"
 			`	You draw your sidearm and fire at the creatures, striking one in its midsection. It crumples, and the other one suddenly vanishes before you can fire a second shot. In the time it takes your eyes to adapt to the creature's camouflage, it has already lodged the barb of its feeler deep in your chest.`
 				die
 			label ship-shoot
-			`	You radio to the <ship> and order your crew to fire a turret at the creatures, killing them both before they have the opportunity to attack you.`
+			`	You radio to the <ship> and order your crew to fire a turret at the creatures, vaporizing them both before they have the opportunity to attack you and leaving only two small scorched craters in the ground.`
 				goto successful
 			label release
 			branch release-friends
@@ -534,10 +534,14 @@ mission "Successors: First Contact 3"
 			label successful
 			action
 				set "Successors FC3: captured kijra-pet"
-			`	You successfully captured the Kijra-kiitaa.`
+			`	With the larger animals dispatched, you and Sieasej dash into your ship with your quarry safe in tow. The waves of color running over Sieasej's body slowly fade. "Well done, captain," they eventually say, "I'm sure Sioeora will be pleased."`
 				goto languages
 			label released
-			`	You released the Kijra-kiitaa.`
+			`	"I confess I hadn't picked thee for such a tender soul, captain," Sieasej eventually says.`
+			choice
+				`	"I only did what I thought would get us back alive."`
+				`	"It wasn't right to hurt them."`
+			`	"Ah," they say. "'Tis the same regardless, really." They wave their locator in the air again, and a fresh wave of color ripples down their body shortly after.` 
 				goto languages
 			label languages
 			`	Later that evening, Sieasej approaches you with what you might have characterized as an inquisitive demeanor. "I confess, captain, thou hast enflamed my curiosity about something and I wish to ask thee before we return: if thou hast explored the galaxy to the point where you have found us, surely thou must have encountered other aliens? We have records, of course, of all those who our Predecessors met in their time. If they have endured as we have, tell me, have their languages also?`
@@ -625,12 +629,12 @@ mission "Successors: First Contact 3"
 				set "known to the successors"
 				set "language: Successor"
 				event "successors: trust 1"
-				"reputation: Successor" += 9
-				"reputation: House Chydiyi" += 9
-				"reputation: House Myurej" += 9
-				"reputation: House Sioeora" += 9
-				"reputation: House Aqrabe" += 11
-				"reputation: House Seineq" += 11
+				"reputation: Successor" += 5
+				"reputation: House Chydiyi" += 5
+				"reputation: House Myurej" += 5
+				"reputation: House Sioeora" += 5
+				"reputation: House Aqrabe" += 10
+				"reputation: House Seineq" += 10
 			`	You captured the Kijra-pet and are rewarded.`
 			label end
 			`Complete.`
@@ -759,9 +763,9 @@ mission "Successors: Released Kijra-pet follow-up"
 				log "People" "Saajret, of Somber Sejra" `Saajret, of Somber Sejra is an archivist, among other things, for the Successor High House Kaatrij. They are a member of the noble lineage of the now-defunct House Sejra, some of whose citizens were absorbed into House Kaatrij during the partial collapse of their predecessors' society.`
 				set "known to the successors"
 				event "successors: trust 1"
-				"reputation: Successor" += 9
-				"reputation: House Chydiyi" += 9
-				"reputation: House Myurej" += 9
+				"reputation: Successor" += 5
+				"reputation: House Chydiyi" += 5
+				"reputation: House Myurej" += 5
 				"reputation: House Aqrabe" += 10
 				"reputation: House Kaatrij" += 10
 				"reputation: House Seineq" += 10
@@ -777,8 +781,8 @@ mission "Successors: Trusted"
 	to offer
 		has "successor jobs" >= 20
 	on offer
-		"reputation: Old Houses" += 1
-		"reputation: New Houses" += 1
+		"reputation: Old Houses" += 5
+		"reputation: New Houses" += 5
 		conversation
 			`Shortly after you set down in the spaceport here, you are approached by a group of Successors in naval uniforms, clearly in the employ of one or several of the High Houses, as there is some variance in the design of their uniforms that you've come to associate with the differences between the various houses. Their leader addresses you in a calm tone with the unmistakable coolness that military officers seem to hold regardless of species. Their skin remains a flat grey throughout.`
 			`	"Captain <last>. The High Houses have noted thy actions in their space, and wishing to make thee a stronger ally to their cause, have summoned thee to meet them in council. Thou art encouraged to make haste to the Uuoru-Kella system.`
@@ -790,7 +794,8 @@ mission "Successors: Trusted"
 				accept
 	on complete
 		set "license: Successor"
-		"reputation: Successor" += 10
+		"reputation: Successor" += 5
+		"reputation: House Chydiyi" += 5
 		set "trusted by the successors"
 		event "successors: trust 2"
 		conversation
