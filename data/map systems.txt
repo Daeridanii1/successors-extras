@@ -610,7 +610,17 @@ system Mosaa-Iyra
 	asteroids "small metal" 18 5
 	minables silicon 11 9
 	minables lead 18 4
-	minables gold 1 8
+	minables gold 2 8
+	trade Clothing 378
+	trade Electronics 739
+	trade Equipment 428
+	trade Food 429
+	trade "Heavy Metals" 748
+	trade Industrial 629
+	trade "Luxury Goods" 1402
+	trade Medical 482
+	trade Metal 324
+	trade Plastic 399
 	fleet "Successor Miners" 3000
 	fleet "Small Successor Transport" 1500
 	fleet "Light Successor Freight" 1500
