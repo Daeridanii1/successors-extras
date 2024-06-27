@@ -57,7 +57,7 @@ outfitter "Successor Basics"
 	`"Aqra" Inductive Thruster`
 	`1-"Uurau" Betavoltaic Cell`
 	`Auxiliary Power Reserve`
-	`"Ej" Shield Cortex`
+	`"Byiaa" Shield Cortex`
 	"Hyperdrive"
 
 outfitter "Successor Weapons Basics"
@@ -73,7 +73,7 @@ outfitter "Successor Civilian"
 	`"Aqra" Inductive Thruster`
 	`1-"Uurau" Betavoltaic Cell`
 	`Auxiliary Power Reserve`
-	`"Ej" Shield Cortex`
+	`"Byiaa" Shield Cortex`
 	`Shield Cortex Interface`
 	"Hyperdrive"
 
@@ -82,6 +82,7 @@ outfitter "Successor Civilian"
 	`"Chyyra" Inductive Thruster`
 
 	`3-"Kaska" Betavoltaic Cell`
+	`"Ej" Shield Cortex`
 	`Primary Power Reserve`
 	"Bunk Room"
 	"Small Bunk Room"
@@ -90,7 +91,6 @@ outfitter "Successor Civilian"
 	"Cargo Expansion"
 	"Outfits Expansion"
 	"Successor Cooling"
-	"Phasing Laser Sidearm"
 
 outfitter "Successor Heavy"
 	`6-"Ruuv" Betavoltaic Cell`
@@ -102,7 +102,6 @@ outfitter "Successor High Tech"
 	`OC-"Mavra" Betavoltaic Cell`
 	`"Tuur" Scanning Suite`
 	`"Niis" Inductive Engines`
-	`"Byiaa" Shield Cortex`
 
 outfitter "High Houses Light"
 	`Auxiliary Power Reserve`
