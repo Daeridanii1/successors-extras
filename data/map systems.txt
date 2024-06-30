@@ -804,12 +804,12 @@ system Ojstaan-Sola
 	trade Medical 778
 	trade Metal 586
 	trade Plastic 369
-	fleet "Small Old Houses" 500
-	fleet "Large Old Houses" 2500
+	fleet "Small Old Houses" 1500
+	fleet "Large Old Houses" 3000
 	fleet "Old Houses Surveillance" 2000
-	fleet "Medium Successor Freight" 250
-	fleet "Small Successor Transport" 250
-	fleet "Successor Miners" 1000
+	fleet "Medium Successor Freight" 1200
+	fleet "Small Successor Transport" 1200
+	fleet "Myurej Home" 1000
 	object
 		sprite star/g5
 		period 10
@@ -1126,6 +1126,7 @@ system Tuur-Kella
 	fleet "Small Old Houses" 1000
 	fleet "Large Old Houses" 1400
 	fleet "Old Houses Surveillance" 2000
+	fleet "Chydiyi Home" 2500
 	object
 		sprite star/b-giant
 	object
@@ -1283,8 +1284,9 @@ system Vade-Staja
 	trade Plastic 286
 	fleet "Small Successor Transport" 1000
 	fleet "Light Successor Freight" 1500
-	fleet "Small Old Houses" 2000
+	fleet "Small Old Houses" 4000
 	fleet "Old Houses Surveillance" 7500
+	fleet "Sioeora Home" 2000
 	object
 		sprite star/f0
 		period 10
@@ -1340,10 +1342,10 @@ system Valkraa-Uuoru
 	trade Metal 423
 	trade Plastic 248
 	fleet "Large Old Houses" 1600
-	fleet "Small Old Houses" 800
 	fleet "Old Houses Surveillance" 2000
 	fleet "Medium Successor Freight" 1400
 	fleet "Small Successor Transport" 2000
+	fleet "Chydiyi Home" 800
 	object
 		sprite star/k0
 		distance 155.228

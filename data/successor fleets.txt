@@ -270,7 +270,7 @@ fleet "Aqrabe Home"
         "Veusade" 2
 
 fleet "Seineq Home"
-    government "House Aqrabe"
+    government "House Seineq"
     names "high houses"
     personality
         heroic
@@ -285,6 +285,64 @@ fleet "Seineq Home"
     variant 10
         "Kaskhorade"
         "Vujlet" 2
+
+fleet "Chydiyi Home"
+    government "House Chydiyi"
+    names "high houses"
+    personality
+        heroic
+    variant 50
+        "Aaulqra"
+        "Stolsaqra (Military)" 2
+    variant 50
+        "Aaulqra (Sniper)"
+        "Stolsaqra (Military)" 2
+    variant 20
+        "Aaulqra"
+        "Veusade" 2
+    variant 10
+        "Aaulqra (Sniper)"
+        "Veusade" 2
+    variant 10
+        "Kaskhorade (Brawler)" 2
+    variant 10
+        "Kaskhorade (Sniper)"
+        "Veusade" 2
+
+fleet "Myurej Home"
+    government "House Myurej"
+    names "high houses"
+    personality
+        heroic
+    variant 50
+        "Seiitej"
+        "Stolsaqra (Military)" 2
+    variant 30
+        "Ejniisde"
+        "Seiitej" 2
+    variant 20
+        "Kaskhorade (Brawler)"
+        "Seiitej"
+    variant 10
+        "Kaskhorade"
+        "Seiitej" 2
+
+fleet "Sioeora Home"
+    government "House Sioeora"
+    names "high houses"
+    personality
+        heroic
+    variant 50
+        "Stolsaqra (Military)" 2
+    variant 30
+        "Seiitej"
+    variant 20
+        "Seiitej"
+        "Nnaatej"
+        "Stolsaqra (Military)" 2
+    variant 10
+        "Seiitej" 2
+        "Nnaatej" 2
 
 fleet "Successor Miners"
     government "Successor"
