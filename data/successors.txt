@@ -536,7 +536,7 @@ trade
 		`fossils`
 		`unfilled reliquaries`
 
-phrase "2-syllable commoditites"
+phrase "2-syllable commodities"
 	word
 		"armlets"
 		"bracelets"

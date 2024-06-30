@@ -39,11 +39,11 @@ news "high houses official"
 			"High Houses officer"
 	message
 		word
-			`"The Houses welcome thee as 'guest' among our people;`
-			`"Please remain in concord with our people;`
-			`"Informed, I am of thy recent arrival;`
-			`"Can I provide assistance, honored traveler?`
-			`"Our noble house does greet thee full of joy;`
+			`"The Houses welcome thee as 'guest' among our people; `
+			`"Please remain in concord with our people; `
+			`"Informed, I am of thy recent arrival; `
+			`"Can I provide assistance, honored traveler? `
+			`"Our noble house does greet thee full of joy; `
 		word
 			`I am at thy service if 'tis needed."`
 			`Today's been rather busy, please speak quickly."`
@@ -55,7 +55,7 @@ news "high houses official"
 			`"If thou see'st something suspect, report't promptly`
 		word
 			`; port rules and regulations should be posted."`
-			`in accordance with our standard port procedure."`
+			` in accordance with our standard port procedure."`
 
 news "successor student"
 	to show
@@ -69,13 +69,13 @@ news "successor student"
 			"Successor student"
 	message
 		word
-			`"Exams, I think, shall never know their end,`
-			`"Hath I forgot my geographic terms?`
-			`"Hath I forgot my chemical reagents?`
-			`"Hyperspace Mechanics is a bore,`
-			`"Predecessors His'try is a drag,`
-			`"Plasma Flow Dynamics is a bore,`
-			`"Particle Kinetics is a bore,`
+			`"Exams, I think, shall never know their end, `
+			`"Hath I forgot my geographic terms? `
+			`"Hath I forgot my chemical reagents? `
+			`"Hyperspace Mechanics is a bore, `
+			`"Predecessors His'try is a drag, `
+			`"Plasma Flow Dynamics is a bore, `
+			`"Particle Kinetics is a bore, `
 		word
 			`I know not sleep nor food nor meager rest`
 			`I wish that I could learn while I'm asleep`
@@ -153,7 +153,7 @@ news "successor merchant"
 		word
 			"some "
 		phrase
-			"2-syllable commmodities"
+			"2-syllable commodities"
 		word
 			"."
 
