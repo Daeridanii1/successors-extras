@@ -535,3 +535,16 @@ trade
 		`lightweight prosthetics`
 		`fossils`
 		`unfilled reliquaries`
+
+phrase "2-syllable commoditites"
+	word
+		"armlets"
+		"bracelets"
+		"goblets"
+		"flooring"
+		"sculptures"
+		"paintings"
+		"fossils"
+		"glassware"
+		"fabrics"
+		"fish-cubes"

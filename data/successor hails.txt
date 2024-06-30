@@ -278,6 +278,7 @@ phrase "kaatrij friendly hail"
 phrase "seineq friendly hail"
 	word
 		`For ten thousand years / for ten thousand more!`
+		`Our alliance shall endure.`
 
 phrase "seineq friendly hail"
 	phrase
