@@ -1363,7 +1363,7 @@ system Valkraa-Uuoru
 		sprite planet/gas6-hot
 		distance 1608
 		period 426.836
-		object
+		object Khora-Uurau-Uuoru
 			sprite planet/rock14-b
 			distance 246
 			period 100.976
