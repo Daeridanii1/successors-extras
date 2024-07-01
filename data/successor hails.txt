@@ -193,7 +193,7 @@ phrase "old houses friendly hail" # Boast hails
 		" shield of "
 		" prime of "
 		" best of "
-	phrase
+	word
 		"the Old Houses"
 	word
 		" in"
