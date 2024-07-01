@@ -642,12 +642,37 @@ mission "Successors: Released Kijra-pet follow-up"
 		random < 30
 	on offer
 		conversation
+			branch was-monoglot
+				has "offered: Successors: Kaatrij Monoglot Prompt"
 			branch hai
 				has "language: Hai"
 			`Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board. After rummaging through some of your belongings, you discover that it is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in a familiar-looking script that you quickly realize belongs to one of the species of the Coalition. After running the text through the translation box you acquired from the <coalition ally>, you are able to decode the message:`
 				goto message-coalition
 			label hai
 			`Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board. After rummaging through some of your belongings, you discover that it is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in a familiar-looking script that you quickly realize is that of the Hai. After running the text through your ship's Hai translator, you are able to decode the message:`
+				goto message-hai
+			
+			label was-monoglot
+			branch hai-monoglot
+				has "language: Hai"
+			`Upon landing here, you briefly remember the Successor data-sphere that you found on your ship some time ago. Given that you've recently acquired a Coalition translation box, you might be able to decode its message.`
+			choice
+				`	(Try to decode it).`
+				`	(Maybe later).`
+					defer
+				`	(Don't decode it).`
+					decline
+			`	You up the sphere, and it projects its message in a familiar-looking script that you quickly realize belongs to one of the species of the Coalition. After running the text through the translation box you acquired from the <coalition ally>, you are able to decode it:`
+				goto message-coalition
+			label hai-monoglot
+			`Upon landing here, you briefly remember the Successor data-sphere that you found on your ship some time ago. Given that you've recently acquired a Hai translator, you might be able to decode its message.`
+			choice
+				`	(Try to decode it).`
+				`	(Maybe later).`
+					defer
+				`	(Don't decode it).`
+					decline
+			`	You up the sphere, and it projects its message in a familiar-looking script that you quickly realize belongs to the Hai. After running the text through the translation box you acquired from them, you are able to decode it:`
 				goto message-hai
 			label message-coalition
 			`		AUDIENCE OF HUMAN CAPTAIN, HOUSE KAATRIJ REQUESTS`
@@ -753,13 +778,27 @@ mission "Successors: Released Kijra-pet follow-up"
 				"reputation: House Kaatrij" += 10
 				"reputation: House Seineq" += 10
 
+mission "Successors: Kaatrij Monoglot Prompt"
+	landing
+	invisible
+	to offer
+		has "event: Successors: released kijra-pet wait"
+		and
+			not "language: Hai"
+			not "language: Coalition"
+		random < 30
+	on offer
+		conversation
+			`Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board. After rummaging through some of your belongings, you discover that it is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in a strange-looking alien script that you unfortunately do not recognize. If you ever acquired some alien translation equipment, you might be able to decode it.`
+			decline
+
 mission "Successors: Trusted"
 	landing
 	name "Go to the Uuoru-Kella system to meet with the High Houses"
-	description "The High Houses are pleased with how you've conducted yourself in Successor space, and wish to meet with you to strengthen your relationship. You have been given clearance to land."
+	description "The High Houses are pleased with how you've conducted yourself in Successor space, and wish to meet with you in council to strengthen your relationship."
 	source
-		government "Successor" "Old Houses" "New Houses"
-		not attributes "quiet" "crime"
+		attributes "successor"
+		not attributes "quiet" "crime" "uninhabited"
 	destination "Aava-Aasa-Khora"
 	to offer
 		has "successor jobs" >= 20
@@ -767,7 +806,7 @@ mission "Successors: Trusted"
 		"reputation: Old Houses" += 5
 		"reputation: New Houses" += 5
 		conversation
-			`Shortly after you set down in the spaceport here, you are approached by a group of Successors in naval uniforms, clearly in the employ of one or several of the High Houses, as there is some variance in the design of their uniforms that you've come to associate with the differences between the various houses. Their leader addresses you in a calm tone with the unmistakable coolness that military officers seem to hold regardless of species. Their skin remains a flat grey throughout.`
+			`Shortly after you set down in the spaceport here, you are approached by a group of Successors in naval uniforms, clearly and surprisingly in the employ of multiple various High Houses; there is some variance in the design of the uniforms of different members. Their leader addresses you in a calm tone with the unmistakable coolness that military officers seem to hold regardless of species, their skin remaining a flat grey throughout.`
 			`	"Captain <last>. The High Houses have noted thy actions in their space, and wishing to make thee a stronger ally to their cause, have summoned thee to meet them in council. Thou art encouraged to make haste to the Uuoru-Kella system.`
 			choice
 				`	"Thank you for telling me. I'll prepare to travel there immediately."`
@@ -782,8 +821,9 @@ mission "Successors: Trusted"
 		set "trusted by the successors"
 		event "successors: trust 2"
 		conversation
-			`Once you have sat down at the spaceport, you are met by another group of Successor naval officers. You notice that this group appears even more diverse than the last, representing several different uniform styles and liveries. Unifying them, however, is their all wearing a small white and blue pin on their outfits that does not seem to correspond to the insignia of any one of the High Houses. They guide you, politely but firmly, to one of the monorail trains snaking out from the spaceport to other installations on the planet, and you all shuffle together into one of the cars, which appears to have been completely cleared of normal passengers.`
-			`	Several minutes later, the monorail deposits you at an especially large and well-decorated complex that swarms with both military and well-dressed civilians, some of whom appear so opulent and bejeweled that you suspect their personal effects are worth more than your ship. Each of them without exception wears the same white and blue insignia as your escorts, though many have incorporated it into their clothes' design or even display it as a pattern in skin coloration. As your escort peels off into the crowd, you see a familiar face in the distance: Sieasej, the Successor scholar, who visibly perks up when they see you and approaches.`
+			`Once you have sat down at the spaceport, you are met by another group of Successor naval officers. You notice that this group appears even more diverse than the last, representing several different uniform styles and liveries. Unifying them all is a small white and blue pin attached to their outfits; one that does not correspond to the insignia of any of the High Houses. The officers guide you, politely but firmly, to one of the monorail trains snaking out from the spaceport to other installations on the planet, and you all shuffle together into one of the cars, which appears to have been completely cleared of normal passengers if it even carried those in the first place.`
+			`	Several minutes later, the monorail deposits you at an especially large and well-decorated complex that swarms with both military and well-dressed civilians, some of whom appear so opulent and bejeweled that you suspect their personal effects are worth more than your ship. Each of them without exception wears the same white and blue insignia as your escorts, though many have incorporated it into their clothes' design or even display it as a pattern in skin coloration.`
+			`	As your escort peels off into the crowd, you see a familiar face in the distance: Sieasej, the Successor scholar, who visibly perks up when they see you and approaches.`
 			`	"Captain! Thou hast arrived at a fortuitous time! There are still some minutes before this day's meetings—including thy own audience with the Houses—are scheduled to begin." `
 			choice
 				`	"I'm ready to start.`
