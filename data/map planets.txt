@@ -151,6 +151,12 @@ planet Myiara-Sola-Tej
 	description `This abandoned station appears to remain technically habitable, if one doesn't mind breathing the poorly-recycled and dusty air.`
 	government Uninhabited
 
+planet Myiara-Aret-Iir
+	attributes predecessor uninhabited
+	landscape land/badlands4
+	description `In contrast to the pristine emptiness of the other formerly-inhabited planets in this area of space, this world teems with signs of chaos. The remnants of hastily-built weather-control towers dot much of its surface, and the cities upon it are neither majestic nor well-maintained; none are very large, but most are surrounded by vast expanses of fabric and radiation-bleached temporary constructions.`
+	government Predecessor
+
 planet Mavra-Sol-Kvel
 	attributes wealthy successor
 	landscape land/fields14

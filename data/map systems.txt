@@ -909,7 +909,7 @@ system Oublaa-Khora
 	haze _menu/haze-tear
 	object
 		sprite star/g0-old
-	object
+	object Myiara-Aret-Iir
 		sprite planet/rock13
 		distance 1258
 		period 1258
