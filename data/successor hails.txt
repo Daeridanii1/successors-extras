@@ -116,6 +116,34 @@ phrase "successor hostile hail"
 		"The gentle hand of Death close up thy eye."
 		"No satisfaction lives in our reprisal."
 
+phrase "successor friendly disabled hail"
+	word
+		"Thy prompt assist t'would honor thee,"
+		"Alas, our vessel's lay'en low,"
+		"'Help!' we ask, fair visitor,"
+		"Our valiant craft's been stricken, friend,"
+	word
+		" / "
+	word
+		"Make haste, we thee implore."
+		"Lend aid if 'tis in reach."
+		"Thy help would make us whole."
+		"'Tis noble to be kind and wise to help."
+
+phrase "successor hostile disabled hail"
+	word
+		"Ruinous creature, see now thy bitter handiwork!"
+		"Thy deceit's laid low our fairest vessel!"
+		"Bitter knave, thoughtless in kind and action!"
+		"Cruel deceiver, we observe our fault 'twas trusting thee,"
+	word
+		" / "
+	word
+		"The Houses shall bring thy bitter self to justice!"
+		"Spare us but our lives if not our ship!"
+		"Thou art cursed, foolish, cruel, and sure to die."
+		"Our families shall avenge us, no matter how!"
+
 ### HIGH HOUSES: GENERIC
 
 phrase "high houses friendly hail"
@@ -180,6 +208,26 @@ phrase "high houses hostile hail"
 		"Our thorns shall sprout in thy rebellious flesh."
 		"May thy death be valorous and quick."
 		"May thy pain be consuming and quick."
+
+phrase "high houses hostile disabled hail" 2
+	word
+		"Ruinous cur, our vengeance shall yet find thee!"
+		"Revenge is a dish best served cold,"
+		"Thou might break our ship but shall never break our spirit!"
+		"Putrefy and fester, knave deciever!"
+		"Board us and we shall fight to the last!"
+	word
+		" / "
+	word
+		"Our friends shall avenge thy bitter cruelty!"
+		"Let thy rotten flesh be consumed in flame!"
+		"Our friends shall yet let thee know fear."
+		"Thy only noble act shall be to perish."
+
+phrase "high houses hostile disabled hail"
+	word
+		"From void's heart, we stab at thee! / For the good of hate, we spit our last breaths at thee!"
+		"Cowards die many times before their deaths, / But the valiant never taste of death but once!"
 
 ### HIGH HOUSES: OLD HOUSES
 
