@@ -73,7 +73,6 @@ Files:
  images/ship/aaulqra*
  images/ship/ejniisde*
  images/ship/kaskhorade*
- images/ship/kijra-khora*
  images/ship/kvelqde-khora*
  images/ship/kvelqde*
  images/ship/myaede*
@@ -81,14 +80,12 @@ Files:
  images/ship/ojde*
  images/ship/seiitej*
  images/ship/stolsaqra*
- images/ship/valkkyiara-khorasaqra*
  images/ship/veusade*
  images/ship/vujlet*
 
  images/thumbnail/aaulqra*
  images/thumbnail/ejniisde*
  images/thumbnail/kaskhorade*
- images/thumbnail/kijra-khora*
  images/thumbnail/kvelqde-khora*
  images/thumbnail/kvelqde*
  images/thumbnail/myaede*
@@ -96,10 +93,17 @@ Files:
  images/thumbnail/ojde*
  images/thumbnail/seiitej*
  images/thumbnail/stolsaqra*
- images/thumbnail/valkkyiara-khorasaqra*
  images/thumbnail/veusade*
  images/thumbnail/vujlet*
 
+Copyright: Daeridanii (https://github.com/Daeridanii1)
+License: CC-BY-SA-4.0
+
+Files:
+ images/ship/kijra-khora*
+ images/ship/valkkyiara-khorasaqra*
+ images/thumbnail/kijra-khora*
+ images/thumbnail/valkkyiara-khorasaqra*
 Copyright: Daeridanii (https://github.com/Daeridanii1)
 License: CC-BY-SA-4.0
 
