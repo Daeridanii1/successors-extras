@@ -627,7 +627,7 @@ substitutions
 	"<coalition ally>" "Lunarium"
 		has "joined the lunarium"
 
-mission "Successors: Released Kijra-pet follow-up"
+mission "Successors: Kaatrij First Contact 1"
 	landing
 	clearance
 	infiltrating
@@ -792,6 +792,14 @@ mission "Successors: Kaatrij Monoglot Prompt"
 			`Shortly after you set the <ship> down on <source>, you notice a faint trilling coming from your cabin on board. After rummaging through some of your belongings, you discover that it is coming from a Successor data-sphere, which is vibrating intensely. You pick it up, and it projects a message in a strange-looking alien script that you unfortunately do not recognize. If you ever acquired some alien translation equipment, you might be able to decode it.`
 			decline
 
+substitutions
+	"<successor patron>" "Sioeora"
+	"<successor patron>" "Kaatrij"
+		has "completed: Successors: Kaatrij First Contact 1"
+	"<successor opponent>" "Kaatrij"
+	"<successor opponent>" "Sioeora"
+		has "completed: Successors: Kaatrij First Contact 1"
+
 mission "Successors: Trusted"
 	landing
 	name "Go to the Uuoru-Kella system to meet with the High Houses"
@@ -824,52 +832,103 @@ mission "Successors: Trusted"
 			`Once you have sat down at the spaceport, you are met by another group of Successor naval officers. You notice that this group appears even more diverse than the last, representing several different uniform styles and liveries. Unifying them all is a small white and blue pin attached to their outfits; one that does not correspond to the insignia of any of the High Houses. The officers guide you, politely but firmly, to one of the monorail trains snaking out from the spaceport to other installations on the planet, and you all shuffle together into one of the cars, which appears to have been completely cleared of normal passengers if it even carried those in the first place.`
 			`	Several minutes later, the monorail deposits you at an especially large and well-decorated complex that swarms with both military and well-dressed civilians, some of whom appear so opulent and bejeweled that you suspect their personal effects are worth more than your ship. Each of them without exception wears the same white and blue insignia as your escorts, though many have incorporated it into their clothes' design or even display it as a pattern in skin coloration.`
 			`	As your escort peels off into the crowd, you see a familiar face in the distance: Sieasej, the Successor scholar, who visibly perks up when they see you and approaches.`
-			`	"Captain! Thou hast arrived at a fortuitous time! There are still some minutes before this day's meetings—including thy own audience with the Houses—are scheduled to begin." `
+			`	"Captain! Thou hast arrived at a fortuitous time! There are still some minutes before this day's meetings, including thy own audience with the Houses, are scheduled to begin." `
 			choice
 				`	"I'm ready to start.`
 					goto start
 				`	"Can you explain what's going on here?"`
 					goto explain
+				`	"How has House Sioeora been?"`
+					goto sioeora
 				`	"What are you doing here?"`
-					goto seiasej
+					goto aboutyou
 			label explain
-			`	"This is a diplomatic world for representatives of the High Houses to meet in council, resolve disputes, bicker over policy, and I suspect in as it shall be in thy own case, to offer special dispensation to citizens. I had told thou when we first met that they would be keeping their eyes upon thee, and since they have summoned thou here today, they must clearly want to involve thee in the next stage of their plans."`
+			`	"This is a diplomatic world for representatives of the High Houses to meet in council, resolve disputes, bicker over policy, and I suspect in as it shall be in thy own case, to offer special dispensation to citizens and patronized aliens."`
 			choice
 				`	"I see. We'd better begin, then."`
 					goto start
+				`	"How has house Sioeora been?"`
+					goto sioeora
 				`	"What are you doing here?"`
-					goto seiasej
-			label seiasej
-			`	Sieasej briefly turns a shade of green in a display you might almost characterize as blushing. "I was summoned. I suspect the Houses wish to reflect on my involvement as well."`
+					goto aboutyou
+			label sioeora
+			branch sioeora-opposed
+				has "completed: Successors: Kaatrij First Contact 1"
+			`	"Our mutual patrons remain their usual selves. Would'st though believe that Riijaaora themself informed me of thy invitation here? They've made themself a leader among the others for their fruitful advocacy towards thee... ah, but I digress. Let it suffice to say that Sioeora doubtless shall support thee in council today, for thou art considered something of a successful investment on their part."`
+				goto sioeora-choice
+			label sioeora-opposed
+			`	"Ah, do they approve of thy presence here and that?" Sieasej briefly examines a suckered arm before leaning in a little closer. "'Tis true the scions of my honored House remain chilly towards thee, doubly so for thy finding another patron which, I confess, may be what angers them most. Thou remain'st a person of interest to them nonetheless; I suspect they would be quite pleased to know that I had encountered thee at this council. Let them brood, I say. If Sioeora requires thee again, they shall not be so knavish so as not to make contact."`
+			label sioeora-choice
+			choice
+				`	"We'd better begin, then."`
+					goto start
+				`	"Council?"`
+					goto explain
+				`	"What are you doing here?"`
+					goto aboutyou
+			label aboutyou
+			`	Sieasej briefly turns a shade of green in a display you might almost characterize as blushing. "I was summoned as well. Thy arrival here has ignited much interest in our past dealings with humans, and I have been instructed to speak to several groups here as a so-called expert on the subject."`
 			choice
 				`	"Indeed. I'm ready to begin, then."`
 					goto start
 			label start
-			`	"Good! We would be wise to be early."`
-			`	Together with Sieasej, you make your way to one of the smaller rooms branching off from the lobby. The doors open to reveal a garden-like area, filled with large long-leafed plants surrounding a centrally-located depression half-filled with water. Several Successors, many well-dressed like before, are gathered in the pool, and while Sieasej takes to it happily, you can't help but wince a little as the frigid water floods your boots.`
+			`	"Good! We would be wise to be early to our respective events."`
+			`	Sieasej brings you to a concierge of sorts, who eventually informs you that you should make your way to one of the smaller rooms branching off from the lobby. The doors open to reveal a garden-like area, filled with large long-leafed plants surrounding a centrally-located depression half-filled with water. Several Successors, many well-dressed like before, are gathered in the pool; you can't help but wince a little as the frigid water floods your boots.`
+			branch kaatrij
+				has "completed: Successors: Kaatrij First Contact 1"
 			`	After a few minutes and other Successors have trickled in, the meeting begins in earnest. One of the Successors moves to the center of the pool and addresses you directly.`
-			`	"Captain. House Sioeora, who has supported thee with the gift of our translation device, and continues to recognize thy potential as an ally, wishes to recognize the good thy have done in our space, and proposes thy be awarded purchase rights for our general technology."`
+			`	"Captain. House Sioeora, who has supported thee with the gift of our translation device, and continues to recognize thy potential as an ally, wishes to further recognize the good thy have done in our space, and proposes thou be awarded purchase rights for our general technology."`
 			`	That representative then returns to the outer rim of the circle and another takes the center, this time facing the representative who just spoke.`
-			`	"House Sioeora. House Chydiyi recognizes thy perspicacity and the value demonstrated by the captain, and supports thy proposal. The captain has proven themselves a valuable ally."`
+			`	"House Sioeora. House Chydiyi recognizes thy perspicacity and the value demonstrated by the captain, and supports thy proposal. The captain has proven themself a benevolent traveler in our space who we have every desire to make an ever more positive and useful independent element."`
 			`	A third representative now takes the center position, addressing the two previous speakers.`
-			`	"Houses Sioeora and Chydiyi. House Seineq proposes this alien be given no further rights nor gifts until they have proved themselves neutral. The Old Houses, which Sioeora and Chydiyi do today here represent, doth clearly seek to sway the alien's favor through brib'ry and deceit, and House Seineq stands with the New Houses in opposing this corruption."`
+			`	"Houses Sioeora and Chydiyi. House Kaatrij proposes this alien be given no further rights nor gifts until they have proved themself neutral. The Old Houses, which Sioeora and Chydiyi do today here represent, doth clearly seek to sway this alien's favor through brib'ry and deceit, exploiting their lack of knowledge of our practices, using them as they already have to further their own private interests in conflict with the common good."`
 			`	That representative then returns to the edge of the circle, where they continue to eye you with suspicion. There is a pause in the conversation.`
 			choice
 				`	(Remain silent.)`
 					goto silent
-				`	"I have no interest in taking sides."`
+				`	"I don't intend to take sides in your conflicts."`
+					goto no
+			label kaatrij
+			`	After a few minutes and other Successors have trickled in, the meeting begins in earnest. One of the Successors moves to the center of the pool and addresses you directly.`
+			`	"Captain. House Kaatrij, who has supported thee with the gift of our translation device, and continues to recognize thy potential as an ally, wishes to further recognize the good thy have done in our space, and proposes thou be awarded purchase rights for our general technology."`
+			`	That representative then returns to the outer rim of the circle and another takes the center, this time facing the representative who just spoke.`
+			`	"House Kaatrij. House Chydiyi recognizes thy perspicacity and the value demonstrated by the captain, and supports thy proposal. The captain has proven themself a benevolent traveler in our space who we have every desire to make an ever more positive and useful independent element."`
+			`	A third representative now takes the center position, addressing the two previous speakers.`
+			`	"Houses Kaatrij and Chydiyi. House Sioeora proposes this alien be given no further rights nor gifts until they have proved themself neutral. The alien has already forsaken a task given by this House in favor of another: Kaatrij, whose ability to sway favor through brib'ry and deceit is quite clear. Should'st the alien be given purchase rights, their ability to offer wealth and power to individual factions will be even more formidable, and Sioeora stands strong in opposing this nascent corruption."`
+			`	That representative then returns to the edge of the circle, where they continue to eye you with suspicion. There is a pause in the conversation.`
+			choice
+				`	(Remain silent.)`
+					goto silent
+				`	"I don't intend to take sides in your conflicts."`
 					goto no
 			label no
-			`	This sparks some murmuring among the gathered Successors, both the representatives themselves and the other, quieter members who continue to stand around the periphery of the pool. There is no direct reply for some time until, after what seems like several minutes, the representative from House Seineq returns to the center and speaks.`
-			`	"Guest. House Seineq recognizes thy noble words, even if we hold no reason for belief in them. We will permit the others to let thee buy our trinkets, and we shall watch thee closely to see if thy word is matched in action."`
-			`	With no further comments from any of the Successors, the representative from House Sioeora calls for a vote from among the gathered representatives. Sioeora and Chydiyi vote for the proposition and Seineq abstains from the vote, remaining at the rim of the pool, inspecting your behavior closely. The representative from Sioeora then promptly produces another small box from within their outfit and presents it to you. You open it to reveal one of the pin insignias that you have seen throughout this meeting.`
-			`	"This is the mark of our diplomats and our symbol of trust and cooperation. Our people may remain wary of an alien in their midst, but wherever thou displays this, it shall be known that thou hast recieved the blessing of the High Houses in council and that they made trade with you in amity and without fear. Do not abuse this trust."`
-			`	With a somewhat suspicious air, Sioeora then leaves the room, followed by the other representatives and gathered members, all of whom keep their eyes focused on you on the way out. Eventually, when only ones remaining are Sieasej and yourself, you pin the insignia on your jacket beside the translation device and exit as well, when you are directed back to the monorail station.`
-				accept
+			branch no-kaatrij
+				has "completed: Successors: Kaatrij First Contact 1"
+			`	This sparks some murmuring among the gathered Successors, both the representatives themselves and the other, quieter members who continue to stand around the periphery of the pool. There is no direct reply for some time until, after what seems like several minutes, the representative from House Kaatrij returns to the center and speaks.`
+			`	"Guest. House Kaatrij recognizes thy noble words, even if we hold no reason for belief in them. We will permit the others to let thee buy our trinkets, and we shall watch thee closely to see if thy word is matched in action."`
+			`	With no further comments from any of the Successors, the representative from House Sioeora calls for a vote from among the gathered representatives. Sioeora and Chydiyi vote for the proposition and Kaatrij abstains from the vote, remaining at the rim of the pool, inspecting your behavior closely. The representative from Sioeora then promptly produces another small box from within their outfit and presents it to you. You open it to reveal one of the pin insignias that you have seen throughout this meeting.`
+				goto outside
+			label no-kaatrij
+			`	This sparks some murmuring among the gathered Successors, both the representatives themselves and the other, quieter members who continue to stand around the periphery of the pool. There is no direct reply for some time until, after what seems like several minutes, the representative from House Sioeora returns to the center and speaks.`
+			`	"Alien. House Sioeora recognizes thy noble words, but we must commit ourselves in opposition to this proposition for a gift. Thou surely cannot remain a neutral party while thy patron already seeks to honor thee before this council, to offer thee boons that surely curry favor soon enough."`
+			`	With no further comments from any of the Successors, the representative from House Kaatrij calls for a vote from among the gathered representatives. Kaatrij and Chydiyi vote for the proposition and Sioeora votes against it, remaining stationary at the rim of the pool. The representative from Kaatrij then promptly produces another small box from within their outfit and presents it to you. You open it to reveal one of the pin insignias that you have seen throughout this meeting.`
+				goto outside
 			label silent
-			`	With no further comments from any of the Successors, the representative from House Sioeora calls for a vote from among the gathered representatives. Unsurprisingly, Sioeora and Chydiyi vote for the proposition and Seineq votes against it, and the representative from Sioeora promptly produces another small box from within their outfit and presents it to you. You open it to reveal one of the pin insignias that you have seen throughout this meeting.`
-			`	"This is the mark of our diplomats and our symbol of trust and cooperation. Our people may remain wary of an alien in their midst, but wherever thou displays this, it shall be known that thou hast recieved the blessing of the High Houses in council and that they may trade with you in amity and without fear."`
-			`	Sioeora then leaves the room, followed by the other representatives and gathered members, all of whom keep their eyes focused on you on the way out. Eventually, when only ones remaining are Sieasej and yourself, you pin the insignia on your jacket beside the translation device and exit as well, where you are directed back to the monorail station.`
+			`	With no further comments from any of the Successors, the representative from House <successor patron> calls for a vote from among the gathered representatives. Unsurprisingly, <successor patron> and Chydiyi vote for the proposition and <successor opponent> votes against it, and the representative from <successor patron> promptly produces another small box from within their outfit and presents it to you. You open it to reveal one of the pin insignias that you have seen throughout this meeting.`
+			scene "outfit/successor license"
+			`	"This is the mark of our diplomats and our symbol of trust and cooperation," they say. "Our people may remain wary of an alien in their midst, but wherever thou displays this, it shall be known that thou hast recieved the blessing of the High Houses in council and that they made trade with you in amity and without fear."`
+			`	With this, Chydiyi then leaves the room, followed by most of the other representatives and gathered members, the remainder of whom begin to mingle amongst themselves and chat; the meeting is apparently over.`
+			label outside
+			`	Outside, you run into Sieasej again, recently come back from a meeting of their own. "Well, captain, how went thy meeting in council? 'Twas fruitful?"`
+			choice
+				`	"Yes, I was awarded technology purchase rights."`
+				`	"Yes, it was. How was yours?"`
+					goto yours
+			`	"I, for one, am pleased to hear of this, captain. The Houses can be jealous with their favors, but in thy case I think they are wise for dispensing them liberally. Ah," they say, interrupting themself, "would that I could stay, but my role here is yet to finish and I have another meeting still to entertain. Fair travels, captain, and may we meet again." They splay their arms wide in the same gesture you've seen many times before and you offer a short bow in return.`
+				goto end
+			label yours
+			`	"I am pleased to hear of this, captain. I spoke at length about some of my human lingustic research, ah, thy tongues are fascinating items and make for truly interesting sounds... 'Twas also that I entertained a number of questions about thee thyself! Some young archivist from Kaatrij, I think? Truthfully, I sometimes confuse the New Houses with each other. Ah," they say, interrupting themself, "would that I could discuss it more, but my role here is yet to finish and I have another meeting still to entertain. Fair travels, captain, and may we meet again." They splay their arms wide in the same gesture you've seen many times before and you offer a short bow in return.`
+			label end
 
 mission "Successors: People's Houses, First Contact"
 	landing
