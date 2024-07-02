@@ -20,18 +20,33 @@ planet Aqra-Kvel-Taaq
 	attributes successor uninhabited
 	landscape land/snow20
 	description `While this planet may have a rocky surface deep down, it is covered by kilometers-thick glaciers composed of water ice. Near the equator, a ring of craters push the ice up into circular ridges that cast long shadows across the landscape.`
+		to display
+			not "known to the successors"
+	description "Covered in glaciers miles thick and bitterly cold, this planet is little more than a bleak ball of ice too far from its sun to be habitable. In the past, the Successors attempted to set up a shipyard here, but it eventually proved too costly to maintain and too poorly positioned to make up for it. Since it was abandoned, the Successors have made no further attempts to establish facilities here."
+		to display
+			has "known to the successors"
 	government Uninhabited
 
 planet Cavaasa-Vasa-Tej
 	attributes predecessor uninhabited
 	landscape land/lava8
 	description `This planet is hot and dry, and holds on to only a tenuous atmosphere. Several enormous alien installations are present on its surface; semicircular bubbles that smoothly emerge from the rock as if they were grown from it, dotted with small pores, which are each large enough for a starship. Inside them, the temperature is surprisingly quite habitable and you can observe the remains of what look like mines and industrial facilities within.`
+		to display
+			not "trusted by the successors"
+	description "Once an important industrial planet for the High Houses of the core systems, Cavasaa-Vasa-Tej was a hub for the mining of rare elements and for the growth of exotic metal in the superheated corona of the Kasii-Cavaasa star. Without maintenance, most of the stellar metallic gardens have long since fallen into Kasii-Cavaasa's outer layers, but the few that have survived by chance are now completely overgrown with threads of hyperdense alloy; enough to supply the facilities of Cavaasa-Vasa-Tej's industry for years, if they were still operational."
+		to display
+			has "trusted by the successors"
 	government Predecessor
 
 planet Chyyra-Raaqa-Tuur
 	attributes successor uninhabited
 	landscape land/snow7
 	description `This snow-covered planet orbits a dim brown dwarf, making its surface dark and bitterly cold. Near the north pole, there are signs of large-scale excavation, possibly for materials to construct the station that orbits it.`
+		to display
+			not "known to the successors"
+	description "During the arrival of the New Houses, this planet was briefly considered as a location for permanent habitation. However, the brown dwarf it orbits produces very little heat and makes the planet uncomfortably cold, even for the cold-tolerant Successors. Furthermore, its lack of substantial natural resources exempted it from use as an industrial or mining planet, and it continues to remain uninhabited."
+		to display
+			has "known to the successors"
 	government Uninhabited
 
 planet Giiq-Oj-Sol
@@ -44,12 +59,22 @@ planet Giiq-Sou-Kella
 	attributes successor uninhabited
 	landscape land/sea2
 	description `Small, atmospherically placid, and tectonically stable, this planet is completely covered in a global ocean composed of liquid methane. A few small rock outcrops emerge above the offgassing waves, but there are no dry landmasses larger than a square kilometer or so.`
+		to display
+			not "known to the successors"
+	description "Small, atmospherically placid, and tectonically stable, this planet is completely covered in a global ocean composed of liquid methane. The inherent toxicity of this environmental feature, combined with the frigid temperatures on its surface and the tiny amount of dry land, have made it unsuitable for long-term habitation."
+		to display
+			has "known to the successors"
 	government Uninhabited
 
 planet Iyra-Ijasa-Iret
 	attributes successor 
 	landscape land/sea10-sfiera
 	description `As far as you can tell, Iyra-Ijasa-Iret is a purely water world, with no solid land anywhere upon its surface. Despite this, it has several underwater settlements and cities. Most dot the shallows, but you notice that several pressure-resistant ships dive much deeper into the ocean, suggesting that some inhabitants may live at more significant depths.`
+		to display
+			not "known to the successors"
+	description `Iyra-Ijasa-Iret is a pure water world, with no solid land anywhere upon its surface. Despite this, it hosts a relatively sizable population of Successors, most living in several sprawling underwater cities that dot the shallows, but some in much deeper and more pressure-resistant enclaves closer to the ocean floor. The moon is revered throughout Successor space for its undersea beauty; on the side of the moon that faces the gas giant which it orbits, huge plumes of bioluminescent plankton stream up towards the surface from the deep ocean in a daily feeding cycle the Successors call the "Ribbons of Iret."`
+		to display
+			has "known to the successors"
 	spaceport `The spaceport resembles a group of enormous bubbles in the ocean near the equator; translucent, hemi-spherical hangars protrude from the water, cracking open like the petals of flowers to allow ships to enter and depart. Once inside, all the hangars are connected by a dense web of corridors and small, spherical rooms. Many are just as water-filled as the port's surroundings, and about half of the Successors you see throughout the spaceport are partially or entirely submerged.`
 	"required reputation" 5
 	bribe 0
@@ -99,13 +124,28 @@ planet Kella-Uuoru-Sossa
 	attributes predecessor uninhabited
 	landscape land/badlands0
 	description `This planet is an ecological catastrophe. Its surface has been scoured by radiation and what must have been an orbital bombardment; no organic life remains. Many large cities dot the surface, several of which have been leveled or damaged by weapon strikes, and far more of which are nearly entirely intact. All are equally empty. Persistent clouds of caustic dust choke the atmosphere, and your ship's sensors alert you to the presence of several dust storms at other locations on the planet's surface. It would be wise not to get caught in one.`
+		to display
+			not "trusted by the successors"
+	description "This is the ancestral homeworld of the Successor species. The spatial anomalies that now dominate this system have scoured its surface with radiation and evaporated most of its once-extensive oceans. The great cities of the Predecessors' empire are now devoid of all organic life; many of them remain as pristine and gleaming as the on the days they were abandoned. Caustic dust chokes the lower atmosphere of the planet, and your ship's sensors alert you to the presence of several sandstorms at other locations on the planet's surface. It would be wise not to get caught in one."
+		to display
+			has "trusted by the successors"
 	spaceport `A massive spaceport on the surface stands proudly even after thousands of years of disuse. Grand walls and cavernous vaulted ceilings rise hundreds of meters up above your ship, some scarred by weapons fire, others distorted by heat or radiation. A couple of small cleaning drones attempt to polish the weather-worn floors, while others wander aimlessly, devoid of purpose and direction.`
+		to display
+			not "trusted by the successors"
+	spaceport "The planet's main spaceport endures proudly even after thousands of years of disuse. Grand walls and cavernous vaulted ceilings rise hundreds of meters above your ship, some scarred by weapons fire, others distorted by heat or radiation. One flock of small cleaning drones continually polish the sand-worn floors, while others wander about aimlessly, devoid of purpose or direction."
+		to display
+			has "trusted by the successors"
 	government Predecessor
 
 planet Khora-Uurau-Uuoru
 	attributes successor uninhabited
 	landscape land/desert3
 	description `This moon appears to have been used as an ancient weapons testing site. The scars of violence still mar its surface, and its tenuous atmosphere clings desperately to its surface, almost as if it is still terrified of being stripped away.`
+		to display
+			not "known to the successors"
+	description "Thousands of years ago, during the reign of the Predecessors' empire, this moon was used as a weapons testing site. Since the Successors have not invented any novel weapons requiring an entire moon to test since the collapse of the old empire, Khora-Uurau-Uuoru has remained unbombarded since then. Even so, the scars of ancient violence still mar its surface, and its tenuous atmosphere clings desperately to its surface, almost as if it is still terrified of being stripped away."
+		to display
+			has "known to the successors"
 	government Uninhabited
 
 planet Khora-Vasa-Reyyaa
@@ -132,11 +172,21 @@ planet Khosa-Kella-Oa
 	attributes successor uninhabited
 	landscape land/mars1
 	description `Devoid of atmosphere, this small and rocky world sits at the very edge of the galaxy. This may very well be the last planet for millions of light years, the furthest child of the Milky Way.`
+		to display
+			not "known to the successors"
+	description "Devoid of atmosphere, this small and rocky world sits at the eastern end of Successor space, orbiting a dim star. Because of the Successors' location on the rim of the galaxy, this may very well be the last planet for millions of light years, the furthest child of the Milky Way."
+		to display
+			has "known to the successors"
 
 planet Kuj-Sol-Nnesa
 	attributes boldtourism successor uninhabited
 	landscape land/desert13
 	description `This hot and arid world hosts giant millipede-like creatures that roam the sand during the twilight hours, hunting anything that moves.`
+		to display
+			not "known to the successors"
+	description "This desert planet is far too hot and arid for the Successors' environmental needs, and its lack of any meaningful deposits of natural resources has precluded its exploitation by mining or industry. It is occasionally visited by Successor researchers, primarily to study the local fauna; giant millipede-like creatures are known to roam the sand here during the twilight hours, hunting anything that moves."
+		to display
+			has "known to the successors"
 	government Uninhabited
 
 planet Maspa-Viir-Kella
@@ -149,18 +199,33 @@ planet Myiara-Sola-Tej
 	attributes crime station successor uninhabited
 	landscape land/station25
 	description `This abandoned station appears to remain technically habitable, if one doesn't mind breathing the poorly-recycled and dusty air.`
+		to display
+			not "known to the successors"
+	description "This industrial station was constructed during the arrival of the New Houses to exploit the mineral wealth of this system, but was abandoned when richer and more accessible mineral deposits were found planetside. It still remains technically habitable, but none of the High Houses have had an interest in refurbishing it since cheaper and easier industrial and habitation projects are constantly available."
+		to display
+			has "known to the successors"
 	government Uninhabited
 
 planet Myiara-Aret-Iir
 	attributes predecessor uninhabited
 	landscape land/badlands4
 	description `In contrast to the pristine emptiness of the other formerly-inhabited planets in this area of space, this world teems with signs of chaos. The remnants of hastily-built weather-control towers dot much of its surface, and the cities upon it are neither majestic nor well-maintained; none are very large, but most are surrounded by vast expanses of fabric and radiation-bleached temporary constructions.`
+		to display
+			not "trusted by the successors"
+	description `Once a minor colony world, what would come to be known as Myiara-Aret-Iir was the last stop of all those hoping to escape the decay of the Predecessors' space by traveling through the wormhole. Those with wealthy patrons who could afford passage on specially-modified vessels spent little time here, but those without often found the blossoming shanty towns of the planet to be their new homes. With the denounment of the Predecessors' last inter-Houses war and the final push to evacuate, most of those living here eventually made it through. The rest probably perished long ago.`
+		to display
+			has "trusted by the successors"
 	government Predecessor
 
 planet Mavra-Sol-Kvel
 	attributes wealthy successor
 	landscape land/fields14
 	description `This green and well-populated moon enjoys a temperate climate and spectacular vistas, both of its own surface and of the gas giant it orbits. The gravity here is quite low, and the Successors you see here tower over you even more noticeably than on other worlds. There are several several cities on the surface, most along the equator.`
+		to display
+			not "known the successors"
+	description "Shielded by the persistent asteroid impacts of this system by its parent gas giant, Mavra-Sol-Kvel enjoys a temperate climate and spectacular vistas. The low gravity here is greatly appreciated by the Successors, and consequently the moon supports a sizable population despite its small size, most of whom live in several cities along the equator."
+		to display
+			has "known the successors"
 	spaceport `The spaceport is large but efficient, and plastered in bright and friendly colors, much like the landscape surrounding it. Most of the buildings are organic in shape, arcing and bubbling from place to place like seafoam, and despite the fanciful design, they also appear to be servicing a large volume of travellers, merchants, and military personnel, with color-coded lines leading to different areas.`
 	"required reputation" 5
 	bribe 0
@@ -169,7 +234,17 @@ planet Kua-Oa-Aava
 	attributes quiet successor
 	landscape land/space2
 	description `This small moon hosts only a few surface installations; most are much larger than the public spaceport and are frequented exclusively by military craft. Beyond these, the moon is barren and undeveloped and your ship's sensors detect nothing of interest beyond the spaceport limits.`
+		to display
+			not "known to the successors"
+	description "The Old Houses have established several refueling and restock facilities on Aava-Aasa-Khora's moon to increase the speed at which they can service their warships by taking advantage of the additional space and low gravity the moon provides. While nominally open to the public, the vast majority of the facilities here are devoted entirely to military use, and the civilian areas are mostly intended to make sure that no ships without clearance will become stranded in this system."
+		to display
+			has "known to the successors"
 	spaceport `The spaceport here is tiny and barebones, offering only minimal services. Most of the few Successors you see here are wearing military uniforms and while they do  not react to you with any discernable surprise, most keep a close eye on you as you walk through the facility.`
+		to display
+			not "known to the successors"
+	spaceport "The spaceport here is tiny and barebones, offering only minimal services. The few Successors you see are wearing military uniforms and remain polite and courteous to you, even as an alien."
+		to display
+			has "known the successors"
 	spaceport `	Several tunnels from this spaceport lead off into the distance, though they are guarded by military personnel and identification equipment. You presume that they lead to some of the facilities established elsewhere on the moon's surface.`
 	government Successor
 	"required reputation" 5
@@ -179,8 +254,26 @@ planet Mosaa-Ooa-Wyrdd
 	attributes successor
 	landscape land/mountain14-sfiera
 	description `This small planet hosts a population of towering octopus-like aliens. They have built several cities across its surface that are highly symmetrical and filled with organic-looking curved buildings draped in colorful fabrics that shimmer in the light. The air is damp and chilly; rainstorms blanket a significant portion of the planet's surface and many of the sleek-looking vessels that set down in the spaceport discharge streams of water upon landing.`
+		to display
+			not "known the successors"
+	description "Mosaa-Oaa-Wyrdd's location in the only hyperspace link between the northern and southern parts of Successor territory has made it a hub for interstellar trade and the center of Successor commerce."
+		to display
+			has "known the successors"
+	description "Unique among all Successor planets, its primary employer is not one of the High Houses but an independent corporation responsible for manufacturing, among other things, the Pulse Laser. The High Houses are understandably somewhat perturbed by this autonomy, but have allowed independent commerce to continue here in exchange for levying modest taxes on transactions that do not go through their official channels."
+		to display
+			has "known the successors"
 	spaceport `The spaceport is large and busy, and sits situated at the foot of a mountain. Small shops and tents sit abreast advertisements and large metallic statues of various sorts, many of which seem weather-worn and unmaintained.`
+		to display
+			not "known the successors"
 	spaceport `	At the edges of the port, there is a large ongoing construction project to expand it; you can count dozens of half-completed hangars each large enough for several freighters.`
+		to display
+			not "known the successors"
+	spaceport "The spaceport is large and busy, situated at the foot of a mountain, and seems more haphazard than most Successor spaceports you've seen. Small shops and tents sit abreast advertisements for the latest generation of Pulse Laser and statues of important figures in the high houses, many of which seem weather-worn and unmaintained."
+		to display
+			has "known the successors"
+	spaceport "At the edges of the port, there is a large ongoing construction project to expand it; you can count dozens of half-completed hangars each large enough for several freighters."
+		to display
+			has "known the successors"
 	government Successor
 	bribe 0
 
@@ -188,12 +281,22 @@ planet Naph-Naap-Kella
 	attributes successor uninhabited boldtourism
 	landscape land/lava1
 	description `This planet is deep in the throes of its early history, with a thick sulfurous atmosphere concealing an unstable and volcanically active surface. Mineral-rich pools simmer next to lava flows and crumbling ejecta, and the atmosphere is repeatedly lit up by enormous cloud-to-cloud lightning discharges that leave the hull of your ship crackling with static electricity.`
+		to display
+			not "known the successors"
+	description "This planet is deep in the throes of its early history, with a thick sulfurous atmosphere concealing an unstable and volcanically active surface. Despite that, the Successors have discovered very simple life forms here, possibly the very first life that has developed on this planet. Consequently, it is of some interest to Successor biologists, or at least the ones willing to brave the toxic and destructive conditions on the surface."
+		to display
+			has "known the successors"
 	government Uninhabited
 
 planet Osolaa-Val-Mavra
 	attributes predecessor uninhabited
 	landscape land/dmottl1
 	description `This moon is covered in a constant veil of frost that coats the sparse and hardy vegetation on its surface in delicate ice crystals. On the side of the moon that faces its parent gas giant, a massive circular trench, kilometers-deep, has been carved into the earth. Within it, huge terraced complexes have been built into the walls; empty residential areas, shipyards, and public spaces jut into the trench's open air where they are adorned by the constant snowfall.`
+		to display
+			not "trusted by the successors"
+	description "The moon of Osolaa-Val-Mavra was one of the first worlds of the Predecessors to evacuate as a consequence of the deterioration of their space. House Sejra ran massive transport ships for seven years to and from the surface in an effort to move its citizens offworld and into neighboring systems. By the time they were done, Sejra's coffers were dry and its government on the brink of collapse, and the citizens it had gone to such effort to relocated were stranded in systems that were starting to show the same signs of decay as their one-time home. The desolate habitation trench and ice-covered surface of the moon are testaments to Sejra's folly; of trying to escape something they did not understand and had no hope of stopping."
+		to display
+			has "trusted by the successors"
 	government Predecessor
 
 planet O-Vasa-Oa
@@ -215,6 +318,14 @@ planet Raaqa-Kvelq-Ryuit
 	attributes education successor urban
 	landscape land/fields6
 	description `This planet seems to host a larger population than any other you have seen in Successor space. The weather is mild, and the landscape is dotted with farms both large and small, and both terrestrial and aquatic. On the tidal shores, massive crops of a long, stringy plant most reminiscent of seaweed grow under the care of swarms of agricultral robots.`
+		to display
+			not "known to the successors"
+	description "Raaqa-Kvelq-Ryuit was the very first planet in this area of space to be colonized by the Successors' ancestors, and today it boasts a population of over one billion inhabitants, the largest of any planet in Successor space. Its famously mild and forgiving weather supports a strong agricultural economy, and the landscape is dotted with farms both large and small. The primary export of the planet is a long, stringy plant most reminiscent of seaweed, which the Successors consider a staple and consume great quantities of."
+		to display
+			has "known to the successors"
+	description "Raaqa-Kvelq-Ryuit is also familial seat to House Myurej, one of the Old Houses."
+		to display
+			has "known the successors"
 	spaceport `The spaceport is located right on the equator and is a massive, sprawling affair with several enormous racks of cargo containers stretching out into the distance, clearly awaiting transport on soon-arriving freighters. The ground is wet from a sprinkler system that maintains a constant thin film of water all throughout the spaceport's exterior. The Successors, lacking shoes, must appreciate this for reducing friction between their arms and the relatively rough and uncomfortable concrete.`
 	government "House Myurej"
 	"required reputation" 5
@@ -242,7 +353,17 @@ planet Raaqa-Uur-Kaav
 	attributes predecessor uninhabited
 	landscape land/forest3
 	description `Unlike most of the planets in this area of space, this moon remains relatively habitable. Large forests have fluorished throughout it in the absence of sapient life, and the stark remains of abandoned cities are slowly being reclaimed by the nature that surrounds them. While the materials which compose the buildings have not decayed an iota over the eons, the tender shoots of green life nonetheless adhere to their twisting surfaces and flourish within their unmaintained interiors.`
+		to display
+			not "trusted by the successors"
+	description "The one-time ancestral home of House Kaatrij is one of the few worlds of the Predecessors that remains relatively habitable. Its large forests have fluorished even in the absence of Kaatrij's intentional ecoengineering, and the enduring remains of the moon's cities are slowly but surely being consumed by the nature that surrounds them. While the advanced materials composing them resist decay even on a timescale of thousands of years, the tender shoots of green life nontheless quietly demonstrate their supremacy over the unmaintained artificial."
+		to display
+			has "trusted by the successors"
 	spaceport `What was once this moon's spaceport is now a field of flowers. The landing pad upon which your ship rests has been overtaken by a host of tall blue ribbon-like blossoms, which sprout up from seams in the pavement and wave in the breeze. Nearer what once was the main body of the port, millenia-old flowerboxes are dense with spiky orange blooms that recede when touched and shed seed pods onto the empty walkways, where they are eventually snapped up by the gossamer flying creatures which perch around the whole area.`
+		to display
+			not "trusted by the successors"
+	spaceport `What was once this moon's spaceport is now a field of flowers. The landing pad upon which your ship rests has been overtaken by a host of tall blue ribbon-like blossoms for which the Successor name translates to something along the lines of "thread lilies". Nearer what once was the main body of the port, millenia-old flowerboxes are dense with spiky orange blooms that recede when touched and shed seed pods onto the empty walkways, where they are eventually snapped up by the wild gossamer-winged "Kijra"-pets which, like the moon as a whole, have thrived in the absence of their Predecessor masters.`
+		to display
+			has "trusted by the successors"
 	government Predecessor
 
 planet Saska-Aa-Noorr
@@ -269,7 +390,20 @@ planet Staja-Kella-Oa
 	attributes education wealthy successor
 	landscape land/fog12
 	description `The easternmost planet in Successor space, Staja-Kella-Oa is mostly covered in dense forest with only a few small cities. The planet hosts at least one academy under the auspices of the noble House Sioeora. Further from your landing site, there is evidence of ongoing archaeological work.`
+		to display
+			not "known to the successors"
+	description "Staja-Kella-Oa is widely recognized as the location of the best educational institutions in Successor space, most of which are funded by the Old Houses but accept applications from all Successors regardless of birthplace or family history."
+		to display
+			has "known to the successors"
+	description "The planet itself is densely forested with a few small cities. Part of the reason that it continues to be a center for education is that it has a rich archaelogical history: this planet was home to a now presumed-extinct sapient species roughly one hundred thousand years ago, and there is a great deal of interest in uncovering the details of their society."
+		to display
+			has "known to the successors"
 	spaceport `The dense tree cover shades the landing pads of the spaceport and casts the whole area in dappled light that reflects softly off the moving ships. Much of the traffic at the spaceport is small shuttles and transports carrying youthful-looking groups of Successors to and from the planet; the interiors of the buildings are clean and colorful.`
+		to display
+			not "known to the successors"
+	spaceport "The dense tree cover shades the landing pads of the spaceport and casts the whole area in dappled light that reflects softly off the moving ships. Much of the traffic at the spaceport is small shuttles and transports carrying Successor students to and from the planet; the interior of it is clean and colorful, and seems directed towards its more youthful audience, with several recruiting posters for the fleets of the various High Houses plastered on the walls."
+		to display
+			has "known to the successors"
 	government "House Sioeora"
 	"required reputation" 5
 	bribe 0
@@ -321,6 +455,11 @@ planet Vade-Osolaa-Kaska
 	attributes crime station successor uninhabited
 	landscape land/loc3
 	description `This station appears abandoned; it is old and decaying, and while the automated systems maintain a breathable atmosphere in some areas, there are no signs of permanent habitation.`
+		to display
+			not "known to the successors"
+	description "Although briefly used as a small-scale shipyard several hundred years ago, this station was eventually abandoned by the High Houses because of its inconvenient location and altogether poor construction. There are occasional rumors about criminals using it as a bolt-hole or a place to hide contraband, but few Successors have the desire to go and check."
+		to display
+			has "known to the successors"
 	spaceport `The spaceport here is cavernous but empty, riddled with voids where vast pieces of machinery have been removed. A layer of dust covers the ground; it is disturbed in some locations with what look like trails, suggesting that this place may not be entirely unused.`
 	government Uninhabited
 
@@ -328,12 +467,22 @@ planet Vyraa-Giiq-Sora
 	attributes boldtourism successor uninhabited
 	landscape land/myrabella0
 	description `It's not clear why this planet remains uninhabited, as it possesses a breathable atmosphere and temperate climate; the surface is covered in indigenous lifeforms, many of which exhibit some degree of bioluminescence.`
+		to display
+			not "known to the successors"
+	description "Despite the verdant and often bioluminescent life on its surface, the atmosphere of this planet is highly toxic to the Successors' biochemistry, and so they have made no permanent settlements here. While it is occasionally visited by the odd few tourists who don't mind having to wear an isolation suit, its distance from the majority of Successor space means that the Successors largely leave it alone."
+		to display
+			has "known to the successors"
 	government Uninhabited
 
 planet Vyraa-Viir-Kella
 	attributes successor uninhabited
 	landscape land/water4
 	description `This planet has a clear, oxygen-rich atmosphere, and a cool and watery surface with many large lakes. There appear to be no sites of permanent habitation, though a couple of landing pads and associated temporary shelters have been built on islands in the southern hemisphere.`
+		to display
+			not "known to the successors"
+	description "This planet is being surveyed to establish its potential as a new settlement location for the New Houses. Although its gravity is somewhat high for Successor tastes, it has a clear, oxygen-rich atmosphere, and a cool and watery surface. The first few settlers are scheduled to arrive here in a few years, once the planetary surveys are complete and have declared it safe and geologically stable."
+		to display
+			has "known to the successors"
 	government Uninhabited
 
 planet Yoqqa-Vasa-Vasa
