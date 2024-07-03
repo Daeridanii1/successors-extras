@@ -272,7 +272,7 @@ system Kella-Uoasa
 	government Successor
 	attributes successor
 	arrival 5000
-	habitable 22300
+	habitable 8650
 	link Luue-Saqru
 	link Maspa-Raaqa
 	asteroids "large metal" 58 4.5
@@ -297,7 +297,7 @@ system Kella-Uoasa
 	fleet "People's Houses Raiders" 3000
 	fleet "Small New Houses" 15000
 	object
-		sprite star/o-giant
+		sprite star/o8
 	object
 		sprite planet/callisto
 		distance 2500
@@ -316,7 +316,7 @@ system Kella-Uoasa
 			period 1000
 	object Giiq-Sou-Kella
 		sprite planet/ocean9
-		distance 8400
+		distance 9270
 		period 10000
 
 system Khasola-Ryuit
@@ -467,8 +467,8 @@ system Maspa-Cavaasa
 	pos -515.32 1468.65
 	government Successor
 	attributes successor
-	arrival 500
-	habitable 320
+	arrival 2310
+	habitable 2310
 	link Osolaa-Uuoru
 	asteroids "large metal" 12 1.5
 	minables lead 8 1.5
@@ -488,7 +488,11 @@ system Maspa-Cavaasa
 	fleet "Successor Miners" 4000
 	fleet "Small New Houses" 8000
 	object
-		sprite star/m0
+		sprite star/g0-old
+		period 10
+	object
+		sprite star/g-dwarf
+		distance 92
 		period 10
 	object
 		sprite planet/gas3
@@ -515,8 +519,8 @@ system Maspa-Mavra
 	pos -565.96 1626.95
 	government Uninhabited
 	attributes successor
-	arrival 2160
-	habitable 2160
+	arrival 500
+	habitable 320
 	link Osolaa-Uuoru
 	asteroids "small metal" 1 1
 	asteroids "large metal" 1 1
@@ -526,7 +530,7 @@ system Maspa-Mavra
 	haze _menu/haze-none
 	"starfield density" 0.05
 	object
-		sprite star/g0-old
+		sprite star/m0
 	object Khosa-Kella-Oa
 		sprite planet/rock0-b
 		distance 1000
@@ -759,22 +763,23 @@ system Myruet-Kvelq
 		sprite planet/cloud4
 		distance 180.84
 		period 23.489
-	object Uuoru-Veldt-Stir
-		sprite planet/rock11
-		distance 693.69
-		period 176.472
 	object
 		sprite planet/gas9
 		distance 1481.98
 		period 551.051
+	object Uuoru-Veldt-Stir
+		sprite planet/rock11
+		distance 1683.69
+		period 870
+	object "Successor Wormhole"
+		sprite planet/wormhole-red
+		distance 2240
+		period 1400
 	object
 		sprite planet/gas1
 		distance 3735.87
 		period 2205.54
-	object "Successor Wormhole"
-		sprite planet/wormhole-red
-		distance 1900
-		period 400
+
 
 system Ojstaan-Sola
 	pos 35.9748 1453.98
@@ -910,8 +915,8 @@ system Oublaa-Khora
 		sprite star/g0-old
 	object Myiara-Aret-Iir
 		sprite planet/rock13
-		distance 1258
-		period 1258
+		distance 2480
+		period 2480
 	object 
 		sprite planet/gas14-b
 		distance 5289
@@ -933,8 +938,8 @@ system Pelaa-Muora
 	pos -169.59 1380.83
 	government Successor
 	attributes successor
-	arrival 5000
-	habitable 12981.236
+	arrival 2895
+	habitable 2895
 	belt 1841 4
 	belt 1916 3
 	link Aaura-Kaska
@@ -964,12 +969,12 @@ system Pelaa-Muora
 	fleet "Successor Miners" 600
 	fleet "Small New Houses" 1400
 	object
-		sprite star/b3
+		sprite star/f-dwarf
 		distance 161.974
 		period 88.77
 		offset 180
 	object
-		sprite star/b-giant
+		sprite star/f3
 		distance 117.026
 		period 88.77
 	object
@@ -982,15 +987,15 @@ system Pelaa-Muora
 		period 84.862
 	object Shassa-Wyra-Orrou
 		sprite planet/rock13-b
-		distance 1154
+		distance 2600
 		period 137.629
 	object
 		sprite planet/gas13
-		distance 2229
+		distance 2880
 		period 369.46
 	object
 		sprite planet/gas1-b
-		distance 3367
+		distance 3567
 		period 685.909
 		object Uo-Oraa-Vayya
 			sprite planet/callisto-b
@@ -1054,8 +1059,8 @@ system Stiidej-Nnesa
 	pos -27.0278 1417.17
 	government Successor
 	attributes successor
-	arrival 5000
-	habitable 22300
+	arrival 4020
+	habitable 4020
 	link Aaura-Kaska
 	link Ojstaan-Sola
 	link Tuur-Kella
@@ -1081,7 +1086,11 @@ system Stiidej-Nnesa
 	fleet "Successor Miners" 1000
 	fleet "Medium Successor Freight" 1000
 	object
-		sprite star/o-giant
+		sprite star/a0
+	object
+		sprite star/k8
+		distance 104
+		period 24
 	object
 		sprite planet/rock10
 		distance 2440
@@ -1104,7 +1113,7 @@ system Tuur-Kella
 	government Successor
 	attributes successor
 	arrival 5000
-	habitable 12200
+	habitable 6300
 	link Aaura-Kaska
 	link Stiidej-Nnesa
 	link Uuoru-Kella
@@ -1126,7 +1135,7 @@ system Tuur-Kella
 	fleet "Old Houses Surveillance" 2000
 	fleet "Chydiyi Home" 2500
 	object
-		sprite star/b-giant
+		sprite star/b3
 	object
 		sprite planet/gas0-hot
 		distance 1200
@@ -1152,8 +1161,8 @@ system Uuoru-Kella
 	pos 68.2795 1369.06
 	government "Old Houses"
 	attributes successor
-	arrival 5000
-	habitable 11350
+	arrival 2300
+	habitable 2300
 	belt 1631 6
 	link Ojstaan-Sola
 	link Valkraa-Uuoru
@@ -1180,7 +1189,7 @@ system Uuoru-Kella
 	fleet "Large Old Houses" 2000
 	fleet "Old Houses Surveillance" 1000
 	object
-		sprite star/b-giant
+		sprite star/f3
 	object Aava-Aasa-Khora
 		sprite planet/cloud2
 		distance 2500
@@ -1292,21 +1301,21 @@ system Vade-Staja
 		sprite planet/desert9
 		distance 328
 		period 28.4
+	object
+		sprite planet/rock6
+		distance 1554
+		period 292.879
 	object Staja-Kella-Oa
 		sprite planet/cloud3
-		distance 1200
-		period 169.451
+		distance 2870
+		period 580.451
 		object
 			sprite planet/callisto
 			distance 192
 			period 125.853
 	object
-		sprite planet/rock6
-		distance 1554
-		period 292.879
-	object
 		sprite planet/gas12
-		distance 3448
+		distance 3648
 		period 967.97
 		object
 			sprite planet/rock3
