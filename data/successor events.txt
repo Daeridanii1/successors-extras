@@ -16,6 +16,8 @@ event "successors: first contact wait"
 
 event "successors: tardy for sioeora"
 
+event "successors: released kijra-pet wait"
+
 event "successors: trust 1"
 	### Associated with getting the translation device.
 	### Add facilities to previously-available but limited planets.

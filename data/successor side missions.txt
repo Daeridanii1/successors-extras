@@ -30,7 +30,7 @@ mission "Successors: First Contact Exploration: Raaqa-Kvelq-Ryuit"
 			`One of the Successors in the spaceport here seems to be offering small morsels of food to the others; short cooked strips of a dark green plant vaguely resembling a succulent, impaled on a wooden stick. Though most of the individuals here keep their distance from you, this one takes notice and offers you a stick.`
 			choice
 				`	(Take it.)`
-				` 	(Decline.)`
+				`	(Decline.)`
 					goto refused
 			`	You take the stick from them and a wave of color runs up their body before they slither away to a different part of the spaceport.`
 			choice

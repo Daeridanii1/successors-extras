@@ -231,7 +231,7 @@ fleet "New Houses Surveillance"
     variant 20
         "Stolsaqra (Military)" 2
     variant 20
-        "Vujlet (Surveiellance)"
+        "Vujlet (Surveillance)"
     variant 10
         "Veusade (Surveillance)"
 
@@ -245,7 +245,7 @@ fleet "Kaatrij Home"
     variant 20
         "Stolsaqra (Military)" 3
     variant 20
-        "Vujlet (Surveiellance)"
+        "Vujlet (Surveillance)"
     variant 15
         "Vujlet (Surveillance)" 2
     variant 10

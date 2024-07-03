@@ -110,7 +110,6 @@ outfitter "High Houses Light"
 	`Drag Cannon`
 	`"Jaase" Shield Cortex`
 	`Shield Cortex Interface`
-	`"Viir" Repair Module`
 	`Kinetic Rail Rifle`
 	`"Veldt" Combat Scanner`
 
@@ -126,7 +125,6 @@ outfitter "High Houses Heavy"
 	"Multimodal Armor: Regen"
 	"Multimodal Armor: Resilient"
 	`"Jorv" Shield Cortex`
-	`"Vyraa" Repair Module`
 
 outfitter "Peoples Houses"
 	"Overcharged Pulse Laser"

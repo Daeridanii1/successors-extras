@@ -145,6 +145,7 @@ system Chyyra-Osolaa
 		period 3688
 
 system "Eta Carinae"
+	shrouded
 	pos -212.62 928.99
 	government Uninhabited
 	attributes predecessor
@@ -194,7 +195,6 @@ system Kasii-Sola
 	arrival 500
 	habitable 320
 	link Vasa-Oorua
-	link Oublaa-Khora
 	hazard "Predecessors Base Spatial Decay" 600
 	asteroids "medium rock" 39 1.005
 	asteroids "large rock" 2 1.11
@@ -897,7 +897,6 @@ system Osolaa-Uuoru
 
 system Oublaa-Khora
 	pos 24 1122
-	link "Kasii-Sola"
 	government Uninhabited
 	attributes predecessor
 	arrival 2160

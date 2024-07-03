@@ -507,8 +507,6 @@ phrase "high houses end"
 phrase "high houses"
 	phrase
 		"high houses start"
-	phrase 
-		"successor middle"
 	phrase
 		"high houses end"
 

@@ -99,5 +99,5 @@ mission "Successors Naive Test"
 	source "  Successors"
 	on accept
 		event "successors: trust 1"
-		event "successsors: trust 2"
+		event "successors: trust 2"
 		fail
