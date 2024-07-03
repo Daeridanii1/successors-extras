@@ -153,7 +153,6 @@ planet Khora-Vasa-Reyyaa
 	landscape land/nasa2
 	description `Much of Successor technology relies on advanced composite materials, from their extremely durable ship hulls to their high-performance railguns. This planet contains rich natural deposits of the raw materials required for the manufacturing of their composites, and consequently, it serves as both a center for the mining of these materials and as the industrial core of Successor space.`
 	description `	Because Khora-Vasa-Reyyaa falls within the sphere of influence of the Old Houses, many in the New Houses are very concerned about the power imbalance this creates, and several treaties are in place ensuring fair and open exports from the planet.`
-	description `	Khora-Vasa-Reyyaa is also home to the familial seat of House Chydiyi, one of the Old Houses.`
 	spaceport `The spaceport here is perhaps the most militarized of any you have visited in Successor space. Large industrial buildings rise up around the landing pads, casting them into deep shadow, and several small Successor warships stand ready on fast-launch pads, ready to enter orbit at a moment's notice. You pass through a security checkpoint on your way into the spaceport proper, and while the security officers have clearly been briefed to expect alien visitors, they still regard you with some degree of scrutiny.`
 	spaceport `	The trading posts, outfitters, and shipyard inside are all quite impressive, and the Successors you meet are all very curt and professional, including the merchant captains.`
 	government "House Chydiyi"
@@ -323,9 +322,6 @@ planet Raaqa-Kvelq-Ryuit
 	description "Raaqa-Kvelq-Ryuit was the very first planet in this area of space to be colonized by the Successors' ancestors, and today it boasts a population of over one billion inhabitants, the largest of any planet in Successor space. Its famously mild and forgiving weather supports a strong agricultural economy, and the landscape is dotted with farms both large and small. The primary export of the planet is a long, stringy plant most reminiscent of seaweed, which the Successors consider a staple and consume great quantities of."
 		to display
 			has "known to the successors"
-	description "Raaqa-Kvelq-Ryuit is also familial seat to House Myurej, one of the Old Houses."
-		to display
-			has "known the successors"
 	spaceport `The spaceport is located right on the equator and is a massive, sprawling affair with several enormous racks of cargo containers stretching out into the distance, clearly awaiting transport on soon-arriving freighters. The ground is wet from a sprinkler system that maintains a constant thin film of water all throughout the spaceport's exterior. The Successors, lacking shoes, must appreciate this for reducing friction between their arms and the relatively rough and uncomfortable concrete.`
 	government "House Myurej"
 	"required reputation" 5
@@ -336,8 +332,7 @@ planet Raaqa-Puan-Uuoru
 	landscape land/beach3
 	description `After the collapse, many Successors found themselves without a family, or without the knowledge of unbroken lineage that others took comfort in. House Kaatrij, which had lost many of its scions in the collapse, took the previously unprecedented step of welcoming these otherwise-outcasts into its familial order, earning its reputation as perhaps the most diverse of the Houses. Many of its members still pledge a ceremonial allegiance to their defunct Houses under Kaatrij, which remains small but well-supported and a key member of the New Houses alliance.`
 	description `	This, its home planet, is small, rainy, and mostly covered by ocean. Widely regarded as one of the most beautiful planets in Successor space, settlement here is tightly regulated by House Kaatrij.`
-	spaceport `Upon setting down, the landing pad releases a billowing sheet of clear water-repellant material that covers your ship, presumably as some sort of protection against the rain. The spaceport itself is low and small and decorated with strips of the same material that gently ruffle in the wind, almost like the sails of an ancient ocean-going ship.`
-	spaceport `	The few Successors you see appear attentive to but not surprised by your presence, clearly already well-informed about the arrival of the new alien traveler.`
+	spaceport `Upon setting down, the landing pad releases a billowing sheet of clear water-repellant material that covers your ship, presumably as some sort of protection against the rain. The spaceport itself is low and small and decorated with strips of the same material that gently ruffle in the wind, almost like the sails of an ancient ocean-going ship. The water collects in carefully-sculpted channels that run all over the surface of the building, occasionally collecting in small pools or spreading out into delicate branch-like networks built into the ground.`
 	shipyard "High Houses Light"
 	shipyard "New Houses Light"
 	shipyard "Successor Basics"
