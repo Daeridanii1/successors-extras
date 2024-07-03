@@ -59,7 +59,7 @@ system Aaura-Kaska
 		sprite planet/gas2
 		distance 1456
 		period 378.715
-		object Mosaa-Ooa-Wyrdd
+		object Mosaa-Oa-Vyret
 			sprite planet/rhea
 			distance 300
 			period 200

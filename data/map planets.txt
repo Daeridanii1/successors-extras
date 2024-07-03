@@ -249,13 +249,13 @@ planet Kua-Oa-Aava
 	"required reputation" 5
 	bribe 0
 
-planet Mosaa-Ooa-Wyrdd
+planet Mosaa-Oa-Vyret
 	attributes successor
 	landscape land/mountain14-sfiera
 	description `This small planet hosts a population of towering octopus-like aliens. They have built several cities across its surface that are highly symmetrical and filled with organic-looking curved buildings draped in colorful fabrics that shimmer in the light. The air is damp and chilly; rainstorms blanket a significant portion of the planet's surface and many of the sleek-looking vessels that set down in the spaceport discharge streams of water upon landing.`
 		to display
 			not "known the successors"
-	description `Mosaa-Oaa-Wyrdd's location in the only hyperspace link between the northern and southern parts of Successor territory has made it a hub for interstellar trade and the center of Successor commerce.`
+	description `Mosaa-Oa-Vyret's location in the only hyperspace link between the northern and southern parts of Successor territory has made it a hub for interstellar trade and the center of Successor commerce.`
 		to display
 			has "known the successors"
 	description `	Unique among all Successor planets, its primary employer is not one of the High Houses but an independent corporation responsible for manufacturing, among other things, the Pulse Laser. The High Houses are understandably somewhat perturbed by this autonomy, but have allowed independent commerce to continue here in exchange for levying modest taxes on transactions that do not go through their official channels.`
