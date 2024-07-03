@@ -1,8 +1,8 @@
 ## The Successors
 
-Welcome to the development repository for the Successors, a work-in-progress alien faction for the open-source space game [Endless Sky](https://www.github.com/endless-sky/endless-sky), currently in the plugin format but intended for the base game.
+Welcome to the development repository for the Successors, an alien faction for the open-source space game [Endless Sky](https://www.github.com/endless-sky/endless-sky). This repository is in the plugin format, but I intend to eventually pull request its contents for inclusion in the base game.
 
-The Successors currently occupy their own map region in the far galactic south-southwest. Several missions are implemented, along with a full roster of ships and outfits, some of which can be obtained through normal gameplay via a short introductory storyline. 
+The Successors currently occupy their own map region in the far galactic south-southwest. An introductory storyline is implemented, including at least four mainline missions and several side missions. Numerous ships and outfits are included, some of which are legitimately obtainable through progressing the main story.
 
 All-content plugin support for testing and development is provided by [Omnis](https://www.github.com/DarcyManoel/-Omnis).
 
