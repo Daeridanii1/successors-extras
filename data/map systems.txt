@@ -826,7 +826,7 @@ system Ojstaan-Sola
 		distance 1000.41
 		period 400.255
 		object Saska-Aa-Noorr
-			sprite planet/stationsuccessor1
+			sprite planet/"station successor 1"
 			distance 300
 			period 30
 			offset 2
