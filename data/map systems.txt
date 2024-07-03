@@ -553,6 +553,8 @@ system Maspa-Raaqa
 	fleet "People's Houses" 2000
 	fleet "People's Houses Raiders" 4000
 	fleet "Small New Houses" 10000
+	haze _menu/haze-none
+	"starfield density" 0.5
 	object
 		sprite star/protostar-orange
 	object Giiq-Oj-Sol
