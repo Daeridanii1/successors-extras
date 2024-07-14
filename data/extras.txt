@@ -125,6 +125,7 @@ ship `Kijra-Khora`
 	description `	The "Kijra-Khora" also has two mobile nacelles that can be deployed in combat to present additional weapons hardpoints, and can be retracted while docking or in hyperspace for additional protection. The nacelles also automatically retract when cloaking; this reduces the size of the cloaking field that must be generated, improving the overall efficiency of the system.`
 
 outfit "Multimodal Armor: S-KK"
+	### Advanced stealth armor for the Kijra-Khora. Fast and offers afterburner usage, but drains a lot of shields.
 	"display name" "Stealth Plating: Kijra-Khora"
 	category "Systems"
 	cost 10000000
@@ -142,6 +143,7 @@ outfit "Multimodal Armor: S-KK"
 	description `	These generate a so-called "fast" cloak, relatively inefficient but facilitating rapid cloaking and decloaking cycles, perfect for dancing in and out of sight while under fire. A complex exhaust suppression system allows for the use of afterburners while under cloak, at the cost of drawing addition power from the shield grid.`
 
 outfit "Multimodal Armor: S-Vu"
+	### Stealth armor that allows for retrofitting Vujleten. More efficient than the Kijra-Khora cloak but slower and less powerful.
 	"display name" "Stealth Plating: Vujlet"
 	category "Systems"
 	cost 10000000
@@ -157,6 +159,7 @@ outfit "Multimodal Armor: S-Vu"
 	description `	 House Kaatrij's first foray back into cloaking technology is based on recovered data stashed away on Raaqa-Uur-Kaav before the fall. To support the massive energy requirements of this technology, power is drawn directly from the Vujlet's shield grid while active.`
 
 outfit "Shield Cortex Bypass"
+	### Shield generator mod designed to support Successor cloaking ships. 
 	category "Systems"
 	cost 400000
 	thumbnail "outfit/shield cortex interface"
