@@ -10,6 +10,17 @@
 
 ### EXTRAS: Content I don't plan on including in an initial PR but I wanted to make anyway. Spoiler territory for how I might (plan to) develop the story.
 
+outfit "House Kaatrij License"
+	category "Licenses"
+	thumbnail "outfit/unknown"
+	description "A manifestation of House Kaatrij's gratitude and allyship; the opportunity to purchase their exclusive technology."
+
+outfit "Kaatrij Winged-Eye License"
+	category "Licenses"
+	thumbnail "outfit/unknown"
+	description `"Let those trusted with our secrets also be so t'our successes."`
+	description `		- Kaatrij Ija Saajret, of Somber Sejra`
+
 ship `Kijra-Khora`
 	### An over-powered, over-gunned light warship intended as a potential unique reward for a storyline about House Kaatrij. Appropriate acquisition would be substantially after acquiring the High Houses license. Could be contrasted against another option (choose one or the other), perhaps a small selection of Predecessor-era outfits?
 	### NOTE: The Blender model is rigged for movable nacelles, but this can't be achieved in main until we get some sort of context-sensitive ship animation support; see issue #4991 and PR #8797
@@ -18,6 +29,7 @@ ship `Kijra-Khora`
 	attributes
 		licenses
 			"High Houses"
+			"Kaatrij Winged-Eye"
 		category "Light Warship"
 		"cost" 55000000
 		"shields" 12000
@@ -132,6 +144,7 @@ outfit "Multimodal Armor: S-KK"
 	thumbnail "outfit/unknown"
 	licenses
 		"High Houses"
+		"Kaatrij Winged-Eye"
 	"multimodal armor" -1
 	"exclusive: Kijra-Khora" -1
 	"cloak" .04
@@ -150,6 +163,7 @@ outfit "Multimodal Armor: S-Vu"
 	thumbnail "outfit/unknown"
 	licenses
 		"High Houses"
+		"House Kaatrij"
 	"multimodal armor" -1
 	"exclusive: Vujlet" -1
 	"cloak" .02
