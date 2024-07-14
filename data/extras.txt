@@ -135,12 +135,11 @@ outfit "Multimodal Armor: S-KK"
 	"exclusive: Kijra-Khora" -1
 	"cloak" .04
 	"cloaking fuel" .06
-	"cloaking energy" 3.0
-	"cloaking heat" 6.0
+	"cloaking shields" 6.0
 	"cloaked afterburner" 1
-	"afterburner heat" 6.0
+	"afterburner shields" 6.0
 	description `Advanced stealth plating and supporting systems designed for the "Kijra-Khora" light warship, applied as multimodal armor.`
-	description `	These generate a so-called "fast" cloak, relatively inefficient but facilitating rapid cloaking and decloaking cycles, perfect for dancing in and out of sight while under fire. A complex exhaust suppression system allows for the use of afterburners while under cloak, at the cost of generating additional heat buildup within the vessel.`
+	description `	These generate a so-called "fast" cloak, relatively inefficient but facilitating rapid cloaking and decloaking cycles, perfect for dancing in and out of sight while under fire. A complex exhaust suppression system allows for the use of afterburners while under cloak, at the cost of drawing addition power from the shield grid.`
 
 outfit "Multimodal Armor: S-Vu"
 	"display name" "Stealth Plating: Vujlet"
@@ -153,7 +152,7 @@ outfit "Multimodal Armor: S-Vu"
 	"exclusive: Vujlet" -1
 	"cloak" .02
 	"cloaking fuel" .07
-	"cloaking shields" 5.0
+	"cloaking shields" 5.2
 	description `Stealth plating and supporting systems designed for the "Vujlet" light warship, applied as multimodal armor.`
 	description `	 House Kaatrij's first foray back into cloaking technology is based on recovered data stashed away on Raaqa-Uur-Kaav before the fall. To support the massive energy requirements of this technology, power is drawn directly from the Vujlet's shield grid while active.`
 
