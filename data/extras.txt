@@ -32,16 +32,12 @@ ship `Kijra-Khora`
 		"outfit space" 450
 		"weapon capacity" 185
 		"engine capacity" 110
-		"multimodal armor" 1
 		"hull repair rate" 1.4
 		"hull energy" 1.96
 		"hull heat" 1.96
-		"cloak" .04
-		"cloaking fuel" .06
-		"cloaking energy" 3.0
-		"cloaking heat" 6.0
-		"cloaked afterburner" 1
 		"quantum keystone" 1
+		"multimodal armor" 1
+		"exclusive: Kijra-Khora" 1
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -58,7 +54,7 @@ ship `Kijra-Khora`
 		`Hyperdrive`
 		`Successor Cooling` 2
 		`"Ojet" Bimodal Coilgun` 6
-		`Multimodal Armor: Heavy`
+		`Multimodal Armor: S-KK`
 		`Kinetic Rail Rifle` 5
 	gun 4 -74 
 	gun -4 -74 
@@ -127,3 +123,20 @@ ship `Kijra-Khora`
 	"final explode" "final explosion medium"
 	description `Named for the gossamer-winged birds of House Kaatrij's homeworld, the "Kijra-Khora" is the first truly new and original warship design employed by the Successors in nearly two thousand years. Broadly patterned after the fast and stealthy hit-and-run craft employed by Kaatrij's Predecessors in their destructive runs against Point Drive production facilities, the "Kijra-Khora" incorporates the House's recently-recovered cloaking technology and sports a fearsome weapons layout.`
 	description `	The "Kijra-Khora" also has two mobile nacelles that can be deployed in combat to present additional weapons hardpoints, and can be retracted while docking or in hyperspace for additional protection. The nacelles also automatically retract when cloaking; this reduces the size of the cloaking field that must be generated, improving the overall efficiency of the system.`
+
+outfit "Multimodal Armor: S-KK"
+	"display name" "Stealth Plating: Kijra-Khora"
+	category "Systems"
+	cost 10000000
+	thumbnail "outfit/unknown"
+	licenses
+		"High Houses"
+	"multimodal armor" -1
+	"exclusive: Kijra-Khora" -1
+	"cloak" .04
+	"cloaking fuel" .06
+	"cloaking energy" 3.0
+	"cloaking heat" 6.0
+	"cloaked afterburner" 1
+	"afterburner heat" 6.0
+	description `Stealth plating and supporting systems designed for the "Kijra-Khora" light warship, applied as multimodal armor. These generate a so-called "fast" cloak, relatively inefficient but facilitating rapid cloaking and decloaking cycles, perfect for dancing in and out of sight while under fire. A complex exhaust suppression system allows for the use of afterburners while under cloak, at the cost of generating additional heat buildup within the vessel.`

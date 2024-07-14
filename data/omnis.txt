@@ -19,3 +19,4 @@ outfitter "successors extras"
 	`"Ija" Heirloom Reactor`
 	`"Jiita" Heirloom Shielding`
 	"Heirloom Hunter-Killers"
+	"Multimodal Armor: S-KK"
