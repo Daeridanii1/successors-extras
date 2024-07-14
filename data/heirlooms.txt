@@ -160,7 +160,7 @@ outfit `"Sarija" Heirloom Coilgun`
 			"start frame" 0
 			"no repeat"
 		sound "bimodal"
-		"hit effect" "electron impact" 3
+		"hit effect" "bimodal impact"
 		"inaccuracy" 1
 		"velocity" 45
 		"lifetime" 10
@@ -191,7 +191,7 @@ outfit "Heirloom Point Defense"
 	"weapon capacity" -15
 	"turret mounts" -1
 	weapon
-		"hardpoint sprite" "hardpoint/point defense turret"
+		"hardpoint sprite" "hardpoint/point defense"
 		"hardpoint offset" 5.
 		"hit effect" "burst anti-missile"
 		"anti-missile" 25
