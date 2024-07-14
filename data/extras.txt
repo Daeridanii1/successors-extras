@@ -184,6 +184,6 @@ outfit "Shield Cortex Bypass"
 	"shield connection point" -1
 	"high shield permeability" 1
 	"low shield permeability" 1
-	"shield energy multiplier" 0.7
-	description `With the rediscovery of their shield-hungry cloaking technology, House Kaatrij has begun producing these small modifier units which divert shields directly to non-defensive systems like engines and cloaks. This closer integration reduces energy losses but also entirely prevents generated shields from intercepting incoming damage.`
+	"shield generation multiplier" 0.8
+	description `With the rediscovery of their shield-hungry cloaking technology, House Kaatrij has begun producing these small modifier units which divert shields directly to non-defensive systems like engines and cloaks. This closer integration improves generator output but also entirely prevents generated shields from intercepting incoming damage.`
 	description `	Though designed for use with Kaatrij's exclusive cloaking technology, the usefulness of this outfit for powering general Successor afterburners has led Kaatrij to offer this to civilians as well.`
