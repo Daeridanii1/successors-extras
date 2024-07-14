@@ -139,4 +139,35 @@ outfit "Multimodal Armor: S-KK"
 	"cloaking heat" 6.0
 	"cloaked afterburner" 1
 	"afterburner heat" 6.0
-	description `Stealth plating and supporting systems designed for the "Kijra-Khora" light warship, applied as multimodal armor. These generate a so-called "fast" cloak, relatively inefficient but facilitating rapid cloaking and decloaking cycles, perfect for dancing in and out of sight while under fire. A complex exhaust suppression system allows for the use of afterburners while under cloak, at the cost of generating additional heat buildup within the vessel.`
+	description `Advanced stealth plating and supporting systems designed for the "Kijra-Khora" light warship, applied as multimodal armor.`
+	description `	These generate a so-called "fast" cloak, relatively inefficient but facilitating rapid cloaking and decloaking cycles, perfect for dancing in and out of sight while under fire. A complex exhaust suppression system allows for the use of afterburners while under cloak, at the cost of generating additional heat buildup within the vessel.`
+
+outfit "Multimodal Armor: S-Vu"
+	"display name" "Stealth Plating: Vujlet"
+	category "Systems"
+	cost 10000000
+	thumbnail "outfit/unknown"
+	licenses
+		"High Houses"
+	"multimodal armor" -1
+	"exclusive: Vujlet" -1
+	"cloak" .02
+	"cloaking fuel" .07
+	"cloaking shields" 5.0
+	description `Stealth plating and supporting systems designed for the "Vujlet" light warship, applied as multimodal armor.`
+	description `	 House Kaatrij's first foray back into cloaking technology is based on recovered data stashed away on Raaqa-Uur-Kaav before the fall. To support the massive energy requirements of this technology, power is drawn directly from the Vujlet's shield grid while active.`
+
+outfit "Shield Cortex Bypass"
+	category "Systems"
+	cost 400000
+	thumbnail "outfit/shield cortex interface"
+	licenses 
+		"Successor"
+	"mass" 3
+	"outfit space" -3
+	"shield connection point" -1
+	"high shield permeability" 1
+	"low shield permeability" 1
+	"shield energy multiplier" 0.7
+	description `With the rediscovery of their shield-hungry cloaking technology, House Kaatrij has begun producing these small modifier units which divert shields directly to non-defensive systems like engines and cloaks. This closer integration reduces energy losses but also entirely prevents generated shields from intercepting incoming damage.`
+	description `	Though designed for use with Kaatrij's exclusive cloaking technology, the usefulness of this outfit for powering general Successor afterburners has led Kaatrij to offer this to civilians as well.`

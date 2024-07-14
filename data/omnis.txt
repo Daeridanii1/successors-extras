@@ -20,3 +20,5 @@ outfitter "successors extras"
 	`"Jiita" Heirloom Shielding`
 	"Heirloom Hunter-Killers"
 	"Multimodal Armor: S-KK"
+	"Multimodal Armor: S-Vu"
+	"Shield Cortex Bypass"
