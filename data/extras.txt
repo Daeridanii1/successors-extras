@@ -13,7 +13,7 @@ outfit "Kaatrij Winged-Eye License"
 
 ship `Kijra-Khora`
 	### An over-powered, over-gunned light warship intended as a potential unique reward for a storyline about House Kaatrij. Appropriate acquisition would be substantially after acquiring the High Houses license. Could be contrasted against another option (choose one or the other), perhaps a small selection of Predecessor-era outfits?
-	### NOTE: The Blender model is rigged for movable nacelles, but this can't be achieved in main until we get some sort of context-sensitive ship animation support; see issue #4991 and PR #8797
+	### NOTE: The Blender model is rigged for movable nacelles, but this can't be achieved in main until we get some sort of context-sensitive ship animation support; see issue #4991 and PR #8797 from the main repository.
 	sprite "ship/kijra-khora"
 	thumbnail "thumbnail/kijra-khora"
 	attributes
@@ -49,15 +49,15 @@ ship `Kijra-Khora`
 		`"Veusa" Inductive Thruster`
 		`"Veusa" Inductive Steering`
 		`"Ryuit" Fusion Core`
-		`Primary Power Reserve`
-		`Auxiliary Power Reserve` 2
-		`Successor Fuel Sail`
+		"Primary Power Reserve"
+		"Auxiliary Power Reserve" 2
+		"Successor Fuel Sail"
 		`"Jaase" Shield Cortex`
-		`Hyperdrive`
-		`Successor Cooling` 2
+		"Hyperdrive"
+		"Successor Cooling" 2
 		`"Ojet" Bimodal Coilgun` 6
-		`Multimodal Armor: S-KK`
-		`Kinetic Rail Rifle` 5
+		"Multimodal Armor: S-KK"
+		"Kinetic Rail Rifle" 5
 	gun 4 -74 
 	gun -4 -74 
 	gun 34 -20 
@@ -176,7 +176,7 @@ outfit `"Kajra" Stealth Shielding`
 	"shield generation multiplier" -0.45
 	"shield generation" 0.0667
 	"shield energy" 8.4
-	description `An advanced shield generator developed by House Kaatrij for their newly-rediscovered cloaking ships, the "Kajra" operates in an unusual but undeniably effective fashion. By delivering a vast amount of power along the same channels as the ship's cloaking systems, the "Kajra" can achieve a pace of regeneration that outstrips even the rapidly- recharging shield cortices of the High Houses. However, the large majority of this can only be conducted while the vessel it is equipped on is cloaked, and the process substantially interferes with standard shield generation equipment.`
+	description `An advanced shield generator developed by House Kaatrij for their newly-rediscovered cloaking ships, the "Kajra" operates in an unusual but undeniably effective fashion. By delivering a vast amount of power along the same channels as the ship's cloaking systems, the "Kajra" can achieve a pace of regeneration that outstrips even the rapidly-recharging shield cortices of the High Houses. However, the large majority of this can only be conducted while the vessel it is equipped on is cloaked, and the process substantially interferes with standard shield generation equipment.`
 	description `	Many of Kaatrij's captains still prefer to stick with the more time-proven shield cortices on their vessels, but many of the House's more adept and confronting pilots have come to enjoy the higher risk and reward that the "Kajra" offers.`
 
 outfit `"Sosrue" Stealth Shielding`
