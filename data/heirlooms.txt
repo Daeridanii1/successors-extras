@@ -127,7 +127,7 @@ outfit `"Tijra" Heirloom Lance`
 		"hit force" 6000
 		"ion damage" 120
 		"phasing" 1
-	description "Among the largest and most powerful of the Predecessors' weapons, this massive coilgun propels its magnetic projectiles to a sizeable fraction of the speed of light, delivering enough kinetic energy on impact to destroy a small city or alternatively, a large warship."
+	description "Among the largest and most powerful of the Predecessors' weapons, this massive coilgun propels its magnetic projectiles to a sizable fraction of the speed of light, delivering enough kinetic energy on impact to destroy a small city or alternatively, a large warship."
 
 outfit "Hypervelocity Spike"
 	category "Ammunition"
