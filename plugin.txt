@@ -1,0 +1,2 @@
+name "Successors Extras"
+about "This plugin contains additional ships and outfits for the Successors that have yet to be PR'd. Balance not guaranteed!"
