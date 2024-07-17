@@ -6,9 +6,11 @@ Source: https://github.com/Daeridanii1/successors-extras
 Files:
  images/outfit/small?stealth?shielding*
  images/outfit/large?stealth?shielding*
+ images/outfit/stealth?plating*
 
  images/ship/kijra-khora*
  images/ship/valkkyiara-khorasaqra*
+ 
  images/thumbnail/kijra-khora*
  images/thumbnail/valkkyiara-khorasaqra*
 Copyright: Daeridanii (https://github.com/Daeridanii1)

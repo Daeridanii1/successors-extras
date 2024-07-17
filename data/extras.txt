@@ -131,7 +131,7 @@ outfit "Multimodal Armor: S-KK"
 	"display name" "Stealth Plating: Kijra-Khora"
 	category "Systems"
 	cost 10000000
-	thumbnail "outfit/unknown"
+	thumbnail "outfit/stealth plating kijra-khora"
 	licenses
 		"High Houses"
 		"Kaatrij Winged-Eye"
@@ -150,7 +150,7 @@ outfit "Multimodal Armor: S-Vu"
 	"display name" "Stealth Plating: Vujlet"
 	category "Systems"
 	cost 10000000
-	thumbnail "outfit/unknown"
+	thumbnail "outfit/stealth plating vujlet"
 	licenses
 		"High Houses"
 		"House Kaatrij"
