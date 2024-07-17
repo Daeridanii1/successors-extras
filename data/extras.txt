@@ -173,18 +173,34 @@ outfit "Multimodal Armor: S-Vu"
 	description `	 House Kaatrij's first foray back into cloaking technology is based on recovered data stashed away on Raaqa-Uur-Kaav before the fall. To support the massive energy requirements of this technology, power is drawn directly from the Vujlet's shield grid while active.`
 
 outfit `"Kajra" Stealth Shielding`
-	### Shield generator specifically designed for Successor cloaking vessels. Less efficient while visible, but reduces shield draw of cloaking.
+	### Shield generator specifically designed for Successor cloaking vessels. Massive shield regen under cloak, at the cost of drawing a lot of power while shields <100% and reducing the effectiveness of standard shield regen outfits.
 	category "Systems"
 	licenses
 		"High Houses"
 		"House Kaatrij"
-	cost 8750000
-	thumbnail "outfit/cloak shield"
+	cost 7550000
+	thumbnail "outfit/small stealth shielding"
+	"mass" 22
+	"outfit space" -22
+	"cloaking shields" -6.3
+	"shield generation multiplier" -0.45
+	"shield generation" 0.0667
+	"shield energy" 10.7
+	description `An advanced shield generator developed by House Kaatrij for their newly-rediscovered cloaking ships, the "Kajra" operates in an unusual but undeniably effective fashion. By delivering a vast amount of power along the same channels as the ship's cloaking systems, the "Kajra" can achieve a pace of regeneration that outstrips even the rapidly- recharging shield cortices of the High Houses. However, the large majority of this can only be conducted while the vessel it is equipped on is cloaked, and the process substantially interferes with standard shield generation equipment.`
+	description `	Many of Kaatrij's captains still prefer to stick with the more time-proven shield cortices on their vessels, but many of the House's more adept and confronting pilots have come to enjoy the higher risk and reward that the "Kajra" offers.`
+
+outfit `"Sosrue" Stealth Shielding`
+	### Larger cloaking shield.
+	category "Systems"
+	licenses
+		"High Houses"
+		"Kaatrij Winged-Eye"
+	cost 15750000
+	thumbnail "outfit/large stealth shielding"
 	"mass" 36
 	"outfit space" -36
-	"shield generation" 4.0
-	"cloaking shields" -1.75
-	"shield protection" -0.33
-	"shield energy" 7.95
-	"shield connection point" 1
-	description `Designed specifically for use by their new cloaking-equipped vessels, the "Kajra" shielding system diverts a substantial portion of its output to cloaking systems.`
+	"cloaking shields" -12.5
+	"shield generation multiplier" -0.45
+	"shield generation" 0.1334
+	"shield energy" 20.5
+	description `The apex of modern Successor shield technology, the "Sosrue" allows a cloaked vessel to recover with startling rapidity, though one of these units draws more power than most reactors can produce. It bears the name of a deep-sea dwelling creature known for hunting from the shadows anything that bears light. Long thought extinct, relegated only to the imaginary stories told by parents to their children, the genetic code of the Sosrue was preserved, among others, in a sealed vault once owned by the old House Kaatrij.`

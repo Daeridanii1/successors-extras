@@ -25,3 +25,4 @@ outfitter "successors extras"
 	"House Kaatrij License"
 	"Kaatrij Winged-Eye License"
 	`"Kajra" Stealth Shielding`
+	`"Sosrue" Stealth Shielding`
