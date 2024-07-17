@@ -26,3 +26,4 @@ outfitter "successors extras"
 	"Kaatrij Winged-Eye License"
 	`"Kajra" Stealth Shielding`
 	`"Sosrue" Stealth Shielding`
+	`"Asja" Power Distributor`

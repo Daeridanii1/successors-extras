@@ -194,3 +194,19 @@ outfit `"Sosrue" Stealth Shielding`
 	"shield generation" 0.1334
 	"shield energy" 16.5
 	description `The apex of the Myiaran Successors' modern shield technology, the "Sosrue" allows a cloaked vessel to recover its defenses with startling rapidity, though one of these units draws more power than most reactors can produce. It bears the name of a deep-sea dwelling creature known for hunting from the shadows anything that bears light. Long thought extinct, relegated only to the imaginary stories told by parents to their children, the genetic code of the Sosrue was preserved, among others, in a sealed vault once owned by the old House Kaatrij.`
+
+outfit `"Asja" Power Distributor`
+	category "Power"
+	cost 1250000
+	thumbnail "outfit/large successor battery"
+	licenses
+		"High Houses"
+		"House Kaatrij"
+	"mass" 38
+	"outfit space" -38
+	"energy capacity" 32500
+	"shield energy multiplier" -0.30
+	"hull energy multiplier" -0.30
+	"shield generation multiplier" -0.20
+	"hull repair multiplier" -0.20
+	description "Power distributor."
