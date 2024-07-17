@@ -1,3 +1,8 @@
+outfit "Heirloom License"
+	category "Licenses"
+	thumbnail "outfit/unknown"
+	description "Oh no, one of the scions dropped their ID card and some nimble-fingered captain just happened to be walking by."
+
 ship "Valkkyiara-Khorasaqra"
 	sprite "ship/valkkyiara-khorasaqra"
 	thumbnail "thumbnail/valkkyiara-khorasaqra"
