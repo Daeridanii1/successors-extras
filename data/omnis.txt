@@ -8,8 +8,8 @@ planet "  Successors"
 	add outfitter "successors extras"
 #	Sales
 shipyard "successors extras"
-	`Kijra-Khora`
-	`Valkkyiara-Khorasaqra`
+	"Kijra-Khora"
+	"Valkkyiara-Khorasaqra"
 outfitter "successors extras"
 	"Heirloom License"
 	`"Tijra" Heirloom Lance`
