@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Successors Extras
 Upstream-Contact: Daeridanii (daeridanii44@gmail.com)
-Source: https://github.com/Daeridanii1/successors
+Source: https://github.com/Daeridanii1/successors-extras
 
 Files:
  images/outfit/small?stealth?shielding*
