@@ -147,16 +147,16 @@ outfit "Multimodal Armor: S-KK"
 		"Kaatrij Winged-Eye"
 	"multimodal armor" -1
 	"exclusive: Kijra-Khora" -1
-	"cloak" .04
-	"cloaking fuel" .06
-	"cloaking shields" 6.0
+	"cloak" 0.04
+	"cloaking fuel" 0.08
+	"cloaking shields" 5.7
 	"cloaked afterburner" 1
-	"afterburner shields" 6.0
+	"afterburner shields" 5.7
 	description `Advanced stealth plating and supporting systems designed for the "Kijra-Khora" light warship, applied as multimodal armor.`
-	description `	These generate a so-called "fast" cloak, relatively inefficient but facilitating rapid cloaking and decloaking cycles, perfect for dancing in and out of sight while under fire. A complex exhaust suppression system allows for the use of afterburners while under cloak, at the cost of drawing addition power from the shield grid.`
+	description `	These generate a so-called "fast" cloak, relatively inefficient but facilitating rapid cloaking and decloaking cycles, perfect for dancing in and out of sight while under fire. A complex exhaust suppression system allows for the use of afterburners while under cloak, at the cost of drawing additional power from the shield grid.`
 
 outfit "Multimodal Armor: S-Vu"
-	### Stealth armor that allows for retrofitting Vujleten. More efficient than the Kijra-Khora cloak but slower and less powerful.
+	### Stealth armor that allows for retrofitting Vujleten. More efficient than the Kijra-Khora cloak but slower and does not offer afterburning.
 	"display name" "Stealth Plating: Vujlet"
 	category "Systems"
 	cost 10000000
@@ -166,24 +166,25 @@ outfit "Multimodal Armor: S-Vu"
 		"House Kaatrij"
 	"multimodal armor" -1
 	"exclusive: Vujlet" -1
-	"cloak" .02
-	"cloaking fuel" .07
-	"cloaking shields" 5.2
+	"cloak" 0.02
+	"cloaking fuel" 0.06
+	"cloaking shields" 5.0
 	description `Stealth plating and supporting systems designed for the "Vujlet" light warship, applied as multimodal armor.`
 	description `	 House Kaatrij's first foray back into cloaking technology is based on recovered data stashed away on Raaqa-Uur-Kaav before the fall. To support the massive energy requirements of this technology, power is drawn directly from the Vujlet's shield grid while active.`
 
-outfit "Shield Cortex Bypass"
-	### Shield generator mod designed to support Successor cloaking ships. 
+outfit `"Kajra" Stealth Shielding`
+	### Shield generator specifically designed for Successor cloaking vessels. Less efficient while visible, but reduces shield draw of cloaking.
 	category "Systems"
-	cost 400000
-	thumbnail "outfit/shield cortex interface"
-	licenses 
-		"Successor"
-	"mass" 3
-	"outfit space" -3
-	"shield connection point" -1
-	"high shield permeability" 1
-	"low shield permeability" 1
-	"shield generation multiplier" 0.8
-	description `With the rediscovery of their shield-hungry cloaking technology, House Kaatrij has begun producing these small modifier units which divert shields directly to non-defensive systems like engines and cloaks. This closer integration improves generator output but also entirely prevents generated shields from intercepting incoming damage.`
-	description `	Though designed for use with Kaatrij's exclusive cloaking technology, the usefulness of this outfit for powering general Successor afterburners has led Kaatrij to offer this to civilians as well.`
+	licenses
+		"High Houses"
+		"House Kaatrij"
+	cost 8750000
+	thumbnail "outfit/cloak shield"
+	"mass" 36
+	"outfit space" -36
+	"shield generation" 4.0
+	"cloaking shields" -1.75
+	"shield protection" -0.33
+	"shield energy" 7.95
+	"shield connection point" 1
+	description `Designed specifically for use by their new cloaking-equipped vessels, the "Kajra" shielding system diverts a substantial portion of its output to cloaking systems.`
