@@ -2,11 +2,15 @@
 
 outfit "House Kaatrij License"
 	category "Licenses"
+	series "Licenses: Successors"
+	index 30
 	thumbnail "outfit/unknown"
 	description "A manifestation of House Kaatrij's gratitude and allyship; the opportunity to purchase their exclusive technology."
 
 outfit "Kaatrij Winged-Eye License"
 	category "Licenses"
+	series "Licenses: Successors"
+	index 40
 	thumbnail "outfit/unknown"
 	description `"Let those trusted with our secrets also be so t'our successes."`
 	description `		- Kaatrij Ija Saajret, of Somber Sejra`
@@ -23,20 +27,20 @@ ship `Kijra-Khora`
 		category "Light Warship"
 		"cost" 55000000
 		"shields" 12000
-		"hull" 26500
+		"hull" 23500
 		"required crew" 5
 		"bunks" 10
-		"mass" 577
-		"drag" 4.05
-		"heat dissipation" .453
+		"mass" 440
+		"drag" 4.2
+		"heat dissipation" 0.5
 		"fuel capacity" 800
 		"cargo space" 15
 		"outfit space" 450
-		"weapon capacity" 185
+		"weapon capacity" 135
 		"engine capacity" 110
-		"hull repair rate" 1.4
-		"hull energy" 1.96
-		"hull heat" 1.96
+		"hull repair rate" 1.25
+		"hull energy" 1.75
+		"hull heat" 1.75
 		"quantum keystone" 1
 		"multimodal armor" 1
 		"exclusive: Kijra-Khora" 1
@@ -125,11 +129,14 @@ ship `Kijra-Khora`
 	"final explode" "final explosion medium"
 	description `Named for the gossamer-winged creatures of House Kaatrij's homeworld, the "Kijra-Khora" is the first truly new and original warship design employed by the Myiaran Successors in nearly two thousand years. Broadly patterned after the fast and stealthy hit-and-run craft employed by Kaatrij's Predecessors in their destructive runs against Point Drive production facilities, the "Kijra-Khora" incorporates the House's recently-recovered cloaking technology and sports a fearsome weapons layout.`
 	#description `	The "Kijra-Khora" also has two mobile nacelles that can be deployed in combat to present additional weapons hardpoints, and can be retracted while docking or in hyperspace for additional protection. The nacelles also automatically retract when cloaking; this reduces the size of the cloaking field that must be generated, improving the overall efficiency of the system.`
+	description `	The "Kijra-Khora" is inherently capable of passing through unstable wormholes.`
 
 outfit "Multimodal Armor: S-KK"
 	### Advanced stealth armor for the Kijra-Khora. Fast and offers afterburner usage, but drains a lot of shields.
 	"display name" "Stealth Plating: Kijra-Khora"
 	category "Systems"
+	series "Special Systems: Successors"
+	index 50
 	cost 10000000
 	thumbnail "outfit/stealth plating kijra-khora"
 	licenses
@@ -149,6 +156,8 @@ outfit "Multimodal Armor: S-Vu"
 	### Stealth armor that allows for retrofitting Vujleten. More efficient than the Kijra-Khora cloak but slower and does not offer afterburning.
 	"display name" "Stealth Plating: Vujlet"
 	category "Systems"
+	series "Special Systems: Successors"
+	index 60
 	cost 10000000
 	thumbnail "outfit/stealth plating vujlet"
 	licenses
@@ -165,6 +174,8 @@ outfit "Multimodal Armor: S-Vu"
 outfit `"Kajra" Stealth Shielding`
 	### Shield generator specifically designed for Successor cloaking vessels. Massive shield regen under cloak, at the cost of drawing a lot of power while shields <100% and reducing the effectiveness of standard shield regen outfits.
 	category "Systems"
+	series "Shields: Successors"
+	index 100
 	licenses
 		"High Houses"
 		"House Kaatrij"
@@ -182,6 +193,8 @@ outfit `"Kajra" Stealth Shielding`
 outfit `"Sosrue" Stealth Shielding`
 	### Larger cloaking shield.
 	category "Systems"
+	series "Shields: Successors"
+	index 110
 	licenses
 		"High Houses"
 		"Kaatrij Winged-Eye"
@@ -197,6 +210,8 @@ outfit `"Sosrue" Stealth Shielding`
 
 outfit `"Asja" Power Distributor`
 	category "Power"
+	series "Power: Successors"
+	index 130
 	cost 1250000
 	thumbnail "outfit/large successor battery"
 	licenses
