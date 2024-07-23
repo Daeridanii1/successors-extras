@@ -146,9 +146,9 @@ outfit "Multimodal Armor: S-KK"
 	"exclusive: Kijra-Khora" -1
 	"cloak" 0.04
 	"cloaking fuel" 0.08
-	"cloaking shields" 5.7
+	"cloaking shields" 4.5
 	"cloaked afterburner" 1
-	"afterburner shields" 5.7
+	"afterburner shields" 1.5
 	description `Advanced stealth plating and supporting systems designed for the "Kijra-Khora" light warship, applied as multimodal armor.`
 	description `	These generate a so-called "fast" cloak, relatively inefficient but facilitating rapid cloaking and decloaking cycles, perfect for dancing in and out of sight while under fire. A complex exhaust suppression system allows for the use of afterburners while under cloak, at the cost of drawing additional power from the shield grid.`
 
@@ -167,7 +167,7 @@ outfit "Multimodal Armor: S-Vu"
 	"exclusive: Vujlet" -1
 	"cloak" 0.02
 	"cloaking fuel" 0.06
-	"cloaking shields" 5.0
+	"cloaking shields" 4.0
 	description `Stealth plating and supporting systems designed for the "Vujlet" light warship, applied as multimodal armor.`
 	description `	 House Kaatrij's first foray back into cloaking technology is based on recovered data stashed away on Raaqa-Uur-Kaav before the fall. To support the massive energy requirements of this technology, power is drawn directly from the Vujlet's shield grid while active.`
 
@@ -183,10 +183,10 @@ outfit `"Kajra" Stealth Shielding`
 	thumbnail "outfit/small stealth shielding"
 	"mass" 22
 	"outfit space" -22
-	"cloaking shields" -6.1
+	"cloaking shields" -5.3
 	"shield generation multiplier" -0.45
 	"shield generation" 0.6667
-	"shield energy" 8.4
+	"shield energy" 7.3
 	description `An advanced shield generator developed by House Kaatrij for their newly-rediscovered cloaking ships, the "Kajra" operates in an unusual but undeniably effective fashion. By delivering a vast amount of power along the same channels as the ship's cloaking systems, the "Kajra" can achieve a pace of regeneration that outstrips even the rapidly-recharging shield cortices of the High Houses. However, the large majority of this can only be conducted while the vessel it is equipped on is cloaked, and the process substantially interferes with standard shield generation equipment.`
 	description `	Many of Kaatrij's captains still prefer to stick with the more time-proven shield cortices on their vessels, but many of the House's more adept and confronting pilots have come to enjoy the higher risk and reward that the "Kajra" offers.`
 
@@ -202,10 +202,10 @@ outfit `"Sosrue" Stealth Shielding`
 	thumbnail "outfit/large stealth shielding"
 	"mass" 36
 	"outfit space" -36
-	"cloaking shields" -12
+	"cloaking shields" -10.8
 	"shield generation multiplier" -0.45
 	"shield generation" 1.3334
-	"shield energy" 16.5
+	"shield energy" 14.8
 	description `The apex of the Myiaran Successors' modern shield technology, the "Sosrue" allows a cloaked vessel to recover its defenses with startling rapidity, though one of these units draws more power than most reactors can produce. It bears the name of a deep-sea dwelling creature known for hunting from the shadows anything that bears light. Long thought extinct, relegated only to the imaginary stories told by parents to their children, the genetic code of the Sosrue was preserved, among others, in a sealed vault once owned by the old House Kaatrij.`
 
 outfit `"Asja" Power Distributor`
