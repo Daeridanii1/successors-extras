@@ -19,11 +19,11 @@ outfitter "successors extras"
 	`"Ija" Heirloom Reactor`
 	`"Jiita" Heirloom Shielding`
 	"Heirloom Hunter-Killers"
-	"Multimodal Armor: S-KK"
-	"Multimodal Armor: S-Vu"
+	"Stealth Plating: Kijra-Khora"
+	"Stealth Plating: Vujlet"
 	"Shield Cortex Bypass"
 	"House Kaatrij License"
 	"Kaatrij Winged-Eye License"
 	`"Kajra" Stealth Shielding`
 	`"Sosrue" Stealth Shielding`
-	`"Asja" Power Distributor`
+	`"Asja" Fusion Distributor`
