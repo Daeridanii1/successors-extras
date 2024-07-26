@@ -15,122 +15,13 @@ outfit "Kaatrij Winged-Eye License"
 	description `"Let those trusted with our secrets also be so t'our successes."`
 	description `		- Kaatrij Ija Saajret, of Somber Sejra`
 
-ship `Kijra-Khora`
-	### An over-powered, over-gunned light warship intended as a potential unique reward for a storyline about House Kaatrij. Appropriate acquisition would be substantially after acquiring the High Houses license. Could be contrasted against another option (choose one or the other), perhaps a small selection of Predecessor-era outfits?
-	### NOTE: The Blender model is rigged for movable nacelles, but this can't be achieved in main until we get some sort of context-sensitive ship animation support; see issue #4991 and PR #8797 from the main repository.
-	plural "Kijran-Khora"
-	sprite "ship/kijra-khora"
-	thumbnail "thumbnail/kijra-khora"
-	attributes
-		licenses
-			"High Houses"
-			"Kaatrij Winged-Eye"
-		category "Light Warship"
-		"cost" 55000000
-		"shields" 12000
-		"hull" 23500
-		"required crew" 5
-		"bunks" 10
-		"mass" 440
-		"drag" 4.2
-		"heat dissipation" 0.5
-		"fuel capacity" 800
-		"cargo space" 15
-		"outfit space" 450
-		"weapon capacity" 135
-		"engine capacity" 110
-		"hull repair rate" 1.25
-		"hull energy" 1.75
-		"hull heat" 1.75
-		"quantum keystone" 1
-		"multimodal armor" 1
-		"exclusive: Kijra-Khora" 1
-		weapon
-			"blast radius" 100
-			"shield damage" 1000
-			"hull damage" 500
-			"hit force" 1500
-	outfits
-		`"Veusa" Inductive Thruster`
-		`"Veusa" Inductive Steering`
-		`"Ryuit" Fusion Core`
-		"Primary Power Reserve"
-		"Auxiliary Power Reserve" 2
-		"Successor Fuel Sail"
-		`"Jaase" Shield Cortex`
-		"Hyperdrive"
-		"Successor Cooling" 2
-		`"Ojet" Bimodal Coilgun` 6
-		"Stealth Plating: Kijra-Khora"
-		"Kinetic Rail Rifle" 5
-	gun 4 -74 
-	gun -4 -74 
-	gun 34 -20 
-	gun -34 -20 
-	gun 34 -20 
-	gun -34 -20 
-	engine 34 55
-		zoom .8
-	engine -34 55
-		zoom .8
-	engine 0 67
-		zoom 1.2
-	"steering engine" -13 -57
-		angle 110
-		right
-		zoom .4
-	"steering engine" -12 -61
-		angle 110
-		right
-		zoom .4
-	"steering engine" -11 -64 
-		angle 110
-		right
-		zoom .4
-	"steering engine" -10 -67 
-		angle 110
-		right
-		zoom .4
-	"steering engine" 10 -67
-		angle 250
-		left
-		zoom .4
-	"steering engine" 11 -64 
-		angle 250
-		left
-		zoom .4
-	"steering engine" 12 -61
-		angle 250
-		left
-		zoom .4
-	"steering engine" 13 -57
-		angle 250
-		left
-		zoom .4
-	"steering engine" -47 47 
-		angle 90
-		left
-		zoom .7
-		over
-	"steering engine" 47 47 
-		angle 270
-		right
-		zoom .7
-		over
-	"reverse engine" 26 -11
-		zoom .8
-	"reverse engine" -26 -11
-		zoom .8
-	leak "leak" 50 50
-	leak "flame" 30 80
-	explode "tiny explosion" 18
-	explode "small explosion" 36
-	explode "medium explosion" 24
-	explode "large explosion" 8
-	"final explode" "final explosion medium"
-	description `Named for the fearsome gossamer-winged creatures of House Kaatrij's lost homeworld, the "Kijra-Khora" is the first truly new and original warship design employed by the Myiaran Successors in nearly two thousand years. Broadly patterned after the fast and stealthy hit-and-run craft employed by Kaatrij's Predecessors in their destructive runs against Point Drive production facilities, the "Kijra-Khora" incorporates the House's recently-recovered cloaking technology and sports a fearsome weapons layout.`
-	#description `	The "Kijra-Khora" also has two mobile nacelles that can be deployed in combat to present additional weapons hardpoints, and can be retracted while docking or in hyperspace for additional protection. The nacelles also automatically retract when cloaking; this reduces the size of the cloaking field that must be generated, improving the overall efficiency of the system.`
-	description `	The advanced armor of the "Kijra-Khora" enables it to inherently pass through unstable wormholes.`
+outfit "House Chydiyi License"
+	category "Licenses"
+	series "Licenses: Successors"
+	index 50
+	thumbnail "outfit/unknown"
+	description "A manifestation of House Chydiyi's favor; the opportunity to purchase their exclusive technology."
+
 
 outfit "Stealth Plating: Kijra-Khora"
 	### Advanced stealth armor for the Kijra-Khora. Fast and offers afterburner usage, but drains a lot of shields.
@@ -170,6 +61,7 @@ outfit "Stealth Plating: Vujlet"
 	description `Stealth plating and supporting systems designed for the "Vujlet" light warship, applied as multimodal armor.`
 	description `	 House Kaatrij's first foray back into cloaking technology is based on recovered data stashed away on Raaqa-Uur-Kaav before the fall. To support the massive energy requirements of this technology, power is drawn directly from the Vujlet's shield grid while active.`
 
+
 outfit `"Kajra" Stealth Shielding`
 	### Shield generator specifically designed for Successor cloaking vessels. Massive shield regen under cloak, at the cost of drawing a lot of power while shields <100% and reducing the effectiveness of standard shield regen outfits.
 	category "Systems"
@@ -207,6 +99,7 @@ outfit `"Sosrue" Stealth Shielding`
 	"shield energy" 14.8
 	description `The apex of the Myiaran Successors' modern shield technology, the "Sosrue" allows a cloaked vessel to recover its defenses with startling rapidity, though one of these units draws more power than most reactors can produce. It bears the name of a deep-sea dwelling creature known for hunting from the shadows anything that bears light. Long thought extinct, relegated only to the imaginary stories told by parents to their children, the genetic code of the Sosrue was preserved, among others, in a sealed vault once owned by the old House Kaatrij.`
 
+
 outfit `"Asja" Fusion Distributor`
 	category "Power"
 	series "Power: Successors"
@@ -226,80 +119,67 @@ outfit `"Asja" Fusion Distributor`
 	description `The many energy-hungry systems of House Kaatrij's latest advanced warships have demanded a more compact and specialized power plant to support them. The "Asja" is a highly integrated fusion power system, featuring a top-of-the-line stellarator reactor directly connected to high-density batteries and a complex shield modulation system that substantially reduces shield power usage while only slightly reducing regeneration rate.`
 
 
-outfit "House Chydiyi License"
-	category "Licenses"
-	series "Licenses: Successors"
-	index 50
-	thumbnail "outfit/unknown"
-	description "A manifestation of House Chydiyi's favor; the opportunity to purchase their exclusive technology."
+outfit `Antiproton Emitter`
+	category "Secondary Weapons"
+	series "Fixed Secondaries: Successors"
+	index 20
+	cost 1400000
+	thumbnail "outfit/antiproton emitter"
+	"mass" 19
+	"outfit space" -19
+	"weapon capacity" -19
+	"gun ports" -1
+	"unique" 1
+	weapon
+		icon "icon/antiproton"
+		"reload" 1
+		"firing energy" 16
+		"firing heat" 8
+		"firing fuel" 0.16
+		submunition "Antiproton Beam" 4
+	description `This outfit uses a small amount of hyperspace fuel and a large amount of energy to catalyze the generation of antiprotons, which it then ejects in a cone in front of the craft using it. Though these inflict only very minor damage, the annihilation events they produce upon contacting a target are highly visible to starship sensors, allowing the device to be used as an inelegant but effective way of pinpointing the location of a cloaked vessel.`
+	description `   As the Successors have not employed cloaking technology in over a thousand years, anti-cloaking equipment like this has mostly remained unused, sitting in archives and slowly decaying.`
 
-ship "Uoret-Raasja"
-	plural "Uoreten-Raasja"
-	sprite "ship/uoret-raasja"
-		center 0 -33
-	thumbnail "thumbnail/uoret-raasja"
-	attributes
-		licenses
-			"High Houses"
-			"House Chydiyi"
-		category "Medium Warship"
-		"cost" 45250000
-		"shields" 6500
-		"hull" 51500
-		"shield generation multiplier" 0.35
-		"shield energy multiplier" 0.20
-		"required crew" 16
-		"bunks" 38
-		"mass" 950
-		"drag" 9.9
-		"heat dissipation" 0.45
-		"fuel capacity" 500
-		"cargo space" 35
-		"outfit space" 550
-		"weapon capacity" 275
-		"engine capacity" 115
-		"multimodal armor" 1
-		"hull repair rate" 2.25
-		"hull energy" 3.26
-		"hull heat" 3.26
-		weapon
-			"blast radius" 100
-			"shield damage" 1000
-			"hull damage" 500
-			"hit force" 1500
-	outfits
-		`"Ojet" Bimodal Coilgun` 7
+outfit `Antiproton Emitter Turret`
+	category "Secondary Weapons"
+	series "Fixed Secondaries: Successors"
+	index 30
+	cost 1400000
+	thumbnail "outfit/antiproton emitter turret"
+	"mass" 26
+	"outfit space" -26
+	"weapon capacity" -26
+	"turret mounts" -1
+	"unique" 1
+	weapon
+		icon "icon/antiproton"
+		"turret turn" 1.2
+		"reload" 1
+		"firing energy" 16
+		"firing heat" 8
+		"firing fuel" 0.16
+		submunition "Antiproton Beam" 4
+	description `This outfit uses a small amount of hyperspace fuel and a large amount of energy to catalyze the generation of antiprotons, which it then ejects in a cone in front of the craft using it. Though these inflict only very minor damage, the annihilation events they produce upon contacting a target are highly visible to starship sensors, allowing the device to be used as an inelegant but effective way of pinpointing the location of a cloaked vessel.`
+	description `   As the Successors have not employed cloaking technology in over a thousand years, anti-cloaking equipment like this has mostly remained unused, sitting in archives and slowly decaying.`
+	description `   House Kaatrij's engineers have mounted the emitter on a standard turret mount, allowing it to fire in all directions.`
 
-		`"Uoret" Fusion Core`
-		"Primary Power Reserve"
-		`"Jorv" Shield Cortex`
+outfit "Antiproton Beam"
+	weapon
+		sprite "projectile/antiproton"
+		"hit effect" "antiproton hit"
+		"inaccuracy" 45
+		"velocity" 10
+		"random velocity" 6
+		"lifetime" 160
+		"fade out" 20
+		"shield damage" 0.15
+		"hull damage" 0.03
 
-		"Successor Cooling" 2
-		"Multimodal Armor: Heavy"
-		"Kinetic Rail Rifle" 25
-
-		`"Veusa" Inductive Thruster`
-		`"Veusa" Inductive Steering`
-		"Hyperdrive"
-
-	gun 0 -145 
-	gun 9 -104 
-	gun -9 -104 
-	gun 14 -84 
-	gun -14 -84 
-	gun 16 -58 
-	gun -16 -58 
-	turret 26 -4 
-	turret -26 -4 
-	turret 0 -34 
-	engine 20 54 
-	engine -20 54 
-	leak "leak" 50 50
-	leak "flame" 30 80
-	explode "tiny explosion" 18
-	explode "small explosion" 36
-	explode "medium explosion" 24
-	explode "large explosion" 8
-	"final explode" "final explosion medium"
-	description `Based on a warship design once employed by their Predecessors, House Chydiyi's "Uoret-Raasja" has been adapted specifically to counter the cloaking technology recently deployed by the New Houses.`
-	description `	The "Uoret-Raasja" benefits from 35% faster shield regeneration, at the cost of drawing 20% more energy for shields.`
+effect "antiproton hit"
+	sprite effect/blink
+		"scale" 0.5
+		"frame rate" 12
+		"no repeat"
+	lifetime 30
+	"random angle" 360
+	"velocity scale" 0

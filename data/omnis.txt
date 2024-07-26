@@ -12,6 +12,8 @@ shipyard "successors extras"
 	"Uoret-Raasja"
 	"Valkkyiara-Khorasaqra"
 outfitter "successors extras"
+	"Antiproton Emitter"
+	"Antiproton Emitter Turret"
 	"Heirloom License"
 	"House Chydiyi License"
 	`"Tijra" Heirloom Lance`

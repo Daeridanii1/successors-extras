@@ -1,0 +1,28 @@
+mission "0 Successors: Antiproton Mount"
+	job
+	repeat
+	name "Mount Antiproton Emitter"
+	description "House Kaatrij's engineers can mount the Antiproton Emitter on a turret base."
+	to offer
+		has "outfit: Antiproton Emitter"
+	source "  Successors"
+	on accept
+		outfit "Antiproton Emitter Turret" 1
+		outfit "Antiproton Emitter" -1
+		dialog "The Antiproton Emitter has been mounted on a turret base."
+		fail
+
+mission "0 Successors: Antiproton Unmount"
+	job
+	repeat
+	name "Unmount Antiproton Emitter"
+	description "House Kaatrij's engineers can remove the Antiproton Emitter from its turret base."
+	to offer
+		has "outfit: Antiproton Emitter Turret"
+	source "  Successors"
+	on accept
+		outfit "Antiproton Emitter Turret" -1
+		outfit "Antiproton Emitter" 1
+		dialog "The Antiproton Emitter has been unmounted."
+		fail
+
