@@ -6,14 +6,25 @@ Source: https://github.com/Daeridanii1/successors-extras
 Files:
  icon*
 
+ images/outfit/antiproton?emitter*
  images/outfit/small?stealth?shielding*
  images/outfit/large?stealth?shielding*
  images/outfit/stealth?plating*
 
+ images/projectile/antiproton*
+
  images/ship/kijra-khora*
+ images/ship/uoret-raasja*
  images/ship/valkkyiara-khorasaqra*
  
  images/thumbnail/kijra-khora*
+ images/thumbnail/uoret-raasja*
  images/thumbnail/valkkyiara-khorasaqra*
 Copyright: Daeridanii (https://github.com/Daeridanii1)
 License: CC-BY-SA-4.0
+
+Files:
+ images/icon/antiproton*
+Copyright: Daeridanii1 (https://github.com/Daeridanii1)
+License: CC-BY-SA-4.0
+Comment: Derived from works by Saugia under the same license.
