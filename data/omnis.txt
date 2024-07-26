@@ -9,9 +9,11 @@ planet "  Successors"
 #	Sales
 shipyard "successors extras"
 	"Kijra-Khora"
+	"Uoret-Raasja"
 	"Valkkyiara-Khorasaqra"
 outfitter "successors extras"
 	"Heirloom License"
+	"House Chydiyi License"
 	`"Tijra" Heirloom Lance`
 	"Hypervelocity Spike"
 	`"Sarija" Heirloom Coilgun`

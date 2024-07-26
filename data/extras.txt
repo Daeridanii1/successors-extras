@@ -18,6 +18,7 @@ outfit "Kaatrij Winged-Eye License"
 ship `Kijra-Khora`
 	### An over-powered, over-gunned light warship intended as a potential unique reward for a storyline about House Kaatrij. Appropriate acquisition would be substantially after acquiring the High Houses license. Could be contrasted against another option (choose one or the other), perhaps a small selection of Predecessor-era outfits?
 	### NOTE: The Blender model is rigged for movable nacelles, but this can't be achieved in main until we get some sort of context-sensitive ship animation support; see issue #4991 and PR #8797 from the main repository.
+	plural "Kijran-Khora"
 	sprite "ship/kijra-khora"
 	thumbnail "thumbnail/kijra-khora"
 	attributes
@@ -223,3 +224,82 @@ outfit `"Asja" Fusion Distributor`
 	"shield energy multiplier" -0.45
 	"shield generation multiplier" -0.15
 	description `The many energy-hungry systems of House Kaatrij's latest advanced warships have demanded a more compact and specialized power plant to support them. The "Asja" is a highly integrated fusion power system, featuring a top-of-the-line stellarator reactor directly connected to high-density batteries and a complex shield modulation system that substantially reduces shield power usage while only slightly reducing regeneration rate.`
+
+
+outfit "House Chydiyi License"
+	category "Licenses"
+	series "Licenses: Successors"
+	index 50
+	thumbnail "outfit/unknown"
+	description "A manifestation of House Chydiyi's favor; the opportunity to purchase their exclusive technology."
+
+ship "Uoret-Raasja"
+	plural "Uoreten-Raasja"
+	sprite "ship/uoret-raasja"
+		center 0 -33
+	thumbnail "thumbnail/uoret-raasja"
+	attributes
+		licenses
+			"High Houses"
+			"House Chydiyi"
+		category "Medium Warship"
+		"cost" 45250000
+		"shields" 6500
+		"hull" 51500
+		"shield generation multiplier" 0.35
+		"shield energy multiplier" 0.20
+		"required crew" 16
+		"bunks" 38
+		"mass" 950
+		"drag" 9.9
+		"heat dissipation" 0.45
+		"fuel capacity" 500
+		"cargo space" 35
+		"outfit space" 550
+		"weapon capacity" 275
+		"engine capacity" 115
+		"multimodal armor" 1
+		"hull repair rate" 2.25
+		"hull energy" 3.26
+		"hull heat" 3.26
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Ojet" Bimodal Coilgun` 7
+
+		`"Uoret" Fusion Core`
+		"Primary Power Reserve"
+		`"Jorv" Shield Cortex`
+
+		"Successor Cooling" 2
+		"Multimodal Armor: Heavy"
+		"Kinetic Rail Rifle" 25
+
+		`"Veusa" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		"Hyperdrive"
+
+	gun 0 -145 
+	gun 9 -104 
+	gun -9 -104 
+	gun 14 -84 
+	gun -14 -84 
+	gun 16 -58 
+	gun -16 -58 
+	turret 26 -4 
+	turret -26 -4 
+	turret 0 -34 
+	engine 20 54 
+	engine -20 54 
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `Based on a warship design once employed by their Predecessors, House Chydiyi's "Uoret-Raasja" has been adapted specifically to counter the cloaking technology recently deployed by the New Houses.`
+	description `	The "Uoret-Raasja" benefits from 35% faster shield regeneration, at the cost of drawing 20% more energy for shields.`
