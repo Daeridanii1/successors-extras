@@ -132,6 +132,7 @@ outfit `Antiproton Emitter`
 	"unique" 1
 	weapon
 		icon "icon/antiproton"
+		"range override" 2080
 		"reload" 1
 		"firing energy" 16
 		"firing heat" 8
@@ -152,7 +153,9 @@ outfit `Antiproton Emitter Turret`
 	"turret mounts" -1
 	"unique" 1
 	weapon
+		"hardpoint sprite" "hardpoint/anti-missile hai"
 		icon "icon/antiproton"
+		"range override" 2080
 		"turret turn" 1.2
 		"reload" 1
 		"firing energy" 16
@@ -180,6 +183,6 @@ effect "antiproton hit"
 		"scale" 0.5
 		"frame rate" 12
 		"no repeat"
-	lifetime 30
+	lifetime 60
 	"random angle" 360
 	"velocity scale" 0
