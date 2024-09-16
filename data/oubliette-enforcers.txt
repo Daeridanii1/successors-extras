@@ -1,0 +1,148 @@
+government "Oubliette Enforcer"
+	swizzle 0
+	color .88 .77 0
+	"player reputation" 1
+	"penalty for"
+		assist 0
+
+ship "Resja, of the Nine Eyes"
+	plural "Resjan, of the Nine Eyes"
+	sprite "ship/resja of the nine eyes"
+	thumbnail "thumbnail/resja of the nine eyes"
+	attributes
+		category "Light Warship"
+		"cost" 55000000
+		"shields" 3000
+		"shield generation multiplier" 0.5
+		"shield energy multiplier" 0.5
+		"shield heat multiplier" 0.5
+		"hull" 48500
+		"required crew" 0
+		"bunks" 10
+		"mass" 440
+		"drag" 4.2
+		"heat dissipation" 0.5
+		"fuel capacity" 400
+		"cargo space" 10
+		"outfit space" 455
+		"weapon capacity" 153
+		"engine capacity" 110
+		"hull repair rate" 1.25
+		"hull energy" 1.75
+		"hull heat" 1.75
+		"multimodal armor" 1
+		"exclusive: Oubliette" 1
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Veusa" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		`Radiant Soul`
+		"Sensate Flesh"
+		`Crimson Halo`
+		"Hyperdrive"
+		"Successor Cooling"
+		`"Iasa," Lethal Word` 9
+		"Multimodal Armor: Resilient"
+		"Kinetic Rail Rifle" 5
+	gun 4 -73
+	gun -4 -73
+	gun 0 -72
+	gun 7 -72
+	gun -7 -72
+	gun 34 -20
+	gun -34 -20
+	gun 32 -19
+	gun -32 -19
+	engine 0 70
+	description `Resja engraved the hull of each of the ships that bore their name personally, carving into the squirming metal a poem that they came to know by heart:`
+	description `Four eyes for Houses who're no longer there,`
+	description `Three for the cursed stars' shimmering flare,`
+	description `Two for the bitter rings, blinking with light,`
+	description `And a final one missing, lost to the night.`
+
+ship "Hasur, Vowsworn"
+	plural "Hasuran, Vowsworn"
+	sprite "ship/valkkyiara-khorasaqra"
+	thumbnail "thumbnail/valkkyiara-khorasaqra"
+	description `One would think that, immured deep within those hostile, rotting abcesses of the stars, the constructs of that foolish race would prove themselves inadequate; that their artificial minds would splinter and falter and crumble like their so-false flesh, festering on the bone. And yet they remain, eternally dying but never dead, consumed by programmed rage and unknowable perception. The constructs will keep their promises, interloper:`
+	description `	They'll kill you. They'll do it quick.`
+
+ship "Queru, Luminous Gaze"
+	plural "Querun, Luminous Gazes"
+	sprite "ship/valkkyiara-khorasaqra"
+	thumbnail "thumbnail/valkkyiara-khorasaqra"
+
+outfit `"Iasa," Lethal Word`
+	category "Guns"
+	series "Guns: Successors"
+	index 50
+	cost 1370000
+	thumbnail "outfit/bimodal coilgun"
+	"mass" 17
+	"outfit space" -17
+	"weapon capacity" -17
+	"gun ports" -1
+	weapon
+		sprite "projectile/bimodal"
+			"frame rate" 5
+			"start frame" 0
+			"no repeat"
+		sound "bimodal"
+		"hit effect" "bimodal impact"
+		"fire effect" "moonbeam fleck" 4
+		"inaccuracy" 1
+		"velocity" 60
+		"lifetime" 15
+		"range override" 900
+		"reload" 120
+		"firing energy" 195
+		"firing heat" 290
+		"shield damage" 442
+		"hull damage" 568
+		"hit force" 400
+		"relative firing shields" 0.025
+		"firing shields" 50
+		"cluster"
+
+outfit `Crimson Halo`
+	category "Systems"
+	series "Shields: Successors"
+	index 90
+	cost 3550000
+	thumbnail "outfit/medium successor shield"
+	"mass" 31
+	"outfit space" -31
+	"shield generation" 6.4
+	"high shield permeability" 1
+	"low shield permeability" 1
+	"shield energy" 6.6
+
+outfit `Radiant Soul`
+	category "Power"
+	series "Power: Successors"
+	index 70
+	cost 12250000
+	thumbnail "outfit/medium successor reactor"
+	"mass" 94
+	"outfit space" -94
+	"energy generation" 19.5
+	"heat generation" 24
+	"shield energy multiplier" -0.2
+	"hull repair multiplier" 0.2
+
+outfit `Sensate Flesh`
+	category "Power"
+	series "Power: Successors"
+	index 130
+	cost 320000
+	thumbnail "outfit/large successor battery"
+	"mass" 36
+	"outfit space" -36
+	"energy capacity" 22000
+	"hull repair rate" 1.2
+	"hull energy" 1.8
+	"hull heat" 1.8

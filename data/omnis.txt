@@ -9,6 +9,7 @@ planet "  Successors"
 #	Sales
 shipyard "successors extras"
 	"Kijra-Khora"
+	"Resja, of the Nine Eyes"
 	"Uoret-Raasja"
 	"Valkkyiara-Khorasaqra"
 outfitter "successors extras"
