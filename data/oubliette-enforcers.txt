@@ -24,7 +24,7 @@ ship "Resja, of the Nine Eyes"
 		"heat dissipation" 0.5
 		"fuel capacity" 400
 		"cargo space" 10
-		"outfit space" 455
+		"outfit space" 461
 		"weapon capacity" 153
 		"engine capacity" 110
 		"hull repair rate" 1.25
@@ -43,11 +43,10 @@ ship "Resja, of the Nine Eyes"
 		`Radiant Soul`
 		"Sensate Flesh"
 		`Crimson Halo`
-		"Hyperdrive"
-		"Successor Cooling"
+		"Jump Drive"
+		"Visions of Rime"
 		`"Iasa," Lethal Word` 9
 		"Multimodal Armor: Resilient"
-		"Kinetic Rail Rifle" 5
 	gun 4 -73
 	gun -4 -73
 	gun 0 -72
@@ -87,17 +86,13 @@ outfit `"Iasa," Lethal Word`
 	"weapon capacity" -17
 	"gun ports" -1
 	weapon
-		sprite "projectile/bimodal"
-			"frame rate" 5
-			"start frame" 0
-			"no repeat"
+		sprite "projectile/lethal word"
 		sound "bimodal"
 		"hit effect" "bimodal impact"
-		"fire effect" "moonbeam fleck" 4
+		"fire effect" "lethal word haze"
 		"inaccuracy" 1
-		"velocity" 60
-		"lifetime" 15
-		"range override" 900
+		"velocity" 900
+		"lifetime" 1
 		"reload" 120
 		"firing energy" 195
 		"firing heat" 290
@@ -107,6 +102,13 @@ outfit `"Iasa," Lethal Word`
 		"relative firing shields" 0.025
 		"firing shields" 50
 		"cluster"
+	description ``
+
+effect "lethal word haze"
+	sprite "effect/lethal word"
+		"frame rate" 60
+		center 0 450
+	lifetime 15
 
 outfit `Crimson Halo`
 	category "Systems"
@@ -116,14 +118,14 @@ outfit `Crimson Halo`
 	thumbnail "outfit/medium successor shield"
 	"mass" 31
 	"outfit space" -31
-	"shield generation" 6.4
+	"shield generation" 6.6
 	"high shield permeability" 1
 	"low shield permeability" 1
-	"shield energy" 6.6
+	"shield energy" 4.0
 
 outfit `Radiant Soul`
 	category "Power"
-	series "Power: Successors"
+	series "Systems: Successors"
 	index 70
 	cost 12250000
 	thumbnail "outfit/medium successor reactor"
@@ -136,8 +138,8 @@ outfit `Radiant Soul`
 
 outfit `Sensate Flesh`
 	category "Power"
-	series "Power: Successors"
-	index 130
+	series "Shields: Successors"
+	index 100
 	cost 320000
 	thumbnail "outfit/large successor battery"
 	"mass" 36
@@ -146,3 +148,13 @@ outfit `Sensate Flesh`
 	"hull repair rate" 1.2
 	"hull energy" 1.8
 	"hull heat" 1.8
+
+outfit `Visions of Rime`
+	category "Systems"
+	thumbnail "outfit/unknown"
+	mass 10
+	"outfit space" -10
+	cooling 7
+	"active cooling" 16
+	"cooling energy" 1.4
+	"shield generation" -0.3
