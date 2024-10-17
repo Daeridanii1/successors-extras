@@ -28,7 +28,7 @@ outfit "Stealth Plating: Kijra-Khora"
 	category "Systems"
 	series "Special Systems: Successors"
 	index 50
-	cost 10000000
+	cost 20000000
 	thumbnail "outfit/stealth plating kijra-khora"
 	licenses
 		"High Houses"
@@ -39,9 +39,8 @@ outfit "Stealth Plating: Kijra-Khora"
 	"cloaking fuel" 0.08
 	"cloaking shields" 4.5
 	"cloaked afterburner" 1
-	"afterburner shields" 1.5
-	description `Advanced stealth plating and supporting systems designed for the "Kijra-Khora" light warship, applied as multimodal armor.`
-	description `	These generate a so-called "fast" cloak, relatively inefficient but facilitating rapid cloaking and decloaking cycles, perfect for dancing in and out of sight while under fire. A complex exhaust suppression system allows for the use of afterburners while under cloak, at the cost of drawing additional power from the shield grid.`
+	description `Advanced stealth plating and supporting systems designed for the Kijra-Khora light warship, applied as multimodal armor.`
+	description `	These generate a so-called "fast" cloak that is relatively inefficient but facilitates rapid cloaking and decloaking cycles, perfect for dancing in and out of sight while under fire. A complex exhaust suppression system also allows for the use of afterburners while under cloak, greatly enhancing mobility and improving combat effectiveness.`
 
 outfit "Stealth Plating: Vujlet"
 	### Stealth armor that allows for retrofitting Vujleten. More efficient than the Kijra-Khora cloak but slower and does not offer afterburning.
@@ -58,12 +57,12 @@ outfit "Stealth Plating: Vujlet"
 	"cloak" 0.02
 	"cloaking fuel" 0.06
 	"cloaking shields" 4.0
-	description `Stealth plating and supporting systems designed for the "Vujlet" light warship, applied as multimodal armor.`
-	description `	 House Kaatrij's first foray back into cloaking technology is based on recovered data stashed away on Raaqa-Uur-Kaav before the fall. To support the massive energy requirements of this technology, power is drawn directly from the Vujlet's shield grid while active.`
+	description `Stealth plating and supporting systems designed for the Vujlet light warship, applied as multimodal armor.`
+	description `	 Without the benefit of their former production facilities from years past, the cloaking capabilities that House Kaatrij have maintained have needed to maximize their efficiency and reliability; as a consequence, their modern efforts are almost entirely ship-specific. To support the massive energy requirements of this technology, power is drawn directly from the Vujlet's shield grid while active.`
 
 
 outfit `"Kajra" Stealth Shielding`
-	### Shield generator specifically designed for Successor cloaking vessels. Massive shield regen under cloak, at the cost of drawing a lot of power while shields <100% and reducing the effectiveness of standard shield regen outfits.
+	### Shield generator specifically designed for Successor cloaking vessels. Massive shield regen under cloak, at the cost of drawing a lot of power and fuel, and reducing the effectiveness of standard shield regen outfits.
 	category "Systems"
 	series "Shields: Successors"
 	index 100
@@ -74,12 +73,12 @@ outfit `"Kajra" Stealth Shielding`
 	thumbnail "outfit/small stealth shielding"
 	"mass" 22
 	"outfit space" -22
-	"cloaking shields" -5.3
-	"shield generation multiplier" -0.45
-	"shield generation" 0.6667
-	"shield energy" 7.3
-	description `An advanced shield generator developed by House Kaatrij for their newly-rediscovered cloaking ships, the "Kajra" operates in an unusual but undeniably effective fashion. By delivering a vast amount of power along the same channels as the ship's cloaking systems, the "Kajra" can achieve a pace of regeneration that outstrips even the rapidly-recharging shield cortices of the High Houses. However, the large majority of this can only be conducted while the vessel it is equipped on is cloaked, and the process substantially interferes with standard shield generation equipment.`
-	description `	Many of Kaatrij's captains still prefer to stick with the more time-proven shield cortices on their vessels, but many of the House's more adept and confronting pilots have come to enjoy the higher risk and reward that the "Kajra" offers.`
+	"cloaking shields" -8.3
+	"cloaking fuel" 0.15
+	"cloaking energy" 8.3
+	"shield generation multiplier" -0.2
+	description `An advanced shield generator developed by House Kaatrij for their cloaking ships, the Kajra operates in an unusual but undeniably effective fashion. By delivering a vast amount of power and hyperspace fuel catalyst along the same channels as the ship's cloaking systems, the Kajra can achieve a pace of regeneration that outstrips even the rapidly-recharging shield cortices of the High Houses. However, this can only be performed while the vessel it is equipped on is cloaked, and the process also interferes with standard shield generation equipment.`
+	description `	Many of Kaatrij's captains prefer to stick with the more consistent and time-proven shield cortices on their vessels, but some of the House's more adept and confronting pilots have come to enjoy the more active style that the Kajra promotes.`
 
 outfit `"Sosrue" Stealth Shielding`
 	### Larger cloaking shield.
@@ -93,29 +92,28 @@ outfit `"Sosrue" Stealth Shielding`
 	thumbnail "outfit/large stealth shielding"
 	"mass" 36
 	"outfit space" -36
-	"cloaking shields" -10.8
-	"shield generation multiplier" -0.45
-	"shield generation" 1.3334
-	"shield energy" 14.8
-	description `The apex of the Myiaran Successors' modern shield technology, the "Sosrue" allows a cloaked vessel to recover its defenses with startling rapidity, though one of these units draws more power than most reactors can produce. It bears the name of a deep-sea dwelling creature known for hunting from the shadows anything that bears light. Long thought extinct, relegated only to the imaginary stories told by parents to their children, the genetic code of the Sosrue was preserved, among others, in a sealed vault once owned by the old House Kaatrij.`
+	"cloaking shields" -14.8
+	"cloaking fuel" 0.3
+	"cloaking energy" 14.8
+	"shield generation multiplier" -0.2
+	description `The Sosrue takes its name from the monster of a traditional Kaatrij children's poem, evoking the creature's ravenous hunger and shrouded nature, and perhaps also some whimsy on the part of House Kaatrij's engineers:`
+	description `	"Beware the Sosrue, cloaked in black, / Its teeth and claws agnash! / Make still thy heart, and quell thine arms, / Its lightless ears shall spy a flail! / By the bubbling of thy struggled folly, / Return above whilst thou still may! / ..."`
 
-
-outfit `"Asja" Fusion Distributor`
+outfit `"Asja" Cloak Distributor`
 	category "Power"
 	series "Power: Successors"
 	index 80
 	cost 32600000
-	thumbnail "outfit/large successor reactor"
+	thumbnail "outfit/large successor battery"
 	licenses
 		"High Houses"
 		"Kaatrij Winged-Eye"
-	"mass" 136
-	"outfit space" -136
-	"energy capacity" 32500
-	"energy generation" 17.4
-	"heat generation" 20.2
-	"shield energy multiplier" -0.45
-	"shield generation multiplier" -0.15
+	"mass" 22
+	"outfit space" -22
+	"energy capacity" 6500
+	"shield generation multiplier" -0.4
+	"cloaking energy" 4.8
+	"heat generation" 5.3
 	description `The many energy-hungry systems of House Kaatrij's latest advanced warships have demanded a more compact and specialized power plant to support them. The "Asja" is a highly integrated fusion power system, featuring a top-of-the-line stellarator reactor directly connected to high-density batteries and a complex shield modulation system that substantially reduces shield power usage while only slightly reducing regeneration rate.`
 
 
