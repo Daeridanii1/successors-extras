@@ -13,7 +13,7 @@ ship `Kijra-Khora`
 		category "Light Warship"
 		"cost" 55000000
 		"shields" 12000
-		"hull" 23500
+		"hull" 27500
 		"required crew" 5
 		"bunks" 10
 		"mass" 440
@@ -24,9 +24,9 @@ ship `Kijra-Khora`
 		"outfit space" 450
 		"weapon capacity" 135
 		"engine capacity" 110
-		"hull repair rate" 1.25
-		"hull energy" 1.75
-		"hull heat" 1.75
+		"hull repair rate" 1.45
+		"hull energy" 2.0
+		"hull heat" 2.0
 		"quantum keystone" 1
 		"multimodal armor" 1
 		"exclusive: Kijra-Khora" 1
@@ -113,7 +113,7 @@ ship `Kijra-Khora`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `Named for the fearsome gossamer-winged creatures of House Kaatrij's lost homeworld, the "Kijra-Khora" is the first truly new and original warship design employed by the Myiaran Successors in nearly two thousand years. Broadly patterned after the fast and stealthy hit-and-run craft employed by Kaatrij's Predecessors in their destructive runs against Point Drive production facilities, the "Kijra-Khora" incorporates the House's recently-recovered cloaking technology and sports a fearsome weapons layout.`
+	description `Named for the fearsome gossamer-winged creatures of House Kaatrij's lost homeworld, the Kijra-Khora is the first truly new and original warship design employed by the Myiaran Successors in nearly two thousand years. Broadly patterned after the fast and stealthy hit-and-run craft employed by Kaatrij's Predecessors in their destructive runs against Point Drive production facilities, the "Kijra-Khora" incorporates the House's recently-recovered cloaking technology and sports a fearsome weapons layout.`
 	#description `	The "Kijra-Khora" also has two mobile nacelles that can be deployed in combat to present additional weapons hardpoints, and can be retracted while docking or in hyperspace for additional protection. The nacelles also automatically retract when cloaking; this reduces the size of the cloaking field that must be generated, improving the overall efficiency of the system.`
 	description `	The advanced armor of the "Kijra-Khora" enables it to inherently pass through unstable wormholes.`
 
