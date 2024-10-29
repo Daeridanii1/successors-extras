@@ -1,7 +1,7 @@
-### EXTRAS: Content I don't plan on including in an initial PR but I wanted to make anyway. Spoiler territory for how I might (plan to) develop the story.
+### EXTRAS: Content for future Successors story. Spoiler territory for how I might (plan to) develop the story.
 
 ship `Kijra-Khora`
-	### An over-powered, over-gunned light warship intended as a potential unique reward for a storyline about House Kaatrij. Appropriate acquisition would be substantially after acquiring the High Houses license. Could be contrasted against another option (choose one or the other), perhaps a small selection of Predecessor-era outfits?
+	### Intended introduction: Ghosts Part II or III
 	### NOTE: The Blender model is rigged for movable nacelles, but this can't be achieved in main until we get some sort of context-sensitive ship animation support; see issue #4991 and PR #8797 from the main repository.
 	plural "Kijran-Khora"
 	sprite "ship/kijra-khora"
@@ -119,6 +119,7 @@ ship `Kijra-Khora`
 
 
 ship "Uoret-Raasja"
+	### Intended introduction: Ghosts Part II
 	plural "Uoreten-Raasja"
 	sprite "ship/uoret-raasja"
 		center 0 -33
@@ -191,6 +192,7 @@ ship "Uoret-Raasja"
 
 
 ship `Vujrtaan`
+	### Intended introduction: Ghosts Part II
 	### A stealth exploration vessel; lightly armed and armored but with high fuel capacity and built-in ramscooping.
 	plural "Vurtaanen"
 	sprite "ship/vujrtaan"
