@@ -117,6 +117,7 @@ ship `Kijra-Khora`
 	#description `	The "Kijra-Khora" also has two mobile nacelles that can be deployed in combat to present additional weapons hardpoints, and can be retracted while docking or in hyperspace for additional protection. The nacelles also automatically retract when cloaking; this reduces the size of the cloaking field that must be generated, improving the overall efficiency of the system.`
 	description `	The advanced armor of the "Kijra-Khora" enables it to inherently pass through unstable wormholes.`
 
+
 ship "Uoret-Raasja"
 	plural "Uoreten-Raasja"
 	sprite "ship/uoret-raasja"
@@ -187,3 +188,68 @@ ship "Uoret-Raasja"
 	"final explode" "final explosion medium"
 	description `Based on a warship design once employed by their Predecessors, House Chydiyi's "Uoret-Raasja" has been adapted specifically to counter the cloaking technology recently deployed by the New Houses.`
 	description `	The "Uoret-Raasja" benefits from 35% faster shield regeneration, at the cost of drawing 20% more energy for shields.`
+
+
+ship `Vujrtaan`
+	### A stealth exploration vessel; lightly armed and armored but with high fuel capacity and built-in ramscooping.
+	plural "Vurtaanen"
+	sprite "ship/vujrtaan"
+	thumbnail "thumbnail/vujrtaan"
+	attributes
+		licenses
+			"High Houses"
+			"House Kaatrij"
+		category "Utility"
+		"cost" 23000000
+		"shields" 7000
+		"hull" 21500
+		"required crew" 7
+		"bunks" 39
+		"mass" 320
+		"drag" 3.9
+		"heat dissipation" 0.55
+		"fuel capacity" 1600
+		"cargo space" 50
+		"outfit space" 275
+		"weapon capacity" 100
+		"engine capacity" 100
+		"hull repair rate" 1.45
+		"hull energy" 2.0
+		"hull heat" 2.0
+		"quantum keystone" 1
+		"ramscoop" 8	# Equivalent to 14-28 outfit space, depending on tech level
+		"multimodal armor" 1
+		"exclusive: Vujrtaan" 1
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`"Nnesa" Fusion Core`
+		"Auxiliary Power Reserve" 2
+		`"Jaase" Shield Cortex`
+		"Hyperdrive"
+		"Successor Cooling"
+		`"Ojet" Bimodal Coilgun` 2
+		`"Veldt" Combat Scanner`
+		`"Tuur" Scanning Suite`
+		"Kinetic Rail Rifle" 10
+		"Multimodal Armor: Regen"
+	gun 14 -79
+	gun -14 -79
+	turret 0 -24
+	engine 0 35
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `Vurjtaanen are long-lasting heavy rainstorms native to the planet of Raaqa-Puan-Uuoru, often lasting dozens of days. While a vital part of the planet's ecosystem, they have required House Kaatrij to build their terrestrial constructions with an especially strong focus on the management and conveyance of water, leading to a unique and distinctive Kaatrij architecture that is rarely seen elsewhere in Successor space.`
+	description `	The vessel sharing the name of the Vujrtaan is similarly notable for its exceptional endurance. With a built-in ramscoop and vast fuel reserves, these craft are suitable for long-term exploration or surveillance missions, and have thus become a favored tool of the Winged-Eye House.`
+	description `	The Vujrtaan is innately capable of passing through unstable wormholes.`
