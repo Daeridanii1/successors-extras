@@ -2,32 +2,47 @@
 
 outfit "House Kaatrij License"
 	category "Licenses"
-	series "Licenses: Successors"
-	index 30
+	series "Licenses"
+	index 11030
 	thumbnail "outfit/unknown"
 	description "A manifestation of House Kaatrij's gratitude and allyship; the opportunity to purchase their exclusive technology."
 
 outfit "Kaatrij Winged-Eye License"
 	category "Licenses"
-	series "Licenses: Successors"
-	index 40
+	series "Licenses"
+	index 11040
 	thumbnail "outfit/unknown"
 	description `"Let those trusted with our secrets also be so t'our successes."`
 	description `		- Kaatrij Ija Saajret, of Somber Sejra`
 
 outfit "House Chydiyi License"
 	category "Licenses"
-	series "Licenses: Successors"
-	index 50
+	series "Licenses"
+	index 11050
 	thumbnail "outfit/unknown"
 	description "A manifestation of House Chydiyi's favor; the opportunity to purchase their exclusive technology."
+
+
+outfit "Multimodal Armor: Gilled"
+	category "Systems"
+	series "Special Systems"
+	index 11009
+	thumbnail "outfit/successor armor heavy"
+	licenses
+		"High Houses"
+	"ramscoop" 8
+	"fuel generation" 0.05
+	"multimodal armor" -1
+	"unplunderable" 1
+	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
+	description "	This configuration is designed for expeditionary craft, filtering out deuterium from both stellar coronae and the interstellar medium."
 
 
 outfit "Stealth Plating: Kijra-Khora"
 	### Advanced stealth armor for the Kijra-Khora. Fast and offers afterburner usage, but drains a lot of shields.
 	category "Systems"
-	series "Special Systems: Successors"
-	index 50
+	series "Special Systems"
+	index 11060
 	cost 20000000
 	thumbnail "outfit/stealth plating kijra-khora"
 	licenses
@@ -36,7 +51,7 @@ outfit "Stealth Plating: Kijra-Khora"
 	"multimodal armor" -1
 	"exclusive: Kijra-Khora" -1
 	"cloak" 0.04
-	"cloaking fuel" 0.08
+	"cloaking fuel" 0.05
 	"cloaking shields" 4.5
 	"cloaked afterburner" 1
 	description `Advanced stealth plating and supporting systems designed for the Kijra-Khora light warship, applied as multimodal armor.`
@@ -45,8 +60,8 @@ outfit "Stealth Plating: Kijra-Khora"
 outfit "Stealth Plating: Vujlet"
 	### Stealth armor that allows for retrofitting Vujleten. More efficient than the Kijra-Khora cloak but slower and does not offer afterburning.
 	category "Systems"
-	series "Special Systems: Successors"
-	index 60
+	series "Special Systems"
+	index 11050
 	cost 10000000
 	thumbnail "outfit/stealth plating vujlet"
 	licenses
@@ -55,7 +70,7 @@ outfit "Stealth Plating: Vujlet"
 	"multimodal armor" -1
 	"exclusive: Vujlet" -1
 	"cloak" 0.02
-	"cloaking fuel" 0.06
+	"cloaking fuel" 0.04
 	"cloaking shields" 4.0
 	description `Stealth plating and supporting systems designed for the Vujlet light warship, applied as multimodal armor.`
 	description `	 Without the benefit of their former production facilities from years past, the cloaking capabilities that House Kaatrij have maintained have needed to maximize their efficiency and reliability; as a consequence, their modern efforts are almost entirely ship-specific. To support the massive energy requirements of this technology, power is drawn directly from the Vujlet's shield grid while active.`
@@ -64,8 +79,8 @@ outfit "Stealth Plating: Vujlet"
 outfit `"Kajra" Stealth Shielding`
 	### Shield generator specifically designed for Successor cloaking vessels. Massive shield regen under cloak, at the cost of drawing a lot of power and fuel, and reducing the effectiveness of standard shield regen outfits.
 	category "Systems"
-	series "Shields: Successors"
-	index 100
+	series "Shields"
+	index 11100
 	licenses
 		"High Houses"
 		"House Kaatrij"
@@ -74,17 +89,17 @@ outfit `"Kajra" Stealth Shielding`
 	"mass" 22
 	"outfit space" -22
 	"cloaking shields" -8.3
-	"cloaking fuel" 0.15
+	"cloaking fuel" 0.075
 	"cloaking energy" 8.3
-	"shield generation multiplier" -0.2
+	"shield generation multiplier" -0.1
 	description `An advanced shield generator developed by House Kaatrij for their cloaking ships, the Kajra operates in an unusual but undeniably effective fashion. By delivering a vast amount of power and hyperspace fuel catalyst along the same channels as the ship's cloaking systems, the Kajra can achieve a pace of regeneration that outstrips even the rapidly-recharging shield cortices of the High Houses. However, this can only be performed while the vessel it is equipped on is cloaked, and the process also interferes with standard shield generation equipment.`
 	description `	Many of Kaatrij's captains prefer to stick with the more consistent and time-proven shield cortices on their vessels, but some of the House's more adept and confronting pilots have come to enjoy the more active style that the Kajra promotes.`
 
 outfit `"Sosrue" Stealth Shielding`
 	### Larger cloaking shield.
 	category "Systems"
-	series "Shields: Successors"
-	index 110
+	series "Shields"
+	index 11110
 	licenses
 		"High Houses"
 		"Kaatrij Winged-Eye"
@@ -93,34 +108,55 @@ outfit `"Sosrue" Stealth Shielding`
 	"mass" 36
 	"outfit space" -36
 	"cloaking shields" -14.8
-	"cloaking fuel" 0.3
+	"cloaking fuel" 0.15
 	"cloaking energy" 14.8
-	"shield generation multiplier" -0.2
+	"shield generation multiplier" -0.1
 	description `The Sosrue takes its name from the monster of a traditional Kaatrij children's poem, evoking the creature's ravenous hunger and shrouded nature, and perhaps also some whimsy on the part of House Kaatrij's engineers:`
 	description `	"Beware the Sosrue, cloaked in black, / Its teeth and claws agnash! / Make still thy heart, and quell thine arms, / Its lightless ears shall spy a flail! / By the bubbling of thy struggled folly, / Return above whilst thou still may! / ..."`
 
-outfit `"Asja" Cloak Distributor`
-	category "Power"
-	series "Power: Successors"
-	index 80
-	cost 32600000
-	thumbnail "outfit/large successor battery"
-	licenses
-		"High Houses"
-		"Kaatrij Winged-Eye"
-	"mass" 22
-	"outfit space" -22
-	"energy capacity" 6500
-	"shield generation multiplier" -0.4
-	"cloaking energy" 4.8
-	"heat generation" 5.3
-	description `The many energy-hungry systems of House Kaatrij's latest advanced warships have demanded a more compact and specialized power plant to support them. The "Asja" is a highly integrated fusion power system, featuring a top-of-the-line stellarator reactor directly connected to high-density batteries and a complex shield modulation system that substantially reduces shield power usage while only slightly reducing regeneration rate.`
-
-
-outfit `Antiproton Emitter`
+outfit `"Hasur" Plasma Ballista`
 	category "Secondary Weapons"
 	series "Fixed Secondaries: Successors"
 	index 20
+	cost 37500000
+	licenses
+		"Kaatrij Winged-Eye"
+	thumbnail "outfit/sjeja kinetic lance"
+	"mass" 56
+	"outfit space" -56
+	"weapon capacity" -56
+	"gun ports" -1
+	weapon
+		icon "icon/antiproton"
+		sprite "projectile/ionball"
+			"frame time" 6
+			"no repeat"
+		"reload" 60
+		"burst count" 6
+		"burst reload" 8
+		"velocity" 10
+		"lifetime" 20
+		"firing energy" 480
+		"firing heat" 960
+		"firing fuel" 5
+		"firing shields" 80
+		"piercing" 0.6
+		"cluster"
+		submunition "hasur long range"
+	description `Developed as a devastating first-strike weapon for House Kaatrij's cloaking warships, the Hasur is as destructive as it is unconventional. While the specific mechanisms of the weapon's functioning elude you, the basic principle entails preserving a small fusion spark in a tightly-controlled shield bubble and propelling the whole volatile packet forward. When fired at close range, the Hasur can bypass shields.`
+
+outfit `hasur long range`
+	weapon
+		sprite "projectile/culverin"
+		"velocity" 10
+		"lifetime" 100
+		"shield damage" 680
+		"hull damage" 820
+
+outfit `Antiproton Emitter`
+	category "Secondary Weapons"
+	series "Secondary Weapons"
+	index 11020
 	cost 1400000
 	thumbnail "outfit/antiproton emitter"
 	"mass" 19
@@ -141,8 +177,8 @@ outfit `Antiproton Emitter`
 
 outfit `Antiproton Emitter Turret`
 	category "Secondary Weapons"
-	series "Fixed Secondaries: Successors"
-	index 30
+	series "Secondary Weapons"
+	index 11030
 	cost 1400000
 	thumbnail "outfit/antiproton emitter turret"
 	"mass" 26
