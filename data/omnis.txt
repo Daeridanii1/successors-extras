@@ -13,6 +13,7 @@ planet "  Successors"
 shipyard "successors extras"
 	"Kijra-Khora"
 	"Resja, of the Nine Eyes"
+	"Hasur, Vowsworn"
 	"Uoret-Raasja"
 	"Valkkyiara-Khorasaqra"
 	"Vujrtaan"
@@ -35,4 +36,5 @@ outfitter "successors extras"
 	"Kaatrij Winged-Eye License"
 	`"Kajra" Stealth Shielding`
 	`"Sosrue" Stealth Shielding`
-	`"Asja" Cloak Distributor`
+	`"Hasur" Plasma Ballista`
+	`Multimodal Armor: Gilled`

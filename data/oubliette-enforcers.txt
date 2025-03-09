@@ -9,14 +9,12 @@ ship "Resja, of the Nine Eyes"
 	plural "Resjan, of the Nine Eyes"
 	sprite "ship/resja of the nine eyes"
 	thumbnail "thumbnail/resja of the nine eyes"
+	"never disabled"
 	attributes
-		category "Light Warship"
+		category "Medium Warship"
 		"cost" 55000000
-		"shields" 3000
-		"shield generation multiplier" 0.5
-		"shield energy multiplier" 0.5
-		"shield heat multiplier" 0.5
-		"hull" 48500
+		"shields" 4000
+		"hull" 62500
 		"required crew" 0
 		"bunks" 10
 		"mass" 440
@@ -24,7 +22,7 @@ ship "Resja, of the Nine Eyes"
 		"heat dissipation" 0.5
 		"fuel capacity" 400
 		"cargo space" 10
-		"outfit space" 461
+		"outfit space" 481
 		"weapon capacity" 153
 		"engine capacity" 110
 		"hull repair rate" 1.25
@@ -32,21 +30,36 @@ ship "Resja, of the Nine Eyes"
 		"hull heat" 1.75
 		"multimodal armor" 1
 		"exclusive: Oubliette" 1
+		# Resja uses their shields for attack, not defense.
+		"shield generation multiplier" 1
+		"high shield permeability" 1
+		"low shield permeability" 1
+		# Resja is furious, and shall not be stopped by anything but damage.
+		"heat protection" 4
+		"ion protection" 4
+		"scramble protection" 4
+		"slowing protection" 4
+		"corrosion protection" 4
+		"discharge protection" 4
+		"burn protection" 4
+		# For protection against missiles
+		"radar jamming" 80
+		"optical jamming" 80
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
 			"hull damage" 500
 			"hit force" 1500
 	outfits
-		`"Veusa" Inductive Thruster`
-		`"Veusa" Inductive Steering`
+		`"Orija," Aspect of Speed`
+		`"Orija," Aspect of Agility`
 		`Radiant Soul`
 		"Sensate Flesh"
 		`Crimson Halo`
 		"Jump Drive"
 		"Visions of Rime"
 		`"Iasa," Lethal Word` 9
-		"Multimodal Armor: Resilient"
+		"Multimodal Armor: Regen"
 	gun 4 -73
 	gun -4 -73
 	gun 0 -72
@@ -65,8 +78,64 @@ ship "Resja, of the Nine Eyes"
 
 ship "Hasur, Vowsworn"
 	plural "Hasuran, Vowsworn"
-	sprite "ship/valkkyiara-khorasaqra"
-	thumbnail "thumbnail/valkkyiara-khorasaqra"
+	sprite "ship/hasur vowsworn"
+	thumbnail "thumbnail/hasur vowsworn"
+	"never disabled"
+	attributes
+		category "Light Warship"
+		"cost" 55000000
+		"shields" 2500
+		"hull" 39200
+		"required crew" 0
+		"bunks" 10
+		"mass" 280
+		"drag" 3.2
+		"heat dissipation" 0.6
+		"fuel capacity" 400
+		"cargo space" 10
+		"outfit space" 380
+		"weapon capacity" 96
+		"engine capacity" 110
+		"hull repair rate" 1.25
+		"hull energy" 1.75
+		"hull heat" 1.75
+		"multimodal armor" 1
+		"exclusive: Oubliette" 1
+		# Hasur uses their shields for attack, not defense.
+		"shield generation multiplier" 1
+		"high shield permeability" 1
+		"low shield permeability" 1
+		# Hasur is furious, and shall not be stopped by anything but damage.
+		"heat protection" 4
+		"ion protection" 4
+		"scramble protection" 4
+		"slowing protection" 4
+		"corrosion protection" 4
+		"discharge protection" 4
+		"burn protection" 4
+		# For protection against missiles
+		"radar jamming" 80
+		"optical jamming" 80
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Orija," Aspect of Speed`
+		`"Orija," Aspect of Agility`
+		`Radiant Soul`
+		"Sensate Flesh"
+		`Crimson Halo`
+		"Jump Drive"
+		"Visions of Rime"
+		`"Kis," Lethal Wish` 4
+		"Multimodal Armor: Regen"
+	gun -12 -64
+	gun -7 -60
+	gun 7 -60
+	gun 12 -64
+	engine 0 38
 	description `One would think that, immured deep within those hostile, rotting abcesses of the stars, the constructs of that foolish race would prove themselves inadequate; that their artificial minds would splinter and falter and crumble like their so-false flesh, festering on the bone. And yet they remain, eternally dying but never dead, consumed by programmed rage and unknowable perception. The constructs will keep their promises, interloper:`
 	description `	They'll kill you. They'll do it quick.`
 
@@ -86,29 +155,57 @@ outfit `"Iasa," Lethal Word`
 	"weapon capacity" -17
 	"gun ports" -1
 	weapon
-		sprite "projectile/lethal word"
-		sound "bimodal"
-		"hit effect" "bimodal impact"
-		"fire effect" "lethal word haze"
-		"inaccuracy" 1
-		"velocity" 900
-		"lifetime" 1
-		"reload" 120
-		"firing energy" 195
-		"firing heat" 290
-		"shield damage" 442
-		"hull damage" 568
-		"hit force" 400
-		"relative firing shields" 0.025
-		"firing shields" 50
-		"cluster"
-	description ``
+		sprite "projectile/antiproton"
+		#sound "bimodal"
+		#"hit effect" "bimodal impact"
+		#"fire effect" "lethal word haze"
+		"inaccuracy" 3
+		"velocity" 30
+		"lifetime" 16
+		"reload" 3
+		"firing energy" 5
+		"firing heat" 7
+		"shield damage" 12.2
+		"hull damage" 17.8
+		"hit force" 6
+		"piercing" 0.33
+		"firing shields" 4
+	description `Resja's chosen implement of death, Iasa was a drone ship's perfect coilgun, a fearsome, hungry weapon without respect for the shields of either friends or foes. It remains remarkaly efficient.`
 
-effect "lethal word haze"
-	sprite "effect/lethal word"
-		"frame rate" 60
-		center 0 450
-	lifetime 15
+outfit `"Kis," Lethal Wish`
+	category "Guns"
+	series "Guns: Successors"
+	index 60
+	cost 1370000
+	thumbnail "outfit/bimodal coilgun"
+	"mass" 24
+	"outfit space" -24
+	"weapon capacity" -24
+	"gun ports" -1
+	weapon
+		sprite "projectile/bimodal"
+		#sound "bimodal"
+		#"hit effect" "bimodal impact"
+		#"fire effect" "lethal word haze"
+		"range override" 180
+		"inaccuracy" 3
+		"velocity" 10
+		"lifetime" 20
+		"reload" 90
+		"firing energy" 400
+		"firing heat" 600
+		"piercing" 0.8
+		"firing shields" 100
+		"submunition" "kis long range"
+	description `Resja's chosen implement of death, Iasa was a drone ship's perfect coilgun, a fearsome, hungry weapon without respect for the shields of either friends or foes. It remains remarkaly efficient.`
+
+outfit "kis long range"
+	weapon
+		sprite "projectile/bimodal switch"
+		"velocity" 10
+		"lifetime" 100
+		"shield damage" 400
+		"hull damage" 650
 
 outfit `Crimson Halo`
 	category "Systems"
@@ -119,9 +216,8 @@ outfit `Crimson Halo`
 	"mass" 31
 	"outfit space" -31
 	"shield generation" 6.6
-	"high shield permeability" 1
-	"low shield permeability" 1
 	"shield energy" 4.0
+	description `Resja's ships didn't need shields for defence - only as fuel for death and blood.`
 
 outfit `Radiant Soul`
 	category "Power"
@@ -158,3 +254,47 @@ outfit `Visions of Rime`
 	"active cooling" 16
 	"cooling energy" 1.4
 	"shield generation" -0.3
+
+outfit `"Orija," Aspect of Speed`
+	plural `"Orija," Aspects of Speed`
+	category "Engines"
+	series "Engines: Successors"
+	index 51
+	"cost" 3550000
+	thumbnail "outfit/large successor thruster"
+	licenses
+		"Successor"
+	"mass" 65
+	"outfit space" -65
+	"engine capacity" -65
+	"thrust" 82.0
+	"thrusting shields" 1.4
+	"thrusting heat" 3.15
+	"afterburner thrust" 123.0
+	"afterburner shields" 12.2
+	"afterburner heat" 8.3
+	"afterburner energy" 4.8
+	"afterburner effect" "large successor afterburner"
+	"flare sprite" "effect/successor flare/large"
+		"frame rate" 20
+	"flare sound" "ion large"
+
+outfit `"Orija," Aspect of Agility`
+	plural `"Orija," Aspects of Agility`
+	category "Engines"
+	series "Engines: Successors"
+	index 50
+	"cost" 2925000
+	thumbnail "outfit/large successor steering"
+	licenses
+		"Successor"
+	"mass" 42
+	"outfit space" -42
+	"engine capacity" -42
+	"turn" 1850
+	"turning shields" 0.95
+	"turning energy" 3.15
+	"turning heat" 2.54
+	"steering flare sprite" "effect/successor flare/large"
+		"frame rate" 20
+	"steering flare sound" "ion large"
