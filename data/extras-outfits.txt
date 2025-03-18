@@ -52,44 +52,6 @@ outfit "Multimodal Armor: Light"
 	description "	This configuration introduces well-ordered nanoscale voids into the armor's structure, reducing a warship's mass without compromising structural integrity."
 
 
-outfit "Stealth Plating: Kijra-Khora"
-	### Advanced stealth armor for the Kijra-Khora. Fast and offers afterburner usage, but drains a lot of shields.
-	category "Systems"
-	series "Special Systems"
-	index 11060
-	cost 20000000
-	thumbnail "outfit/stealth plating kijra-khora"
-	licenses
-		"High Houses"
-		"Kaatrij Winged-Eye"
-	"multimodal armor" -1
-	"exclusive: Kijra-Khora" -1
-	"cloak" 0.04
-	"cloaking fuel" 0.05
-	"cloaking shields" 4.5
-	"cloaked afterburner" 1
-	description `Advanced stealth plating and supporting systems designed for the Kijra-Khora light warship, applied as multimodal armor.`
-	description `	These generate a so-called "fast" cloak that is relatively inefficient but facilitates rapid cloaking and decloaking cycles, perfect for dancing in and out of sight while under fire. A complex exhaust suppression system also allows for the use of afterburners while under cloak, greatly enhancing mobility and improving combat effectiveness.`
-
-outfit "Stealth Plating: Vujlet"
-	### Stealth armor that allows for retrofitting Vujleten. More efficient than the Kijra-Khora cloak but slower and does not offer afterburning.
-	category "Systems"
-	series "Special Systems"
-	index 11050
-	cost 10000000
-	thumbnail "outfit/stealth plating vujlet"
-	licenses
-		"High Houses"
-		"House Kaatrij"
-	"multimodal armor" -1
-	"exclusive: Vujlet" -1
-	"cloak" 0.02
-	"cloaking fuel" 0.04
-	"cloaking shields" 4.0
-	description `Stealth plating and supporting systems designed for the Vujlet light warship, applied as multimodal armor.`
-	description `	 Without the benefit of their former production facilities from years past, the cloaking capabilities that House Kaatrij have maintained have needed to maximize their efficiency and reliability; as a consequence, their modern efforts are almost entirely ship-specific. To support the massive energy requirements of this technology, power is drawn directly from the Vujlet's shield grid while active.`
-
-
 outfit `"Kajra" Stealth Shielding`
 	### Shield generator specifically designed for Successor cloaking vessels. Massive shield regen under cloak, at the cost of drawing a lot of power and fuel, and reducing the effectiveness of standard shield regen outfits.
 	category "Systems"

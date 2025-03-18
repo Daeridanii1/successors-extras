@@ -29,6 +29,7 @@ planet "  Successors"
 shipyard "successors extras"
 	"Kijra-Khora"
 	"Uoret-Raasja"
+	"Vujlet (Cloaking)"
 	"Vujrtaan"
 
 shipyard "successors heirloom"
@@ -46,8 +47,6 @@ outfitter "successors extras"
 
 	`Multimodal Armor: Gilled`
 	`Multimodal Armor: Light`
-	"Stealth Plating: Kijra-Khora"
-	"Stealth Plating: Vujlet"
 
 	`"Kajra" Stealth Shielding`
 	`"Sosrue" Stealth Shielding`
