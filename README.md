@@ -1,3 +1,5 @@
 ## Successors EXTRAS
 
-Extra ships and outfits for the Successors, a species for [Endless Sky](https://github.com/endless-sky/endless-sky). Maybe I'll use them in future story, wouldn't that be nice?
+![Kijra-Khora thumbnail](images/thumbnail/kijra-khora.png)
+
+Extra ships, outfits, and more for the Successors, a species for [Endless Sky](https://github.com/endless-sky/endless-sky). My testing ground for potential future content. Items here may be unbalanced, incomplete, or never make it into a PR. They might also be fun!
