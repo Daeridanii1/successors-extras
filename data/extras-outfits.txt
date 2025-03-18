@@ -37,6 +37,20 @@ outfit "Multimodal Armor: Gilled"
 	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
 	description "	This configuration is designed for expeditionary craft, filtering out deuterium from both stellar coronae and the interstellar medium."
 
+outfit "Multimodal Armor: Light"
+	category "Systems"
+	series "Special Systems"
+	index 11008
+	thumbnail "outfit/successor armor heavy"
+	licenses
+		"High Houses"
+	"hull protection" 8
+	"inertia reduction" 12
+	"multimodal armor" -1
+	"unplunderable" 1
+	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
+	description "	This configuration introduces well-ordered nanoscale voids into the armor's structure, reducing a warship's mass without compromising structural integrity."
+
 
 outfit "Stealth Plating: Kijra-Khora"
 	### Advanced stealth armor for the Kijra-Khora. Fast and offers afterburner usage, but drains a lot of shields.
