@@ -6,6 +6,10 @@ Source: https://github.com/Daeridanii1/successors-extras
 Files:
  icon*
 
+ images/effect/lethal?word*
+ images/effect/resja?afterburner*
+ images/effect/resja?flare*
+
  images/outfit/antiproton?emitter*
  images/outfit/small?stealth?shielding*
  images/outfit/large?stealth?shielding*
@@ -13,11 +17,15 @@ Files:
 
  images/projectile/antiproton*
 
+ images/ship/hasur?vowsworn*
+ images/ship/resja?of?the?nine?eyes*
  images/ship/kijra-khora*
  images/ship/uoret-raasja*
  images/ship/valkkyiara-khorasaqra*
  images/ship/vujrtaan*
  
+ images/thumbnail/hasur?vowsworn*
+ images/thumbnail/resja?of?the?nine?eyes*
  images/thumbnail/kijra-khora*
  images/thumbnail/uoret-raasja*
  images/thumbnail/valkkyiara-khorasaqra*

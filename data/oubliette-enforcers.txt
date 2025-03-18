@@ -69,7 +69,8 @@ ship "Resja, of the Nine Eyes"
 	gun -34 -20
 	gun 32 -19
 	gun -32 -19
-	engine 0 70
+	engine 0 0
+		over
 	description `Resja engraved the hull of each of the ships that bore their name personally, carving into the squirming metal a poem that they came to know by heart:`
 	description `Four eyes for Houses who're no longer there,`
 	description `Three for the cursed stars' shimmering flare,`
@@ -274,9 +275,10 @@ outfit `"Orija," Aspect of Speed`
 	"afterburner shields" 12.2
 	"afterburner heat" 8.3
 	"afterburner energy" 4.8
-	"afterburner effect" "large successor afterburner"
-	"flare sprite" "effect/successor flare/large"
-		"frame rate" 20
+	"afterburner effect" "resja afterburner"
+	"flare sprite" "effect/resja flare"
+		"frame rate" 3
+		"rewind"
 	"flare sound" "ion large"
 
 outfit `"Orija," Aspect of Agility`
@@ -298,3 +300,11 @@ outfit `"Orija," Aspect of Agility`
 	"steering flare sprite" "effect/successor flare/large"
 		"frame rate" 20
 	"steering flare sound" "ion large"
+
+effect "resja afterburner"
+	sprite "effect/resja afterburner"
+		"frame rate" 60
+		"no repeat"
+	sound "successor afterburner tiny"
+	"sound category" "afterburner"
+	lifetime 7
