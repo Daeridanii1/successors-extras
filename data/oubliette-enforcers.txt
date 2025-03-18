@@ -24,12 +24,13 @@ ship "Resja, of the Nine Eyes"
 		"cargo space" 10
 		"outfit space" 481
 		"weapon capacity" 153
-		"engine capacity" 110
+		"engine capacity" 100
 		"hull repair rate" 1.25
 		"hull energy" 1.75
 		"hull heat" 1.75
 		"multimodal armor" 1
-		"exclusive: Oubliette" 1
+		"exclusive: Resja" 1
+		"unremovable" -1
 		# Resja uses their shields for attack, not defense.
 		"shield generation multiplier" 1
 		"high shield permeability" 1
@@ -51,8 +52,7 @@ ship "Resja, of the Nine Eyes"
 			"hull damage" 500
 			"hit force" 1500
 	outfits
-		`"Orija," Aspect of Speed`
-		`"Orija," Aspect of Agility`
+		`Resja Engine Block`
 		`Radiant Soul`
 		"Sensate Flesh"
 		`Crimson Halo`
@@ -101,7 +101,8 @@ ship "Hasur, Vowsworn"
 		"hull energy" 1.75
 		"hull heat" 1.75
 		"multimodal armor" 1
-		"exclusive: Oubliette" 1
+		"exclusive: Hasur" 1
+		"unremovable" -1
 		# Hasur uses their shields for attack, not defense.
 		"shield generation multiplier" 1
 		"high shield permeability" 1
@@ -123,8 +124,7 @@ ship "Hasur, Vowsworn"
 			"hull damage" 500
 			"hit force" 1500
 	outfits
-		`"Orija," Aspect of Speed`
-		`"Orija," Aspect of Agility`
+		`Hasur Engine Block`
 		`Radiant Soul`
 		"Sensate Flesh"
 		`Crimson Halo`
@@ -256,50 +256,67 @@ outfit `Visions of Rime`
 	"cooling energy" 1.4
 	"shield generation" -0.3
 
-outfit `"Orija," Aspect of Speed`
-	plural `"Orija," Aspects of Speed`
+outfit `Resja Engine Block`
 	category "Engines"
-	series "Engines: Successors"
-	index 51
+	series "Engines"
+	index 11061
+	"unremovable" 1
+	"exclusive: Resja" -1
+	"unplunderable"
 	"cost" 3550000
-	thumbnail "outfit/large successor thruster"
-	licenses
-		"Successor"
-	"mass" 65
-	"outfit space" -65
-	"engine capacity" -65
+	"mass" 100
+	"outfit space" -100
+	"engine capacity" -100
 	"thrust" 82.0
 	"thrusting shields" 1.4
 	"thrusting heat" 3.15
-	"afterburner thrust" 123.0
-	"afterburner shields" 12.2
-	"afterburner heat" 8.3
-	"afterburner energy" 4.8
-	"afterburner effect" "resja afterburner"
 	"flare sprite" "effect/resja flare"
 		"frame rate" 3
 		"rewind"
 	"flare sound" "ion large"
 
-outfit `"Orija," Aspect of Agility`
-	plural `"Orija," Aspects of Agility`
-	category "Engines"
-	series "Engines: Successors"
-	index 50
-	"cost" 2925000
-	thumbnail "outfit/large successor steering"
-	licenses
-		"Successor"
-	"mass" 42
-	"outfit space" -42
-	"engine capacity" -42
 	"turn" 1850
 	"turning shields" 0.95
 	"turning energy" 3.15
 	"turning heat" 2.54
-	"steering flare sprite" "effect/successor flare/large"
-		"frame rate" 20
 	"steering flare sound" "ion large"
+
+	"afterburner thrust" 123.0
+	"afterburner shields" 12.2
+	"afterburner heat" 8.3
+	"afterburner energy" 4.8
+	"afterburner effect" "resja afterburner"
+
+outfit `Hasur Engine Block`
+	category "Engines"
+	series "Engines"
+	index 11051
+	"unremovable" 1
+	"exclusive: Hasur" -1
+	"unplunderable"
+	"cost" 3550000
+	"mass" 60
+	"outfit space" -60
+	"engine capacity" -60
+	"thrust" 49
+	"thrusting shields" 0.84
+	"thrusting heat" 1.9
+#	"flare sprite" "effect/hasur flare"
+#		"frame rate" 3
+#		"rewind"
+	"flare sound" "ion large"
+
+	"turn" 1110
+	"turning shields" 0.55
+	"turning energy" 1.9
+	"turning heat" 1.5
+	"steering flare sound" "ion large"
+
+	"afterburner thrust" 74
+	"afterburner shields" 7.3
+	"afterburner heat" 5
+	"afterburner energy" 2.9
+#	"afterburner effect" "hasur afterburner"
 
 effect "resja afterburner"
 	sprite "effect/resja afterburner"
