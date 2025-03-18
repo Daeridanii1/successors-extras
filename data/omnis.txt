@@ -1,40 +1,79 @@
 #	Map: Main
 planet "Everything "
+	add shipyard "predecessor"
 	add shipyard "successors extras"
+	add shipyard "successors heirloom"
+	add shipyard "predecessor"
 	add outfitter "successors extras"
+	add outfitter "successors heirloom"
 planet " Successors"
+	add shipyard "predecessor"
 	add shipyard "successors extras"
+	add shipyard "successors heirloom"
+	add shipyard "predecessor"
 	add outfitter "successors extras"
+	add outfitter "successors heirloom"
 #	Map: Ancillary
 planet "  Successors"
+	add shipyard "predecessor"
 	add shipyard "successors extras"
+	add shipyard "successors heirloom"
+	add shipyard "predecessor"
 	add outfitter "successors extras"
-#	Sales
+	add outfitter "successors heirloom"
+
+#	Shipyards
 shipyard "successors extras"
 	"Kijra-Khora"
+	"Uoret-Raasja"
+	"Vujrtaan"
+
+shipyard "successors heirloom"
+	"Valkkyiara-Khorasaqra"
+
+shipyard "predecessor"
 	"Resja, of the Nine Eyes"
 	"Hasur, Vowsworn"
-	"Uoret-Raasja"
-	"Valkkyiara-Khorasaqra"
-	"Vujrtaan"
+
+#	Outfitters
 outfitter "successors extras"
 	"Antiproton Emitter"
 	"Antiproton Emitter Turret"
-	"Heirloom License"
-	"House Chydiyi License"
-	`"Tijra" Heirloom Lance`
-	"Hypervelocity Spike"
-	`"Sarija" Heirloom Coilgun`
-	"Heirloom Point Defense"
-	`"Ija" Heirloom Reactor`
-	`"Jiita" Heirloom Shielding`
-	"Heirloom Hunter-Killers"
+	`"Hasur" Plasma Ballista`
+
+	`Multimodal Armor: Gilled`
+	`Multimodal Armor: Light`
 	"Stealth Plating: Kijra-Khora"
 	"Stealth Plating: Vujlet"
-	"Shield Cortex Bypass"
-	"House Kaatrij License"
-	"Kaatrij Winged-Eye License"
+
 	`"Kajra" Stealth Shielding`
 	`"Sosrue" Stealth Shielding`
-	`"Hasur" Plasma Ballista`
-	`Multimodal Armor: Gilled`
+
+	"House Kaatrij License"
+	"Kaatrij Winged-Eye License"
+	"House Chydiyi License"
+
+outfitter "successors heirloom"
+	"Heirloom License"
+
+	`"Sarija" Heirloom Coilgun`
+	"Heirloom Point Defense"
+
+	`"Tijra" Heirloom Lance`
+	"Hypervelocity Spike"
+
+	`"Jiita" Heirloom Shielding`
+
+	`"Ija" Heirloom Reactor`
+
+	"Heirloom Hunter-Killers"
+
+outfitter "predecessor"
+	`"Iasa," Lethal Word`
+	`"Kis," Lethal Wish`
+
+	`Crimson Halo`
+	`Sensate Flesh`
+	`Visions of Rime`
+
+	`Radiant Soul`
