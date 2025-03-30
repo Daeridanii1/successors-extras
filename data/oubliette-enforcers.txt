@@ -52,14 +52,20 @@ ship "Resja, of the Nine Eyes"
 			"hull damage" 500
 			"hit force" 1500
 	outfits
-		`Resja Engine Block`
-		`Radiant Soul`
-		"Sensate Flesh"
-		`Crimson Halo`
-		"Jump Drive"
-		"Visions of Rime"
 		`"Iasa," Lethal Word` 9
-		"Multimodal Armor: Regen"
+
+		`Hyperdrive`
+		`Crimson Halo`
+		`Sensate Flesh`
+		`Visions of Rime`
+
+		`Radiant Soul`
+		`Auxiliary Power Reserve`
+		`Primary Power Reserve`
+
+		`Resja Engine Block`
+
+		`Multimodal Armor: Regen`
 	gun 4 -73
 	gun -4 -73
 	gun 0 -72
@@ -94,9 +100,9 @@ ship "Hasur, Vowsworn"
 		"heat dissipation" 0.6
 		"fuel capacity" 400
 		"cargo space" 10
-		"outfit space" 380
+		"outfit space" 360
 		"weapon capacity" 96
-		"engine capacity" 110
+		"engine capacity" 60
 		"hull repair rate" 1.25
 		"hull energy" 1.75
 		"hull heat" 1.75
@@ -124,14 +130,21 @@ ship "Hasur, Vowsworn"
 			"hull damage" 500
 			"hit force" 1500
 	outfits
-		`Hasur Engine Block`
-		`Radiant Soul`
-		"Sensate Flesh"
-		`Crimson Halo`
-		"Jump Drive"
-		"Visions of Rime"
+	outfits
 		`"Kis," Lethal Wish` 4
-		"Multimodal Armor: Regen"
+
+		`Hyperdrive`
+		`Crimson Halo`
+		`Sensate Flesh`
+		`Visions of Rime`
+
+		`Radiant Soul`
+		`Auxiliary Power Reserve`
+		`Primary Power Reserve`
+
+		`Hasur Engine Block`
+
+		`Multimodal Armor: Regen`
 	gun -12 -64
 	gun -7 -60
 	gun 7 -60
@@ -147,9 +160,9 @@ ship "Queru, Luminous Gaze"
 
 outfit `"Iasa," Lethal Word`
 	category "Guns"
-	series "Guns: Successors"
-	index 50
-	cost 1370000
+	series "Guns"
+	index 11050
+	cost 4200000
 	thumbnail "outfit/bimodal coilgun"
 	"mass" 17
 	"outfit space" -17
@@ -171,13 +184,13 @@ outfit `"Iasa," Lethal Word`
 		"hit force" 6
 		"piercing" 0.33
 		"firing shields" 4
-	description `Resja's chosen implement of death, Iasa was a drone ship's perfect coilgun, a fearsome, hungry weapon without respect for the shields of either friends or foes. It remains remarkaly efficient.`
+	description `Resja's chosen implement of death, Iasa was a drone ship's perfect coilgun, a fearsome, hungry weapon without respect for the shields of either friends or foes. It remains remarkaly efficient, even after fifteen hundred years of waiting.`
 
 outfit `"Kis," Lethal Wish`
 	category "Guns"
-	series "Guns: Successors"
-	index 60
-	cost 1370000
+	series "Guns"
+	index 11060
+	cost 7500000
 	thumbnail "outfit/bimodal coilgun"
 	"mass" 24
 	"outfit space" -24
@@ -196,9 +209,9 @@ outfit `"Kis," Lethal Wish`
 		"firing energy" 400
 		"firing heat" 600
 		"piercing" 0.8
-		"firing shields" 100
+		"firing shields" 120
 		"submunition" "kis long range"
-	description `Resja's chosen implement of death, Iasa was a drone ship's perfect coilgun, a fearsome, hungry weapon without respect for the shields of either friends or foes. It remains remarkaly efficient.`
+	description `Like a cold and ravenous beast, the frightful Kis tears through the defenses of anything that dares stride close enough to its jaws. At long range this weapon loses its high shield penetration but continues to output respectable damage, encouraging retreat while continuing to harry foes.`
 
 outfit "kis long range"
 	weapon
@@ -210,51 +223,57 @@ outfit "kis long range"
 
 outfit `Crimson Halo`
 	category "Systems"
-	series "Shields: Successors"
-	index 90
-	cost 3550000
-	thumbnail "outfit/medium successor shield"
+	series "Shields"
+	index 11120
+	cost 8550000
+	thumbnail "outfit/unknown"
 	"mass" 31
 	"outfit space" -31
 	"shield generation" 6.6
-	"shield energy" 4.0
-	description `Resja's ships didn't need shields for defence - only as fuel for death and blood.`
+	"shield energy" 6.6
+	"shield protection" -0.5
+	"shield connection point" 1
+	description `Resja's ships didn't need shields for defence - only as fuel for attacking their foes. Thus, their favored shield cortex is an unusually powerful one, emitting a staggering amount of energy that is much less useful for intercepting damage than it is when fed back into a starship's systems.`
 
 outfit `Radiant Soul`
 	category "Power"
-	series "Systems: Successors"
-	index 70
-	cost 12250000
-	thumbnail "outfit/medium successor reactor"
+	series "Generators"
+	index 11070
+	cost 22500000
+	thumbnail "outfit/unknown"
 	"mass" 94
 	"outfit space" -94
-	"energy generation" 19.5
-	"heat generation" 24
-	"shield energy multiplier" -0.2
-	"hull repair multiplier" 0.2
+	"energy generation" 19
+	"heat generation" 28
+	"shield energy multiplier" -0.18
+	"hull energy multiplier" -0.18
+	description `Though not substantially different from its modern derivatives, this ancient reactor of the Myiaran Predecessors has few equals for raw power. Because it was designed  for Resja's drone ships that did not require a cool and comfortable crew, it generates more heat than most Myiaran generators, extracting more energy from this additional inefficiency.`
 
 outfit `Sensate Flesh`
-	category "Power"
-	series "Shields: Successors"
-	index 100
-	cost 320000
-	thumbnail "outfit/large successor battery"
-	"mass" 36
-	"outfit space" -36
-	"energy capacity" 22000
-	"hull repair rate" 1.2
-	"hull energy" 1.8
-	"hull heat" 1.8
+	category "Systems"
+	series "Repair"
+	index 11030
+	cost 12200000
+	thumbnail "outfit/unknown"
+	"mass" 24
+	"outfit space" -24
+	"hull repair rate" 1.1
+	"hull energy" 1.4
+	"hull heat" 1.4
+	"high shield permeability" 0.05
+	description `With their shields devoted to other uses, Resja's warships relied on their dense armor to absorb incoming fire. From this repair unit, delicate strands of living metal spread out and intertwine with the layers of a ship's armor, coaxing it to regenerate from wounds much like an organic creature. These require a certain measure of shield energy to operate, however - modern craft will find that the armor longs to recieve damage even while shields are active.`
 
 outfit `Visions of Rime`
 	category "Systems"
+	series "Cooling"
+	index 11020
+	cost 5000000
 	thumbnail "outfit/unknown"
 	mass 10
 	"outfit space" -10
-	cooling 7
-	"active cooling" 16
-	"cooling energy" 1.4
-	"shield generation" -0.3
+	cooling 24
+	"shield generation" -0.4
+	description `Radiating excess heat through a starship's shield matrix, this compact, ancient cooling system is strikingly efficient. On Resja's furious drone ships, the shield strength that this saps is all but insignificant, but on lesser craft it may come with a certain cost to endurance.`
 
 outfit `Resja Engine Block`
 	category "Engines"

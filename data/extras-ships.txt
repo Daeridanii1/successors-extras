@@ -51,7 +51,7 @@ ship `Kijra-Khora`
 		"Hyperdrive"
 		"Successor Cooling" 2
 		`"Ojet" Bimodal Coilgun` 6
-		"Stealth Plating: Kijra-Khora"
+		"Multimodal Armor: Light"
 		"Kinetic Rail Rifle" 5
 	gun 4 -74 
 	gun -4 -74 
@@ -248,7 +248,7 @@ ship `Vujrtaan`
 		`"Veldt" Combat Scanner`
 		`"Tuur" Scanning Suite`
 		"Kinetic Rail Rifle" 10
-		"Multimodal Armor: Regen"
+		"Multimodal Armor: Light"
 	gun 14 -79
 	gun -14 -79
 	turret 0 -24
