@@ -23,74 +23,10 @@ outfit "House Chydiyi License"
 	description "A manifestation of House Chydiyi's favor; the opportunity to purchase their exclusive technology."
 
 
-outfit "Multimodal Armor: Gilled"
-	category "Systems"
-	series "Special Systems"
-	index 11009
-	thumbnail "outfit/successor armor heavy"
-	licenses
-		"High Houses"
-	"ramscoop" 8
-	"fuel generation" 0.05
-	"multimodal armor" -1
-	"unplunderable" 1
-	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
-	description "	This configuration is designed for expeditionary craft, filtering out deuterium from both stellar coronae and the interstellar medium."
-
-outfit `"Kajra" Stealth Shielding`
-	### Shield generator specifically designed for Successor cloaking vessels. Massive shield regen under cloak, at the cost of drawing a lot of power and fuel, and reducing the effectiveness of standard shield regen outfits.
-	category "Systems"
-	series "Shields"
-	index 11100
-	licenses
-		"High Houses"
-		"House Kaatrij"
-	cost 7550000
-	thumbnail "outfit/small stealth shielding"
-	"mass" 22
-	"outfit space" -22
-	"cloaking shields" -8.3
-	"cloaking fuel" 0.075
-	"cloaking energy" 8.3
-	"shield generation multiplier" -0.1
-	description `An advanced shield generator developed by House Kaatrij for their cloaking ships, the Kajra operates in an unusual but undeniably effective fashion. By delivering a vast amount of power and hyperspace fuel catalyst along the same channels as the ship's cloaking systems, the Kajra can achieve a pace of regeneration that outstrips even the rapidly-recharging shield cortices of the High Houses. However, this can only be performed while the vessel it is equipped on is cloaked, and the process also interferes with standard shield generation equipment.`
-	description `	Many of Kaatrij's captains prefer to stick with the more consistent and time-proven shield cortices on their vessels, but some of the House's more adept and confronting pilots have come to enjoy the more active style that the Kajra promotes.`
-
-outfit `Writhing Metal Patch`
-	category "Systems"
-	series "Repair"
-	index 11010
-	cost 1080000
-	thumbnail "outfit/writhing metal patch"
-	"mass" 12
-	"outfit space" -12
-	"hull repair rate" 0.6
-	"hull energy" 0.6
-	"hull heat" 0.6
-	"hull energy multiplier" 0.06
-	"hull heat multiplier" 0.06
-	description `Born of Predecessor mastery and matured under the glare of mutating anomalies, this fragment of strangely fluid metal bonds to and infiltrates any material it comes into contact with. When properly innervated it is capable of reconstituting itself from even severe damage. However, its strange symbiosis is easy to unbalance - the more of a ship's hull is replaced with these alien forms, the more each one of them demands.`
-
-outfit `"Sosrue" Stealth Shielding`
-	### Larger cloaking shield.
-	category "Systems"
-	series "Shields"
-	index 11110
-	licenses
-		"High Houses"
-		"Kaatrij Winged-Eye"
-	cost 15750000
-	thumbnail "outfit/large stealth shielding"
-	"mass" 36
-	"outfit space" -36
-	"cloaking shields" -14.8
-	"cloaking fuel" 0.15
-	"cloaking energy" 14.8
-	"shield generation multiplier" -0.1
-	description `The Sosrue takes its name from the monster of a traditional Kaatrij children's poem, evoking the creature's ravenous hunger and shrouded nature, and perhaps also some whimsy on the part of House Kaatrij's engineers:`
-	description `	"Beware the Sosrue, cloaked in black, / Its teeth and claws agnash! / Make still thy heart, and quell thine arms, / Its lightless ears shall spy a flail! / By the bubbling of thy struggled folly, / Return above whilst thou still may! / ..."`
 
 outfit `"Hasur" Photoballista`
+	### Intended introduction: Ghosts Part II or III
+	### Endgame weapon of House Kaatrij. More or less a "shotgun" variant of the Sjeja Kinetic Lance designed for cloaking ships; murderizes anything at close range.
 	category "Secondary Weapons"
 	series "Secondary Weapons"
 	index 11020
@@ -150,6 +86,8 @@ effect "snap nuke hit"
 	"random angle" 6
 	"velocity scale" 0
 
+
+
 outfit "Stellar Metal Fragments"
 	plural "Stellar Metal Fragments"
 	category "Ammunition"
@@ -160,6 +98,8 @@ outfit "Stellar Metal Fragments"
 	"mass" 4.4
 	"stellar frag capacity" -1
 	description `A canister containing fragments of bronze-colored stellar metal, grown over thousands of years in the corona of a blue star. The metal is unnaturally dense and composed of exotic elements not yet known to human science.`
+
+
 
 outfit "Stellar Fragment Reserve"
 	category "Ammunition"
@@ -175,7 +115,9 @@ outfit "Stellar Fragment Reserve"
 	description `Generally installed only on expeditionary craft on extended missions, Kaatrij's supplementary ammunition store for their flagship weapon is a barebones, efficient affair - nothing about it is more complicated than it needs to be, despite the exotic nature of its contents.`
 
 
+
 outfit `Antiproton Emitter`
+	### Unclear if these will be used, given how the story is currently developing.
 	category "Secondary Weapons"
 	series "Secondary Weapons"
 	index 11030
@@ -196,6 +138,8 @@ outfit `Antiproton Emitter`
 		submunition "Antiproton Beam" 4
 	description `This outfit uses a small amount of hyperspace fuel and a large amount of energy to catalyze the generation of antiprotons, which it then ejects in a cone in front of the craft using it. Though these inflict only very minor damage, the annihilation events they produce upon contacting a target are highly visible to starship sensors, allowing the device to be used as an inelegant but effective way of pinpointing the location of a cloaked vessel.`
 	description `   As the Successors have not employed cloaking technology in over a thousand years, anti-cloaking equipment like this has mostly remained unused, sitting in archives and slowly decaying.`
+
+
 
 outfit `Antiproton Emitter Turret`
 	category "Secondary Weapons"
@@ -242,3 +186,83 @@ effect "antiproton hit"
 	lifetime 60
 	"random angle" 360
 	"velocity scale" 0
+
+
+
+outfit `"Kajra" Stealth Shielding`
+	### Intended introduction: Ghosts Part II
+	### Shield generator specifically designed for Successor cloaking vessels. Massive shield regen under cloak, at the cost of drawing a lot of power and fuel, and reducing the effectiveness of standard shield regen outfits.
+	category "Systems"
+	series "Shields"
+	index 11100
+	licenses
+		"High Houses"
+		"House Kaatrij"
+	cost 7550000
+	thumbnail "outfit/small stealth shielding"
+	"mass" 22
+	"outfit space" -22
+	"cloaking shields" -8.3
+	"cloaking fuel" 0.075
+	"cloaking energy" 8.3
+	"shield generation multiplier" -0.1
+	description `An advanced shield generator developed by House Kaatrij for their cloaking ships, the Kajra operates in an unusual but undeniably effective fashion. By delivering a vast amount of power and hyperspace fuel catalyst along the same channels as the ship's cloaking systems, the Kajra can achieve a pace of regeneration that outstrips even the rapidly-recharging shield cortices of the High Houses. However, this can only be performed while the vessel it is equipped on is cloaked, and the process also interferes with standard shield generation equipment.`
+	description `	Many of Kaatrij's captains prefer to stick with the more consistent and time-proven shield cortices on their vessels, but some of the House's more adept and confronting pilots have come to enjoy the more active style that the Kajra promotes.`
+
+
+
+outfit `"Sosrue" Stealth Shielding`
+	### Intended introduction: Ghosts Part II or III (with the Kijra-Khora)
+	### Larger cloaking shield.
+	category "Systems"
+	series "Shields"
+	index 11110
+	licenses
+		"High Houses"
+		"Kaatrij Winged-Eye"
+	cost 15750000
+	thumbnail "outfit/large stealth shielding"
+	"mass" 36
+	"outfit space" -36
+	"cloaking shields" -14.8
+	"cloaking fuel" 0.15
+	"cloaking energy" 14.8
+	"shield generation multiplier" -0.1
+	description `The Sosrue takes its name from the monster of a traditional Kaatrij children's poem, evoking the creature's ravenous hunger and shrouded nature, and perhaps also some whimsy on the part of House Kaatrij's engineers:`
+	description `	"Beware the Sosrue, cloaked in black, / Its teeth and claws agnash! / Make still thy heart, and quell thine arms, / Its lightless ears shall spy a flail! / By the bubbling of thy struggled folly, / Return above whilst thou still may! / ..."`
+
+
+
+outfit `Writhing Metal Patch`
+	### Intended introduction: Tangled Shroud rework (requires compact event saving)
+	### Predecessor-space hull repair. Best at its scale, but each one equipped makes hull repair increasingly less energy and heat-efficient.
+	category "Systems"
+	series "Repair"
+	index 11010
+	cost 1080000
+	thumbnail "outfit/writhing metal patch"
+	"mass" 12
+	"outfit space" -12
+	"hull repair rate" 0.6
+	"hull energy" 0.6
+	"hull heat" 0.6
+	"hull energy multiplier" 0.06
+	"hull heat multiplier" 0.06
+	description `Born of Predecessor mastery and matured under the glare of mutating anomalies, this fragment of strangely fluid metal bonds to and infiltrates any material it comes into contact with. When properly innervated it is capable of reconstituting itself from even severe damage. However, its strange symbiosis is easy to unbalance - the more of a ship's hull is replaced with these alien forms, the more each one of them demands.`
+
+
+
+outfit "Multimodal Armor: Gilled"
+	### Unclear if I actually want to implement this in vanilla, but it could be a nice diversification of MM armor.
+	category "Systems"
+	series "Special Systems"
+	index 11009
+	thumbnail "outfit/successor armor heavy"
+	licenses
+		"High Houses"
+	"ramscoop" 8
+	"fuel generation" 0.05
+	"multimodal armor" -1
+	"unplunderable" 1
+	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
+	description "	This configuration is designed for expeditionary craft, filtering out deuterium from both stellar coronae and the interstellar medium."
