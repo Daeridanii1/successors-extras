@@ -1,5 +1,3 @@
-### EXTRAS: Content for future Successors story. Spoiler territory for how I might (plan to) develop the story.
-
 ship `Kijra-Khora`
 	### Intended introduction: Ghosts Part II or III
 	### NOTE: The Blender model is rigged for movable nacelles, but this can't be achieved in main until we get some sort of context-sensitive ship animation support; see issue #4991 and PR #8797 from the main repository.
@@ -121,6 +119,96 @@ ship `Kijra-Khora`
 	description `	The Kijra-Khora's cloaking technology is integrated with its hull and cannot be removed. Optimized for combat, it features a fast decloaking cycle but draws a substantial amount of fuel and shielding while active.`
 
 
+
+ship `Vujrtaan`
+	### Intended introduction: Ghosts Part II
+	### A stealth exploration vessel; lightly armed and armored but with high fuel capacity and built-in ramscooping.
+	plural "Vurtaanen"
+	sprite "ship/vujrtaan"
+	thumbnail "thumbnail/vujrtaan"
+	attributes
+		licenses
+			"High Houses"
+			"House Kaatrij"
+		category "Utility"
+		"cost" 23000000
+		"shields" 7000
+		"hull" 21500
+		"required crew" 7
+		"bunks" 39
+		"mass" 320
+		"drag" 3.9
+		"heat dissipation" 0.55
+		"fuel capacity" 1600
+		"cargo space" 50
+		"outfit space" 275
+		"weapon capacity" 100
+		"engine capacity" 100
+		"hull repair rate" 1.45
+		"hull energy" 2.0
+		"hull heat" 2.0
+		"ramscoop" 8	# Equivalent to 14-28 outfit space, depending on tech level
+		"multimodal armor" 1
+		# Cloaking
+		"cloak" 0.01
+		"cloaking fuel" 0.035
+		"cloaking shields" 3.2
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`"Nnesa" Fusion Core`
+		"Auxiliary Power Reserve" 2
+		`"Jaase" Shield Cortex`
+		"Hyperdrive"
+		"Successor Cooling"
+		`"Ojet" Bimodal Coilgun` 2
+		`"Veldt" Combat Scanner`
+		`"Tuur" Scanning Suite`
+		"Kinetic Rail Rifle" 10
+		"Multimodal Armor: Light"
+	gun 14 -79
+	gun -14 -79
+	turret 0 -24
+	engine 0 35
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `Vurjtaanen are long-lasting heavy rainstorms native to the planet of Raaqa-Puan-Uuoru, often lasting dozens of days. While a vital part of the planet's ecosystem, they have required House Kaatrij to build their terrestrial constructions with an especially strong focus on the management and conveyance of water, leading to a unique and distinctive Kaatrij architecture that is rarely seen elsewhere in Successor space.`
+	description `	The vessel sharing the name of the Vujrtaan is similarly notable for its exceptional endurance. With a built-in ramscoop, cloak, and vast fuel reserves, these craft are suitable for long-term exploration or surveillance missions, and have thus become a favored tool of the Winged-Eye House.`
+	description `	The cloaking technology of the Vujrtaan is integrated with the hull and cannot be removed. Optimized for duration, it activates slowly but draws little fuel and shielding to maintain.`
+
+
+
+
+ship "Vujlet" "Vujlet (Cloaking)"
+	sprite "ship/vujlet modified"
+	thumbnail "thumbnail/vujlet modified"
+	add attributes
+		cost "8000000"
+		"shields" 1200
+		"hull" -1000
+		"required crew" 2
+		"cloak" 0.02
+		"cloaking fuel" 0.04
+		"cloaking shields" 4.0
+		licenses
+			"House Kaatrij"
+	description `Navigating the stars with the grace of a flitting bird, the compact Vujlet is a mass-produced High Houses warship flexible enough to serve in a variety of light-duty roles. Large enough to operate as a self-sufficient unit, these vessels serve as a useful bridge between short-ranged and relatively vulnerable interceptors, and larger, more resource-intensive warships that can be much more expensive to build and operate.`
+	description `	The design was originally employed by House Kaatrij as a stealth reconnaissance vessel that made use of their then-recently-developed cloaking technology. As the alliance between the New Houses strengthened, the plans for the Vujlet were distributed among them, and the light warship rapidly became a mainstay of their fleets.`
+	description `	Cloaking technology remains powerful enough in the modern day that House Kaatrij remains quite discerning about whom they offer these ships. To support its stealth systems, this variant has additional crew and a higher-capacity shield matrix.`
+
+
+
 ship "Uoret-Raasja"
 	### Intended introduction: Ghosts Part II
 	plural "Uoreten-Raasja"
@@ -191,88 +279,3 @@ ship "Uoret-Raasja"
 	"final explode" "final explosion medium"
 	description `Based on a warship design once employed by their Predecessors, House Chydiyi's "Uoret-Raasja" has been adapted specifically to counter the cloaking technology recently deployed by the New Houses.`
 	description `	The "Uoret-Raasja" benefits from 35% faster shield regeneration, at the cost of drawing 20% more energy for shields.`
-
-
-ship `Vujrtaan`
-	### Intended introduction: Ghosts Part II
-	### A stealth exploration vessel; lightly armed and armored but with high fuel capacity and built-in ramscooping.
-	plural "Vurtaanen"
-	sprite "ship/vujrtaan"
-	thumbnail "thumbnail/vujrtaan"
-	attributes
-		licenses
-			"High Houses"
-			"House Kaatrij"
-		category "Utility"
-		"cost" 23000000
-		"shields" 7000
-		"hull" 21500
-		"required crew" 7
-		"bunks" 39
-		"mass" 320
-		"drag" 3.9
-		"heat dissipation" 0.55
-		"fuel capacity" 1600
-		"cargo space" 50
-		"outfit space" 275
-		"weapon capacity" 100
-		"engine capacity" 100
-		"hull repair rate" 1.45
-		"hull energy" 2.0
-		"hull heat" 2.0
-		"ramscoop" 8	# Equivalent to 14-28 outfit space, depending on tech level
-		"multimodal armor" 1
-		# Cloaking
-		"cloak" 0.01
-		"cloaking fuel" 0.035
-		"cloaking shields" 3.2
-		weapon
-			"blast radius" 100
-			"shield damage" 1000
-			"hull damage" 500
-			"hit force" 1500
-	outfits
-		`"Chyyra" Inductive Thruster`
-		`"Veusa" Inductive Steering`
-		`"Aqra" Inductive Reverser`
-		`"Nnesa" Fusion Core`
-		"Auxiliary Power Reserve" 2
-		`"Jaase" Shield Cortex`
-		"Hyperdrive"
-		"Successor Cooling"
-		`"Ojet" Bimodal Coilgun` 2
-		`"Veldt" Combat Scanner`
-		`"Tuur" Scanning Suite`
-		"Kinetic Rail Rifle" 10
-		"Multimodal Armor: Light"
-	gun 14 -79
-	gun -14 -79
-	turret 0 -24
-	engine 0 35
-	leak "leak" 50 50
-	leak "flame" 30 80
-	explode "tiny explosion" 18
-	explode "small explosion" 36
-	explode "medium explosion" 24
-	explode "large explosion" 8
-	"final explode" "final explosion medium"
-	description `Vurjtaanen are long-lasting heavy rainstorms native to the planet of Raaqa-Puan-Uuoru, often lasting dozens of days. While a vital part of the planet's ecosystem, they have required House Kaatrij to build their terrestrial constructions with an especially strong focus on the management and conveyance of water, leading to a unique and distinctive Kaatrij architecture that is rarely seen elsewhere in Successor space.`
-	description `	The vessel sharing the name of the Vujrtaan is similarly notable for its exceptional endurance. With a built-in ramscoop, cloak, and vast fuel reserves, these craft are suitable for long-term exploration or surveillance missions, and have thus become a favored tool of the Winged-Eye House.`
-	description `	The cloaking technology of the Vujrtaan is integrated with the hull and cannot be removed. Optimized for duration, it activates slowly but draws little fuel and shielding to maintain.`
-
-ship "Vujlet" "Vujlet (Cloaking)"
-	sprite "ship/vujlet modified"
-	thumbnail "thumbnail/vujlet modified"
-	add attributes
-		cost "8000000"
-		"shields" 1200
-		"hull" -1000
-		"required crew" 2
-		"cloak" 0.02
-		"cloaking fuel" 0.04
-		"cloaking shields" 4.0
-		licenses
-			"House Kaatrij"
-	description `Navigating the stars with the grace of a flitting bird, the compact Vujlet is a mass-produced High Houses warship flexible enough to serve in a variety of light-duty roles. Large enough to operate as a self-sufficient unit, these vessels serve as a useful bridge between short-ranged and relatively vulnerable interceptors, and larger, more resource-intensive warships that can be much more expensive to build and operate.`
-	description `	The design was originally employed by House Kaatrij as a stealth reconnaissance vessel that made use of their then-recently-developed cloaking technology. As the alliance between the New Houses strengthened, the plans for the Vujlet were distributed among them, and the light warship rapidly became a mainstay of their fleets.`
-	description `	Cloaking technology remains powerful enough in the modern day that House Kaatrij remains quite discerning about whom they offer these ships. To support its stealth systems, this variant has additional crew and a higher-capacity shield matrix.`
