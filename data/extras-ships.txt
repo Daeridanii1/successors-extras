@@ -8,7 +8,6 @@ ship `Kijra-Khora`
 	thumbnail "thumbnail/kijra-khora"
 	attributes
 		licenses
-			"High Houses"
 			"Kaatrij Winged-Eye"
 		category "Light Warship"
 		"cost" 55000000
@@ -28,7 +27,6 @@ ship `Kijra-Khora`
 		"hull repair rate" 1.45
 		"hull energy" 2.0
 		"hull heat" 2.0
-		"quantum keystone" 1
 		"multimodal armor" 1
 		# Cloaking
 		"cloak" 0.04
@@ -118,9 +116,9 @@ ship `Kijra-Khora`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `Named for the fearsome gossamer-winged creatures of House Kaatrij's lost homeworld, the Kijra-Khora is the first truly new and original warship design employed by the Myiaran Successors in nearly two thousand years. Broadly patterned after the fast and stealthy hit-and-run craft employed by Kaatrij's Predecessors in their destructive runs against Point Drive production facilities, the "Kijra-Khora" incorporates the House's recently-recovered cloaking technology and sports a fearsome weapons layout.`
+	description `Named for the fearsome gossamer-winged creatures of House Kaatrij's lost homeworld, this is the first truly new and original warship design employed by the Myiaran Successors in nearly two thousand years. Evoking the fast and stealthy hit-and-run craft employed by Kaatrij's Predecessors, the Kijra-Khora strains to be considered a light warship; every iota of internal space has been carved out to support the ship's systems. Sporting an aggressive weapons layout and Kaatrij's newly-rediscovered cloaking technology, few ships could equal it at its scale.`
 	#description `	The "Kijra-Khora" also has two mobile nacelles that can be deployed in combat to present additional weapons hardpoints, and can be retracted while docking or in hyperspace for additional protection. The nacelles also automatically retract when cloaking; this reduces the size of the cloaking field that must be generated, improving the overall efficiency of the system.`
-	description `	The advanced armor of the "Kijra-Khora" enables it to inherently pass through unstable wormholes.`
+	description `	The Kijra-Khora's cloaking technology is integrated with its hull and cannot be removed. Optimized for combat, it features a fast decloaking cycle but draws a substantial amount of fuel and shielding while active.`
 
 
 ship "Uoret-Raasja"
@@ -131,9 +129,8 @@ ship "Uoret-Raasja"
 	thumbnail "thumbnail/uoret-raasja"
 	attributes
 		licenses
-			"High Houses"
 			"House Chydiyi"
-		category "Medium Warship"
+		category "Heavy Warship"
 		"cost" 45250000
 		"shields" 6500
 		"hull" 51500
@@ -223,7 +220,6 @@ ship `Vujrtaan`
 		"hull repair rate" 1.45
 		"hull energy" 2.0
 		"hull heat" 2.0
-		"quantum keystone" 1
 		"ramscoop" 8	# Equivalent to 14-28 outfit space, depending on tech level
 		"multimodal armor" 1
 		# Cloaking
@@ -262,9 +258,11 @@ ship `Vujrtaan`
 	"final explode" "final explosion medium"
 	description `Vurjtaanen are long-lasting heavy rainstorms native to the planet of Raaqa-Puan-Uuoru, often lasting dozens of days. While a vital part of the planet's ecosystem, they have required House Kaatrij to build their terrestrial constructions with an especially strong focus on the management and conveyance of water, leading to a unique and distinctive Kaatrij architecture that is rarely seen elsewhere in Successor space.`
 	description `	The vessel sharing the name of the Vujrtaan is similarly notable for its exceptional endurance. With a built-in ramscoop, cloak, and vast fuel reserves, these craft are suitable for long-term exploration or surveillance missions, and have thus become a favored tool of the Winged-Eye House.`
-	description `	The Vujrtaan is innately capable of passing through unstable wormholes.`
+	description `	The cloaking technology of the Vujrtaan is integrated with the hull and cannot be removed. Optimized for duration, it activates slowly but draws little fuel and shielding to maintain.`
 
 ship "Vujlet" "Vujlet (Cloaking)"
+	sprite "ship/vujlet modified"
+	thumbnail "thumbnail/vujlet modified"
 	add attributes
 		cost "8000000"
 		"shields" 1200
