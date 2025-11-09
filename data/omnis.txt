@@ -1,63 +1,34 @@
-#	Map: Main
-planet "Everything "
-	add shipyard "predecessor"
-	add shipyard "successors extras"
-	add shipyard "successors heirloom"
-	add shipyard "predecessor"
-	add outfitter "successors extras"
-	add outfitter "successors heirloom"
-	add outfitter "predecessor"
-planet " Successors"
-	add shipyard "predecessor"
-	add shipyard "successors extras"
-	add shipyard "successors heirloom"
-	add shipyard "predecessor"
-	add outfitter "successors extras"
-	add outfitter "successors heirloom"
-	add outfitter "predecessor"
-#	Map: Ancillary
-planet "  Successors"
-	add shipyard "predecessor"
-	add shipyard "successors extras"
-	add shipyard "successors heirloom"
-	add shipyard "predecessor"
-	add outfitter "successors extras"
-	add outfitter "successors heirloom"
-	add outfitter "predecessor"
-
-#	Shipyards
-shipyard "successors extras"
+shipyard "successor plugin"
 	"Kijra-Khora"
 	"Uoret-Raasja"
 	"Vujlet (Cloaking)"
 	"Vujrtaan"
-
-shipyard "successors heirloom"
 	"Valkkyiara-Khorasaqra"
+	
+	# The following are commented out because the Ghosts development plugin must be installed for them to exist
 
-shipyard "predecessor"
-	"Resja, of the Nine Eyes"
-	"Hasur, Vowsworn"
+	#"Resja, of the Nine Eyes"
+	#"Hasur, Vowsworn"
+	#"Queru, Luminous Gaze"
 
-#	Outfitters
-outfitter "successors extras"
+outfitter "successor plugin"
+	`"Hasur" Photoballista`
+	`Stellar Metal Fragments`
+	`Stellar Fragment Reserve`
+
 	"Antiproton Emitter"
 	"Antiproton Emitter Turret"
-	`"Hasur" Plasma Ballista`
-
-	`Multimodal Armor: Gilled`
-	`Multimodal Armor: Light`
 
 	`"Kajra" Stealth Shielding`
 	`"Sosrue" Stealth Shielding`
+	`Writhing Metal Patch`
+	"Multimodal Armor: Gilled"
 
 	"House Kaatrij License"
 	"Kaatrij Winged-Eye License"
 	"House Chydiyi License"
 
-outfitter "successors heirloom"
-	"Heirloom License"
-
+outfitter "successor plugin"
 	`"Sarija" Heirloom Coilgun`
 	"Heirloom Point Defense"
 
@@ -69,13 +40,3 @@ outfitter "successors heirloom"
 	`"Ija" Heirloom Reactor`
 
 	"Heirloom Hunter-Killers"
-
-outfitter "predecessor"
-	`"Iasa," Lethal Word`
-	`"Kis," Lethal Wish`
-
-	`Crimson Halo`
-	`Sensate Flesh`
-	`Visions of Rime`
-
-	`Radiant Soul`
