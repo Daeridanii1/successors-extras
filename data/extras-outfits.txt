@@ -37,21 +37,6 @@ outfit "Multimodal Armor: Gilled"
 	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
 	description "	This configuration is designed for expeditionary craft, filtering out deuterium from both stellar coronae and the interstellar medium."
 
-outfit "Multimodal Armor: Light"
-	category "Systems"
-	series "Special Systems"
-	index 11008
-	thumbnail "outfit/successor armor heavy"
-	licenses
-		"High Houses"
-	"hull protection" 0.08
-	"inertia reduction" 0.12
-	"multimodal armor" -1
-	"unplunderable" 1
-	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
-	description "	This configuration introduces well-ordered nanoscale voids into the armor's structure, reducing a warship's mass without compromising structural integrity."
-
-
 outfit `"Kajra" Stealth Shielding`
 	### Shield generator specifically designed for Successor cloaking vessels. Massive shield regen under cloak, at the cost of drawing a lot of power and fuel, and reducing the effectiveness of standard shield regen outfits.
 	category "Systems"
@@ -70,6 +55,21 @@ outfit `"Kajra" Stealth Shielding`
 	"shield generation multiplier" -0.1
 	description `An advanced shield generator developed by House Kaatrij for their cloaking ships, the Kajra operates in an unusual but undeniably effective fashion. By delivering a vast amount of power and hyperspace fuel catalyst along the same channels as the ship's cloaking systems, the Kajra can achieve a pace of regeneration that outstrips even the rapidly-recharging shield cortices of the High Houses. However, this can only be performed while the vessel it is equipped on is cloaked, and the process also interferes with standard shield generation equipment.`
 	description `	Many of Kaatrij's captains prefer to stick with the more consistent and time-proven shield cortices on their vessels, but some of the House's more adept and confronting pilots have come to enjoy the more active style that the Kajra promotes.`
+
+outfit `Writhing Metal Patch`
+	category "Systems"
+	series "Repair"
+	index 11010
+	cost 1080000
+	thumbnail "outfit/writhing metal patch"
+	"mass" 12
+	"outfit space" -12
+	"hull repair rate" 0.6
+	"hull energy" 0.6
+	"hull heat" 0.6
+	"hull energy multiplier" 0.06
+	"hull heat multiplier" 0.06
+	description `Born of Predecessor mastery and matured under the glare of mutating anomalies, this fragment of strangely fluid metal bonds to and infiltrates any material it comes into contact with. When properly innervated it is capable of reconstituting itself from even severe damage. However, its strange symbiosis is easy to unbalance - the more of a ship's hull is replaced with these alien forms, the more each one of them demands.`
 
 outfit `"Sosrue" Stealth Shielding`
 	### Larger cloaking shield.
@@ -90,49 +90,95 @@ outfit `"Sosrue" Stealth Shielding`
 	description `The Sosrue takes its name from the monster of a traditional Kaatrij children's poem, evoking the creature's ravenous hunger and shrouded nature, and perhaps also some whimsy on the part of House Kaatrij's engineers:`
 	description `	"Beware the Sosrue, cloaked in black, / Its teeth and claws agnash! / Make still thy heart, and quell thine arms, / Its lightless ears shall spy a flail! / By the bubbling of thy struggled folly, / Return above whilst thou still may! / ..."`
 
-outfit `"Hasur" Plasma Ballista`
+outfit `"Hasur" Photoballista`
 	category "Secondary Weapons"
-	series "Fixed Secondaries: Successors"
-	index 20
+	series "Secondary Weapons"
+	index 11020
 	cost 37500000
 	licenses
 		"Kaatrij Winged-Eye"
-	thumbnail "outfit/sjeja kinetic lance"
+	thumbnail "outfit/photoballista"
 	"mass" 56
 	"outfit space" -56
 	"weapon capacity" -56
 	"gun ports" -1
+	"stellar frag capacity" 21
 	weapon
 		icon "icon/antiproton"
-		sprite "projectile/ionball"
+		sprite "projectile/drak bolt"
 			"frame time" 6
 			"no repeat"
-		"reload" 60
-		"burst count" 6
-		"burst reload" 8
-		"velocity" 10
-		"lifetime" 20
-		"firing energy" 480
-		"firing heat" 960
-		"firing fuel" 5
-		"firing shields" 80
-		"piercing" 0.6
+		ammo "Stellar Metal Fragments"
+		"fire effect" "finisher sparks" 1
+		"fire effect" "bimodal switch impact" 4
+		"hit effect" "snap nuke hit"
+		"die effect" "moonbeam flecks" 8
+		"reload" 300
+		"burst reload" 12
+		"burst count" 3
+		"velocity" 36
+		"lifetime" 5
+		"firing energy" 2050
+		"firing heat" 5500
+		"firing shields" 400
+		"piercing" 0.33
 		"cluster"
-		submunition "hasur long range"
-	description `Developed as a devastating first-strike weapon for House Kaatrij's cloaking warships, the Hasur is as destructive as it is unconventional. While the specific mechanisms of the weapon's functioning elude you, the basic principle entails preserving a small fusion spark in a tightly-controlled shield bubble and propelling the whole volatile packet forward. When fired at close range, the Hasur can bypass shields.`
+		"hit force" 1200
+		submunition "hasur long range" 9
+	description `Developed as a devastating first-strike weapon for House Kaatrij's cloaking warships, the Hasur is as destructive as it is unconventional: it fires hypermagnetized stellar metal fragments at velocities high enough to trigger nuclear reactions on contact with solid matter, such that even the exceptionally durable armor of the Successors is unable to provide much resistance.`
+	description `	At close ranges, the fragments are collimated by a forwardly- projected shield bubble - intersecting an enemy ship with this allows the weapon to bypass a portion of enemy shielding.`
 
 outfit `hasur long range`
 	weapon
-		sprite "projectile/culverin"
-		"velocity" 10
-		"lifetime" 100
-		"shield damage" 680
-		"hull damage" 820
+		sprite "projectile/drak bolt"
+		"inaccuracy" 5
+			uniform
+		"random lifetime" 16
+		"lifetime" 24
+		"fade out" 6
+		"shield damage" 380
+		"hull damage" 605
+		"damage dropoff" 540
+
+effect "snap nuke hit"
+	sprite "effect/snap-nuke-hit"
+		"no repeat"
+		"frame time" 4
+		scale 0.5
+	#sound "explosion nuke"
+	"lifetime" 16
+	"random angle" 6
+	"velocity scale" 0
+
+outfit "Stellar Metal Fragments"
+	plural "Stellar Metal Fragments"
+	category "Ammunition"
+	series "Ammunition"
+	index 11030
+	cost 77000
+	thumbnail "outfit/hv spike"
+	"mass" 4.4
+	"stellar frag capacity" -1
+	description `A canister containing fragments of bronze-colored stellar metal, grown over thousands of years in the corona of a blue star. The metal is unnaturally dense and composed of exotic elements not yet known to human science.`
+
+outfit "Stellar Fragment Reserve"
+	category "Ammunition"
+	series "Ammunition"
+	index 11040
+	cost 350000
+	licenses
+		"Kaatrij Winged-Eye"
+	thumbnail "outfit/hv spike rack"
+	"mass" 9
+	"outfit space" -9
+	"stellar frag capacity" 9
+	description `Generally installed only on expeditionary craft on extended missions, Kaatrij's supplementary ammunition store for their flagship weapon is a barebones, efficient affair - nothing about it is more complicated than it needs to be, despite the exotic nature of its contents.`
+
 
 outfit `Antiproton Emitter`
 	category "Secondary Weapons"
 	series "Secondary Weapons"
-	index 11020
+	index 11030
 	cost 1400000
 	thumbnail "outfit/antiproton emitter"
 	"mass" 19
@@ -154,7 +200,7 @@ outfit `Antiproton Emitter`
 outfit `Antiproton Emitter Turret`
 	category "Secondary Weapons"
 	series "Secondary Weapons"
-	index 11030
+	index 11040
 	cost 1400000
 	thumbnail "outfit/antiproton emitter turret"
 	"mass" 26

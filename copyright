@@ -13,7 +13,7 @@ Files:
  images/outfit/antiproton?emitter*
  images/outfit/small?stealth?shielding*
  images/outfit/large?stealth?shielding*
- images/outfit/stealth?plating*
+ images/outfit/writhing?metal?patch*
 
  images/projectile/antiproton*
 
@@ -38,3 +38,9 @@ Files:
 Copyright: Daeridanii1 (https://github.com/Daeridanii1)
 License: CC-BY-SA-4.0
 Comment: Derived from works by Saugia under the same license.
+
+Files:
+ images/effect/snap?nuke*
+Copyright: Daeridanii1 (https://github.com/Daeridanii1)
+License: CC-BY-SA-4.0
+Comment: Derived from works by @Karirawri under the same license.
