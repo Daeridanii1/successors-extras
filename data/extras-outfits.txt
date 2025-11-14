@@ -233,6 +233,26 @@ outfit `"Sosrue" Stealth Shielding`
 
 
 
+outfit `"Hojret" Shield Cortex`
+	### Intended introduction: Ghosts Part II or III (on the ship that opposes the Kijra-Khora)
+	### Distressingly large shield cortex for carrier warship.
+	category "Systems"
+	series "Shields"
+	index 11050
+	cost 14500000
+	thumbnail "outfit/unknown"
+	licenses
+		"High Houses"
+	"mass" 100
+	"outfit space" -100
+	"shield generation" 22.5
+	"shield protection" -0.33
+	"shield energy" 32
+	"shield connection point" 1
+	description "Finally achieving a unitary form, the largest shield cortex of the Myiara is designed not only to replenish the shield-hungry engines of the grandest of ships, but also of countless docked drones simultaneously. Though sheer scale has made it somewhat more efficient than its smaller siblings, its total energy consumption nonetheless borders on that of a small city, requiring almost the entire output of an Uoret reactor in order to run continuously."
+
+
+
 outfit `Writhing Metal Patch`
 	### Intended introduction: Tangled Shroud rework (requires compact event saving)
 	### Predecessor-space hull repair. Best at its scale, but each one equipped makes hull repair increasingly less energy and heat-efficient.
