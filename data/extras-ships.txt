@@ -189,26 +189,6 @@ ship `Vujrtaan`
 
 
 
-
-ship "Vujlet" "Vujlet (Cloaking)"
-	sprite "ship/vujlet modified"
-	thumbnail "thumbnail/vujlet modified"
-	add attributes
-		cost "8000000"
-		"shields" 1200
-		"hull" -1000
-		"required crew" 2
-		"cloak" 0.02
-		"cloaking fuel" 0.04
-		"cloaking shields" 4.0
-		licenses
-			"House Kaatrij"
-	description `Navigating the stars with the grace of a flitting bird, the compact Vujlet is a mass-produced High Houses warship flexible enough to serve in a variety of light-duty roles. Large enough to operate as a self-sufficient unit, these vessels serve as a useful bridge between short-ranged and relatively vulnerable interceptors, and larger, more resource-intensive warships that can be much more expensive to build and operate.`
-	description `	The design was originally employed by House Kaatrij as a stealth reconnaissance vessel that made use of their then-recently-developed cloaking technology. As the alliance between the New Houses strengthened, the plans for the Vujlet were distributed among them, and the light warship rapidly became a mainstay of their fleets.`
-	description `	Cloaking technology remains powerful enough in the modern day that House Kaatrij remains quite discerning about whom they offer these ships. To support its stealth systems, this variant has additional crew and a higher-capacity shield matrix.`
-
-
-
 ship "Uoret-Raasja"
 	### Intended introduction: Ghosts Part II
 	plural "Uoreten-Raasja"
