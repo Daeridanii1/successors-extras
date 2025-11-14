@@ -128,8 +128,7 @@ ship `Vujrtaan`
 	thumbnail "thumbnail/vujrtaan"
 	attributes
 		licenses
-			"High Houses"
-			"House Kaatrij"
+			"Kaatrij Winged-Eye"
 		category "Utility"
 		"cost" 23000000
 		"shields" 7000

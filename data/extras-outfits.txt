@@ -1,19 +1,11 @@
 ### EXTRAS: Content I don't plan on including in an initial PR but I wanted to make anyway. Spoiler territory for how I might (plan to) develop the story.
 
-outfit "House Kaatrij License"
+outfit "Kaatrij Winged-Eye License"
 	category "Licenses"
 	series "Licenses"
 	index 11030
 	thumbnail "outfit/unknown"
 	description "A manifestation of House Kaatrij's gratitude and allyship; the opportunity to purchase their exclusive technology."
-
-outfit "Kaatrij Winged-Eye License"
-	category "Licenses"
-	series "Licenses"
-	index 11040
-	thumbnail "outfit/unknown"
-	description `"Let those trusted with our secrets also be so t'our successes."`
-	description `		- Kaatrij Ija Saajret, of Somber Sejra`
 
 outfit "House Chydiyi License"
 	category "Licenses"
@@ -196,8 +188,7 @@ outfit `"Kajra" Stealth Shielding`
 	series "Shields"
 	index 11100
 	licenses
-		"High Houses"
-		"House Kaatrij"
+		"Kaatrij Winged-Eye"
 	cost 7550000
 	thumbnail "outfit/small stealth shielding"
 	"mass" 22
@@ -218,7 +209,6 @@ outfit `"Sosrue" Stealth Shielding`
 	series "Shields"
 	index 11110
 	licenses
-		"High Houses"
 		"Kaatrij Winged-Eye"
 	cost 15750000
 	thumbnail "outfit/large stealth shielding"
