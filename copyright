@@ -7,21 +7,21 @@ Files:
  icon*
 
  images/effect/lethal?word*
- images/effect/resja?afterburner*
- images/effect/resja?flare*
 
  images/outfit/antiproton?emitter*
  images/outfit/small?stealth?shielding*
  images/outfit/large?stealth?shielding*
  images/outfit/writhing?metal?patch*
 
- images/projectile/antiproton*
+ images/projectile/lethal?word*
 
  images/ship/kijra-khora*
+ images/ship/ryuit-briiqra*
  images/ship/uoret-raasja*
  images/ship/vujrtaan*
  
  images/thumbnail/kijra-khora*
+ images/thumbnail/ryuit-briiqra*
  images/thumbnail/uoret-raasja*
  images/thumbnail/vujrtaan*
 Copyright: Daeridanii (https://github.com/Daeridanii1)

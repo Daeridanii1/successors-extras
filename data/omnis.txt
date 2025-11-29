@@ -1,42 +1,24 @@
-shipyard "successor plugin"
+shipyard `successor plugin`
+	# House Kaatrij Ships
 	"Kijra-Khora"
 	"Uoret-Raasja"
-	"Vujlet (Cloaking)"
 	"Vujrtaan"
-	"Valkkyiara-Khorasaqra"
-	
-	# The following are commented out because the Ghosts development plugin must be installed for them to exist
+	# Other
+	"Ryuit-Briiqra"
 
-	#"Resja, of the Nine Eyes"
-	#"Hasur, Vowsworn"
-	#"Queru, Luminous Gaze"
+outfitter `successor plugin`
+	"Kaatrij Winged-Eye License"
+	"House Chydiyi License"
 
-outfitter "successor plugin"
 	`"Hasur" Photoballista`
-	`Stellar Metal Fragments`
-	`Stellar Fragment Reserve`
+	"Stellar Metal Fragments"
+	"Stellar Fragment Reserve"
 
 	"Antiproton Emitter"
 	"Antiproton Emitter Turret"
 
+	`"Hojret" Shield Cortex`
 	`"Kajra" Stealth Shielding`
 	`"Sosrue" Stealth Shielding`
 	`Writhing Metal Patch`
 	"Multimodal Armor: Gilled"
-
-	"House Kaatrij License"
-	"Kaatrij Winged-Eye License"
-	"House Chydiyi License"
-
-outfitter "successor plugin"
-	`"Sarija" Heirloom Coilgun`
-	"Heirloom Point Defense"
-
-	`"Tijra" Heirloom Lance`
-	"Hypervelocity Spike"
-
-	`"Jiita" Heirloom Shielding`
-
-	`"Ija" Heirloom Reactor`
-
-	"Heirloom Hunter-Killers"

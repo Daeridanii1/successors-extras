@@ -188,6 +188,115 @@ ship `Vujrtaan`
 
 
 
+ship `Ryuit-Briiqra`
+	### Intended introduction: End of Ghosts
+	### A stealth exploration vessel; lightly armed and armored but with high fuel capacity and built-in ramscooping.
+	plural "Ryuit-Briiqran"
+	sprite "ship/ryuit-briiqra"
+	thumbnail "thumbnail/ryuit-briiqra"
+	attributes
+		licenses
+			"Kaatrij Winged-Eye"
+		category "Medium Warship"
+		"cost" 23000000
+		"shields" 14500
+		"hull" 52000
+		"required crew" 12
+		"bunks" 45
+		"mass" 605
+		"drag" 4.0
+		"heat dissipation" 0.5
+		"fuel capacity" 1200
+		"cargo space" 50
+		"outfit space" 510
+		"weapon capacity" 170
+		"engine capacity" 110
+		"hull repair rate" 2.6
+		"hull energy" 2.86
+		"hull heat" 2.86
+		"ramscoop" 6
+		"multimodal armor" 1
+		# Cloaking
+		"cloak" 0.01
+		"cloaking fuel" 0.035
+		"cloaking shields" 3.2
+		# Scanning
+		"tactical scan power" 64
+		"outfit scan power" 16
+		"outfit scan efficiency" 20
+		"cargo scan power" 16
+		"cargo scan effficiency" 20
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Veusa" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		`"Chyyra" Inductive Reverser`
+		`"Uoret" Fusion Core`
+		"Primary Power Reserve"
+		"Auxiliary Power Reserve"
+		`"Jorv" Shield Cortex`
+		"Hyperdrive"
+		"Harmonic Keystone"
+		"Successor Cooling" 2
+		`Bimodal Coilgun Turret` 2
+		`"Tuur" Scanning Suite`
+		"Kinetic Rail Rifle" 10
+		"Multimodal Armor: Light"
+	gun 12 -20
+	gun -12 -20
+	gun 14 -20
+	gun -14 -20
+	turret 22 6
+	turret -22 6
+	engine 0 112
+		zoom .8
+		under
+	engine -30 78
+		zoom .6
+		under
+	engine 30 78
+		zoom .6
+		under
+	"steering engine" -7 -98 
+		angle 90
+		right
+		zoom .6
+	"steering engine" 7 -98
+		angle 270
+		left
+		zoom .6
+	"steering engine" -8 91 
+		angle 90
+		left
+		zoom .6
+		over
+	"steering engine" 8 91 
+		angle 270
+		right
+		zoom .6
+		over
+	bay "Fighter" 0 90
+		angle 180
+		"launch effect" "human internal"
+	bay "Fighter" 0 90
+		angle 180
+		"launch effect" "human internal"
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `The "star-bridging" Ryuit-Biqra is House Kaatrij's new flagship craft, integrating all the lessons learned from their prior vessels into a striking and versatile package. Built for exploration and fleet command rather than pure combat, the ship enjoys a powerful integrated scanning suite, gill-style ramscoops, and a fighter bay for expeditionary craft - not to mention Kaatrij's signature cloaking techhnology.`
+	description `	The cloaking technology of the Vujrtaan is integrated with the hull and cannot be removed. Optimized for duration, it activates slowly but draws little fuel and shielding to maintain.`
+
+
+
 ship "Uoret-Raasja"
 	### Intended introduction: Ghosts Part II
 	plural "Uoreten-Raasja"
