@@ -22,9 +22,9 @@ ship `Kijra-Khora`
 		"weapon capacity" 135
 		"engine capacity" 110
 		# Hull repair
-		"hull repair rate" 1.45
-		"hull energy" 2.0
-		"hull heat" 2.0
+		"hull repair rate" 1.17
+		"hull energy" 1.287
+		"hull heat" 1.287
 		"multimodal armor" 1
 		# Cloaking
 		"cloak" 0.04
@@ -60,48 +60,23 @@ ship `Kijra-Khora`
 	engine -34 55
 		zoom .8
 	engine 0 67
-		zoom 1.2
-	"steering engine" -13 -57
+	"steering engine" -11 -62
 		angle 110
 		right
-		zoom .4
-	"steering engine" -12 -61
-		angle 110
-		right
-		zoom .4
-	"steering engine" -11 -64 
-		angle 110
-		right
-		zoom .4
-	"steering engine" -10 -67 
-		angle 110
-		right
-		zoom .4
-	"steering engine" 10 -67
+		zoom .6
+	"steering engine" 11 -62
 		angle 250
 		left
-		zoom .4
-	"steering engine" 11 -64 
-		angle 250
-		left
-		zoom .4
-	"steering engine" 12 -61
-		angle 250
-		left
-		zoom .4
-	"steering engine" 13 -57
-		angle 250
-		left
-		zoom .4
+		zoom .6
 	"steering engine" -47 47 
 		angle 90
 		left
-		zoom .7
+		zoom .6
 		over
 	"steering engine" 47 47 
 		angle 270
 		right
-		zoom .7
+		zoom .6
 		over
 	"reverse engine" 26 -11
 		zoom .8
