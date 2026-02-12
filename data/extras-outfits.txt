@@ -30,10 +30,10 @@ outfit `"Hasur" Photoballista`
 	"outfit space" -56
 	"weapon capacity" -56
 	"gun ports" -1
-	"stellar frag capacity" 21
+	"stellar frag capacity" 63
 	weapon
 		icon "icon/antiproton"
-		sprite "projectile/drak bolt"
+		sprite "projectile/hasur bolt"
 			"frame time" 6
 			"no repeat"
 		ammo "Stellar Metal Fragments"
@@ -41,19 +41,20 @@ outfit `"Hasur" Photoballista`
 		"fire effect" "bimodal switch impact" 4
 		"hit effect" "snap nuke hit"
 		"die effect" "moonbeam flecks" 8
-		"reload" 300
-		"burst reload" 12
+		"sound" "sjeja lance"
+		"reload" 100
+		"burst reload" 15
 		"burst count" 3
 		"velocity" 36
 		"lifetime" 5
-		"firing energy" 2050
-		"firing heat" 5500
-		"firing shields" 400
+		"firing energy" 690
+		"firing heat" 1830
+		"firing shields" 130
 		"piercing" 0.33
 		"cluster"
-		"hit force" 1200
-		submunition "hasur long range" 9
-	description `Developed as a devastating first-strike weapon for House Kaatrij's cloaking warships, the Hasur is as destructive as it is unconventional: it fires hypermagnetized stellar metal fragments at velocities high enough to trigger nuclear reactions on contact with solid matter, such that even the exceptionally durable armor of the Successors is unable to provide much resistance.`
+		"hit force" 400
+		submunition "hasur long range" 4
+	description `Developed as a devastating first-strike weapon for House Kaatrij's cloaking warships, the Hasur is as destructive as it is unconventional. Firing stellar metal fragments dense enough to scythe through even the exceptionally durable armor of the Successors, the inner functions of this weapon border on the uncanny, somehow liberating a measure of the fragments' internal energy in order to propel them faster than would otherwise be possible.`
 	description `	At close ranges, the fragments are collimated by a forwardly- projected shield bubble - intersecting an enemy ship with this allows the weapon to bypass a portion of enemy shielding.`
 
 outfit `hasur long range`
@@ -64,8 +65,8 @@ outfit `hasur long range`
 		"random lifetime" 16
 		"lifetime" 24
 		"fade out" 6
-		"shield damage" 380
-		"hull damage" 605
+		"shield damage" 281.25
+		"hull damage" 450
 		"damage dropoff" 540
 
 effect "snap nuke hit"
@@ -81,15 +82,16 @@ effect "snap nuke hit"
 
 
 outfit "Stellar Metal Fragments"
+	### I would like these to be obtainable by mining "asteroids" in very close orbit of certain Predecessor stars; a unique way to avoid the rather punishing restock costs.
 	plural "Stellar Metal Fragments"
 	category "Ammunition"
 	series "Ammunition"
 	index 11030
-	cost 77000
+	cost 22000
 	thumbnail "outfit/hv spike"
-	"mass" 4.4
+	"mass" 2
 	"stellar frag capacity" -1
-	description `A canister containing fragments of bronze-colored stellar metal, grown over thousands of years in the corona of a blue star. The metal is unnaturally dense and composed of exotic elements not yet known to human science.`
+	description `A canister containing fragments of bronze-colored stellar metal, cultivated over thousands of years in the corona of a blue star. The metal is unnaturally dense and composed of exotic elements not yet known to human science.`
 
 
 
@@ -103,7 +105,7 @@ outfit "Stellar Fragment Reserve"
 	thumbnail "outfit/hv spike rack"
 	"mass" 9
 	"outfit space" -9
-	"stellar frag capacity" 9
+	"stellar frag capacity" 27
 	description `Generally installed only on expeditionary craft on extended missions, Kaatrij's supplementary ammunition store for their flagship weapon is a barebones, efficient affair - nothing about it is more complicated than it needs to be, despite the exotic nature of its contents.`
 
 
@@ -264,14 +266,15 @@ outfit `Writhing Metal Patch`
 
 outfit "Multimodal Armor: Gilled"
 	### Unclear if I actually want to implement this in vanilla, but it could be a nice diversification of MM armor.
+	### If so, a good spot would be after the conclusion of Ghosts, when the Successors can rejuvenate their interest in exploration through freaky anomalies in the Shroud.
 	category "Systems"
 	series "Special Systems"
-	index 11009
+	index 11035
 	thumbnail "outfit/successor armor heavy"
 	licenses
 		"High Houses"
-	"ramscoop" 8
-	"fuel generation" 0.05
+	"ramscoop" 10
+	"fuel generation" 0.025
 	"multimodal armor" -1
 	"unplunderable" 1
 	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
