@@ -94,6 +94,102 @@ ship `Kijra-Khora`
 	description `	The Kijra-Khora's cloaking technology is integrated with its hull and cannot be removed. Optimized for combat, it features a fast decloaking cycle but draws a substantial amount of fuel and shielding while active.`
 
 
+ship `Kijra-Khora A`
+	### Intended introduction: Ghosts Part II or III
+	"display name" "Kijra-Khora"
+	plural "Kijran-Khora"
+	sprite "ship/kijra-khora-a"
+	thumbnail "thumbnail/kijra-khora-a"
+	attributes
+		licenses
+			"Kaatrij Winged-Eye"
+		category "Light Warship"
+		"cost" 55000000
+		"shields" 12000
+		"hull" 23375
+		"required crew" 5
+		"bunks" 10
+		"mass" 440
+		"drag" 4.2
+		"heat dissipation" 0.5
+		"fuel capacity" 800
+		"cargo space" 15
+		"outfit space" 450
+		"weapon capacity" 135
+		"engine capacity" 110
+		# Hull repair
+		"hull repair rate" 1.17
+		"hull energy" 1.287
+		"hull heat" 1.287
+		"multimodal armor" 1
+		# Cloaking
+		"cloak" 0.04
+		"cloaking fuel" 0.05
+		"cloaking shields" 4.5
+		"cloaked afterburner" 1
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Veusa" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		`"Ryuit" Fusion Core`
+		"Primary Power Reserve"
+		"Auxiliary Power Reserve" 2
+		"Successor Fuel Sail"
+		`"Jaase" Shield Cortex`
+		"Hyperdrive"
+		"Successor Cooling" 2
+		`"Ojet" Bimodal Coilgun` 6
+		"Multimodal Armor: Light"
+		"Kinetic Rail Rifle" 5
+	gun 12 -62
+	gun -12 -62
+	gun 16 -62
+	gun -16 -62
+	gun 24 -69
+	gun -24 -69
+	engine 31 61
+	engine -31 61
+	"steering engine" -33 -50
+		angle 90
+		right
+		zoom .6
+		over
+	"steering engine" 33 -50
+		angle 270
+		left
+		zoom .6
+		over
+	"steering engine" -51 70 
+		angle 90
+		left
+		zoom .6
+		over
+	"steering engine" 51 70 
+		angle 270
+		right
+		zoom .6
+		over
+	"reverse engine" 43 -9
+		zoom .8
+		over
+	"reverse engine" -43 -9
+		zoom .8
+		over
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `Named for the fearsome gossamer-winged creatures of House Kaatrij's lost homeworld, this is the first truly new and original warship design employed by the Myiaran Successors in nearly two thousand years. Evoking the fast and stealthy hit-and-run craft employed by Kaatrij's Predecessors, the Kijra-Khora strains to be considered a light warship; every iota of internal space has been carved out to support the ship's systems. Sporting an aggressive weapons layout and Kaatrij's newly-rediscovered cloaking technology, few ships could equal it at its scale.`
+	description `	The Kijra-Khora's cloaking technology is integrated with its hull and cannot be removed. Optimized for combat, it features a fast decloaking cycle but draws a substantial amount of fuel and shielding while active.`
+
+
 
 ship `Vujrtaan`
 	### Intended introduction: Ghosts Part II
