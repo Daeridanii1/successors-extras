@@ -52,7 +52,7 @@ outfit `"Hasur" Photoballista`
 		"firing shields" 130
 		"piercing" 0.33
 		"cluster"
-		"hit force" 400
+		"firing force" 400
 		submunition "hasur long range" 4
 	description `Developed as a devastating first-strike weapon for House Kaatrij's cloaking warships, the Hasur is as destructive as it is unconventional. Firing stellar metal fragments dense enough to scythe through even the exceptionally durable armor of the Successors, the inner functions of this weapon border on the uncanny, somehow liberating a measure of the fragments' internal energy in order to propel them faster than would otherwise be possible.`
 	description `	At close ranges, the fragments are collimated by a forwardly- projected shield bubble - intersecting an enemy ship with this allows the weapon to bypass a portion of enemy shielding.`
@@ -65,9 +65,10 @@ outfit `hasur long range`
 		"random lifetime" 16
 		"lifetime" 24
 		"fade out" 6
-		"shield damage" 281.25
-		"hull damage" 450
+		"shield damage" 350
+		"hull damage" 560
 		"damage dropoff" 540
+		"hit force" 100
 
 effect "snap nuke hit"
 	sprite "effect/snap-nuke-hit"
@@ -88,7 +89,7 @@ outfit "Stellar Metal Fragments"
 	series "Ammunition"
 	index 11030
 	cost 22000
-	thumbnail "outfit/hv spike"
+	thumbnail "outfit/stellar metal fragments"
 	"mass" 2
 	"stellar frag capacity" -1
 	description `A canister containing fragments of bronze-colored stellar metal, cultivated over thousands of years in the corona of a blue star. The metal is unnaturally dense and composed of exotic elements not yet known to human science.`
@@ -270,12 +271,12 @@ outfit "Multimodal Armor: Gilled"
 	category "Systems"
 	series "Special Systems"
 	index 11035
-	thumbnail "outfit/successor armor heavy"
+	thumbnail "outfit/successor armor gilled"
 	licenses
 		"High Houses"
 	"ramscoop" 10
-	"fuel generation" 0.025
+	"fuel capacity" 600
 	"multimodal armor" -1
 	"unplunderable" 1
 	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
-	description "	This configuration is designed for expeditionary craft, filtering out deuterium from both stellar coronae and the interstellar medium."
+	description "	This configuration is designed for expeditionary craft, filtering out deuterium from stellar coronae and storing it in microscopic channels etched into the armor's lower layers."
