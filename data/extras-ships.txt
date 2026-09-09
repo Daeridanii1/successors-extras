@@ -191,6 +191,96 @@ ship `Kijra-Khora A`
 
 
 
+ship "Seiitej-Skere"
+	plural "Seiitejen-Skere"
+	sprite "ship/seiitej-skere"
+	thumbnail "thumbnail/seiitej-skere"
+	attributes
+		licenses
+			"High Houses"
+		category "Utility"
+		"cost" 14250000
+		"shields" 11000
+		"hull" 17500
+		"required crew" 14
+		"bunks" 36
+		"mass" 345
+		"drag" 5.2
+		"heat dissipation" .60
+		"fuel capacity" 800
+		"cargo space" 80
+		"outfit space" 410
+		"weapon capacity" 100
+		"engine capacity" 110
+		"multimodal armor" 1
+		"hull repair rate" 0.875
+		"hull energy" 0.9625
+		"hull heat" 0.9625
+		# Cloaking
+		"cloak" 0.01
+		"cloaking fuel" 0.035
+		"cloaking shields" 3.2
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Ojet" Bimodal Coilgun` 4
+
+		`"Ryuit" Fusion Core`
+		"Auxiliary Power Reserve" 3
+		`"Jaase" Shield Cortex`
+		"Successor Cooling"
+		"Multimodal Armor: Light"
+		"Kinetic Rail Rifle" 15
+
+		`"Veusa" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		"Hyperdrive"
+
+	gun -10 -78
+	gun -5 -86
+	gun 5 -86
+	gun 10 -78
+	turret 0 -29
+	engine -25 44
+	engine 25 44
+	"reverse engine" -25 -35
+		zoom .7
+	"reverse engine" 25 -35
+		zoom .7
+	"steering engine" -44 34
+		left
+		angle 90
+		zoom .5
+		over
+	"steering engine" 44 34
+		right
+		angle 270
+		zoom .5
+		over
+	"steering engine" -5 -89
+		right
+		angle 90
+		zoom .4
+	"steering engine" 5 -89
+		left
+		angle 270
+		zoom .4
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `The peacetime the Seiitej was named for has now been broken. Consequently, its bellicose cloaking variant trades a substantial portion of cargo space for cloaking generators and additional weapons support, allowing it to serve as both a cloaked supply runner and a more powerful warship than the Vujlet-Usaqri.`
+	description "	Although the laws of scale make cloaking more energy-efficient for larger ships than smaller ones, the limited amount of stellar metal available to House Kaatrij has encouraged them to prioritize stealth on fast vessels able to escape combat if necessary, rather than larger cruisers that could be pinned down and potentially salvaged by opposing forces."
+	description `	The cloaking technology of the Seiitej-Skere is integrated with its hull and cannot be removed. Optimized for duration, it activates slowly but requires little fuel and shielding to maintain.`
+
+
+
 ship `Vujrtaan`
 	### Intended introduction: Ghosts Part II
 	### A stealth exploration vessel; lightly armed and armored but with high fuel capacity and built-in ramscooping.
