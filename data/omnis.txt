@@ -1,6 +1,8 @@
 shipyard `successor plugin`
 	# House Kaatrij Ships
-	"Kijra-Khora"
+	#"Kijra-Khora"
+	"Kijra-Khora A"
+	"Seiitej-Skere"
 	"Uoret-Raasja"
 	"Vujrtaan"
 	# Other
