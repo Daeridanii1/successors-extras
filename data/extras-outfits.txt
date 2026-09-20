@@ -104,9 +104,10 @@ outfit "Stellar Fragment Reserve"
 	licenses
 		"Kaatrij Winged-Eye"
 	thumbnail "outfit/hv spike rack"
-	"mass" 9
+	"mass" 3
 	"outfit space" -9
 	"stellar frag capacity" 27
+	ammo "Stellar Metal Fragments"
 	description `Generally installed only on expeditionary craft on extended missions, Kaatrij's supplementary ammunition store for their flagship weapon is a barebones, efficient affair - nothing about it is more complicated than it needs to be, despite the exotic nature of its contents.`
 
 
