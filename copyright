@@ -8,6 +8,8 @@ Files:
 
  images/effect/lethal?word*
 
+ images/icon/hasur*
+
  images/outfit/antiproton?emitter*
  images/outfit/small?stealth?shielding*
  images/outfit/large?stealth?shielding*
@@ -15,12 +17,16 @@ Files:
 
  images/projectile/lethal?word*
 
+ images/ship/jaatide*
  images/ship/kijra-khora*
+ images/ship/kijra-riitaa*
  images/ship/ryuit-briiqra*
  images/ship/uoret-raasja*
  images/ship/vujrtaan*
  
+ images/thumbnail/jaatide*
  images/thumbnail/kijra-khora*
+ images/thumbnail/kijra-riitaa*
  images/thumbnail/ryuit-briiqra*
  images/thumbnail/uoret-raasja*
  images/thumbnail/vujrtaan*
