@@ -1,12 +1,13 @@
 shipyard `successor plugin`
 	# House Kaatrij Ships
-	#"Kijra-Khora"
-	"Kijra-Khora A"
-	"Seiitej-Skere"
+	"Kijra-Khora"
+	"Kijra-Riitaa"
+	#"Seiitej-Skere"
 	"Uoret-Raasja"
 	"Vujrtaan"
 	# Other
 	"Ryuit-Briiqra"
+	"Jaatide"
 
 outfitter `successor plugin`
 	"Kaatrij Winged-Eye License"

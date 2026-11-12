@@ -1,6 +1,73 @@
+ship "Jaatide"
+	plural "Jaatiden"
+	sprite "ship/jaatide"
+	thumbnail "thumbnail/jaatide"
+	attributes
+		licenses
+			"High Houses"
+		category "Fighter"
+		"cost" 300000
+		"shields" 1250
+		"hull" 3550
+		"automaton" 1
+		"mass" 60
+		"drag" 2.5
+		"heat dissipation" 0.75
+		"outfit space" 99
+		"weapon capacity" 36
+		"engine capacity" 30
+		"hull repair rate" 0.18
+		"hull energy" 0.198
+		"hull heat" 0.198
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"Drag Cannon" 3
+
+		`OC-"Mavra" Betavoltaic Cell`
+		`"Byiaa" Shield Cortex`
+		"Auxiliary Power Reserve"
+
+		`"Niis" Inductive Engines`
+	gun 0 -38
+	gun -6 -29
+	gun 6 -29
+	engine 0 39
+	"steering engine" -4 -32 
+		angle 90
+		right
+		zoom .6
+		over
+	"steering engine" 4 -32
+		angle 270
+		left
+		zoom .6
+		over
+	"steering engine" -7 36
+		angle 90
+		left
+		zoom .6
+	"steering engine" 7 36 
+		angle 270
+		right
+		zoom .6
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `The "star-bridging" Ryuit-Biqra is House Kaatrij's new flagship craft, integrating all the lessons learned from their prior vessels into a striking and versatile package. Built for exploration and fleet command rather than pure combat, the ship enjoys a powerful integrated scanning suite, gill-style ramscoops, and a fighter bay for expeditionary craft - not to mention Kaatrij's signature cloaking techhnology.`
+	description `	The cloaking technology of the Vujrtaan is integrated with the hull and cannot be removed. Optimized for duration, it activates slowly but draws little fuel and shielding to maintain.`
+
+
+
 ship `Kijra-Khora`
 	### Intended introduction: Ghosts Part II or III
-	### NOTE: The Blender model is rigged for movable nacelles, but this can't be achieved in main until we get some sort of context-sensitive ship animation support; see issue #4991 and PR #8797 from the main repository.
 	plural "Kijran-Khora"
 	sprite "ship/kijra-khora"
 	thumbnail "thumbnail/kijra-khora"
@@ -12,14 +79,14 @@ ship `Kijra-Khora`
 		"shields" 12000
 		"hull" 23375
 		"required crew" 5
-		"bunks" 10
+		"bunks" 9
 		"mass" 440
 		"drag" 4.2
 		"heat dissipation" 0.5
 		"fuel capacity" 800
-		"cargo space" 15
+		"cargo space" 22
 		"outfit space" 450
-		"weapon capacity" 135
+		"weapon capacity" 136
 		"engine capacity" 110
 		# Hull repair
 		"hull repair rate" 1.17
@@ -40,117 +107,25 @@ ship `Kijra-Khora`
 		`"Veusa" Inductive Thruster`
 		`"Veusa" Inductive Steering`
 		`"Ryuit" Fusion Core`
+		`OC-"Mavra" Betavoltaic Cell`
 		"Primary Power Reserve"
-		"Auxiliary Power Reserve" 2
-		"Successor Fuel Sail"
-		`"Jaase" Shield Cortex`
+		"Auxiliary Power Reserve"
+		`"Kajra" Stealth Shielding`
 		"Hyperdrive"
+		"Harmonic Keystone"
+		`"Veldt" Combat Scanner`
+		"Multimodal Armor: Gilled"
 		"Successor Cooling" 2
 		`"Ojet" Bimodal Coilgun` 6
-		"Multimodal Armor: Light"
-		"Kinetic Rail Rifle" 5
-	gun 4 -74 
-	gun -4 -74 
-	gun 34 -20 
-	gun -34 -20 
-	gun 34 -20 
-	gun -34 -20 
-	engine 34 55
-		zoom .8
-	engine -34 55
-		zoom .8
-	engine 0 67
-	"steering engine" -11 -62
-		angle 110
-		right
-		zoom .6
-	"steering engine" 11 -62
-		angle 250
-		left
-		zoom .6
-	"steering engine" -47 47 
-		angle 90
-		left
-		zoom .6
-		over
-	"steering engine" 47 47 
-		angle 270
-		right
-		zoom .6
-		over
-	"reverse engine" 26 -11
-		zoom .8
-	"reverse engine" -26 -11
-		zoom .8
-	leak "leak" 50 50
-	leak "flame" 30 80
-	explode "tiny explosion" 18
-	explode "small explosion" 36
-	explode "medium explosion" 24
-	explode "large explosion" 8
-	"final explode" "final explosion medium"
-	description `Named for the fearsome gossamer-winged creatures of House Kaatrij's lost homeworld, this is the first truly new and original warship design employed by the Myiaran Successors in nearly two thousand years. Evoking the fast and stealthy hit-and-run craft employed by Kaatrij's Predecessors, the Kijra-Khora strains to be considered a light warship; every iota of internal space has been carved out to support the ship's systems. Sporting an aggressive weapons layout and Kaatrij's newly-rediscovered cloaking technology, few ships could equal it at its scale.`
-	#description `	The "Kijra-Khora" also has two mobile nacelles that can be deployed in combat to present additional weapons hardpoints, and can be retracted while docking or in hyperspace for additional protection. The nacelles also automatically retract when cloaking; this reduces the size of the cloaking field that must be generated, improving the overall efficiency of the system.`
-	description `	The Kijra-Khora's cloaking technology is integrated with its hull and cannot be removed. Optimized for combat, it features a fast decloaking cycle but draws a substantial amount of fuel and shielding while active.`
-
-
-ship `Kijra-Khora A`
-	### Intended introduction: Ghosts Part II or III
-	"display name" "Kijra-Khora"
-	plural "Kijran-Khora"
-	sprite "ship/kijra-khora-a"
-	thumbnail "thumbnail/kijra-khora-a"
-	attributes
-		licenses
-			"Kaatrij Winged-Eye"
-		category "Light Warship"
-		"cost" 55000000
-		"shields" 12000
-		"hull" 23375
-		"required crew" 5
-		"bunks" 10
-		"mass" 440
-		"drag" 4.2
-		"heat dissipation" 0.5
-		"fuel capacity" 800
-		"cargo space" 15
-		"outfit space" 450
-		"weapon capacity" 135
-		"engine capacity" 110
-		# Hull repair
-		"hull repair rate" 1.17
-		"hull energy" 1.287
-		"hull heat" 1.287
-		"multimodal armor" 1
-		# Cloaking
-		"cloak" 0.04
-		"cloaking fuel" 0.05
-		"cloaking shields" 4.5
-		"cloaked afterburner" 1
-		weapon
-			"blast radius" 100
-			"shield damage" 1000
-			"hull damage" 500
-			"hit force" 1500
-	outfits
-		`"Veusa" Inductive Thruster`
-		`"Veusa" Inductive Steering`
-		`"Ryuit" Fusion Core`
-		"Primary Power Reserve"
-		"Auxiliary Power Reserve" 2
-		"Successor Fuel Sail"
-		`"Jaase" Shield Cortex`
-		"Hyperdrive"
-		"Successor Cooling" 2
-		`"Ojet" Bimodal Coilgun` 6
-		"Multimodal Armor: Light"
-		"Kinetic Rail Rifle" 5
+		"Kinetic Rail Rifle" 4
 	gun 12 -62
 	gun -12 -62
 	gun 16 -62
 	gun -16 -62
 	gun 24 -69
 	gun -24 -69
+	gun 0 -69
+		under
 	engine 31 61
 	engine -31 61
 	"steering engine" -33 -50
@@ -188,6 +163,98 @@ ship `Kijra-Khora A`
 	"final explode" "final explosion medium"
 	description `Named for the fearsome gossamer-winged creatures of House Kaatrij's lost homeworld, this is the first truly new and original warship design employed by the Myiaran Successors in nearly two thousand years. Evoking the fast and stealthy hit-and-run craft employed by Kaatrij's Predecessors, the Kijra-Khora strains to be considered a light warship; every iota of internal space has been carved out to support the ship's systems. Sporting an aggressive weapons layout and Kaatrij's newly-rediscovered cloaking technology, few ships could equal it at its scale.`
 	description `	The Kijra-Khora's cloaking technology is integrated with its hull and cannot be removed. Optimized for combat, it features a fast decloaking cycle but draws a substantial amount of fuel and shielding while active.`
+
+
+
+ship `Kijra-Riitaa`
+	plural "Kijran-Riitaa"
+	sprite "ship/kijra-riitaa"
+	thumbnail "thumbnail/kijra-riitaa"
+	attributes
+		category "Transport"
+		"cost" 55000000
+		"shields" 12000
+		"hull" 38500
+		"required crew" 6
+		"bunks" 44
+		"mass" 440
+		"drag" 4.2
+		"heat dissipation" 0.5
+		"fuel capacity" 800
+		"cargo space" 40
+		"outfit space" 380
+		"weapon capacity" 128
+		"engine capacity" 110
+		# Hull repair
+		"hull repair rate" 1.17
+		"hull energy" 1.287
+		"hull heat" 1.287
+		"multimodal armor" 1
+		# Cloaking
+		"cloak" 0.02
+		#"cloaking fuel" 0.05
+		"cloaking shields" 4.5
+		"cloaked afterburner" 1
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Veusa" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		`"Ryuit" Fusion Core`
+		`OC-"Mavra" Betavoltaic Cell`
+		"Primary Power Reserve"
+		"Auxiliary Power Reserve"
+		`"Kajra" Stealth Shielding`
+		"Hyperdrive"
+		"Harmonic Keystone"
+		`"Veldt" Combat Scanner`
+		"Multimodal Armor: Gilled"
+		"Successor Cooling" 2
+		`"Ojet" Bimodal Coilgun` 6
+		"Kinetic Rail Rifle" 4
+	gun 0 -79
+	gun 21 -23
+	gun -21 -23
+	turret 0 0
+	engine 0 79
+	# "steering engine" -33 -50
+	# 	angle 90
+	# 	right
+	# 	zoom .6
+	# 	over
+	# "steering engine" 33 -50
+	# 	angle 270
+	# 	left
+	# 	zoom .6
+	# 	over
+	# "steering engine" -51 70 
+	# 	angle 90
+	# 	left
+	# 	zoom .6
+	# 	over
+	# "steering engine" 51 70 
+	# 	angle 270
+	# 	right
+	# 	zoom .6
+	# 	over
+	# "reverse engine" 43 -9
+	# 	zoom .8
+	# 	over
+	# "reverse engine" -43 -9
+	# 	zoom .8
+	# 	over
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `This elegant scout ship was a masterwork of Myiaran art and engineering. Designed for long-term research missions, it enjoys unparalleled cloaking performance. The dorsal surface of the craft can be reconfigured to serve as a large particle cone, amplifying the Kijra-Riitaa's scanning capabilites. In addition, the particle cone's ability to channel and project radiation allows it to serve as an unconventional but remarkable unique weapon.`
+	description `	The Kijra-Riitaa's cloaking technology is integrated with its hull and cannot be removed. Optimized for research, it draws only shields while active.`
 
 
 
@@ -292,27 +359,27 @@ ship `Vujrtaan`
 			"Kaatrij Winged-Eye"
 		category "Utility"
 		"cost" 23000000
-		"shields" 7000
-		"hull" 21500
+		"shields" 8500
+		"hull" 18200
 		"required crew" 7
-		"bunks" 39
-		"mass" 320
-		"drag" 3.9
+		"bunks" 30
+		"mass" 340
+		"drag" 5.3
 		"heat dissipation" 0.55
 		"fuel capacity" 1600
-		"cargo space" 50
-		"outfit space" 275
-		"weapon capacity" 100
-		"engine capacity" 100
+		"cargo space" 205
+		"outfit space" 290
+		"weapon capacity" 80
+		"engine capacity" 90
 		"hull repair rate" 1.45
 		"hull energy" 2.0
 		"hull heat" 2.0
-		"ramscoop" 8	# Equivalent to 14-28 outfit space, depending on tech level
+		"ramscoop" 3
 		"multimodal armor" 1
 		# Cloaking
 		"cloak" 0.01
 		"cloaking fuel" 0.035
-		"cloaking shields" 3.2
+		"cloaking shields" 2.8
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -321,21 +388,39 @@ ship `Vujrtaan`
 	outfits
 		`"Chyyra" Inductive Thruster`
 		`"Veusa" Inductive Steering`
-		`"Aqra" Inductive Reverser`
+		`"Chyyra" Inductive Reverser`
 		`"Nnesa" Fusion Core`
 		"Auxiliary Power Reserve" 2
-		`"Jaase" Shield Cortex`
+		`"Ej" Shield Cortex`
 		"Hyperdrive"
-		"Successor Cooling"
-		`"Ojet" Bimodal Coilgun` 2
+		"Harmonic Keystone"
+		"Successor Cooling" 2
+		`Drag Cannon` 4
 		`"Veldt" Combat Scanner`
 		`"Tuur" Scanning Suite`
 		"Kinetic Rail Rifle" 10
-		"Multimodal Armor: Light"
-	gun 14 -79
-	gun -14 -79
-	turret 0 -24
-	engine 0 35
+		"Multimodal Armor: Gilled"
+	gun 14 -80
+	gun -14 -80
+	gun 20 -76
+	gun -20 -76
+	engine 0 40
+	"steering engine" -35 -64
+		left
+		angle 90
+		zoom .5
+	"steering engine" 35 -64
+		right
+		angle 270
+		zoom .5
+	"steering engine" -61 40
+		right
+		angle 90
+		zoom .5
+	"steering engine" 61 40
+		left
+		angle 270
+		zoom .5
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
@@ -343,8 +428,8 @@ ship `Vujrtaan`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `Vurjtaanen are long-lasting heavy rainstorms native to the planet of Raaqa-Puan-Uuoru, often lasting dozens of days. While a vital part of the planet's ecosystem, they have required House Kaatrij to build their terrestrial constructions with an especially strong focus on the management and conveyance of water, leading to a unique and distinctive Kaatrij architecture that is rarely seen elsewhere in Successor space.`
-	description `	The vessel sharing the name of the Vujrtaan is similarly notable for its exceptional endurance. With a built-in ramscoop, cloak, and vast fuel reserves, these craft are suitable for long-term exploration or surveillance missions, and have thus become a favored tool of the Winged-Eye House.`
+	description `Vurjtaanen are long-lasting heavy rainstorms native to the planet of Raaqa-Puan-Uuoru, often lasting many weeks. While a vital part of the planet's ecosystem, they have required House Kaatrij to build their terrestrial constructions with an especially strong focus on the management and conveyance of water, leading to a unique and distinctive Kaatrij architecture.`
+	description `	The vessel sharing the name of the Vujrtaan is similarly notable for its exceptional endurance. With a built-in ramscoop, cloak, and vast fuel reserves, these craft are ideal for stealth transportation and long-term surveillance missions, and have thus become a favored tool of the Winged-Eye House.`
 	description `	The cloaking technology of the Vujrtaan is integrated with the hull and cannot be removed. Optimized for duration, it activates slowly but draws little fuel and shielding to maintain.`
 
 
@@ -462,61 +547,59 @@ ship "Uoret-Raasja"
 	### Intended introduction: Ghosts Part II
 	plural "Uoreten-Raasja"
 	sprite "ship/uoret-raasja"
-		center 0 -33
 	thumbnail "thumbnail/uoret-raasja"
 	attributes
 		licenses
 			"House Chydiyi"
-		category "Heavy Warship"
+		category "Medium Warship"
 		"cost" 45250000
-		"shields" 6500
-		"hull" 51500
-		"shield generation multiplier" 0.35
-		"shield energy multiplier" 0.20
-		"required crew" 16
+		"shields" 6600
+		"hull" 39000
+		"required crew" 24
 		"bunks" 38
-		"mass" 950
+		"mass" 550
 		"drag" 9.9
-		"heat dissipation" 0.45
+		"heat dissipation" 0.8
 		"fuel capacity" 500
 		"cargo space" 35
-		"outfit space" 550
-		"weapon capacity" 275
-		"engine capacity" 115
+		"outfit space" 575
+		"weapon capacity" 315
+		"engine capacity" 90
 		"multimodal armor" 1
 		"hull repair rate" 2.25
 		"hull energy" 3.26
 		"hull heat" 3.26
+		"ion protection" 0.33 # Strengthened power conduits reduce firing cost of Sjejas
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
 			"hull damage" 500
 			"hit force" 1500
 	outfits
-		`"Ojet" Bimodal Coilgun` 7
+		`"Sjeja" Kinetic Lance` 4
+		"High-Velocity Spike Rack"
+		"High-Velocity Spike" 96
 
 		`"Uoret" Fusion Core`
-		"Primary Power Reserve"
-		`"Jorv" Shield Cortex`
+		"Primary Power Reserve" 2
+		"Auxiliary Power Reserve"
+		`"Ej" Shield Cortex`
 
-		"Successor Cooling" 2
-		"Multimodal Armor: Heavy"
+		"Successor Cooling" 4
+		"Multimodal Armor: Light"
 		"Kinetic Rail Rifle" 25
 
-		`"Veusa" Inductive Thruster`
-		`"Veusa" Inductive Steering`
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
 		"Hyperdrive"
+
+		"Outfits Expansion"
 
 	gun 0 -145 
 	gun 9 -104 
 	gun -9 -104 
 	gun 14 -84 
 	gun -14 -84 
-	gun 16 -58 
-	gun -16 -58 
-	turret 26 -4 
-	turret -26 -4 
-	turret 0 -34 
 	engine 20 54 
 	engine -20 54 
 	leak "leak" 50 50
@@ -526,5 +609,5 @@ ship "Uoret-Raasja"
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `Based on a warship design once employed by their Predecessors, House Chydiyi's "Uoret-Raasja" has been adapted specifically to counter the cloaking technology recently deployed by the New Houses.`
-	description `	The "Uoret-Raasja" benefits from 35% faster shield regeneration, at the cost of drawing 20% more energy for shields.`
+	description `Newly deployed by House Chydiyi in preparation for a hot conflict with the New Houses, the Uoret-Raasja is a fragile but fearsome heavy weapons platform capable of supporting the largest and most destructive weapons of the High Houses. A massive array of high-temperature radiators at the rear of the vessel keeps its weapons array cool, while strengthened power conduits allow it to better support the ionization effects of multiple Sjeja lances.`
+	description `	The ancestors of these ships caused more bloodshed than any others in the fell era of the last great inter-Houses war; it was this family of craft that carried the massive planetary-bombardment coilguns that leveled the greatest cities of the Myiara.`
