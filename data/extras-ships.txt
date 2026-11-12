@@ -67,7 +67,7 @@ ship "Jaatide"
 
 
 ship `Kijra-Khora`
-	### Intended introduction: Ghosts Part II or III
+	### Intended introduction: Ghosts Part II
 	plural "Kijran-Khora"
 	sprite "ship/kijra-khora"
 	thumbnail "thumbnail/kijra-khora"
@@ -75,11 +75,11 @@ ship `Kijra-Khora`
 		licenses
 			"Kaatrij Winged-Eye"
 		category "Light Warship"
-		"cost" 55000000
+		"cost" 22200000
 		"shields" 12000
 		"hull" 23375
 		"required crew" 5
-		"bunks" 9
+		"bunks" 12
 		"mass" 440
 		"drag" 4.2
 		"heat dissipation" 0.5
@@ -161,9 +161,26 @@ ship `Kijra-Khora`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `Named for the fearsome gossamer-winged creatures of House Kaatrij's lost homeworld, this is the first truly new and original warship design employed by the Myiaran Successors in nearly two thousand years. Evoking the fast and stealthy hit-and-run craft employed by Kaatrij's Predecessors, the Kijra-Khora strains to be considered a light warship; every iota of internal space has been carved out to support the ship's systems. Sporting an aggressive weapons layout and Kaatrij's newly-rediscovered cloaking technology, few ships could equal it at its scale.`
+	description `Named for the fearsome gossamer-winged creatures of House Kaatrij's lost homeworld, this is the first truly new and original warship design employed by the Myiaran Successors in nearly two thousand years. Evoking the fast and stealthy hit-and-run craft employed by Kaatrij's Predecessors, the Kijra-Khora strains to be considered a light warship; every iota of internal space has been carved out to support the ship's systems. Sporting an aggressive weapons layout and Kaatrij's most advanced cloak, few ships could equal it at its scale.`
 	description `	The Kijra-Khora's cloaking technology is integrated with its hull and cannot be removed. Optimized for combat, it features a fast decloaking cycle but draws a substantial amount of fuel and shielding while active.`
 
+ship "Kijra-Khora" "Kijra-Khora (Bomber)"
+	outfits
+		`"Veusa" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		`"Ryuit" Fusion Core`
+		`OC-"Mavra" Betavoltaic Cell`
+		"Primary Power Reserve"
+		"Auxiliary Power Reserve"
+		`"Sosrue" Stealth Shielding`
+		"Hyperdrive"
+		"Harmonic Keystone"
+		"Multimodal Armor: Gilled"
+		"Successor Cooling" 2
+		`Drag Cannon` 6
+		`"Hasur" Photoballista`
+		"Stellar Metal Fragments" 63
+		"Kinetic Rail Rifle" 4
 
 
 ship `Kijra-Riitaa`
